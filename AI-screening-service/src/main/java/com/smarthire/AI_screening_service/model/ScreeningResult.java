@@ -8,6 +8,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.time.LocalDateTime;
 
+
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
@@ -22,43 +23,4 @@ public class ScreeningResult {
     private int score;
     private String feedback;
     private LocalDateTime screenedAt;
-	public String getId() {
-		return id;
-	}
-	public void setId(String id) {
-		this.id = id;
-	}
-	public int getCandidateId() {
-		return candidateId;
-	}
-	public void setCandidateId(int candidateId) {
-		this.candidateId = candidateId;
-	}
-	public int getJobId() {
-		return jobId;
-	}
-	public void setJobId(int jobId) {
-		this.jobId = jobId;
-	}
-	public int getScore() {
-		return score;
-	}
-	public void setScore(int score) {
-		this.score = score;
-	}
-	public String getFeedback() {
-		return feedback;
-	}
-	public void setFeedback(String feedback) {
-		this.feedback = feedback;
-	}
-	public LocalDateTime getScreenedAt() {
-		return screenedAt;
-	}
-	public void setScreenedAt(LocalDateTime screenedAt) {
-		this.screenedAt = screenedAt;
-	}
-	
-	
-    
 }

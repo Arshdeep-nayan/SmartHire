@@ -27,13 +27,7 @@ public class ScreeningService {
         String geminiResponse = chatClient.prompt(prompt).call().content();
         int score = extractScore(geminiResponse);
 
-        ScreeningResult result = new ScreeningResult();
-        result.setCandidateId(candidateId);
-        result.setJobId(jobId);
-        result.setScore(score);
-        result.setFeedback(geminiResponse);
-        result.setScreenedAt(LocalDateTime.now());
-
+        ScreeningResult result = new ScreeningResult(null, candidateId, jobId, score, geminiResponse, LocalDateTime.now());
         return repo.save(result);
     }
 
