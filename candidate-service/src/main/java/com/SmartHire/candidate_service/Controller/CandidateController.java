@@ -124,4 +124,15 @@ public class CandidateController
         return ResponseEntity.ok(service.getCandidatesSortedByDate());
     }
 
+    @PostMapping("/candidate/apply")
+    public ResponseEntity<String> applyForJob(
+            @RequestParam int candidateId,
+            @RequestParam int jobId)
+    {
+        service.applyForJob(candidateId, jobId);
+
+        return ResponseEntity.status(HttpStatus.CREATED)
+                .body("Application submitted successfully");
+    }
+
 }

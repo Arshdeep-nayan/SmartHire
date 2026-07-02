@@ -18,7 +18,7 @@ public class Candidate
 {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private Integer id;
 
     @NotBlank(message = "Name is required")
     private String name;
