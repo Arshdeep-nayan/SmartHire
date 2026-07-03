@@ -1,6 +1,10 @@
 package com.smarthire.AI_screening_service.service;
 
+import com.smarthire.AI_screening_service.dto.CandidateDTO;
+import com.smarthire.AI_screening_service.dto.JobDTO;
 import com.smarthire.AI_screening_service.exception.ScreeningNotFoundException;
+import com.smarthire.AI_screening_service.feign.CandidateFeignClient;
+import com.smarthire.AI_screening_service.feign.JobFeignClient;
 import com.smarthire.AI_screening_service.model.ScreeningResult;
 import com.smarthire.AI_screening_service.repository.ScreeningRepository;
 import org.springframework.ai.chat.client.ChatClient;
@@ -15,23 +19,67 @@ public class ScreeningService {
 
     private final ScreeningRepository repo;
     private final ChatClient chatClient;
+    private final CandidateFeignClient candidateFeignClient;
+    private final JobFeignClient jobFeignClient;
 
-    public ScreeningService(ScreeningRepository repo,
-                            GoogleGenAiChatModel chatModel) {
+    public ScreeningService(
+            ScreeningRepository repo,
+            GoogleGenAiChatModel chatModel,
+            CandidateFeignClient candidateFeignClient,
+            JobFeignClient jobFeignClient) {
+
         this.repo = repo;
         this.chatClient = ChatClient.create(chatModel);
+        this.candidateFeignClient = candidateFeignClient;
+        this.jobFeignClient = jobFeignClient;
     }
 
-    public ScreeningResult screenCandidate(int candidateId, int jobId) {
+    public ScreeningResult screenCandidate(
+            int candidateId,
+            int jobId) {
 
-        String resumeText = fetchResumeText(candidateId);
-        String jobDescription = fetchJobDescription(jobId);
+        CandidateDTO candidate =
+                candidateFeignClient.getCandidateById(candidateId);
 
-        String prompt = buildPrompt(resumeText, jobDescription);
+        JobDTO job =
+                jobFeignClient.getJobById(jobId);
+
+        String resumeText = buildResumeText(candidate);
+        String jobDescription = buildJobDescription(job);
+
+        String prompt = buildPrompt(
+                resumeText,
+                jobDescription);
+
+        System.out.println(
+                "========== SCREENING STARTED ==========");
+
+        System.out.println("Candidate Data:");
+        System.out.println(candidate);
+
+        System.out.println("Job Data:");
+        System.out.println(job);
+
+        System.out.println(
+                "========== PROMPT SENT TO GEMINI ==========");
+        System.out.println(prompt);
+
         String geminiResponse =
-                chatClient.prompt(prompt).call().content();
+                chatClient.prompt(prompt)
+                        .call()
+                        .content();
+
+        System.out.println(
+                "========== GEMINI RESPONSE ==========");
+        System.out.println(geminiResponse);
 
         int score = extractScore(geminiResponse);
+
+        System.out.println(
+                "Extracted Score : " + score);
+
+        System.out.println(
+                "========== SCREENING COMPLETED ==========");
 
         ScreeningResult result =
                 new ScreeningResult(
@@ -46,42 +94,59 @@ public class ScreeningService {
         return repo.save(result);
     }
 
+    private String buildResumeText(
+            CandidateDTO candidate) {
 
-    private String fetchResumeText(int candidateId) {
-        return "5 years experience in Java, Spring Boot, Microservices, REST APIs, MySQL, Docker.";
+        return "Name : " + candidate.getName()
+                + "\nSkills : " + candidate.getSkills()
+                + "\nExperience : " + candidate.getExperience()
+                + "\nLocation : " + candidate.getCurrentLocation();
     }
 
-    private String fetchJobDescription(int jobId) {
-        return "Looking for a backend developer with 3+ years experience in Java and Spring Boot.";
+    private String buildJobDescription(
+            JobDTO job) {
+
+        return "Title : " + job.getTitle()
+                + "\nCompany : " + job.getCompany()
+                + "\nRequired Skills : " + job.getSkills()
+                + "\nExperience : " + job.getExperience()
+                + "\nDescription : " + job.getDescription();
     }
 
-    private String buildPrompt(String resumeText,
-                               String jobDescription) {
+    private String buildPrompt(
+            String resumeText,
+            String jobDescription) {
 
         return "You are an expert recruiter. Given this candidate resume:\n"
                 + resumeText
                 + "\n\nAnd this job description:\n"
                 + jobDescription
                 + "\n\nProvide a match score out of 100 and brief feedback. "
-                + "Respond in this exact format: SCORE: <number>\nFEEDBACK: <text>";
+                + "Respond in this exact format: "
+                + "SCORE: <number>\n"
+                + "FEEDBACK: <text>";
     }
 
     private int extractScore(String geminiResponse) {
+
         try {
             if (geminiResponse.contains("SCORE:")) {
+
                 String scorePart =
-                        geminiResponse.split("SCORE:")[1].trim();
+                        geminiResponse
+                                .split("SCORE:")[1]
+                                .trim();
 
                 return Integer.parseInt(
                         scorePart.split("\\D")[0]);
             }
-        } catch (Exception e) {
+        }
+        catch (Exception e) {
             return 0;
         }
 
         return 0;
     }
-
 
     public List<ScreeningResult> getAllScreenings() {
         return repo.findAll();
@@ -148,6 +213,4 @@ public class ScreeningService {
 
         repo.deleteById(id);
     }
-
-
 }
