@@ -25,14 +25,34 @@ public class CandidateEventConsumer {
     public void consume(String message) {
 
         try {
-            System.out.println("Received Message : " + message);
 
-            CandidateAppliedEvent event =
-                    objectMapper.readValue(
-                            message,
-                            CandidateAppliedEvent.class);
+            System.out.println(
+                    "Received Message : " + message);
 
-            System.out.println("Received Event : " + event);
+            CandidateAppliedEvent event;
+
+            // Handle double serialized message
+            if (message.startsWith("\"")) {
+
+                String actualJson =
+                        objectMapper.readValue(
+                                message,
+                                String.class);
+
+                event =
+                        objectMapper.readValue(
+                                actualJson,
+                                CandidateAppliedEvent.class);
+            }
+            else {
+                event =
+                        objectMapper.readValue(
+                                message,
+                                CandidateAppliedEvent.class);
+            }
+
+            System.out.println(
+                    "Received Event : " + event);
 
             screeningService.screenCandidate(
                     event.getCandidateId(),
