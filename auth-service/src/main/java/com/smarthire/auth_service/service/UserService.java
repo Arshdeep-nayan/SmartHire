@@ -8,30 +8,42 @@ import org.springframework.security.authentication.UsernamePasswordAuthenticatio
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
-
 @Service
-public class UserService
-{
+public class UserService {
+
     private final UserRepository repo;
     private final JWTService jwtService;
     private final AuthenticationManager auth;
-    public UserService(UserRepository repo, JWTService jwtService, AuthenticationManager auth) {
+
+    private final BCryptPasswordEncoder encoder =
+            new BCryptPasswordEncoder(12);
+
+    public UserService(UserRepository repo,
+                       JWTService jwtService,
+                       AuthenticationManager auth) {
         this.repo = repo;
         this.jwtService = jwtService;
         this.auth = auth;
     }
-    private BCryptPasswordEncoder encoder = new BCryptPasswordEncoder(12);
 
-
-    public Users register(@Valid Users user)
-    {
+    public Users register(@Valid Users user) {
         user.setPassword(encoder.encode(user.getPassword()));
         return repo.save(user);
     }
 
-    public String login(Users user)
-    {
-       auth.authenticate(new UsernamePasswordAuthenticationToken(user.getEmail(),user.getPassword()));
-       return jwtService.generateToken(user.getEmail());
+    public String login(Users user) {
+
+        auth.authenticate(
+                new UsernamePasswordAuthenticationToken(
+                        user.getEmail(),
+                        user.getPassword()
+                )
+        );
+
+        Users dbUser = repo.findByEmail(user.getEmail())
+                .orElseThrow(() ->
+                        new RuntimeException("User not found"));
+
+        return jwtService.generateToken(dbUser);
     }
 }

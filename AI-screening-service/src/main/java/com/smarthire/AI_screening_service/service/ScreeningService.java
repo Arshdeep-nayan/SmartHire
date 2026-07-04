@@ -2,6 +2,7 @@ package com.smarthire.AI_screening_service.service;
 
 import com.smarthire.AI_screening_service.dto.CandidateDTO;
 import com.smarthire.AI_screening_service.dto.JobDTO;
+import com.smarthire.AI_screening_service.dto.ScreeningCompletedEvent;
 import com.smarthire.AI_screening_service.exception.ScreeningNotFoundException;
 import com.smarthire.AI_screening_service.feign.CandidateFeignClient;
 import com.smarthire.AI_screening_service.feign.JobFeignClient;
@@ -21,17 +22,20 @@ public class ScreeningService {
     private final ChatClient chatClient;
     private final CandidateFeignClient candidateFeignClient;
     private final JobFeignClient jobFeignClient;
+    private final ScreeningEventProducer screeningEventProducer;
 
     public ScreeningService(
             ScreeningRepository repo,
             GoogleGenAiChatModel chatModel,
             CandidateFeignClient candidateFeignClient,
-            JobFeignClient jobFeignClient) {
+            JobFeignClient jobFeignClient,
+            ScreeningEventProducer screeningEventProducer) {
 
         this.repo = repo;
         this.chatClient = ChatClient.create(chatModel);
         this.candidateFeignClient = candidateFeignClient;
         this.jobFeignClient = jobFeignClient;
+        this.screeningEventProducer = screeningEventProducer;
     }
 
     public ScreeningResult screenCandidate(
@@ -80,6 +84,17 @@ public class ScreeningService {
 
         System.out.println(
                 "========== SCREENING COMPLETED ==========");
+
+        ScreeningCompletedEvent event =
+                new ScreeningCompletedEvent(
+                        candidateId,
+                        jobId,
+                        score
+                );
+
+        screeningEventProducer
+                .publishScreeningCompletedEvent(
+                        event);
 
         ScreeningResult result =
                 new ScreeningResult(
