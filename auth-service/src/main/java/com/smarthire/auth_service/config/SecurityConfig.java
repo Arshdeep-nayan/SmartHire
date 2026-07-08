@@ -1,6 +1,5 @@
 package com.smarthire.auth_service.config;
 
-
 import com.smarthire.auth_service.service.MyUserDetailsService;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -16,88 +15,74 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 
-
 @Configuration
 @EnableWebSecurity
-public class SecurityConfig
-{
+public class SecurityConfig {
 
     private final JWTFilter jwtFilter;
     private final MyUserDetailsService userDetialsService;
-    public SecurityConfig(JWTFilter jwtFilter,MyUserDetailsService userDetialsService) {
+
+    public SecurityConfig(
+            JWTFilter jwtFilter,
+            MyUserDetailsService userDetialsService) {
+
         this.jwtFilter = jwtFilter;
         this.userDetialsService = userDetialsService;
     }
+
     @Bean
-    public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception
-    {
+    public SecurityFilterChain securityFilterChain(HttpSecurity http)
+            throws Exception {
+
         return http
-                .csrf(c->c.disable())
-                .authorizeHttpRequests(r->r
-                        .requestMatchers("/api/register","/api/login")
-                        .permitAll()
+                .csrf(c -> c.disable())
+
+                .authorizeHttpRequests(r -> r
+
+                        .requestMatchers(
+                                "/api/register",
+                                "/api/login",
+                                "/swagger-ui/**",
+                                "/swagger-ui.html",
+                                "/v3/api-docs/**"
+
+                        ).permitAll()
+
                         .anyRequest().authenticated())
+
                 .httpBasic(Customizer.withDefaults())
-                .sessionManagement(s->s.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
-                .addFilterBefore( jwtFilter, UsernamePasswordAuthenticationFilter.class)
+
+                .sessionManagement(s ->
+                        s.sessionCreationPolicy(
+                                SessionCreationPolicy.STATELESS))
+
+                .addFilterBefore(
+                        jwtFilter,
+                        UsernamePasswordAuthenticationFilter.class)
+
                 .build();
     }
 
     @Bean
-    public AuthenticationProvider authenticationProvider()
-    {
-        DaoAuthenticationProvider provider = new DaoAuthenticationProvider();
-        provider.setPasswordEncoder(new BCryptPasswordEncoder(12));
-        provider.setUserDetailsService(userDetialsService);
+    public AuthenticationProvider authenticationProvider() {
+
+        DaoAuthenticationProvider provider =
+                new DaoAuthenticationProvider();
+
+        provider.setPasswordEncoder(
+                new BCryptPasswordEncoder(12));
+
+        provider.setUserDetailsService(
+                userDetialsService);
+
         return provider;
     }
 
     @Bean
-    public AuthenticationManager authenticationManager(AuthenticationConfiguration config) throws Exception {
+    public AuthenticationManager authenticationManager(
+            AuthenticationConfiguration config)
+            throws Exception {
+
         return config.getAuthenticationManager();
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }

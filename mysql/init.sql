@@ -1,0 +1,5 @@
+CREATE DATABASE IF NOT EXISTS smarthire_auth;
+
+CREATE DATABASE IF NOT EXISTS smarthire_jobs;
+
+CREATE DATABASE IF NOT EXISTS smarthire_candidates;

@@ -1,0 +1,212 @@
+version: "3.9"
+
+services:
+
+
+  mysql:
+    image: mysql:8.4
+    container_name: mysql
+
+    restart: unless-stopped
+
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+
+    ports:
+      - "3307:3306"
+
+    volumes:
+      - mysql_data:/var/lib/mysql
+      - ./mysql/init.sql:/docker-entrypoint-initdb.d/init.sql
+
+    networks:
+      - smarthire-network
+
+
+  mongo:
+    image: mongo:8.0
+    container_name: mongo
+
+    restart: unless-stopped
+
+    ports:
+      - "27017:27017"
+
+    volumes:
+      - mongo_data:/data/db
+
+    networks:
+      - smarthire-network
+
+
+  zookeeper:
+    image: confluentinc/cp-zookeeper:7.7.1
+    container_name: zookeeper
+
+    restart: unless-stopped
+
+    environment:
+      ZOOKEEPER_CLIENT_PORT: 2181
+      ZOOKEEPER_TICK_TIME: 2000
+
+    ports:
+      - "2181:2181"
+
+    networks:
+      - smarthire-network
+
+
+  kafka:
+    image: confluentinc/cp-kafka:7.7.1
+    container_name: kafka
+
+    restart: unless-stopped
+
+    depends_on:
+      - zookeeper
+
+    environment:
+      KAFKA_BROKER_ID: 1
+      KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://kafka:9092
+      KAFKA_LISTENERS: PLAINTEXT://0.0.0.0:9092
+      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
+
+    ports:
+      - "9092:9092"
+
+    networks:
+      - smarthire-network
+
+
+  discovery-server:
+    image: discovery-server
+    container_name: discovery-server
+
+    restart: unless-stopped
+
+    depends_on:
+      - mysql
+      - mongo
+      - kafka
+
+    ports:
+      - "8761:8761"
+
+    networks:
+      - smarthire-network
+
+
+  auth-service:
+    image: auth-service
+    container_name: auth-service
+
+    restart: unless-stopped
+
+    depends_on:
+      - discovery-server
+      - mysql
+
+    ports:
+      - "8081:8081"
+
+    networks:
+      - smarthire-network
+
+
+  job-service:
+    image: job-service
+    container_name: job-service
+
+    restart: unless-stopped
+
+    depends_on:
+      - discovery-server
+      - mysql
+
+    ports:
+      - "8082:8082"
+
+    networks:
+      - smarthire-network
+
+
+  candidate-service:
+    image: candidate-service
+    container_name: candidate-service
+
+    restart: unless-stopped
+
+    depends_on:
+      - discovery-server
+      - mysql
+      - mongo
+      - kafka
+
+    ports:
+      - "8083:8083"
+
+    networks:
+      - smarthire-network
+
+
+  ai-screening-service:
+    image: ai-screening-service
+    container_name: ai-screening-service
+
+    restart: unless-stopped
+
+    depends_on:
+      - discovery-server
+      - mongo
+      - kafka
+
+    ports:
+      - "8084:8084"
+
+    networks:
+      - smarthire-network
+
+
+  notification-service:
+    image: notification-service
+    container_name: notification-service
+
+    restart: unless-stopped
+
+    depends_on:
+      - discovery-server
+      - mongo
+      - kafka
+
+    ports:
+      - "8086:8086"
+
+    networks:
+      - smarthire-network
+
+
+  api-gateway:
+    image: api-gateway
+    container_name: api-gateway
+
+    restart: unless-stopped
+
+    depends_on:
+      - discovery-server
+
+    ports:
+      - "8085:8085"
+
+    networks:
+      - smarthire-network
+
+
+volumes:
+  mysql_data:
+  mongo_data:
+
+
+networks:
+  smarthire-network:
+    driver: bridge
