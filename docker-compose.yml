@@ -1,12 +1,8 @@
-version: "3.9"
-
 services:
-
 
   mysql:
     image: mysql:8.4
     container_name: mysql
-
     restart: unless-stopped
 
     environment:
@@ -24,9 +20,8 @@ services:
 
 
   mongo:
-    image: mongo:8.0
+    image: mongo:7.0
     container_name: mongo
-
     restart: unless-stopped
 
     ports:
@@ -42,7 +37,6 @@ services:
   zookeeper:
     image: confluentinc/cp-zookeeper:7.7.1
     container_name: zookeeper
-
     restart: unless-stopped
 
     environment:
@@ -59,7 +53,6 @@ services:
   kafka:
     image: confluentinc/cp-kafka:7.7.1
     container_name: kafka
-
     restart: unless-stopped
 
     depends_on:
@@ -80,9 +73,8 @@ services:
 
 
   discovery-server:
-    image: discovery-server
+    image: arshdeepnayan1234/discovery-server:latest
     container_name: discovery-server
-
     restart: unless-stopped
 
     depends_on:
@@ -98,9 +90,8 @@ services:
 
 
   auth-service:
-    image: auth-service
+    image: arshdeepnayan1234/auth-service:latest
     container_name: auth-service
-
     restart: unless-stopped
 
     depends_on:
@@ -115,9 +106,8 @@ services:
 
 
   job-service:
-    image: job-service
+    image: arshdeepnayan1234/job-service:latest
     container_name: job-service
-
     restart: unless-stopped
 
     depends_on:
@@ -132,9 +122,8 @@ services:
 
 
   candidate-service:
-    image: candidate-service
+    image: arshdeepnayan1234/candidate-service:latest
     container_name: candidate-service
-
     restart: unless-stopped
 
     depends_on:
@@ -151,9 +140,8 @@ services:
 
 
   ai-screening-service:
-    image: ai-screening-service
+    image: arshdeepnayan1234/ai-screening-service:latest
     container_name: ai-screening-service
-
     restart: unless-stopped
 
     depends_on:
@@ -169,9 +157,8 @@ services:
 
 
   notification-service:
-    image: notification-service
+    image: arshdeepnayan1234/notification-service:latest
     container_name: notification-service
-
     restart: unless-stopped
 
     depends_on:
@@ -187,9 +174,8 @@ services:
 
 
   api-gateway:
-    image: api-gateway
+    image: arshdeepnayan1234/api-gateway:latest
     container_name: api-gateway
-
     restart: unless-stopped
 
     depends_on:
