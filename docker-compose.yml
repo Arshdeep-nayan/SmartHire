@@ -101,6 +101,9 @@ services:
     ports:
       - "8081:8081"
 
+    volumes:
+      - D:/SmartHire/logs/auth-service:/logs
+
     networks:
       - smarthire-network
 
@@ -116,6 +119,9 @@ services:
 
     ports:
       - "8082:8082"
+
+    volumes:
+      - D:/SmartHire/logs/job-service:/logs
 
     networks:
       - smarthire-network
@@ -135,6 +141,9 @@ services:
     ports:
       - "8083:8083"
 
+    volumes:
+      - D:/SmartHire/logs/candidate-service:/logs
+
     networks:
       - smarthire-network
 
@@ -151,6 +160,9 @@ services:
 
     ports:
       - "8084:8084"
+
+    volumes:
+      - D:/SmartHire/logs/ai-screening-service:/logs
 
     networks:
       - smarthire-network
@@ -169,6 +181,9 @@ services:
     ports:
       - "8086:8086"
 
+    volumes:
+      - D:/SmartHire/logs/notification-service:/logs
+
     networks:
       - smarthire-network
 
@@ -183,6 +198,9 @@ services:
 
     ports:
       - "8085:8085"
+
+    volumes:
+      - D:/SmartHire/logs/api-gateway:/logs
 
     networks:
       - smarthire-network

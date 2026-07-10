@@ -5,6 +5,7 @@ import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.io.Decoders;
 import io.jsonwebtoken.security.Keys;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Service;
@@ -16,6 +17,7 @@ import java.util.Map;
 import java.util.function.Function;
 
 @Service
+@Slf4j
 public class JWTService {
 
     @Value("${jwt.secret}")
@@ -31,18 +33,24 @@ public class JWTService {
 
     public String generateToken(Users user) {
 
+        log.info("Generating JWT for user: {}", user.getEmail());
+
         Map<String, Object> claims = new HashMap<>();
 
         claims.put("role", user.getRole().name());
         claims.put("userId", user.getId());
 
-        return Jwts.builder()
+        String token = Jwts.builder()
                 .claims(claims)
                 .subject(user.getEmail())
                 .issuedAt(new Date(System.currentTimeMillis()))
                 .expiration(new Date(System.currentTimeMillis() + jwtExpiration))
                 .signWith(getKey())
                 .compact();
+
+        log.info("JWT generated successfully for user: {}", user.getEmail());
+
+        return token;
     }
 
     private Claims extractAllClaims(String token) {
@@ -87,13 +95,33 @@ public class JWTService {
             String token,
             UserDetails userDetails
     ) {
+
+        log.debug("Validating JWT for user: {}", userDetails.getUsername());
+
         final String username = extractUserName(token);
 
-        return username.equals(userDetails.getUsername())
+        boolean isValid = username.equals(userDetails.getUsername())
                 && !isTokenExpired(token);
+
+        if (isValid) {
+            log.info("JWT validated successfully for user: {}", username);
+        } else {
+            log.warn("JWT validation failed for user: {}", userDetails.getUsername());
+        }
+
+        return isValid;
     }
 
     public boolean validateToken(String token) {
-        return !isTokenExpired(token);
+
+        boolean isValid = !isTokenExpired(token);
+
+        if (isValid) {
+            log.debug("JWT validated successfully.");
+        } else {
+            log.warn("JWT has expired.");
+        }
+
+        return isValid;
     }
 }

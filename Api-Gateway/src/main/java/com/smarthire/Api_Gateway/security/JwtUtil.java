@@ -4,6 +4,7 @@ import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.io.Decoders;
 import io.jsonwebtoken.security.Keys;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
@@ -11,6 +12,7 @@ import javax.crypto.SecretKey;
 import java.util.Date;
 import java.util.function.Function;
 
+@Slf4j
 @Component
 public class JwtUtil {
 
@@ -23,6 +25,9 @@ public class JwtUtil {
     }
 
     public Claims extractAllClaims(String token) {
+
+        log.debug("Extracting claims from JWT token");
+
         return Jwts.parser()
                 .verifyWith(getKey())
                 .build()
@@ -34,26 +39,43 @@ public class JwtUtil {
             String token,
             Function<Claims, T> claimResolver
     ) {
+
         Claims claims = extractAllClaims(token);
+
         return claimResolver.apply(claims);
     }
 
     public String extractUsername(String token) {
-        return extractClaim(token, Claims::getSubject);
+
+        String username = extractClaim(token, Claims::getSubject);
+
+        log.debug("Username extracted from token: {}", username);
+
+        return username;
     }
 
     public String extractRole(String token) {
-        return extractClaim(
+
+        String role = extractClaim(
                 token,
                 claims -> claims.get("role", String.class)
         );
+
+        log.debug("Role extracted from token: {}", role);
+
+        return role;
     }
 
     public Integer extractUserId(String token) {
-        return extractClaim(
+
+        Integer userId = extractClaim(
                 token,
                 claims -> claims.get("userId", Integer.class)
         );
+
+        log.debug("User ID extracted from token: {}", userId);
+
+        return userId;
     }
 
     public Date extractExpiration(String token) {
@@ -61,10 +83,24 @@ public class JwtUtil {
     }
 
     public boolean isTokenExpired(String token) {
-        return extractExpiration(token).before(new Date());
+
+        boolean expired = extractExpiration(token).before(new Date());
+
+        if (expired) {
+            log.warn("JWT token has expired");
+        }
+
+        return expired;
     }
 
     public boolean validateToken(String token) {
-        return !isTokenExpired(token);
+
+        boolean valid = !isTokenExpired(token);
+
+        if (valid) {
+            log.debug("JWT token validated successfully");
+        }
+
+        return valid;
     }
 }

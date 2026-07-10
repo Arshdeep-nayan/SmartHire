@@ -2,9 +2,11 @@ package com.smarthire.AI_screening_service.service;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.smarthire.AI_screening_service.dto.CandidateAppliedEvent;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.kafka.annotation.KafkaListener;
 import org.springframework.stereotype.Service;
 
+@Slf4j
 @Service
 public class CandidateEventConsumer {
 
@@ -14,6 +16,7 @@ public class CandidateEventConsumer {
     public CandidateEventConsumer(
             ScreeningService screeningService,
             ObjectMapper objectMapper) {
+
         this.screeningService = screeningService;
         this.objectMapper = objectMapper;
     }
@@ -26,12 +29,10 @@ public class CandidateEventConsumer {
 
         try {
 
-            System.out.println(
-                    "Received Message : " + message);
+            log.info("Received Kafka Message.");
 
             CandidateAppliedEvent event;
 
-            // Handle double serialized message
             if (message.startsWith("\"")) {
 
                 String actualJson =
@@ -45,21 +46,26 @@ public class CandidateEventConsumer {
                                 CandidateAppliedEvent.class);
             }
             else {
+
                 event =
                         objectMapper.readValue(
                                 message,
                                 CandidateAppliedEvent.class);
             }
 
-            System.out.println(
-                    "Received Event : " + event);
+            log.info("Received Candidate Applied Event: {}", event);
 
             screeningService.screenCandidate(
                     event.getCandidateId(),
                     event.getJobId());
+
+            log.info("Candidate screening completed successfully.");
+
         }
         catch (Exception e) {
-            e.printStackTrace();
+
+            log.error("Error while processing Kafka message.", e);
+
         }
     }
 }

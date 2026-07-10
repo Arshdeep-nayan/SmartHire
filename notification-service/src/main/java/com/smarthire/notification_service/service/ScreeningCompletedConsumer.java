@@ -3,9 +3,11 @@ package com.smarthire.notification_service.service;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.smarthire.notification_service.dto.ScreeningCompletedEvent;
 import com.smarthire.notification_service.model.Notification;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.kafka.annotation.KafkaListener;
 import org.springframework.stereotype.Service;
 
+@Slf4j
 @Service
 public class ScreeningCompletedConsumer {
 
@@ -28,18 +30,18 @@ public class ScreeningCompletedConsumer {
 
         try {
 
-            System.out.println(
-                    "Received Screening Message : "
-                            + message);
+            log.info("Received screening completed message: {}", message);
 
             ScreeningCompletedEvent event =
                     objectMapper.readValue(
                             message,
                             ScreeningCompletedEvent.class);
 
-            System.out.println(
-                    "Received Screening Event : "
-                            + event);
+            log.info(
+                    "Screening completed event received. Candidate ID: {}, Job ID: {}, Score: {}",
+                    event.getCandidateId(),
+                    event.getJobId(),
+                    event.getScore());
 
             Notification notification =
                     new Notification();
@@ -61,14 +63,17 @@ public class ScreeningCompletedConsumer {
             notification.setRead(false);
 
             notificationService
-                    .createNotification(
-                            notification);
+                    .createNotification(notification);
 
-            System.out.println(
-                    "Screening notification created successfully.");
+            log.info(
+                    "Screening completion notification created successfully for candidate id: {}",
+                    event.getCandidateId());
+
         }
         catch (Exception e) {
-            e.printStackTrace();
+
+            log.error("Failed to process screening completed event", e);
+
         }
     }
 }

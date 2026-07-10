@@ -3,15 +3,18 @@ package com.smarthire.notification_service.service;
 import com.smarthire.notification_service.exception.NotificationNotFoundException;
 import com.smarthire.notification_service.model.Notification;
 import com.smarthire.notification_service.repository.NotificationRepository;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
 import java.util.List;
 
+@Slf4j
 @Service
 public class NotificationService {
 
     private final NotificationRepository repo;
+
     public NotificationService(
             NotificationRepository repo) {
         this.repo = repo;
@@ -20,28 +23,49 @@ public class NotificationService {
     public Notification createNotification(
             Notification notification) {
 
+        log.info("Creating notification for user id: {}", notification.getUserId());
+
         notification.setCreatedAt(
                 LocalDateTime.now());
 
-        return repo.save(notification);
+        Notification savedNotification = repo.save(notification);
+
+        log.info("Notification created successfully with id: {}", savedNotification.getId());
+
+        return savedNotification;
     }
 
     public List<Notification> getAllNotifications() {
-        return repo.findAll();
+
+        log.info("Fetching all notifications");
+
+        List<Notification> notifications = repo.findAll();
+
+        log.info("Fetched {} notifications", notifications.size());
+
+        return notifications;
     }
 
     public Notification getNotificationById(
             String id) {
 
-        return repo.findById(id)
+        log.info("Fetching notification with id: {}", id);
+
+        Notification notification = repo.findById(id)
                 .orElseThrow(() ->
                         new NotificationNotFoundException(
                                 "Notification not found with id : "
                                         + id));
+
+        log.info("Notification fetched successfully with id: {}", id);
+
+        return notification;
     }
 
     public List<Notification> getNotificationsByUserId(
             int userId) {
+
+        log.info("Fetching notifications for user id: {}", userId);
 
         List<Notification> notifications =
                 repo.findByUserIdOrderByCreatedAtDesc(
@@ -53,10 +77,14 @@ public class NotificationService {
                             + userId);
         }
 
+        log.info("Fetched {} notifications for user id: {}", notifications.size(), userId);
+
         return notifications;
     }
 
     public List<Notification> getUnreadNotifications() {
+
+        log.info("Fetching unread notifications");
 
         List<Notification> notifications =
                 repo.findByReadFalse();
@@ -66,11 +94,15 @@ public class NotificationService {
                     "No unread notifications found");
         }
 
+        log.info("Fetched {} unread notifications", notifications.size());
+
         return notifications;
     }
 
     public Notification markAsRead(
             String id) {
+
+        log.info("Marking notification as read with id: {}", id);
 
         Notification notification =
                 repo.findById(id)
@@ -81,11 +113,17 @@ public class NotificationService {
 
         notification.setRead(true);
 
-        return repo.save(notification);
+        Notification updatedNotification = repo.save(notification);
+
+        log.info("Notification marked as read successfully with id: {}", id);
+
+        return updatedNotification;
     }
 
     public void deleteNotification(
             String id) {
+
+        log.info("Deleting notification with id: {}", id);
 
         if (!repo.existsById(id)) {
             throw new NotificationNotFoundException(
@@ -94,5 +132,7 @@ public class NotificationService {
         }
 
         repo.deleteById(id);
+
+        log.info("Notification deleted successfully with id: {}", id);
     }
 }

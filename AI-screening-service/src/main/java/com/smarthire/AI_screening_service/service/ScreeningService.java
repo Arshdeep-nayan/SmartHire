@@ -8,6 +8,7 @@ import com.smarthire.AI_screening_service.feign.CandidateFeignClient;
 import com.smarthire.AI_screening_service.feign.JobFeignClient;
 import com.smarthire.AI_screening_service.model.ScreeningResult;
 import com.smarthire.AI_screening_service.repository.ScreeningRepository;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.ai.chat.client.ChatClient;
 import org.springframework.ai.google.genai.GoogleGenAiChatModel;
 import org.springframework.stereotype.Service;
@@ -15,6 +16,7 @@ import org.springframework.stereotype.Service;
 import java.time.LocalDateTime;
 import java.util.List;
 
+@Slf4j
 @Service
 public class ScreeningService {
 
@@ -42,11 +44,16 @@ public class ScreeningService {
             int candidateId,
             int jobId) {
 
+        log.info("Starting AI screening for Candidate {} and Job {}", candidateId, jobId);
+
         CandidateDTO candidate =
                 candidateFeignClient.getCandidateById(candidateId);
 
         JobDTO job =
                 jobFeignClient.getJobById(jobId);
+
+        log.debug("Candidate: {}", candidate);
+        log.debug("Job: {}", job);
 
         String resumeText = buildResumeText(candidate);
         String jobDescription = buildJobDescription(job);
@@ -55,35 +62,22 @@ public class ScreeningService {
                 resumeText,
                 jobDescription);
 
-        System.out.println(
-                "========== SCREENING STARTED ==========");
-
-        System.out.println("Candidate Data:");
-        System.out.println(candidate);
-
-        System.out.println("Job Data:");
-        System.out.println(job);
-
-        System.out.println(
-                "========== PROMPT SENT TO GEMINI ==========");
-        System.out.println(prompt);
+        log.debug("Prompt sent to Gemini:\n{}", prompt);
 
         String geminiResponse =
                 chatClient.prompt(prompt)
                         .call()
                         .content();
 
-        System.out.println(
-                "========== GEMINI RESPONSE ==========");
-        System.out.println(geminiResponse);
+        log.debug("Gemini Response:\n{}", geminiResponse);
 
         int score = extractScore(geminiResponse);
 
-        System.out.println(
-                "Extracted Score : " + score);
+        if (score == 0) {
+            log.warn("Unable to extract score from Gemini response.");
+        }
 
-        System.out.println(
-                "========== SCREENING COMPLETED ==========");
+        log.info("Screening completed with score {}", score);
 
         ScreeningCompletedEvent event =
                 new ScreeningCompletedEvent(
@@ -92,9 +86,7 @@ public class ScreeningService {
                         score
                 );
 
-        screeningEventProducer
-                .publishScreeningCompletedEvent(
-                        event);
+        screeningEventProducer.publishScreeningCompletedEvent(event);
 
         ScreeningResult result =
                 new ScreeningResult(
@@ -157,6 +149,7 @@ public class ScreeningService {
             }
         }
         catch (Exception e) {
+            log.error("Error while extracting score from Gemini response.", e);
             return 0;
         }
 
@@ -168,6 +161,7 @@ public class ScreeningService {
     }
 
     public ScreeningResult getScreeningById(String id) {
+
         return repo.findById(id)
                 .orElseThrow(() ->
                         new ScreeningNotFoundException(

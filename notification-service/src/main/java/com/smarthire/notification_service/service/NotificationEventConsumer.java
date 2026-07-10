@@ -3,9 +3,11 @@ package com.smarthire.notification_service.service;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.smarthire.notification_service.dto.CandidateAppliedEvent;
 import com.smarthire.notification_service.model.Notification;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.kafka.annotation.KafkaListener;
 import org.springframework.stereotype.Service;
 
+@Slf4j
 @Service
 public class NotificationEventConsumer {
 
@@ -15,6 +17,7 @@ public class NotificationEventConsumer {
     public NotificationEventConsumer(
             NotificationService notificationService,
             ObjectMapper objectMapper) {
+
         this.notificationService = notificationService;
         this.objectMapper = objectMapper;
     }
@@ -26,16 +29,18 @@ public class NotificationEventConsumer {
     public void consume(String message) {
 
         try {
-            System.out.println(
-                    "Received Message : " + message);
+
+            log.info("Received Kafka message: {}", message);
 
             CandidateAppliedEvent event =
                     objectMapper.readValue(
                             message,
                             CandidateAppliedEvent.class);
 
-            System.out.println(
-                    "Received Event : " + event);
+            log.info(
+                    "Candidate applied event received. Candidate ID: {}, Job ID: {}",
+                    event.getCandidateId(),
+                    event.getJobId());
 
             Notification notification =
                     new Notification();
@@ -56,11 +61,15 @@ public class NotificationEventConsumer {
             notificationService
                     .createNotification(notification);
 
-            System.out.println(
-                    "Notification created successfully.");
+            log.info(
+                    "Notification created successfully for candidate id: {}",
+                    event.getCandidateId());
+
         }
         catch (Exception e) {
-            e.printStackTrace();
+
+            log.error("Failed to process candidate applied event", e);
+
         }
     }
 }

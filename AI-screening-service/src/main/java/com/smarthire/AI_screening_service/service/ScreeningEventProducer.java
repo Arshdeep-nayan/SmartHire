@@ -2,9 +2,11 @@ package com.smarthire.AI_screening_service.service;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.smarthire.AI_screening_service.dto.ScreeningCompletedEvent;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.stereotype.Service;
 
+@Slf4j
 @Service
 public class ScreeningEventProducer {
 
@@ -31,11 +33,13 @@ public class ScreeningEventProducer {
                     "screening-completed",
                     json);
 
-            System.out.println(
-                    "Published Screening Event : "
-                            + json);
+            log.info("Published Screening Event: {}", json);
+
         }
         catch (Exception e) {
+
+            log.error("Failed to publish screening event.", e);
+
             throw new RuntimeException(
                     "Failed to publish screening event",
                     e);
