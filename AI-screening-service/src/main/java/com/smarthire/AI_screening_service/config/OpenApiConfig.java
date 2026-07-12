@@ -21,17 +21,36 @@ public class OpenApiConfig {
     @Bean
     public OpenAPI customOpenAPI() {
 
+        final String securitySchemeName = "Bearer Authentication";
+
         Server server = new Server();
         server.setUrl(gatewayUrl);
         server.setDescription("SmartHire API Gateway");
-
-        final String securitySchemeName = "Bearer Authentication";
 
         return new OpenAPI()
 
                 .info(new Info()
                         .title("AI Screening Service API")
-                        .version("1.0"))
+                        .version("1.0")
+                        .description("""
+                                ## Before Testing Protected APIs
+
+                                1. Select **Authentication Service** from the service dropdown.
+
+                                2. Login using **POST /api/login**.
+
+                                3. Copy the JWT token from the response.
+
+                                4. Switch back to the AI Screening Service from the service dropdown.
+
+                                5. Click the **Authorize** button.
+
+                                6. Paste the JWT token into the authorization field.
+
+                                7. Click **Authorize**.
+
+                                8. You can now test any protected API endpoint.
+                                """))
 
                 .servers(List.of(server))
 

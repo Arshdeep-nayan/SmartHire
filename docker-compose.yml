@@ -90,7 +90,7 @@ services:
 
 
   auth-service:
-    image: arshdeepnayan1234/auth-service:latest
+    image: auth-service
     container_name: auth-service
     restart: unless-stopped
 
@@ -109,7 +109,7 @@ services:
 
 
   job-service:
-    image: arshdeepnayan1234/job-service:latest
+    image: job-service
     container_name: job-service
     restart: unless-stopped
 
@@ -128,7 +128,7 @@ services:
 
 
   candidate-service:
-    image: arshdeepnayan1234/candidate-service:latest
+    image: candidate-service
     container_name: candidate-service
     restart: unless-stopped
 
@@ -149,7 +149,7 @@ services:
 
 
   ai-screening-service:
-    image: arshdeepnayan1234/ai-screening-service:latest
+    image: ai-screening-service
     container_name: ai-screening-service
     restart: unless-stopped
 
@@ -169,7 +169,7 @@ services:
 
 
   notification-service:
-    image: arshdeepnayan1234/notification-service:latest
+    image: notification-service
     container_name: notification-service
     restart: unless-stopped
 
