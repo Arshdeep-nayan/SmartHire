@@ -1,5 +1,29 @@
 # 🚀 SmartHire
 
+
+
+
+> [!IMPORTANT]
+> ### Testing Protected APIs
+>
+> Most APIs in SmartHire are secured using JWT authentication.
+>
+> Before testing protected endpoints:
+>
+> 1. Open the **Swagger UI**.
+> 2. Select **Auth Service** from the service dropdown.
+> 3. Call **POST `/api/login`** to generate a JWT.
+> 4. Copy the JWT from the response.
+> 5. Click the **Authorize (🔒)** button.
+> 6. Paste the JWT into the authorization field and click **Authorize**.
+> 7. Switch to any service and test the protected endpoints.
+
+
+
+
+
+
+
 > **An AI-powered Job Portal Backend built using Java, Spring Boot Microservices, Spring Cloud, Apache Kafka, Google Gemini, Docker, MySQL, and MongoDB.**
 
 <p align="center">
