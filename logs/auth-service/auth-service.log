@@ -1084,3 +1084,18 @@ Caused by: java.net.UnknownHostException: mysql: Name or service not known
 2026-07-10 20:23:00 INFO  UserService - Authentication successful for user: arshdeep1@gmail.com
 2026-07-10 20:23:00 INFO  JWTService - Generating JWT for user: arshdeep1@gmail.com
 2026-07-10 20:23:00 INFO  JWTService - JWT generated successfully for user: arshdeep1@gmail.com
+2026-07-12 19:15:45 INFO  Version - HV000001: Hibernate Validator 8.0.3.Final
+2026-07-12 19:15:46 INFO  AuthServiceApplication - Starting AuthServiceApplication v0.0.1-SNAPSHOT using Java 21.0.11 with PID 1 (/app/app.jar started by root in /app)
+2026-07-12 19:15:46 DEBUG AuthServiceApplication - Running with Spring Boot v3.5.15, Spring v6.2.19
+2026-07-12 19:15:46 INFO  AuthServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2026-07-12 19:15:54 INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-12 19:15:55 INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 700 ms. Found 1 JPA repository interface.
+2026-07-12 19:15:57 INFO  GenericScope - BeanFactory id=a81e853c-154f-3b9d-aa4a-6a673357b50c
+2026-07-12 19:16:00 INFO  TomcatWebServer - Tomcat initialized with port 8081 (http)
+2026-07-12 19:16:00 INFO  Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2026-07-12 19:16:00 INFO  StandardService - Starting service [Tomcat]
+2026-07-12 19:16:00 INFO  StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.55]
+2026-07-12 19:16:01 INFO  [/] - Initializing Spring embedded WebApplicationContext
+2026-07-12 19:16:01 INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 14064 ms
+2026-07-12 19:16:01 INFO  LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-07-12 19:16:02 INFO  Version - HHH000412: Hibernate ORM core version 6.6.53.Final

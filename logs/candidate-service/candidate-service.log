@@ -625,3 +625,25 @@ com.mongodb.MongoNodeIsRecoveringException: Command failed with error 11600 (Int
 2026-07-10 20:22:23 INFO  DiscoveryClient - Registered Applications size is zero : true
 2026-07-10 20:22:23 INFO  DiscoveryClient - Application version is -1: false
 2026-07-10 20:22:23 INFO  DiscoveryClient - Getting all instance registry info from the eureka server
+2026-07-12 19:15:46 INFO  Version - HV000001: Hibernate Validator 8.0.3.Final
+2026-07-12 19:15:47 INFO  CandidateServiceApplication - Starting CandidateServiceApplication v0.0.1-SNAPSHOT using Java 21.0.11 with PID 1 (/app/app.jar started by root in /app)
+2026-07-12 19:15:47 DEBUG CandidateServiceApplication - Running with Spring Boot v3.5.15, Spring v6.2.19
+2026-07-12 19:15:47 INFO  CandidateServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2026-07-12 19:15:54 INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-07-12 19:15:54 INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-12 19:15:55 INFO  RepositoryConfigurationExtensionSupport - Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.SmartHire.candidate_service.Repository.ResumeRepository; If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: jakarta.persistence.Entity, jakarta.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository
+2026-07-12 19:15:55 INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 497 ms. Found 1 JPA repository interface.
+2026-07-12 19:15:55 INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-07-12 19:15:55 INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2026-07-12 19:15:55 INFO  RepositoryConfigurationExtensionSupport - Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.SmartHire.candidate_service.Repository.CandidateRepository; If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository
+2026-07-12 19:15:55 INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 15 ms. Found 1 MongoDB repository interface.
+2026-07-12 19:15:56 INFO  GenericScope - BeanFactory id=419e72db-55fc-3b5e-8d10-55e003a60b1b
+2026-07-12 19:15:59 INFO  TomcatWebServer - Tomcat initialized with port 8083 (http)
+2026-07-12 19:15:59 INFO  Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8083"]
+2026-07-12 19:15:59 INFO  StandardService - Starting service [Tomcat]
+2026-07-12 19:15:59 INFO  StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.55]
+2026-07-12 19:15:59 INFO  [/] - Initializing Spring embedded WebApplicationContext
+2026-07-12 19:15:59 INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 11517 ms
+2026-07-12 19:16:00 INFO  LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-07-12 19:16:01 INFO  Version - HHH000412: Hibernate ORM core version 6.6.53.Final
+2026-07-12 19:16:01 INFO  RegionFactoryInitiator - HHH000026: Second-level cache disabled
