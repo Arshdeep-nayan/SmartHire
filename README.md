@@ -297,10 +297,10 @@ Run the services in the following order:
 <details>
 <summary><b>🔐 Auth Service (8081)</b></summary>
 
-| Method | Endpoint        | Description          | Access |
-| ------ | --------------- | -------------------- | ------ |
-| POST   | `/api/register` | Register new user    | Public |
-| POST   | `/api/login`    | Login & Generate JWT | Public |
+| Method | Endpoint | Description | Access |
+| ------ | -------- | ----------- | ------ |
+| POST | `/api/register` | Register new user | Public |
+| POST | `/api/login` | Login & Generate JWT | Public |
 
 </details>
 
@@ -309,25 +309,25 @@ Run the services in the following order:
 <details>
 <summary><b>💼 Job Service (8082)</b></summary>
 
-| Method | Endpoint                             | Description         | Access                      |
-| ------ | ------------------------------------ | ------------------- | --------------------------- |
-| GET    | `/jobs/jobs/all`                     | Get all jobs        | ADMIN, RECRUITER, CANDIDATE |
-| GET    | `/jobs/job/{id}`                     | Get job by ID       | ADMIN, RECRUITER            |
-| POST   | `/jobs/job/add`                      | Create job          | ADMIN, RECRUITER            |
-| PUT    | `/jobs/job/update`                   | Update job          | ADMIN, RECRUITER            |
-| DELETE | `/jobs/job/delete/{id}`              | Delete job          | ADMIN                       |
-| PATCH  | `/jobs/job/{id}/activate`            | Activate job        | ADMIN, RECRUITER            |
-| PATCH  | `/jobs/job/{id}/deactivate`          | Deactivate job      | ADMIN, RECRUITER            |
-| GET    | `/jobs/search?keyword=`              | Search jobs         | All                         |
-| GET    | `/jobs/location/{location}`          | Jobs by location    | All                         |
-| GET    | `/jobs/company/{company}`            | Jobs by company     | All                         |
-| GET    | `/jobs/salary?minSalary=&maxSalary=` | Salary range        | All                         |
-| GET    | `/jobs/jobtype/{jobType}`            | Job type            | All                         |
-| GET    | `/jobs/experience/{experience}`      | Experience          | All                         |
-| GET    | `/jobs/active`                       | Active jobs         | All                         |
-| GET    | `/jobs/page?page=&size=`             | Pagination          | All                         |
-| GET    | `/jobs/sort/salary`                  | Sort by salary      | All                         |
-| GET    | `/jobs/sort/postedat`                | Sort by posted date | All                         |
+| Method | Endpoint | Description | Access |
+| ------ | -------- | ----------- | ------ |
+| GET | `/jobs/jobs/all` | Get all jobs | ADMIN, RECRUITER, CANDIDATE |
+| GET | `/jobs/job/{id}` | Get job by ID | ADMIN, RECRUITER, CANDIDATE |
+| POST | `/jobs/job/add` | Create job | ADMIN, RECRUITER |
+| PUT | `/jobs/job/update` | Update job | ADMIN, RECRUITER |
+| DELETE | `/jobs/job/delete/{id}` | Delete job | ADMIN |
+| PATCH | `/jobs/job/{id}/activate` | Activate job | ADMIN, RECRUITER |
+| PATCH | `/jobs/job/{id}/deactivate` | Deactivate job | ADMIN, RECRUITER |
+| GET | `/jobs/search?keyword=` | Search jobs | ADMIN, RECRUITER, CANDIDATE |
+| GET | `/jobs/location/{location}` | Jobs by location | ADMIN, RECRUITER, CANDIDATE |
+| GET | `/jobs/company/{company}` | Jobs by company | ADMIN, RECRUITER, CANDIDATE |
+| GET | `/jobs/salary?minSalary=&maxSalary=` | Salary range | ADMIN, RECRUITER, CANDIDATE |
+| GET | `/jobs/type/{jobType}` | Job type | ADMIN, RECRUITER, CANDIDATE |
+| GET | `/jobs/experience/{experience}` | Experience | ADMIN, RECRUITER, CANDIDATE |
+| GET | `/jobs/active` | Active jobs | ADMIN, RECRUITER, CANDIDATE |
+| GET | `/jobs/page?page=&size=` | Pagination | ADMIN, RECRUITER, CANDIDATE |
+| GET | `/jobs/sort/salary` | Sort by salary | ADMIN, RECRUITER, CANDIDATE |
+| GET | `/jobs/sort/date` | Sort by posted date | ADMIN, RECRUITER, CANDIDATE |
 
 </details>
 
@@ -338,38 +338,33 @@ Run the services in the following order:
 
 ### Candidate APIs
 
-| Method | Endpoint                                 | Description               | Access                      |
-| ------ | ---------------------------------------- | ------------------------- | --------------------------- |
-| GET    | `/api/candidates/all`                    | Get all candidates        | ADMIN, RECRUITER            |
-| GET    | `/api/candidate/{id}`                    | Get candidate by ID       | ADMIN, RECRUITER, CANDIDATE |
-| POST   | `/api/candidate/add`                     | Register candidate        | ADMIN, CANDIDATE            |
-| PUT    | `/api/candidate/update`                  | Update candidate          | ADMIN, CANDIDATE            |
-| DELETE | `/api/candidate/delete/{id}`             | Delete candidate          | ADMIN                       |
-| PATCH  | `/api/candidate/{id}/activate`           | Activate candidate        | ADMIN                       |
-| PATCH  | `/api/candidate/{id}/deactivate`         | Deactivate candidate      | ADMIN                       |
-| PATCH  | `/api/candidate/{id}/hire`               | Mark candidate as hired   | ADMIN, RECRUITER            |
-| GET    | `/api/candidate/search?keyword=`         | Search candidate          | ADMIN, RECRUITER            |
-| GET    | `/api/candidate/skill/{skill}`           | Search by skill           | ADMIN, RECRUITER            |
-| GET    | `/api/candidate/location/{location}`     | Search by location        | ADMIN, RECRUITER            |
-| GET    | `/api/candidate/experience/{experience}` | Search by experience      | ADMIN, RECRUITER            |
-| GET    | `/api/candidate/status/{status}`         | Search by status          | ADMIN, RECRUITER            |
-| GET    | `/api/candidate/page?page=&size=`        | Pagination                | ADMIN                       |
-| GET    | `/api/candidate/sort/date`               | Sort by registration date | ADMIN                       |
+| Method | Endpoint | Description | Access |
+| ------ | -------- | ----------- | ------ |
+| GET | `/api/candidates/all` | Get all candidates | ADMIN, RECRUITER |
+| GET | `/api/candidate/{id}` | Get candidate by ID | ADMIN, RECRUITER, CANDIDATE |
+| POST | `/api/candidate/add` | Register candidate | ADMIN, CANDIDATE |
+| PUT | `/api/candidate/update` | Update candidate | ADMIN, CANDIDATE |
+| DELETE | `/api/candidate/delete/{id}` | Delete candidate | ADMIN |
+| PATCH | `/api/candidate/{id}/activate` | Activate candidate | ADMIN |
+| PATCH | `/api/candidate/{id}/deactivate` | Deactivate candidate | ADMIN |
+| PATCH | `/api/candidate/{id}/hire` | Mark candidate as hired | ADMIN, RECRUITER |
+| GET | `/api/candidate/search?keyword=` | Search candidates | ADMIN, RECRUITER |
+| GET | `/api/candidate/skill/{skill}` | Search by skill | ADMIN, RECRUITER |
+| GET | `/api/candidate/location/{location}` | Search by location | ADMIN, RECRUITER |
+| GET | `/api/candidate/experience/{experience}` | Search by experience | ADMIN, RECRUITER |
+| GET | `/api/candidate/status/{status}` | Search by status | ADMIN, RECRUITER |
+| GET | `/api/candidate/page?page=&size=` | Pagination | ADMIN |
+| GET | `/api/candidate/sort/date` | Sort by registration date | ADMIN |
+| POST | `/api/candidate/apply?candidateId=&jobId=` | Publish Candidate Applied Kafka Event | CANDIDATE |
 
 ### Resume APIs
 
-| Method | Endpoint                    | Description   | Access                      |
-| ------ | --------------------------- | ------------- | --------------------------- |
-| POST   | `/api/resume/upload`        | Upload resume | CANDIDATE                   |
-| GET    | `/api/resume/{candidateId}` | Get resume    | ADMIN, RECRUITER, CANDIDATE |
-| PUT    | `/api/resume/{candidateId}` | Update resume | CANDIDATE                   |
-| DELETE | `/api/resume/{resumeId}`    | Delete resume | CANDIDATE                   |
-
-### Kafka API
-
-| Method | Endpoint               | Description                     | Access    |
-| ------ | ---------------------- | ------------------------------- | --------- |
-| POST   | `/api/candidate/apply` | Publish candidate applied event | CANDIDATE |
+| Method | Endpoint | Description | Access |
+| ------ | -------- | ----------- | ------ |
+| POST | `/resumes` | Upload resume | ADMIN, CANDIDATE |
+| GET | `/resumes/candidate/{candidateId}` | Get candidate resume | ADMIN, RECRUITER, CANDIDATE |
+| PUT | `/resumes/candidate/{candidateId}` | Update candidate resume | ADMIN, CANDIDATE |
+| DELETE | `/resumes/{id}` | Delete resume | ADMIN, CANDIDATE |
 
 </details>
 
@@ -494,15 +489,6 @@ The following services are orchestrated using Docker Compose:
 * Swagger / OpenAPI
 * Log4j2
 * Maven
-
----
-
-# 🚀 Future Enhancements
-
-* Unit & Integration Testing (JUnit & Mockito)
-* CI/CD Pipeline
-* Monitoring & Metrics
-* Distributed Tracing
 
 ---
 
