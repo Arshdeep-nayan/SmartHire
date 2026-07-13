@@ -2648,3 +2648,59 @@ Caused by: org.apache.hc.core5.http.NoHttpResponseException: discovery-server:87
 2026-07-12 23:15:17 INFO  DispatcherServlet - Initializing Servlet 'dispatcherServlet'
 2026-07-12 23:15:17 INFO  DispatcherServlet - Completed initialization in 2 ms
 2026-07-12 23:15:17 INFO  AbstractOpenApiResource - Init duration for springdoc-openapi is: 415 ms
+2026-07-13 01:12:53 INFO  Version - HV000001: Hibernate Validator 8.0.3.Final
+2026-07-13 01:12:53 INFO  JobServiceApplication - Starting JobServiceApplication v0.0.1-SNAPSHOT using Java 21.0.11 with PID 1 (/app/app.jar started by root in /app)
+2026-07-13 01:12:53 DEBUG JobServiceApplication - Running with Spring Boot v3.5.14, Spring v6.2.18
+2026-07-13 01:12:53 INFO  JobServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2026-07-13 01:12:59 INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-13 01:12:59 INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 444 ms. Found 1 JPA repository interface.
+2026-07-13 01:13:01 INFO  GenericScope - BeanFactory id=da17e58e-5b73-3206-bed5-870faaf56e10
+2026-07-13 01:13:03 INFO  TomcatWebServer - Tomcat initialized with port 8082 (http)
+2026-07-13 01:13:03 INFO  Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2026-07-13 01:13:03 INFO  StandardService - Starting service [Tomcat]
+2026-07-13 01:13:03 INFO  StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.54]
+2026-07-13 01:13:04 INFO  [/] - Initializing Spring embedded WebApplicationContext
+2026-07-13 01:13:04 INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 9860 ms
+2026-07-13 01:13:05 INFO  LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-07-13 01:13:06 INFO  Version - HHH000412: Hibernate ORM core version 6.6.49.Final
+2026-07-13 01:13:06 INFO  RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-07-13 01:13:09 INFO  SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-13 01:13:09 INFO  HikariDataSource - HikariPool-1 - Starting...
+2026-07-13 01:13:13 INFO  HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@37665305
+2026-07-13 01:13:13 INFO  HikariDataSource - HikariPool-1 - Start completed.
+2026-07-13 01:13:13 WARN  deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-07-13 01:13:14 INFO  pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.4.10
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-07-13 01:13:17 INFO  JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-13 01:13:17 INFO  LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-13 01:13:19 INFO  QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-07-13 01:13:22 WARN  JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-13 01:13:25 INFO  DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+2026-07-13 01:13:25 WARN  LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-07-13 01:13:25 INFO  InstanceInfoFactory - Setting initial instance status as: STARTING
+2026-07-13 01:13:25 INFO  DiscoveryClient - Initializing Eureka in region us-east-1
+2026-07-13 01:13:25 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 01:13:25 INFO  DiscoveryClient - Disable delta property : false
+2026-07-13 01:13:25 INFO  DiscoveryClient - Single vip registry refresh property : null
+2026-07-13 01:13:25 INFO  DiscoveryClient - Force full registry fetch : false
+2026-07-13 01:13:25 INFO  DiscoveryClient - Application is null : false
+2026-07-13 01:13:25 INFO  DiscoveryClient - Registered Applications size is zero : true
+2026-07-13 01:13:25 INFO  DiscoveryClient - Application version is -1: true
+2026-07-13 01:13:25 INFO  DiscoveryClient - Getting all instance registry info from the eureka server
+2026-07-13 01:13:26 INFO  DiscoveryClient - The response status is 200
+2026-07-13 01:13:26 INFO  DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2026-07-13 01:13:26 INFO  InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-07-13 01:13:26 INFO  DiscoveryClient - Discovery Client initialized at timestamp 1783905206561 with initial instances count: 0
+2026-07-13 01:13:26 INFO  EurekaServiceRegistry - Registering application JOB-SERVICE with eureka with status UP
+2026-07-13 01:13:26 INFO  DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1783905206575, current=UP, previous=STARTING]
+2026-07-13 01:13:26 INFO  Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+2026-07-13 01:13:26 INFO  DiscoveryClient - DiscoveryClient_JOB-SERVICE/acd9c541f6b0:JOB-SERVICE:8082: registering service...
+2026-07-13 01:13:26 INFO  TomcatWebServer - Tomcat started on port 8082 (http) with context path '/'
+2026-07-13 01:13:26 INFO  EurekaAutoServiceRegistration - Updating port to 8082
+2026-07-13 01:13:26 INFO  JobServiceApplication - Started JobServiceApplication in 35.205 seconds (process running for 40.784)

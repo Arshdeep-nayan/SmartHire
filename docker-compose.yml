@@ -189,7 +189,7 @@ services:
 
 
   api-gateway:
-    image: arshdeepnayan1234/api-gateway:latest
+    image: api-gateway
     container_name: api-gateway
     restart: unless-stopped
 
