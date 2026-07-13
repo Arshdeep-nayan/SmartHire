@@ -14283,3 +14283,610 @@ Each configuration key has been temporarily mapped to its replacement for your c
 2026-07-13 01:13:46 INFO  DiscoveryClient - Registered Applications size is zero : true
 2026-07-13 01:13:46 INFO  DiscoveryClient - Application version is -1: false
 2026-07-13 01:13:46 INFO  DiscoveryClient - Getting all instance registry info from the eureka server
+2026-07-13 01:13:46 INFO  DiscoveryClient - The response status is 200
+2026-07-13 01:15:17 INFO  [/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-07-13 01:15:17 INFO  DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-07-13 01:15:17 INFO  DispatcherServlet - Completed initialization in 5 ms
+2026-07-13 01:15:17 INFO  JwtAuthenticationFilter - Incoming request: /swagger-ui/index.html
+2026-07-13 01:15:17 DEBUG RouteValidator - Route [/swagger-ui/index.html] is PUBLIC
+2026-07-13 01:15:17 INFO  JwtAuthenticationFilter - Public endpoint accessed: /swagger-ui/index.html
+2026-07-13 01:15:17 INFO  JwtAuthenticationFilter - Incoming request: /swagger-ui/swagger-ui.css
+2026-07-13 01:15:17 INFO  JwtAuthenticationFilter - Incoming request: /swagger-ui/index.css
+2026-07-13 01:15:17 DEBUG RouteValidator - Route [/swagger-ui/index.css] is PUBLIC
+2026-07-13 01:15:17 INFO  JwtAuthenticationFilter - Public endpoint accessed: /swagger-ui/index.css
+2026-07-13 01:15:17 INFO  JwtAuthenticationFilter - Incoming request: /swagger-ui/swagger-ui-standalone-preset.js
+2026-07-13 01:15:17 DEBUG RouteValidator - Route [/swagger-ui/swagger-ui.css] is PUBLIC
+2026-07-13 01:15:17 INFO  JwtAuthenticationFilter - Incoming request: /swagger-ui/swagger-ui-bundle.js
+2026-07-13 01:15:17 INFO  JwtAuthenticationFilter - Incoming request: /swagger-ui/swagger-initializer.js
+2026-07-13 01:15:17 DEBUG RouteValidator - Route [/swagger-ui/swagger-ui-standalone-preset.js] is PUBLIC
+2026-07-13 01:15:17 INFO  JwtAuthenticationFilter - Public endpoint accessed: /swagger-ui/swagger-ui.css
+2026-07-13 01:15:17 DEBUG RouteValidator - Route [/swagger-ui/swagger-ui-bundle.js] is PUBLIC
+2026-07-13 01:15:17 INFO  JwtAuthenticationFilter - Public endpoint accessed: /swagger-ui/swagger-ui-bundle.js
+2026-07-13 01:15:17 INFO  JwtAuthenticationFilter - Public endpoint accessed: /swagger-ui/swagger-ui-standalone-preset.js
+2026-07-13 01:15:17 DEBUG RouteValidator - Route [/swagger-ui/swagger-initializer.js] is PUBLIC
+2026-07-13 01:15:17 INFO  JwtAuthenticationFilter - Public endpoint accessed: /swagger-ui/swagger-initializer.js
+2026-07-13 01:15:17 INFO  JwtAuthenticationFilter - Incoming request: /v3/api-docs/swagger-config
+2026-07-13 01:15:17 DEBUG RouteValidator - Route [/v3/api-docs/swagger-config] is PUBLIC
+2026-07-13 01:15:17 INFO  JwtAuthenticationFilter - Public endpoint accessed: /v3/api-docs/swagger-config
+2026-07-13 01:15:17 INFO  JwtAuthenticationFilter - Incoming request: /screening/v3/api-docs
+2026-07-13 01:15:17 DEBUG RouteValidator - Route [/screening/v3/api-docs] is PUBLIC
+2026-07-13 01:15:17 INFO  JwtAuthenticationFilter - Public endpoint accessed: /screening/v3/api-docs
+2026-07-13 01:18:14 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 01:23:14 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 01:28:14 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 01:33:14 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 01:38:14 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 01:43:14 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 01:48:14 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 01:53:14 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 01:58:14 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 02:00:06 INFO  JwtAuthenticationFilter - Incoming request: /swagger-ui/index.html
+2026-07-13 02:00:06 DEBUG RouteValidator - Route [/swagger-ui/index.html] is PUBLIC
+2026-07-13 02:00:06 INFO  JwtAuthenticationFilter - Public endpoint accessed: /swagger-ui/index.html
+2026-07-13 02:00:06 INFO  JwtAuthenticationFilter - Incoming request: /swagger-ui/swagger-ui.css
+2026-07-13 02:00:06 DEBUG RouteValidator - Route [/swagger-ui/swagger-ui.css] is PUBLIC
+2026-07-13 02:00:06 INFO  JwtAuthenticationFilter - Incoming request: /swagger-ui/index.css
+2026-07-13 02:00:06 INFO  JwtAuthenticationFilter - Public endpoint accessed: /swagger-ui/swagger-ui.css
+2026-07-13 02:00:06 INFO  JwtAuthenticationFilter - Incoming request: /swagger-ui/swagger-ui-bundle.js
+2026-07-13 02:00:06 DEBUG RouteValidator - Route [/swagger-ui/index.css] is PUBLIC
+2026-07-13 02:00:06 DEBUG RouteValidator - Route [/swagger-ui/swagger-ui-bundle.js] is PUBLIC
+2026-07-13 02:00:06 INFO  JwtAuthenticationFilter - Public endpoint accessed: /swagger-ui/index.css
+2026-07-13 02:00:06 INFO  JwtAuthenticationFilter - Public endpoint accessed: /swagger-ui/swagger-ui-bundle.js
+2026-07-13 02:00:06 INFO  JwtAuthenticationFilter - Incoming request: /swagger-ui/swagger-ui-standalone-preset.js
+2026-07-13 02:00:06 DEBUG RouteValidator - Route [/swagger-ui/swagger-ui-standalone-preset.js] is PUBLIC
+2026-07-13 02:00:06 INFO  JwtAuthenticationFilter - Public endpoint accessed: /swagger-ui/swagger-ui-standalone-preset.js
+2026-07-13 02:00:06 INFO  JwtAuthenticationFilter - Incoming request: /swagger-ui/swagger-initializer.js
+2026-07-13 02:00:06 DEBUG RouteValidator - Route [/swagger-ui/swagger-initializer.js] is PUBLIC
+2026-07-13 02:00:06 INFO  JwtAuthenticationFilter - Public endpoint accessed: /swagger-ui/swagger-initializer.js
+2026-07-13 02:00:06 INFO  JwtAuthenticationFilter - Incoming request: /v3/api-docs/swagger-config
+2026-07-13 02:00:06 DEBUG RouteValidator - Route [/v3/api-docs/swagger-config] is PUBLIC
+2026-07-13 02:00:06 INFO  JwtAuthenticationFilter - Public endpoint accessed: /v3/api-docs/swagger-config
+2026-07-13 02:00:06 INFO  JwtAuthenticationFilter - Incoming request: /screening/v3/api-docs
+2026-07-13 02:00:06 DEBUG RouteValidator - Route [/screening/v3/api-docs] is PUBLIC
+2026-07-13 02:00:06 INFO  JwtAuthenticationFilter - Public endpoint accessed: /screening/v3/api-docs
+2026-07-13 11:33:43 INFO  Version - HV000001: Hibernate Validator 8.0.3.Final
+2026-07-13 11:33:44 INFO  ApiGatewayApplication - Starting ApiGatewayApplication v0.0.1-SNAPSHOT using Java 21.0.11 with PID 1 (/app/app.jar started by root in /app)
+2026-07-13 11:33:44 DEBUG ApiGatewayApplication - Running with Spring Boot v3.5.16, Spring v6.2.19
+2026-07-13 11:33:44 INFO  ApiGatewayApplication - No active profile set, falling back to 1 default profile: "default"
+2026-07-13 11:33:58 INFO  GenericScope - BeanFactory id=3d68d9a6-c139-3795-9510-c72188784b45
+2026-07-13 11:34:02 INFO  TomcatWebServer - Tomcat initialized with port 8085 (http)
+2026-07-13 11:34:02 INFO  Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8085"]
+2026-07-13 11:34:02 INFO  StandardService - Starting service [Tomcat]
+2026-07-13 11:34:02 INFO  StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.55]
+2026-07-13 11:34:02 INFO  [/] - Initializing Spring embedded WebApplicationContext
+2026-07-13 11:34:02 INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 16160 ms
+2026-07-13 11:34:04 DEBUG JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2026-07-13 11:34:07 WARN  UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 542d2412-9987-49f3-b36d-6a85614ebd55
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-07-13 11:34:07 INFO  InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-07-13 11:34:18 INFO  DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+2026-07-13 11:34:19 WARN  LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-07-13 11:34:20 INFO  InstanceInfoFactory - Setting initial instance status as: STARTING
+2026-07-13 11:34:20 INFO  DiscoveryClient - Initializing Eureka in region us-east-1
+2026-07-13 11:34:20 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 11:34:20 INFO  DiscoveryClient - Disable delta property : false
+2026-07-13 11:34:20 INFO  DiscoveryClient - Single vip registry refresh property : null
+2026-07-13 11:34:20 INFO  DiscoveryClient - Force full registry fetch : false
+2026-07-13 11:34:20 INFO  DiscoveryClient - Application is null : false
+2026-07-13 11:34:20 INFO  DiscoveryClient - Registered Applications size is zero : true
+2026-07-13 11:34:20 INFO  DiscoveryClient - Application version is -1: true
+2026-07-13 11:34:20 INFO  DiscoveryClient - Getting all instance registry info from the eureka server
+2026-07-13 11:34:22 INFO  DiscoveryClient - The response status is 200
+2026-07-13 11:34:22 INFO  DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2026-07-13 11:34:22 INFO  InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-07-13 11:34:22 INFO  DiscoveryClient - Discovery Client initialized at timestamp 1783942462253 with initial instances count: 0
+2026-07-13 11:34:22 INFO  EurekaServiceRegistry - Registering application API-GATEWAY with eureka with status UP
+2026-07-13 11:34:22 INFO  DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1783942462294, current=UP, previous=STARTING]
+2026-07-13 11:34:22 INFO  DiscoveryClient - DiscoveryClient_API-GATEWAY/1391a66c8096:API-GATEWAY:8085: registering service...
+2026-07-13 11:34:22 INFO  Http11NioProtocol - Starting ProtocolHandler ["http-nio-8085"]
+2026-07-13 11:34:22 INFO  TomcatWebServer - Tomcat started on port 8085 (http) with context path '/'
+2026-07-13 11:34:22 INFO  EurekaAutoServiceRegistration - Updating port to 8085
+2026-07-13 11:34:22 INFO  ApiGatewayApplication - Started ApiGatewayApplication in 40.683 seconds (process running for 49.642)
+2026-07-13 11:34:22 WARN  GatewayServerWebMvcPropertiesMigrationListener - 
+The use of configuration keys that have been renamed was found in the environment:
+
+Property source 'Config resource 'class path resource [application.properties]' via location 'optional:classpath:/'':
+	Key: spring.cloud.gateway.mvc.routes[0].id
+		Line: 29
+		Replacement: spring.cloud.gateway.server.webmvc.routes[0].id
+	Key: spring.cloud.gateway.mvc.routes[0].uri
+		Line: 30
+		Replacement: spring.cloud.gateway.server.webmvc.routes[0].uri
+	Key: spring.cloud.gateway.mvc.routes[0].predicates[0]
+		Line: 31
+		Replacement: spring.cloud.gateway.server.webmvc.routes[0].predicates[0]
+	Key: spring.cloud.gateway.mvc.routes[0].filters[0]
+		Line: 32
+		Replacement: spring.cloud.gateway.server.webmvc.routes[0].filters[0]
+	Key: spring.cloud.gateway.mvc.routes[1].id
+		Line: 35
+		Replacement: spring.cloud.gateway.server.webmvc.routes[1].id
+	Key: spring.cloud.gateway.mvc.routes[1].uri
+		Line: 36
+		Replacement: spring.cloud.gateway.server.webmvc.routes[1].uri
+	Key: spring.cloud.gateway.mvc.routes[1].predicates[0]
+		Line: 37
+		Replacement: spring.cloud.gateway.server.webmvc.routes[1].predicates[0]
+	Key: spring.cloud.gateway.mvc.routes[1].filters[0]
+		Line: 38
+		Replacement: spring.cloud.gateway.server.webmvc.routes[1].filters[0]
+	Key: spring.cloud.gateway.mvc.routes[2].id
+		Line: 41
+		Replacement: spring.cloud.gateway.server.webmvc.routes[2].id
+	Key: spring.cloud.gateway.mvc.routes[2].uri
+		Line: 42
+		Replacement: spring.cloud.gateway.server.webmvc.routes[2].uri
+	Key: spring.cloud.gateway.mvc.routes[2].predicates[0]
+		Line: 43
+		Replacement: spring.cloud.gateway.server.webmvc.routes[2].predicates[0]
+	Key: spring.cloud.gateway.mvc.routes[2].filters[0]
+		Line: 44
+		Replacement: spring.cloud.gateway.server.webmvc.routes[2].filters[0]
+	Key: spring.cloud.gateway.mvc.routes[3].id
+		Line: 47
+		Replacement: spring.cloud.gateway.server.webmvc.routes[3].id
+	Key: spring.cloud.gateway.mvc.routes[3].uri
+		Line: 48
+		Replacement: spring.cloud.gateway.server.webmvc.routes[3].uri
+	Key: spring.cloud.gateway.mvc.routes[3].predicates[0]
+		Line: 49
+		Replacement: spring.cloud.gateway.server.webmvc.routes[3].predicates[0]
+	Key: spring.cloud.gateway.mvc.routes[3].filters[0]
+		Line: 50
+		Replacement: spring.cloud.gateway.server.webmvc.routes[3].filters[0]
+	Key: spring.cloud.gateway.mvc.routes[4].id
+		Line: 53
+		Replacement: spring.cloud.gateway.server.webmvc.routes[4].id
+	Key: spring.cloud.gateway.mvc.routes[4].uri
+		Line: 54
+		Replacement: spring.cloud.gateway.server.webmvc.routes[4].uri
+	Key: spring.cloud.gateway.mvc.routes[4].predicates[0]
+		Line: 55
+		Replacement: spring.cloud.gateway.server.webmvc.routes[4].predicates[0]
+	Key: spring.cloud.gateway.mvc.routes[4].filters[0]
+		Line: 56
+		Replacement: spring.cloud.gateway.server.webmvc.routes[4].filters[0]
+	Key: spring.cloud.gateway.mvc.routes[5].id
+		Line: 63
+		Replacement: spring.cloud.gateway.server.webmvc.routes[5].id
+	Key: spring.cloud.gateway.mvc.routes[5].uri
+		Line: 64
+		Replacement: spring.cloud.gateway.server.webmvc.routes[5].uri
+	Key: spring.cloud.gateway.mvc.routes[5].predicates[0]
+		Line: 65
+		Replacement: spring.cloud.gateway.server.webmvc.routes[5].predicates[0]
+	Key: spring.cloud.gateway.mvc.routes[6].id
+		Line: 68
+		Replacement: spring.cloud.gateway.server.webmvc.routes[6].id
+	Key: spring.cloud.gateway.mvc.routes[6].uri
+		Line: 69
+		Replacement: spring.cloud.gateway.server.webmvc.routes[6].uri
+	Key: spring.cloud.gateway.mvc.routes[6].predicates[0]
+		Line: 70
+		Replacement: spring.cloud.gateway.server.webmvc.routes[6].predicates[0]
+	Key: spring.cloud.gateway.mvc.routes[7].id
+		Line: 73
+		Replacement: spring.cloud.gateway.server.webmvc.routes[7].id
+	Key: spring.cloud.gateway.mvc.routes[7].uri
+		Line: 74
+		Replacement: spring.cloud.gateway.server.webmvc.routes[7].uri
+	Key: spring.cloud.gateway.mvc.routes[7].predicates[0]
+		Line: 75
+		Replacement: spring.cloud.gateway.server.webmvc.routes[7].predicates[0]
+	Key: spring.cloud.gateway.mvc.routes[8].id
+		Line: 78
+		Replacement: spring.cloud.gateway.server.webmvc.routes[8].id
+	Key: spring.cloud.gateway.mvc.routes[8].uri
+		Line: 79
+		Replacement: spring.cloud.gateway.server.webmvc.routes[8].uri
+	Key: spring.cloud.gateway.mvc.routes[8].predicates[0]
+		Line: 80
+		Replacement: spring.cloud.gateway.server.webmvc.routes[8].predicates[0]
+	Key: spring.cloud.gateway.mvc.routes[9].id
+		Line: 83
+		Replacement: spring.cloud.gateway.server.webmvc.routes[9].id
+	Key: spring.cloud.gateway.mvc.routes[9].uri
+		Line: 84
+		Replacement: spring.cloud.gateway.server.webmvc.routes[9].uri
+	Key: spring.cloud.gateway.mvc.routes[9].predicates[0]
+		Line: 85
+		Replacement: spring.cloud.gateway.server.webmvc.routes[9].predicates[0]
+
+
+Each configuration key has been temporarily mapped to its replacement for your convenience. To silence this warning, please update your configuration to use the new keys.
+
+2026-07-13 11:34:23 INFO  DiscoveryClient - DiscoveryClient_API-GATEWAY/1391a66c8096:API-GATEWAY:8085 - registration status: 204
+2026-07-13 11:34:52 INFO  DiscoveryClient - Disable delta property : false
+2026-07-13 11:34:52 INFO  DiscoveryClient - Single vip registry refresh property : null
+2026-07-13 11:34:52 INFO  DiscoveryClient - Force full registry fetch : false
+2026-07-13 11:34:52 INFO  DiscoveryClient - Application is null : false
+2026-07-13 11:34:52 INFO  DiscoveryClient - Registered Applications size is zero : true
+2026-07-13 11:34:52 INFO  DiscoveryClient - Application version is -1: false
+2026-07-13 11:34:52 INFO  DiscoveryClient - Getting all instance registry info from the eureka server
+2026-07-13 11:34:52 INFO  DiscoveryClient - The response status is 200
+2026-07-13 11:36:20 INFO  EurekaServiceRegistry - Unregistering application API-GATEWAY with eureka with status DOWN
+2026-07-13 11:36:20 INFO  DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1783942580247, current=DOWN, previous=UP]
+2026-07-13 11:36:20 INFO  DiscoveryClient - DiscoveryClient_API-GATEWAY/1391a66c8096:API-GATEWAY:8085: registering service...
+2026-07-13 11:36:20 INFO  GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-07-13 11:36:20 INFO  GracefulShutdown - Graceful shutdown complete
+2026-07-13 11:36:20 INFO  DiscoveryClient - Shutting down DiscoveryClient ...
+2026-07-13 11:36:35 INFO  Version - HV000001: Hibernate Validator 8.0.3.Final
+2026-07-13 11:36:35 INFO  ApiGatewayApplication - Starting ApiGatewayApplication v0.0.1-SNAPSHOT using Java 21.0.11 with PID 1 (/app/app.jar started by root in /app)
+2026-07-13 11:36:35 DEBUG ApiGatewayApplication - Running with Spring Boot v3.5.16, Spring v6.2.19
+2026-07-13 11:36:36 INFO  ApiGatewayApplication - No active profile set, falling back to 1 default profile: "default"
+2026-07-13 11:36:45 INFO  GenericScope - BeanFactory id=3d68d9a6-c139-3795-9510-c72188784b45
+2026-07-13 11:36:47 INFO  TomcatWebServer - Tomcat initialized with port 8085 (http)
+2026-07-13 11:36:47 INFO  Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8085"]
+2026-07-13 11:36:47 INFO  StandardService - Starting service [Tomcat]
+2026-07-13 11:36:47 INFO  StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.55]
+2026-07-13 11:36:47 INFO  [/] - Initializing Spring embedded WebApplicationContext
+2026-07-13 11:36:47 INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 10148 ms
+2026-07-13 11:36:47 DEBUG JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2026-07-13 11:36:49 WARN  UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: fdb66c09-3a2e-4092-a7ec-ea1461c03251
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-07-13 11:36:49 INFO  InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-07-13 11:36:53 INFO  DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+2026-07-13 11:36:55 WARN  LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-07-13 11:36:55 INFO  InstanceInfoFactory - Setting initial instance status as: STARTING
+2026-07-13 11:36:56 INFO  DiscoveryClient - Initializing Eureka in region us-east-1
+2026-07-13 11:36:56 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 11:36:56 INFO  DiscoveryClient - Disable delta property : false
+2026-07-13 11:36:56 INFO  DiscoveryClient - Single vip registry refresh property : null
+2026-07-13 11:36:56 INFO  DiscoveryClient - Force full registry fetch : false
+2026-07-13 11:36:56 INFO  DiscoveryClient - Application is null : false
+2026-07-13 11:36:56 INFO  DiscoveryClient - Registered Applications size is zero : true
+2026-07-13 11:36:56 INFO  DiscoveryClient - Application version is -1: true
+2026-07-13 11:36:56 INFO  DiscoveryClient - Getting all instance registry info from the eureka server
+2026-07-13 11:36:58 INFO  DiscoveryClient - The response status is 200
+2026-07-13 11:36:58 INFO  DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2026-07-13 11:36:58 INFO  InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-07-13 11:36:58 INFO  DiscoveryClient - Discovery Client initialized at timestamp 1783942618623 with initial instances count: 0
+2026-07-13 11:36:58 INFO  EurekaServiceRegistry - Registering application API-GATEWAY with eureka with status UP
+2026-07-13 11:36:58 INFO  DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1783942618667, current=UP, previous=STARTING]
+2026-07-13 11:36:58 INFO  DiscoveryClient - DiscoveryClient_API-GATEWAY/ca729faed9a0:API-GATEWAY:8085: registering service...
+2026-07-13 11:36:58 INFO  Http11NioProtocol - Starting ProtocolHandler ["http-nio-8085"]
+2026-07-13 11:36:58 INFO  TomcatWebServer - Tomcat started on port 8085 (http) with context path '/'
+2026-07-13 11:36:58 INFO  EurekaAutoServiceRegistration - Updating port to 8085
+2026-07-13 11:36:58 INFO  ApiGatewayApplication - Started ApiGatewayApplication in 26.095 seconds (process running for 33.84)
+2026-07-13 11:36:58 WARN  GatewayServerWebMvcPropertiesMigrationListener - 
+The use of configuration keys that have been renamed was found in the environment:
+
+Property source 'Config resource 'class path resource [application.properties]' via location 'optional:classpath:/'':
+	Key: spring.cloud.gateway.mvc.routes[0].id
+		Line: 29
+		Replacement: spring.cloud.gateway.server.webmvc.routes[0].id
+	Key: spring.cloud.gateway.mvc.routes[0].uri
+		Line: 30
+		Replacement: spring.cloud.gateway.server.webmvc.routes[0].uri
+	Key: spring.cloud.gateway.mvc.routes[0].predicates[0]
+		Line: 31
+		Replacement: spring.cloud.gateway.server.webmvc.routes[0].predicates[0]
+	Key: spring.cloud.gateway.mvc.routes[0].filters[0]
+		Line: 32
+		Replacement: spring.cloud.gateway.server.webmvc.routes[0].filters[0]
+	Key: spring.cloud.gateway.mvc.routes[1].id
+		Line: 35
+		Replacement: spring.cloud.gateway.server.webmvc.routes[1].id
+	Key: spring.cloud.gateway.mvc.routes[1].uri
+		Line: 36
+		Replacement: spring.cloud.gateway.server.webmvc.routes[1].uri
+	Key: spring.cloud.gateway.mvc.routes[1].predicates[0]
+		Line: 37
+		Replacement: spring.cloud.gateway.server.webmvc.routes[1].predicates[0]
+	Key: spring.cloud.gateway.mvc.routes[1].filters[0]
+		Line: 38
+		Replacement: spring.cloud.gateway.server.webmvc.routes[1].filters[0]
+	Key: spring.cloud.gateway.mvc.routes[2].id
+		Line: 41
+		Replacement: spring.cloud.gateway.server.webmvc.routes[2].id
+	Key: spring.cloud.gateway.mvc.routes[2].uri
+		Line: 42
+		Replacement: spring.cloud.gateway.server.webmvc.routes[2].uri
+	Key: spring.cloud.gateway.mvc.routes[2].predicates[0]
+		Line: 43
+		Replacement: spring.cloud.gateway.server.webmvc.routes[2].predicates[0]
+	Key: spring.cloud.gateway.mvc.routes[2].filters[0]
+		Line: 44
+		Replacement: spring.cloud.gateway.server.webmvc.routes[2].filters[0]
+	Key: spring.cloud.gateway.mvc.routes[3].id
+		Line: 47
+		Replacement: spring.cloud.gateway.server.webmvc.routes[3].id
+	Key: spring.cloud.gateway.mvc.routes[3].uri
+		Line: 48
+		Replacement: spring.cloud.gateway.server.webmvc.routes[3].uri
+	Key: spring.cloud.gateway.mvc.routes[3].predicates[0]
+		Line: 49
+		Replacement: spring.cloud.gateway.server.webmvc.routes[3].predicates[0]
+	Key: spring.cloud.gateway.mvc.routes[3].filters[0]
+		Line: 50
+		Replacement: spring.cloud.gateway.server.webmvc.routes[3].filters[0]
+	Key: spring.cloud.gateway.mvc.routes[4].id
+		Line: 53
+		Replacement: spring.cloud.gateway.server.webmvc.routes[4].id
+	Key: spring.cloud.gateway.mvc.routes[4].uri
+		Line: 54
+		Replacement: spring.cloud.gateway.server.webmvc.routes[4].uri
+	Key: spring.cloud.gateway.mvc.routes[4].predicates[0]
+		Line: 55
+		Replacement: spring.cloud.gateway.server.webmvc.routes[4].predicates[0]
+	Key: spring.cloud.gateway.mvc.routes[4].filters[0]
+		Line: 56
+		Replacement: spring.cloud.gateway.server.webmvc.routes[4].filters[0]
+	Key: spring.cloud.gateway.mvc.routes[5].id
+		Line: 63
+		Replacement: spring.cloud.gateway.server.webmvc.routes[5].id
+	Key: spring.cloud.gateway.mvc.routes[5].uri
+		Line: 64
+		Replacement: spring.cloud.gateway.server.webmvc.routes[5].uri
+	Key: spring.cloud.gateway.mvc.routes[5].predicates[0]
+		Line: 65
+		Replacement: spring.cloud.gateway.server.webmvc.routes[5].predicates[0]
+	Key: spring.cloud.gateway.mvc.routes[6].id
+		Line: 68
+		Replacement: spring.cloud.gateway.server.webmvc.routes[6].id
+	Key: spring.cloud.gateway.mvc.routes[6].uri
+		Line: 69
+		Replacement: spring.cloud.gateway.server.webmvc.routes[6].uri
+	Key: spring.cloud.gateway.mvc.routes[6].predicates[0]
+		Line: 70
+		Replacement: spring.cloud.gateway.server.webmvc.routes[6].predicates[0]
+	Key: spring.cloud.gateway.mvc.routes[7].id
+		Line: 73
+		Replacement: spring.cloud.gateway.server.webmvc.routes[7].id
+	Key: spring.cloud.gateway.mvc.routes[7].uri
+		Line: 74
+		Replacement: spring.cloud.gateway.server.webmvc.routes[7].uri
+	Key: spring.cloud.gateway.mvc.routes[7].predicates[0]
+		Line: 75
+		Replacement: spring.cloud.gateway.server.webmvc.routes[7].predicates[0]
+	Key: spring.cloud.gateway.mvc.routes[8].id
+		Line: 78
+		Replacement: spring.cloud.gateway.server.webmvc.routes[8].id
+	Key: spring.cloud.gateway.mvc.routes[8].uri
+		Line: 79
+		Replacement: spring.cloud.gateway.server.webmvc.routes[8].uri
+	Key: spring.cloud.gateway.mvc.routes[8].predicates[0]
+		Line: 80
+		Replacement: spring.cloud.gateway.server.webmvc.routes[8].predicates[0]
+	Key: spring.cloud.gateway.mvc.routes[9].id
+		Line: 83
+		Replacement: spring.cloud.gateway.server.webmvc.routes[9].id
+	Key: spring.cloud.gateway.mvc.routes[9].uri
+		Line: 84
+		Replacement: spring.cloud.gateway.server.webmvc.routes[9].uri
+	Key: spring.cloud.gateway.mvc.routes[9].predicates[0]
+		Line: 85
+		Replacement: spring.cloud.gateway.server.webmvc.routes[9].predicates[0]
+
+
+Each configuration key has been temporarily mapped to its replacement for your convenience. To silence this warning, please update your configuration to use the new keys.
+
+2026-07-13 11:36:59 INFO  DiscoveryClient - DiscoveryClient_API-GATEWAY/ca729faed9a0:API-GATEWAY:8085 - registration status: 204
+2026-07-13 11:37:28 INFO  DiscoveryClient - Disable delta property : false
+2026-07-13 11:37:28 INFO  DiscoveryClient - Single vip registry refresh property : null
+2026-07-13 11:37:28 INFO  DiscoveryClient - Force full registry fetch : false
+2026-07-13 11:37:28 INFO  DiscoveryClient - Application is null : false
+2026-07-13 11:37:28 INFO  DiscoveryClient - Registered Applications size is zero : true
+2026-07-13 11:37:28 INFO  DiscoveryClient - Application version is -1: false
+2026-07-13 11:37:28 INFO  DiscoveryClient - Getting all instance registry info from the eureka server
+2026-07-13 11:37:28 INFO  DiscoveryClient - The response status is 200
+2026-07-13 11:41:56 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 11:46:56 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 11:51:56 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 11:52:15 INFO  [/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-07-13 11:52:15 INFO  DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-07-13 11:52:15 INFO  DispatcherServlet - Completed initialization in 2 ms
+2026-07-13 11:52:15 INFO  JwtAuthenticationFilter - Incoming request: /swagger-ui/index.html
+2026-07-13 11:52:15 DEBUG RouteValidator - Route [/swagger-ui/index.html] is PUBLIC
+2026-07-13 11:52:15 INFO  JwtAuthenticationFilter - Public endpoint accessed: /swagger-ui/index.html
+2026-07-13 11:52:15 INFO  JwtAuthenticationFilter - Incoming request: /swagger-ui/index.css
+2026-07-13 11:52:15 INFO  JwtAuthenticationFilter - Incoming request: /swagger-ui/swagger-ui.css
+2026-07-13 11:52:16 DEBUG RouteValidator - Route [/swagger-ui/index.css] is PUBLIC
+2026-07-13 11:52:16 DEBUG RouteValidator - Route [/swagger-ui/swagger-ui.css] is PUBLIC
+2026-07-13 11:52:16 INFO  JwtAuthenticationFilter - Public endpoint accessed: /swagger-ui/index.css
+2026-07-13 11:52:16 INFO  JwtAuthenticationFilter - Public endpoint accessed: /swagger-ui/swagger-ui.css
+2026-07-13 11:52:16 INFO  JwtAuthenticationFilter - Incoming request: /swagger-ui/swagger-ui-standalone-preset.js
+2026-07-13 11:52:16 INFO  JwtAuthenticationFilter - Incoming request: /swagger-ui/swagger-ui-bundle.js
+2026-07-13 11:52:16 DEBUG RouteValidator - Route [/swagger-ui/swagger-ui-standalone-preset.js] is PUBLIC
+2026-07-13 11:52:16 INFO  JwtAuthenticationFilter - Incoming request: /swagger-ui/swagger-initializer.js
+2026-07-13 11:52:16 DEBUG RouteValidator - Route [/swagger-ui/swagger-ui-bundle.js] is PUBLIC
+2026-07-13 11:52:16 INFO  JwtAuthenticationFilter - Public endpoint accessed: /swagger-ui/swagger-ui-standalone-preset.js
+2026-07-13 11:52:16 DEBUG RouteValidator - Route [/swagger-ui/swagger-initializer.js] is PUBLIC
+2026-07-13 11:52:16 INFO  JwtAuthenticationFilter - Public endpoint accessed: /swagger-ui/swagger-ui-bundle.js
+2026-07-13 11:52:16 INFO  JwtAuthenticationFilter - Public endpoint accessed: /swagger-ui/swagger-initializer.js
+2026-07-13 11:52:16 INFO  JwtAuthenticationFilter - Incoming request: /v3/api-docs/swagger-config
+2026-07-13 11:52:16 DEBUG RouteValidator - Route [/v3/api-docs/swagger-config] is PUBLIC
+2026-07-13 11:52:16 INFO  JwtAuthenticationFilter - Incoming request: /swagger-ui/favicon-32x32.png
+2026-07-13 11:52:16 INFO  JwtAuthenticationFilter - Public endpoint accessed: /v3/api-docs/swagger-config
+2026-07-13 11:52:16 DEBUG RouteValidator - Route [/swagger-ui/favicon-32x32.png] is PUBLIC
+2026-07-13 11:52:16 INFO  JwtAuthenticationFilter - Public endpoint accessed: /swagger-ui/favicon-32x32.png
+2026-07-13 11:52:16 INFO  JwtAuthenticationFilter - Incoming request: /screening/v3/api-docs
+2026-07-13 11:52:16 DEBUG RouteValidator - Route [/screening/v3/api-docs] is PUBLIC
+2026-07-13 11:52:16 INFO  JwtAuthenticationFilter - Public endpoint accessed: /screening/v3/api-docs
+2026-07-13 11:52:22 INFO  JwtAuthenticationFilter - Incoming request: /candidate/v3/api-docs
+2026-07-13 11:52:22 DEBUG RouteValidator - Route [/candidate/v3/api-docs] is PUBLIC
+2026-07-13 11:52:22 INFO  JwtAuthenticationFilter - Public endpoint accessed: /candidate/v3/api-docs
+2026-07-13 11:52:25 INFO  JwtAuthenticationFilter - Incoming request: /auth/v3/api-docs
+2026-07-13 11:52:25 DEBUG RouteValidator - Route [/auth/v3/api-docs] is PUBLIC
+2026-07-13 11:52:25 INFO  JwtAuthenticationFilter - Public endpoint accessed: /auth/v3/api-docs
+2026-07-13 11:56:56 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 12:01:56 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 12:06:56 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 12:09:37 INFO  EurekaServiceRegistry - Unregistering application API-GATEWAY with eureka with status DOWN
+2026-07-13 12:09:37 INFO  DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1783944577410, current=DOWN, previous=UP]
+2026-07-13 12:09:37 INFO  DiscoveryClient - DiscoveryClient_API-GATEWAY/ca729faed9a0:API-GATEWAY:8085: registering service...
+2026-07-13 12:09:37 INFO  GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-07-13 12:09:37 INFO  GracefulShutdown - Graceful shutdown complete
+2026-07-13 12:09:37 INFO  DiscoveryClient - DiscoveryClient_API-GATEWAY/ca729faed9a0:API-GATEWAY:8085 - registration status: 204
+2026-07-13 12:09:37 INFO  DiscoveryClient - Shutting down DiscoveryClient ...
+2026-07-13 12:13:54 INFO  Version - HV000001: Hibernate Validator 8.0.3.Final
+2026-07-13 12:13:54 INFO  ApiGatewayApplication - Starting ApiGatewayApplication v0.0.1-SNAPSHOT using Java 21.0.11 with PID 1 (/app/app.jar started by root in /app)
+2026-07-13 12:13:54 DEBUG ApiGatewayApplication - Running with Spring Boot v3.5.16, Spring v6.2.19
+2026-07-13 12:13:54 INFO  ApiGatewayApplication - No active profile set, falling back to 1 default profile: "default"
+2026-07-13 12:14:01 INFO  GenericScope - BeanFactory id=3d68d9a6-c139-3795-9510-c72188784b45
+2026-07-13 12:14:02 INFO  TomcatWebServer - Tomcat initialized with port 8085 (http)
+2026-07-13 12:14:03 INFO  Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8085"]
+2026-07-13 12:14:03 INFO  StandardService - Starting service [Tomcat]
+2026-07-13 12:14:03 INFO  StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.55]
+2026-07-13 12:14:03 INFO  [/] - Initializing Spring embedded WebApplicationContext
+2026-07-13 12:14:03 INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 7225 ms
+2026-07-13 12:14:03 DEBUG JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2026-07-13 12:14:05 WARN  UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 4f5b9f4e-5b4d-4b16-b01e-7907969fc776
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-07-13 12:14:05 INFO  InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-07-13 12:14:09 INFO  DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+2026-07-13 12:14:11 WARN  LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-07-13 12:14:12 INFO  InstanceInfoFactory - Setting initial instance status as: STARTING
+2026-07-13 12:14:12 INFO  DiscoveryClient - Initializing Eureka in region us-east-1
+2026-07-13 12:14:12 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 12:14:12 INFO  DiscoveryClient - Disable delta property : false
+2026-07-13 12:14:12 INFO  DiscoveryClient - Single vip registry refresh property : null
+2026-07-13 12:14:12 INFO  DiscoveryClient - Force full registry fetch : false
+2026-07-13 12:14:12 INFO  DiscoveryClient - Application is null : false
+2026-07-13 12:14:12 INFO  DiscoveryClient - Registered Applications size is zero : true
+2026-07-13 12:14:12 INFO  DiscoveryClient - Application version is -1: true
+2026-07-13 12:14:12 INFO  DiscoveryClient - Getting all instance registry info from the eureka server
+2026-07-13 12:14:13 INFO  DiscoveryClient - The response status is 200
+2026-07-13 12:14:13 INFO  DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2026-07-13 12:14:13 INFO  InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-07-13 12:14:13 INFO  DiscoveryClient - Discovery Client initialized at timestamp 1783944853249 with initial instances count: 0
+2026-07-13 12:14:13 INFO  EurekaServiceRegistry - Registering application API-GATEWAY with eureka with status UP
+2026-07-13 12:14:13 INFO  DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1783944853279, current=UP, previous=STARTING]
+2026-07-13 12:14:13 INFO  DiscoveryClient - DiscoveryClient_API-GATEWAY/f376bf07a399:API-GATEWAY:8085: registering service...
+2026-07-13 12:14:13 INFO  Http11NioProtocol - Starting ProtocolHandler ["http-nio-8085"]
+2026-07-13 12:14:13 INFO  TomcatWebServer - Tomcat started on port 8085 (http) with context path '/'
+2026-07-13 12:14:13 INFO  EurekaAutoServiceRegistration - Updating port to 8085
+2026-07-13 12:14:13 INFO  ApiGatewayApplication - Started ApiGatewayApplication in 20.927 seconds (process running for 25.606)
+2026-07-13 12:14:13 WARN  GatewayServerWebMvcPropertiesMigrationListener - 
+The use of configuration keys that have been renamed was found in the environment:
+
+Property source 'Config resource 'class path resource [application.properties]' via location 'optional:classpath:/'':
+	Key: spring.cloud.gateway.mvc.routes[0].id
+		Line: 29
+		Replacement: spring.cloud.gateway.server.webmvc.routes[0].id
+	Key: spring.cloud.gateway.mvc.routes[0].uri
+		Line: 30
+		Replacement: spring.cloud.gateway.server.webmvc.routes[0].uri
+	Key: spring.cloud.gateway.mvc.routes[0].predicates[0]
+		Line: 31
+		Replacement: spring.cloud.gateway.server.webmvc.routes[0].predicates[0]
+	Key: spring.cloud.gateway.mvc.routes[0].filters[0]
+		Line: 32
+		Replacement: spring.cloud.gateway.server.webmvc.routes[0].filters[0]
+	Key: spring.cloud.gateway.mvc.routes[1].id
+		Line: 35
+		Replacement: spring.cloud.gateway.server.webmvc.routes[1].id
+	Key: spring.cloud.gateway.mvc.routes[1].uri
+		Line: 36
+		Replacement: spring.cloud.gateway.server.webmvc.routes[1].uri
+	Key: spring.cloud.gateway.mvc.routes[1].predicates[0]
+		Line: 37
+		Replacement: spring.cloud.gateway.server.webmvc.routes[1].predicates[0]
+	Key: spring.cloud.gateway.mvc.routes[1].filters[0]
+		Line: 38
+		Replacement: spring.cloud.gateway.server.webmvc.routes[1].filters[0]
+	Key: spring.cloud.gateway.mvc.routes[2].id
+		Line: 41
+		Replacement: spring.cloud.gateway.server.webmvc.routes[2].id
+	Key: spring.cloud.gateway.mvc.routes[2].uri
+		Line: 42
+		Replacement: spring.cloud.gateway.server.webmvc.routes[2].uri
+	Key: spring.cloud.gateway.mvc.routes[2].predicates[0]
+		Line: 43
+		Replacement: spring.cloud.gateway.server.webmvc.routes[2].predicates[0]
+	Key: spring.cloud.gateway.mvc.routes[2].filters[0]
+		Line: 44
+		Replacement: spring.cloud.gateway.server.webmvc.routes[2].filters[0]
+	Key: spring.cloud.gateway.mvc.routes[3].id
+		Line: 47
+		Replacement: spring.cloud.gateway.server.webmvc.routes[3].id
+	Key: spring.cloud.gateway.mvc.routes[3].uri
+		Line: 48
+		Replacement: spring.cloud.gateway.server.webmvc.routes[3].uri
+	Key: spring.cloud.gateway.mvc.routes[3].predicates[0]
+		Line: 49
+		Replacement: spring.cloud.gateway.server.webmvc.routes[3].predicates[0]
+	Key: spring.cloud.gateway.mvc.routes[3].filters[0]
+		Line: 50
+		Replacement: spring.cloud.gateway.server.webmvc.routes[3].filters[0]
+	Key: spring.cloud.gateway.mvc.routes[4].id
+		Line: 53
+		Replacement: spring.cloud.gateway.server.webmvc.routes[4].id
+	Key: spring.cloud.gateway.mvc.routes[4].uri
+		Line: 54
+		Replacement: spring.cloud.gateway.server.webmvc.routes[4].uri
+	Key: spring.cloud.gateway.mvc.routes[4].predicates[0]
+		Line: 55
+		Replacement: spring.cloud.gateway.server.webmvc.routes[4].predicates[0]
+	Key: spring.cloud.gateway.mvc.routes[4].filters[0]
+		Line: 56
+		Replacement: spring.cloud.gateway.server.webmvc.routes[4].filters[0]
+	Key: spring.cloud.gateway.mvc.routes[5].id
+		Line: 63
+		Replacement: spring.cloud.gateway.server.webmvc.routes[5].id
+	Key: spring.cloud.gateway.mvc.routes[5].uri
+		Line: 64
+		Replacement: spring.cloud.gateway.server.webmvc.routes[5].uri
+	Key: spring.cloud.gateway.mvc.routes[5].predicates[0]
+		Line: 65
+		Replacement: spring.cloud.gateway.server.webmvc.routes[5].predicates[0]
+	Key: spring.cloud.gateway.mvc.routes[6].id
+		Line: 68
+		Replacement: spring.cloud.gateway.server.webmvc.routes[6].id
+	Key: spring.cloud.gateway.mvc.routes[6].uri
+		Line: 69
+		Replacement: spring.cloud.gateway.server.webmvc.routes[6].uri
+	Key: spring.cloud.gateway.mvc.routes[6].predicates[0]
+		Line: 70
+		Replacement: spring.cloud.gateway.server.webmvc.routes[6].predicates[0]
+	Key: spring.cloud.gateway.mvc.routes[7].id
+		Line: 73
+		Replacement: spring.cloud.gateway.server.webmvc.routes[7].id
+	Key: spring.cloud.gateway.mvc.routes[7].uri
+		Line: 74
+		Replacement: spring.cloud.gateway.server.webmvc.routes[7].uri
+	Key: spring.cloud.gateway.mvc.routes[7].predicates[0]
+		Line: 75
+		Replacement: spring.cloud.gateway.server.webmvc.routes[7].predicates[0]
+	Key: spring.cloud.gateway.mvc.routes[8].id
+		Line: 78
+		Replacement: spring.cloud.gateway.server.webmvc.routes[8].id
+	Key: spring.cloud.gateway.mvc.routes[8].uri
+		Line: 79
+		Replacement: spring.cloud.gateway.server.webmvc.routes[8].uri
+	Key: spring.cloud.gateway.mvc.routes[8].predicates[0]
+		Line: 80
+		Replacement: spring.cloud.gateway.server.webmvc.routes[8].predicates[0]
+	Key: spring.cloud.gateway.mvc.routes[9].id
+		Line: 83
+		Replacement: spring.cloud.gateway.server.webmvc.routes[9].id
+	Key: spring.cloud.gateway.mvc.routes[9].uri
+		Line: 84
+		Replacement: spring.cloud.gateway.server.webmvc.routes[9].uri
+	Key: spring.cloud.gateway.mvc.routes[9].predicates[0]
+		Line: 85
+		Replacement: spring.cloud.gateway.server.webmvc.routes[9].predicates[0]
+
+
+Each configuration key has been temporarily mapped to its replacement for your convenience. To silence this warning, please update your configuration to use the new keys.
+
+2026-07-13 12:14:13 INFO  DiscoveryClient - DiscoveryClient_API-GATEWAY/f376bf07a399:API-GATEWAY:8085 - registration status: 204
+2026-07-13 12:14:43 INFO  DiscoveryClient - Disable delta property : false
+2026-07-13 12:14:43 INFO  DiscoveryClient - Single vip registry refresh property : null
+2026-07-13 12:14:43 INFO  DiscoveryClient - Force full registry fetch : false
+2026-07-13 12:14:43 INFO  DiscoveryClient - Application is null : false
+2026-07-13 12:14:43 INFO  DiscoveryClient - Registered Applications size is zero : true
+2026-07-13 12:14:43 INFO  DiscoveryClient - Application version is -1: false
+2026-07-13 12:14:43 INFO  DiscoveryClient - Getting all instance registry info from the eureka server
