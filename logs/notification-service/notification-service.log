@@ -14078,3 +14078,36 @@ org.apache.kafka.common.errors.DisconnectException: null
 2026-07-13 12:15:06 INFO  ConsumerUtils - Setting offset for partition screening-completed-0 to the committed offset FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[kafka:9092 (id: 1 rack: null)], epoch=0}}
 2026-07-13 12:15:06 INFO  ConsumerUtils - Setting offset for partition arshdeep-0 to the committed offset FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[kafka:9092 (id: 1 rack: null)], epoch=0}}
 2026-07-13 12:15:06 INFO  KafkaMessageListenerContainer - notification-group: partitions assigned: [screening-completed-0]
+2026-07-13 12:15:06 INFO  KafkaMessageListenerContainer - notification-group: partitions assigned: [arshdeep-0]
+2026-07-13 12:19:09 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 12:24:09 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 12:29:09 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 12:34:09 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 12:39:09 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 12:44:09 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 12:49:09 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 12:54:09 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 12:59:09 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 13:04:09 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 13:09:09 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 13:14:09 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 13:19:09 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 13:24:09 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 13:29:09 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 13:34:09 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 13:39:09 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 13:44:09 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 13:49:09 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 13:54:09 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 13:59:09 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 14:04:09 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 14:09:09 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 14:14:09 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 14:19:09 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 14:24:09 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 14:29:09 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 14:34:09 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 14:39:09 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 14:44:09 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 14:49:09 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 14:54:09 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration

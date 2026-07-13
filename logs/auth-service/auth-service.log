@@ -3425,3 +3425,40 @@ com.netflix.discovery.shared.transport.TransportException: Cannot execute reques
 2026-07-13 12:14:48 INFO  DiscoveryClient - Registered Applications size is zero : true
 2026-07-13 12:14:48 INFO  DiscoveryClient - Application version is -1: false
 2026-07-13 12:14:48 INFO  DiscoveryClient - Getting all instance registry info from the eureka server
+2026-07-13 12:14:48 INFO  DiscoveryClient - The response status is 200
+2026-07-13 12:19:17 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 12:24:17 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 12:29:17 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 12:34:17 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 12:39:17 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 12:44:17 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 12:49:17 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 12:54:17 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 12:59:17 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 13:04:17 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 13:09:17 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 13:14:17 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 13:19:17 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 13:24:17 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 13:29:17 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 13:34:17 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 13:39:17 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 13:44:17 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 13:49:17 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 13:54:17 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 13:59:17 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 14:04:17 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 14:09:17 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 14:14:17 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 14:19:17 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 14:24:17 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 14:25:10 INFO  [/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-07-13 14:25:10 INFO  DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-07-13 14:25:10 INFO  DispatcherServlet - Completed initialization in 2 ms
+2026-07-13 14:25:11 INFO  AbstractOpenApiResource - Init duration for springdoc-openapi is: 253 ms
+2026-07-13 14:29:17 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 14:34:17 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 14:39:17 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 14:44:17 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 14:49:17 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 14:54:17 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration

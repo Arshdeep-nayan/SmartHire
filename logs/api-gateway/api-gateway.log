@@ -14890,3 +14890,90 @@ Each configuration key has been temporarily mapped to its replacement for your c
 2026-07-13 12:14:43 INFO  DiscoveryClient - Registered Applications size is zero : true
 2026-07-13 12:14:43 INFO  DiscoveryClient - Application version is -1: false
 2026-07-13 12:14:43 INFO  DiscoveryClient - Getting all instance registry info from the eureka server
+2026-07-13 12:14:43 INFO  DiscoveryClient - The response status is 200
+2026-07-13 12:19:12 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 12:24:12 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 12:29:12 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 12:34:12 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 12:39:12 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 12:44:12 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 12:49:12 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 12:54:12 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 12:59:12 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 13:04:12 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 13:09:12 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 13:14:12 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 13:19:12 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 13:24:12 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 13:29:12 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 13:34:12 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 13:39:12 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 13:44:12 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 13:49:12 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 13:54:11 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 13:59:11 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 14:04:11 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 14:09:11 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 14:14:11 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 14:19:11 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 14:24:11 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 14:25:06 INFO  [/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-07-13 14:25:06 INFO  DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-07-13 14:25:06 INFO  DispatcherServlet - Completed initialization in 4 ms
+2026-07-13 14:25:06 INFO  JwtAuthenticationFilter - Incoming request: /swagger-ui/index.html
+2026-07-13 14:25:06 DEBUG RouteValidator - Route [/swagger-ui/index.html] is PUBLIC
+2026-07-13 14:25:06 INFO  JwtAuthenticationFilter - Public endpoint accessed: /swagger-ui/index.html
+2026-07-13 14:25:06 INFO  JwtAuthenticationFilter - Incoming request: /swagger-ui/index.css
+2026-07-13 14:25:06 INFO  JwtAuthenticationFilter - Incoming request: /swagger-ui/swagger-ui.css
+2026-07-13 14:25:06 DEBUG RouteValidator - Route [/swagger-ui/index.css] is PUBLIC
+2026-07-13 14:25:06 DEBUG RouteValidator - Route [/swagger-ui/swagger-ui.css] is PUBLIC
+2026-07-13 14:25:06 INFO  JwtAuthenticationFilter - Public endpoint accessed: /swagger-ui/index.css
+2026-07-13 14:25:06 INFO  JwtAuthenticationFilter - Public endpoint accessed: /swagger-ui/swagger-ui.css
+2026-07-13 14:25:06 INFO  JwtAuthenticationFilter - Incoming request: /swagger-ui/swagger-ui-bundle.js
+2026-07-13 14:25:06 INFO  JwtAuthenticationFilter - Incoming request: /swagger-ui/swagger-ui-standalone-preset.js
+2026-07-13 14:25:06 INFO  JwtAuthenticationFilter - Incoming request: /swagger-ui/swagger-initializer.js
+2026-07-13 14:25:06 DEBUG RouteValidator - Route [/swagger-ui/swagger-ui-bundle.js] is PUBLIC
+2026-07-13 14:25:06 DEBUG RouteValidator - Route [/swagger-ui/swagger-ui-standalone-preset.js] is PUBLIC
+2026-07-13 14:25:06 DEBUG RouteValidator - Route [/swagger-ui/swagger-initializer.js] is PUBLIC
+2026-07-13 14:25:06 INFO  JwtAuthenticationFilter - Public endpoint accessed: /swagger-ui/swagger-ui-bundle.js
+2026-07-13 14:25:06 INFO  JwtAuthenticationFilter - Public endpoint accessed: /swagger-ui/swagger-ui-standalone-preset.js
+2026-07-13 14:25:06 INFO  JwtAuthenticationFilter - Public endpoint accessed: /swagger-ui/swagger-initializer.js
+2026-07-13 14:25:06 INFO  JwtAuthenticationFilter - Incoming request: /v3/api-docs/swagger-config
+2026-07-13 14:25:06 DEBUG RouteValidator - Route [/v3/api-docs/swagger-config] is PUBLIC
+2026-07-13 14:25:06 INFO  JwtAuthenticationFilter - Public endpoint accessed: /v3/api-docs/swagger-config
+2026-07-13 14:25:06 INFO  JwtAuthenticationFilter - Incoming request: /screening/v3/api-docs
+2026-07-13 14:25:06 DEBUG RouteValidator - Route [/screening/v3/api-docs] is PUBLIC
+2026-07-13 14:25:06 INFO  JwtAuthenticationFilter - Public endpoint accessed: /screening/v3/api-docs
+2026-07-13 14:25:10 INFO  JwtAuthenticationFilter - Incoming request: /auth/v3/api-docs
+2026-07-13 14:25:10 DEBUG RouteValidator - Route [/auth/v3/api-docs] is PUBLIC
+2026-07-13 14:25:10 INFO  JwtAuthenticationFilter - Public endpoint accessed: /auth/v3/api-docs
+2026-07-13 14:29:11 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 14:30:33 INFO  JwtAuthenticationFilter - Incoming request: /swagger-ui/index.html
+2026-07-13 14:30:33 DEBUG RouteValidator - Route [/swagger-ui/index.html] is PUBLIC
+2026-07-13 14:30:33 INFO  JwtAuthenticationFilter - Public endpoint accessed: /swagger-ui/index.html
+2026-07-13 14:30:33 INFO  JwtAuthenticationFilter - Incoming request: /swagger-ui/swagger-ui.css
+2026-07-13 14:30:33 INFO  JwtAuthenticationFilter - Incoming request: /swagger-ui/index.css
+2026-07-13 14:30:33 DEBUG RouteValidator - Route [/swagger-ui/swagger-ui.css] is PUBLIC
+2026-07-13 14:30:33 DEBUG RouteValidator - Route [/swagger-ui/index.css] is PUBLIC
+2026-07-13 14:30:33 INFO  JwtAuthenticationFilter - Public endpoint accessed: /swagger-ui/swagger-ui.css
+2026-07-13 14:30:33 INFO  JwtAuthenticationFilter - Public endpoint accessed: /swagger-ui/index.css
+2026-07-13 14:30:33 INFO  JwtAuthenticationFilter - Incoming request: /swagger-ui/swagger-ui-bundle.js
+2026-07-13 14:30:33 INFO  JwtAuthenticationFilter - Incoming request: /swagger-ui/swagger-ui-standalone-preset.js
+2026-07-13 14:30:33 DEBUG RouteValidator - Route [/swagger-ui/swagger-ui-bundle.js] is PUBLIC
+2026-07-13 14:30:33 INFO  JwtAuthenticationFilter - Incoming request: /swagger-ui/swagger-initializer.js
+2026-07-13 14:30:33 DEBUG RouteValidator - Route [/swagger-ui/swagger-ui-standalone-preset.js] is PUBLIC
+2026-07-13 14:30:33 INFO  JwtAuthenticationFilter - Public endpoint accessed: /swagger-ui/swagger-ui-bundle.js
+2026-07-13 14:30:33 DEBUG RouteValidator - Route [/swagger-ui/swagger-initializer.js] is PUBLIC
+2026-07-13 14:30:33 INFO  JwtAuthenticationFilter - Public endpoint accessed: /swagger-ui/swagger-ui-standalone-preset.js
+2026-07-13 14:30:33 INFO  JwtAuthenticationFilter - Public endpoint accessed: /swagger-ui/swagger-initializer.js
+2026-07-13 14:30:33 INFO  JwtAuthenticationFilter - Incoming request: /v3/api-docs/swagger-config
+2026-07-13 14:30:33 DEBUG RouteValidator - Route [/v3/api-docs/swagger-config] is PUBLIC
+2026-07-13 14:30:33 INFO  JwtAuthenticationFilter - Public endpoint accessed: /v3/api-docs/swagger-config
+2026-07-13 14:30:33 INFO  JwtAuthenticationFilter - Incoming request: /screening/v3/api-docs
+2026-07-13 14:30:33 DEBUG RouteValidator - Route [/screening/v3/api-docs] is PUBLIC
+2026-07-13 14:30:33 INFO  JwtAuthenticationFilter - Public endpoint accessed: /screening/v3/api-docs
+2026-07-13 14:34:11 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 14:39:11 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 14:44:11 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 14:49:11 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 14:54:11 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration

@@ -8088,3 +8088,40 @@ org.apache.kafka.common.errors.DisconnectException: null
 2026-07-13 12:15:06 INFO  ConsumerCoordinator - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Notifying assignor about the new Assignment(partitions=[arshdeep-0])
 2026-07-13 12:15:06 INFO  ConsumerRebalanceListenerInvoker - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Adding newly assigned partitions: arshdeep-0
 2026-07-13 12:15:06 INFO  ConsumerUtils - Setting offset for partition arshdeep-0 to the committed offset FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[kafka:9092 (id: 1 rack: null)], epoch=0}}
+2026-07-13 12:15:06 INFO  KafkaMessageListenerContainer - screening-group: partitions assigned: [arshdeep-0]
+2026-07-13 12:19:15 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 12:24:15 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 12:29:15 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 12:34:15 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 12:39:15 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 12:44:15 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 12:49:15 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 12:54:15 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 12:59:15 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 13:04:15 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 13:09:15 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 13:14:15 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 13:19:15 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 13:24:15 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 13:29:15 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 13:34:15 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 13:39:15 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 13:44:15 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 13:49:15 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 13:54:15 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 13:59:15 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 14:04:15 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 14:09:15 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 14:14:15 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 14:19:15 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 14:24:15 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 14:25:06 INFO  [/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-07-13 14:25:06 INFO  DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-07-13 14:25:06 INFO  DispatcherServlet - Completed initialization in 9 ms
+2026-07-13 14:25:07 INFO  AbstractOpenApiResource - Init duration for springdoc-openapi is: 288 ms
+2026-07-13 14:29:15 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 14:34:15 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 14:39:15 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 14:44:15 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 14:49:15 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 14:54:15 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
