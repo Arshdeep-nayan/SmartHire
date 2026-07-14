@@ -9669,3 +9669,65 @@ org.apache.kafka.common.errors.DisconnectException: null
 2026-07-13 19:38:55 INFO  AppInfoParser - Kafka commitId: 5e9866f43ab8e7e4
 2026-07-13 19:38:55 INFO  AppInfoParser - Kafka startTimeMs: 1783971535208
 2026-07-13 19:38:55 INFO  ClassicKafkaConsumer - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Subscribed to topic(s): arshdeep
+2026-07-13 19:38:55 INFO  AiScreeningServiceApplication - Started AiScreeningServiceApplication in 59.123 seconds (process running for 71.225)
+2026-07-13 19:38:58 INFO  Metadata - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Cluster ID: xCHzlIE3ThyuQ0dMnahzYg
+2026-07-13 19:38:58 INFO  ConsumerCoordinator - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Discovered group coordinator kafka:9092 (id: 2147483646 rack: null)
+2026-07-13 19:38:58 INFO  ConsumerCoordinator - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] (Re-)joining group
+2026-07-13 19:38:58 INFO  ConsumerCoordinator - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Request joining group due to: need to re-join with the given member-id: consumer-screening-group-1-03d4a7c1-f694-4244-8f05-5ec83f6e1965
+2026-07-13 19:38:58 INFO  ConsumerCoordinator - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] (Re-)joining group
+2026-07-13 19:39:21 INFO  ConsumerCoordinator - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Successfully joined group with generation Generation{generationId=19, memberId='consumer-screening-group-1-03d4a7c1-f694-4244-8f05-5ec83f6e1965', protocol='range'}
+2026-07-13 19:39:21 INFO  ConsumerCoordinator - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Finished assignment for group at generation 19: {consumer-screening-group-1-03d4a7c1-f694-4244-8f05-5ec83f6e1965=Assignment(partitions=[arshdeep-0])}
+2026-07-13 19:39:21 INFO  ConsumerCoordinator - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Successfully synced group in generation Generation{generationId=19, memberId='consumer-screening-group-1-03d4a7c1-f694-4244-8f05-5ec83f6e1965', protocol='range'}
+2026-07-13 19:39:21 INFO  ConsumerCoordinator - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Notifying assignor about the new Assignment(partitions=[arshdeep-0])
+2026-07-13 19:39:21 INFO  ConsumerRebalanceListenerInvoker - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Adding newly assigned partitions: arshdeep-0
+2026-07-13 19:39:21 INFO  ConsumerUtils - Setting offset for partition arshdeep-0 to the committed offset FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[kafka:9092 (id: 1 rack: null)], epoch=0}}
+2026-07-13 19:39:21 INFO  KafkaMessageListenerContainer - screening-group: partitions assigned: [arshdeep-0]
+2026-07-13 19:39:23 INFO  DiscoveryClient - Disable delta property : false
+2026-07-13 19:39:23 INFO  DiscoveryClient - Single vip registry refresh property : null
+2026-07-13 19:39:23 INFO  DiscoveryClient - Force full registry fetch : false
+2026-07-13 19:39:23 INFO  DiscoveryClient - Application is null : false
+2026-07-13 19:39:23 INFO  DiscoveryClient - Registered Applications size is zero : true
+2026-07-13 19:39:23 INFO  DiscoveryClient - Application version is -1: false
+2026-07-13 19:39:23 INFO  DiscoveryClient - Getting all instance registry info from the eureka server
+2026-07-13 19:39:23 INFO  DiscoveryClient - The response status is 200
+2026-07-13 19:43:51 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 19:48:51 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 19:53:51 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 19:58:58 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 20:03:58 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 20:08:58 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 20:13:58 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 20:18:58 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 20:23:58 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 20:28:58 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 20:33:58 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 20:38:58 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 20:43:58 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 20:48:58 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 20:53:58 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 20:58:58 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 21:01:16 INFO  EurekaServiceRegistry - Unregistering application AI-SCREENING-SERVICE with eureka with status DOWN
+2026-07-13 21:01:16 INFO  DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1783976476500, current=DOWN, previous=UP]
+2026-07-13 21:01:16 INFO  DiscoveryClient - DiscoveryClient_AI-SCREENING-SERVICE/67bdcc54a3d4:AI-SCREENING-SERVICE:8084: registering service...
+2026-07-13 21:01:16 INFO  DiscoveryClient - DiscoveryClient_AI-SCREENING-SERVICE/67bdcc54a3d4:AI-SCREENING-SERVICE:8084 - registration status: 204
+2026-07-13 21:01:16 INFO  ConsumerRebalanceListenerInvoker - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Revoke previously assigned partitions arshdeep-0
+2026-07-13 21:01:16 INFO  KafkaMessageListenerContainer - screening-group: partitions revoked: [arshdeep-0]
+2026-07-13 21:01:16 INFO  ConsumerCoordinator - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Member consumer-screening-group-1-03d4a7c1-f694-4244-8f05-5ec83f6e1965 sending LeaveGroup request to coordinator kafka:9092 (id: 2147483646 rack: null) due to the consumer unsubscribed from all topics
+2026-07-13 21:01:16 INFO  ConsumerCoordinator - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Resetting generation and member id due to: consumer pro-actively leaving the group
+2026-07-13 21:01:16 INFO  ConsumerCoordinator - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Request joining group due to: consumer pro-actively leaving the group
+2026-07-13 21:01:16 INFO  ClassicKafkaConsumer - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Unsubscribed all topics or patterns and assigned partitions
+2026-07-13 21:01:16 INFO  ConsumerCoordinator - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Resetting generation and member id due to: consumer pro-actively leaving the group
+2026-07-13 21:01:16 INFO  ConsumerCoordinator - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Request joining group due to: consumer pro-actively leaving the group
+2026-07-13 21:01:16 INFO  Metrics - Metrics scheduler closed
+2026-07-13 21:01:16 INFO  Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2026-07-13 21:01:16 INFO  Metrics - Closing reporter org.apache.kafka.common.telemetry.internals.ClientTelemetryReporter
+2026-07-13 21:01:16 INFO  Metrics - Metrics reporters closed
+2026-07-13 21:01:16 INFO  AppInfoParser - App info kafka.consumer for consumer-screening-group-1 unregistered
+2026-07-13 21:01:16 INFO  KafkaMessageListenerContainer - screening-group: Consumer stopped
+2026-07-13 21:01:16 INFO  GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-07-13 21:01:16 INFO  GracefulShutdown - Graceful shutdown complete
+2026-07-13 21:01:16 INFO  DiscoveryClient - Shutting down DiscoveryClient ...
+2026-07-14 12:44:59 INFO  Version - HV000001: Hibernate Validator 8.0.3.Final
+2026-07-14 12:45:00 INFO  AiScreeningServiceApplication - Starting AiScreeningServiceApplication v0.0.1-SNAPSHOT using Java 21.0.11 with PID 1 (/app/app.jar started by root in /app)
+2026-07-14 12:45:00 DEBUG AiScreeningServiceApplication - Running with Spring Boot v3.5.16, Spring v6.2.19
+2026-07-14 12:45:00 INFO  AiScreeningServiceApplication - No active profile set, falling back to 1 default profile: "default"

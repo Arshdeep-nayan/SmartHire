@@ -22,30 +22,55 @@ public class ResumeService {
 
         log.info("Saving resume for candidate id: {}", res.getCandidateId());
 
+        if (rrepo.findByCandidateId(res.getCandidateId()).isPresent()) {
+
+            log.warn(
+                    "Resume already exists for candidate id: {}",
+                    res.getCandidateId());
+
+            throw new IllegalStateException(
+                    "Resume already exists for candidate id: "
+                            + res.getCandidateId()
+                            + ". Use Update Resume API instead.");
+        }
+
+        res.setUploadedAt(LocalDateTime.now());
+
         Resume savedResume = rrepo.save(res);
 
-        log.info("Resume saved successfully for candidate id: {}", savedResume.getCandidateId());
+        log.info(
+                "Resume saved successfully for candidate id: {}",
+                savedResume.getCandidateId());
 
         return savedResume;
     }
 
     public Resume getResumeByCandidateId(int candidateId) {
 
-        log.info("Fetching resume for candidate id: {}", candidateId);
+        log.info(
+                "Fetching resume for candidate id: {}",
+                candidateId);
 
         Resume resume = rrepo.findByCandidateId(candidateId)
                 .orElseThrow(() ->
                         new CandidateNotFoundException(
-                                "Resume not found for this candidate"));
+                                "Resume not found for candidate id : "
+                                        + candidateId));
 
-        log.info("Resume fetched successfully for candidate id: {}", candidateId);
+        log.info(
+                "Resume fetched successfully for candidate id: {}",
+                candidateId);
 
         return resume;
     }
 
-    public Resume updateResume(int candidateId, String newResumeText) {
+    public Resume updateResume(
+            int candidateId,
+            String newResumeText) {
 
-        log.info("Updating resume for candidate id: {}", candidateId);
+        log.info(
+                "Updating resume for candidate id: {}",
+                candidateId);
 
         Resume existing = getResumeByCandidateId(candidateId);
 
@@ -54,18 +79,29 @@ public class ResumeService {
 
         Resume updatedResume = rrepo.save(existing);
 
-        log.info("Resume updated successfully for candidate id: {}", candidateId);
+        log.info(
+                "Resume updated successfully for candidate id: {}",
+                candidateId);
 
         return updatedResume;
     }
 
-    public void deleteResume(String id) {
+    public void deleteResume(int candidateId) {
 
-        log.info("Deleting resume with id: {}", id);
+        log.info(
+                "Deleting resume for candidate id: {}",
+                candidateId);
 
-        rrepo.deleteById(id);
+        Resume existing = rrepo.findByCandidateId(candidateId)
+                .orElseThrow(() ->
+                        new CandidateNotFoundException(
+                                "Resume not found for candidate id : "
+                                        + candidateId));
 
-        log.info("Resume deleted successfully with id: {}", id);
+        rrepo.delete(existing);
+
+        log.info(
+                "Resume deleted successfully for candidate id: {}",
+                candidateId);
     }
-
 }

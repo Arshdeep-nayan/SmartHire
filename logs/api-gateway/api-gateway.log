@@ -16633,3 +16633,56 @@ com.netflix.discovery.shared.transport.TransportException: Cannot execute reques
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
 	at java.base/java.lang.Thread.run(Thread.java:1583) [?:?]
+2026-07-13 19:38:41 WARN  InstanceInfoReplicator - There was a problem with the instance info replicator
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112) ~[eureka-client-2.0.6.jar!/:2.0.6]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) ~[eureka-client-2.0.6.jar!/:2.0.6]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59) ~[eureka-client-2.0.6.jar!/:2.0.6]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76) ~[eureka-client-2.0.6.jar!/:2.0.6]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) ~[eureka-client-2.0.6.jar!/:2.0.6]
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:843) ~[eureka-client-2.0.6.jar!/:2.0.6]
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:125) ~[eureka-client-2.0.6.jar!/:2.0.6]
+	at com.netflix.discovery.InstanceInfoReplicator$2.run(InstanceInfoReplicator.java:105) ~[eureka-client-2.0.6.jar!/:2.0.6]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572) ~[?:?]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317) ~[?:?]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1583) [?:?]
+2026-07-13 19:39:10 INFO  DiscoveryClient - Disable delta property : false
+2026-07-13 19:39:10 INFO  DiscoveryClient - Single vip registry refresh property : null
+2026-07-13 19:39:10 INFO  DiscoveryClient - Force full registry fetch : false
+2026-07-13 19:39:10 INFO  DiscoveryClient - Application is null : false
+2026-07-13 19:39:10 INFO  DiscoveryClient - Registered Applications size is zero : true
+2026-07-13 19:39:10 INFO  DiscoveryClient - Application version is -1: true
+2026-07-13 19:39:10 INFO  DiscoveryClient - Getting all instance registry info from the eureka server
+2026-07-13 19:39:10 INFO  DiscoveryClient - The response status is 200
+2026-07-13 19:39:10 INFO  DiscoveryClient - DiscoveryClient_API-GATEWAY/fa518d9aa41b:API-GATEWAY:8085 - Re-registering apps/API-GATEWAY
+2026-07-13 19:39:10 INFO  DiscoveryClient - DiscoveryClient_API-GATEWAY/fa518d9aa41b:API-GATEWAY:8085: registering service...
+2026-07-13 19:39:10 INFO  DiscoveryClient - DiscoveryClient_API-GATEWAY/fa518d9aa41b:API-GATEWAY:8085 - registration status: 204
+2026-07-13 19:43:38 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 19:48:38 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 19:53:38 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 19:58:45 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 20:03:45 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 20:08:45 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 20:13:45 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 20:18:45 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 20:23:45 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 20:28:45 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 20:33:45 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 20:38:45 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 20:43:45 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 20:48:45 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 20:53:45 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 20:58:45 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-13 21:01:16 INFO  EurekaServiceRegistry - Unregistering application API-GATEWAY with eureka with status DOWN
+2026-07-13 21:01:16 INFO  DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1783976476516, current=DOWN, previous=UP]
+2026-07-13 21:01:16 INFO  DiscoveryClient - DiscoveryClient_API-GATEWAY/fa518d9aa41b:API-GATEWAY:8085: registering service...
+2026-07-13 21:01:16 INFO  GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-07-13 21:01:16 INFO  GracefulShutdown - Graceful shutdown complete
+2026-07-13 21:01:16 INFO  DiscoveryClient - DiscoveryClient_API-GATEWAY/fa518d9aa41b:API-GATEWAY:8085 - registration status: 204
+2026-07-13 21:01:16 INFO  DiscoveryClient - Shutting down DiscoveryClient ...
+2026-07-14 12:44:58 INFO  Version - HV000001: Hibernate Validator 8.0.3.Final
+2026-07-14 12:44:59 INFO  ApiGatewayApplication - Starting ApiGatewayApplication v0.0.1-SNAPSHOT using Java 21.0.11 with PID 1 (/app/app.jar started by root in /app)
+2026-07-14 12:44:59 DEBUG ApiGatewayApplication - Running with Spring Boot v3.5.16, Spring v6.2.19

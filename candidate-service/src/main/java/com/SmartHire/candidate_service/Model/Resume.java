@@ -3,6 +3,7 @@ package com.SmartHire.candidate_service.Model;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
@@ -16,7 +17,11 @@ public class Resume
 {
     @Id
     private String id;
+
     private int candidateId;
+
     private String resumeText;
+
+    @CreatedDate
     private LocalDateTime uploadedAt;
 }
