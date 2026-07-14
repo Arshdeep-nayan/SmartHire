@@ -3916,3 +3916,6 @@ com.netflix.discovery.shared.transport.TransportException: Cannot execute reques
 	Maximum pool size: undefined/unknown
 2026-07-14 13:25:05 INFO  JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
 2026-07-14 13:25:05 INFO  LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-14 15:12:38 INFO  Version - HV000001: Hibernate Validator 8.0.3.Final
+2026-07-14 15:12:38 INFO  JobServiceApplication - Starting JobServiceApplication v0.0.1-SNAPSHOT using Java 21.0.11 with PID 1 (/app/app.jar started by root in /app)
+2026-07-14 15:12:38 DEBUG JobServiceApplication - Running with Spring Boot v3.5.14, Spring v6.2.18

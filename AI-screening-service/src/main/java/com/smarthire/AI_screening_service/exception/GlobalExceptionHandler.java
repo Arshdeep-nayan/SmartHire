@@ -9,20 +9,54 @@ import org.springframework.web.bind.annotation.RestControllerAdvice;
 public class GlobalExceptionHandler {
 
     @ExceptionHandler(ScreeningNotFoundException.class)
-    public ResponseEntity<ApiError> handleScreeningNotFound(ScreeningNotFoundException ex) {
-        ApiError error = new ApiError(HttpStatus.NOT_FOUND.value(), ex.getMessage());
-        return ResponseEntity.status(HttpStatus.NOT_FOUND).body(error);
+    public ResponseEntity<ApiError> handleScreeningNotFound(
+            ScreeningNotFoundException ex) {
+
+        ApiError error = new ApiError(
+                HttpStatus.NOT_FOUND.value(),
+                ex.getMessage());
+
+        return ResponseEntity
+                .status(HttpStatus.NOT_FOUND)
+                .body(error);
+    }
+
+    @ExceptionHandler(ScreeningAlreadyExistsException.class)
+    public ResponseEntity<ApiError> handleScreeningAlreadyExists(
+            ScreeningAlreadyExistsException ex) {
+
+        ApiError error = new ApiError(
+                HttpStatus.CONFLICT.value(),
+                ex.getMessage());
+
+        return ResponseEntity
+                .status(HttpStatus.CONFLICT)
+                .body(error);
     }
 
     @ExceptionHandler(RuntimeException.class)
-    public ResponseEntity<ApiError> handleRuntimeException(RuntimeException ex) {
-        ApiError error = new ApiError(HttpStatus.INTERNAL_SERVER_ERROR.value(), "AI screening failed: " + ex.getMessage());
-        return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(error);
+    public ResponseEntity<ApiError> handleRuntimeException(
+            RuntimeException ex) {
+
+        ApiError error = new ApiError(
+                HttpStatus.INTERNAL_SERVER_ERROR.value(),
+                "AI screening failed: " + ex.getMessage());
+
+        return ResponseEntity
+                .status(HttpStatus.INTERNAL_SERVER_ERROR)
+                .body(error);
     }
 
     @ExceptionHandler(Exception.class)
-    public ResponseEntity<ApiError> handleGenericException(Exception ex) {
-        ApiError error = new ApiError(HttpStatus.INTERNAL_SERVER_ERROR.value(), "Something went wrong");
-        return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(error);
+    public ResponseEntity<ApiError> handleGenericException(
+            Exception ex) {
+
+        ApiError error = new ApiError(
+                HttpStatus.INTERNAL_SERVER_ERROR.value(),
+                "Something went wrong");
+
+        return ResponseEntity
+                .status(HttpStatus.INTERNAL_SERVER_ERROR)
+                .body(error);
     }
 }

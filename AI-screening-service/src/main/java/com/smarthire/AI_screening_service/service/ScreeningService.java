@@ -3,6 +3,7 @@ package com.smarthire.AI_screening_service.service;
 import com.smarthire.AI_screening_service.dto.CandidateDTO;
 import com.smarthire.AI_screening_service.dto.JobDTO;
 import com.smarthire.AI_screening_service.dto.ScreeningCompletedEvent;
+import com.smarthire.AI_screening_service.exception.ScreeningAlreadyExistsException;
 import com.smarthire.AI_screening_service.exception.ScreeningNotFoundException;
 import com.smarthire.AI_screening_service.feign.CandidateFeignClient;
 import com.smarthire.AI_screening_service.feign.JobFeignClient;
@@ -45,6 +46,21 @@ public class ScreeningService {
             int jobId) {
 
         log.info("Starting AI screening for Candidate {} and Job {}", candidateId, jobId);
+
+        repo.findByCandidateIdAndJobId(candidateId, jobId)
+                .ifPresent(existing -> {
+
+                    log.warn(
+                            "Screening already exists for candidate {} and job {}",
+                            candidateId,
+                            jobId);
+
+                    throw new ScreeningAlreadyExistsException(
+                            "Screening already exists for candidate id "
+                                    + candidateId
+                                    + " and job id "
+                                    + jobId);
+                });
 
         CandidateDTO candidate =
                 candidateFeignClient.getCandidateById(candidateId);

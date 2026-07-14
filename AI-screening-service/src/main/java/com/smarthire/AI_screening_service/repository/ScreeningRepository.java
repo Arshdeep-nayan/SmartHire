@@ -14,5 +14,7 @@ public interface ScreeningRepository extends MongoRepository<ScreeningResult, St
 
     List<ScreeningResult> findByJobId(int jobId);
 
-    Optional<ScreeningResult> findByCandidateIdAndJobId(int candidateId, int jobId);
+    Optional<ScreeningResult> findByCandidateIdAndJobId(
+            int candidateId,
+            int jobId);
 }
