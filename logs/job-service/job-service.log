@@ -3805,3 +3805,6 @@ com.netflix.discovery.shared.transport.TransportException: Cannot execute reques
 2026-07-14 12:44:57 INFO  JobServiceApplication - No active profile set, falling back to 1 default profile: "default"
 2026-07-14 12:45:04 INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
 2026-07-14 12:45:04 INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 471 ms. Found 1 JPA repository interface.
+2026-07-14 12:54:27 INFO  Version - HV000001: Hibernate Validator 8.0.3.Final
+2026-07-14 12:54:27 INFO  JobServiceApplication - Starting JobServiceApplication v0.0.1-SNAPSHOT using Java 21.0.11 with PID 1 (/app/app.jar started by root in /app)
+2026-07-14 12:54:28 DEBUG JobServiceApplication - Running with Spring Boot v3.5.14, Spring v6.2.18

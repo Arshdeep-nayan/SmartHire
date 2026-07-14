@@ -137,7 +137,7 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
                 }
 
                 if (path.startsWith("/api/screening")) {
-                    return true;
+                    return method.equals("GET") || method.equals("POST");
                 }
 
                 if (path.startsWith("/api/notification")) {

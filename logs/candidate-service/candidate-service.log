@@ -3746,3 +3746,6 @@ com.mongodb.MongoNodeIsRecoveringException: Command failed with error 11600 (Int
 2026-07-14 12:45:04 INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
 2026-07-14 12:45:04 INFO  RepositoryConfigurationExtensionSupport - Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.SmartHire.candidate_service.Repository.CandidateRepository; If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository
 2026-07-14 12:45:04 INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 21 ms. Found 1 MongoDB repository interface.
+2026-07-14 12:54:27 INFO  Version - HV000001: Hibernate Validator 8.0.3.Final
+2026-07-14 12:54:27 INFO  CandidateServiceApplication - Starting CandidateServiceApplication v0.0.1-SNAPSHOT using Java 21.0.11 with PID 1 (/app/app.jar started by root in /app)
+2026-07-14 12:54:27 DEBUG CandidateServiceApplication - Running with Spring Boot v3.5.15, Spring v6.2.19
