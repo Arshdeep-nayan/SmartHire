@@ -120,64 +120,114 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
 
             case "RECRUITER":
 
+                // Job Service
                 if (path.startsWith("/jobs")) {
+                    if (method.equals("DELETE")) return false;
                     return true;
                 }
 
+                // Candidate Service
                 if (path.startsWith("/api/candidates") || path.startsWith("/api/candidate")) {
+
                     if (path.equals("/api/candidate/add") && method.equals("POST")) return false;
-                    if (method.equals("DELETE")) return false;
+
+                    if (path.startsWith("/api/candidate/update") && method.equals("PUT")) return false;
+
                     if (path.startsWith("/api/candidate/apply")) return false;
-                    if (path.contains("/activate") || path.contains("/deactivate") || path.contains("/hire")) return false;
+
+                    if (method.equals("DELETE")) return false;
+
+                    if (path.contains("/activate") || path.contains("/deactivate")) return false;
+
+                    if (path.startsWith("/api/candidate/page") ||
+                            path.startsWith("/api/candidate/sort")) return false;
+
+                    if (path.contains("/hire") && method.equals("PATCH")) return true;
+
                     return method.equals("GET");
                 }
 
+                // Resume Service
                 if (path.startsWith("/resumes")) {
                     return method.equals("GET");
                 }
 
+                // AI Screening Service
                 if (path.startsWith("/api/screening")) {
-                    return method.equals("GET") || method.equals("POST");
+                    if (method.equals("DELETE")) return false;
+                    return true;
                 }
 
+                // Notification Service
                 if (path.startsWith("/api/notification")) {
-                    return method.equals("GET") || path.contains("/read");
+                    if (path.equals("/api/notification/all")) return false;
+                    if (path.equals("/api/notification/add")) return false;
+                    if (method.equals("DELETE")) return false;
+                    if (path.equals("/api/notification/unread")) return true;
+                    if (path.startsWith("/api/notification/user/")) return true;
+                    if (path.matches("/api/notification/[^/]+/read")) return true;
+                    return false;
                 }
 
                 return false;
 
             case "CANDIDATE":
 
+                //Job Service
                 if (path.startsWith("/jobs")) {
                     if (method.equals("POST") || method.equals("PUT") ||
-                            method.equals("DELETE") || method.equals("PATCH")) {
-                        return false;
-                    }
+                            method.equals("DELETE") || method.equals("PATCH")) return false;
                     return method.equals("GET");
                 }
 
+                //Candidate Services
                 if (path.startsWith("/api/candidate") || path.startsWith("/api/candidates")) {
+
                     if (path.equals("/api/candidates/all")) return false;
+
                     if (method.equals("DELETE")) return false;
-                    if (path.contains("/activate") || path.contains("/deactivate") || path.contains("/hire")) return false;
+
+                    if (path.contains("/activate") || path.contains("/deactivate") ||
+                            path.contains("/hire")) return false;
+
+                    if (path.startsWith("/api/candidate/search") ||
+                            path.startsWith("/api/candidate/skill") ||
+                            path.startsWith("/api/candidate/location") ||
+                            path.startsWith("/api/candidate/experience") ||
+                            path.startsWith("/api/candidate/status") ||
+                            path.startsWith("/api/candidate/page") ||
+                            path.startsWith("/api/candidate/sort")) return false;
+
                     if (path.equals("/api/candidate/add") && method.equals("POST")) return true;
+
                     if (path.startsWith("/api/candidate/update") && method.equals("PUT")) return true;
+
                     if (path.startsWith("/api/candidate/apply") && method.equals("POST")) return true;
-                    if (method.equals("GET") && !path.equals("/api/candidates/all")) return true;
+
+                    if (method.equals("GET")) return true;
+
                     return false;
                 }
 
+                // Resume Service
                 if (path.startsWith("/resumes")) {
                     return true;
                 }
 
+                //AI Screening Service
                 if (path.startsWith("/api/screening")) {
-                    if (method.equals("POST")) return false;
-                    return method.equals("GET");
+                    return false;
                 }
 
+                // Notification Service
                 if (path.startsWith("/api/notification")) {
-                    return method.equals("GET") || path.contains("/read");
+                    if (path.equals("/api/notification/all")) return false;
+                    if (path.equals("/api/notification/add")) return false;
+                    if (method.equals("DELETE")) return false;
+                    if (path.equals("/api/notification/unread")) return true;
+                    if (path.startsWith("/api/notification/user/")) return true;
+                    if (path.matches("/api/notification/[^/]+/read")) return true;
+                    return false;
                 }
 
                 return false;
