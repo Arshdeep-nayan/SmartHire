@@ -7,18 +7,23 @@ import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
+import java.util.Optional;
 
 @Repository
-public interface CandidateRepository extends JpaRepository<Candidate,Integer>
+public interface CandidateRepository extends JpaRepository<Candidate, Integer>
 {
     @Query("select p from Candidate p Where LOWER(p.name) LIKE LOWER(CONCAT('%',:keyword,'%')) OR " +
             "LOWER(p.skills) LIKE LOWER(CONCAT('%',:keyword,'%')) OR " +
             "LOWER(p.currentLocation) LIKE LOWER(CONCAT('%',:keyword,'%'))")
-    public List<Candidate> searchByKeyword(@Param("keyword") String keyword);
-    public List<Candidate> findBySkillsContainingIgnoreCase(String skill);
-    public List<Candidate> findByCurrentLocationIgnoreCase(String currentLocation);
-    public List<Candidate> findByExperienceIgnoreCase(String experience);
-    public List<Candidate> findByStatus(Candidate.CandidateStatus status);
+    List<Candidate> searchByKeyword(@Param("keyword") String keyword);
 
+    List<Candidate> findBySkillsContainingIgnoreCase(String skill);
 
+    List<Candidate> findByCurrentLocationIgnoreCase(String currentLocation);
+
+    List<Candidate> findByExperienceIgnoreCase(String experience);
+
+    List<Candidate> findByStatus(Candidate.CandidateStatus status);
+
+    Optional<Candidate> findByEmail(String email);
 }

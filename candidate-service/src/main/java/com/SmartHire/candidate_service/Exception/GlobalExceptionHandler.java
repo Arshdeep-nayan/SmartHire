@@ -9,8 +9,20 @@ import org.springframework.web.bind.annotation.RestControllerAdvice;
 public class GlobalExceptionHandler
 {
     @ExceptionHandler(CandidateNotFoundException.class)
-    public ResponseEntity<String> handleCandidateNotFoundException(CandidateNotFoundException e)
+    public ResponseEntity<String> handleCandidateNotFoundException(
+            CandidateNotFoundException e)
     {
-        return ResponseEntity.status(HttpStatus.NOT_FOUND).body(e.getMessage());
+        return ResponseEntity
+                .status(HttpStatus.NOT_FOUND)
+                .body(e.getMessage());
+    }
+
+    @ExceptionHandler(CandidateAlreadyExistsException.class)
+    public ResponseEntity<String> handleCandidateAlreadyExistsException(
+            CandidateAlreadyExistsException e)
+    {
+        return ResponseEntity
+                .status(HttpStatus.CONFLICT)
+                .body(e.getMessage());
     }
 }

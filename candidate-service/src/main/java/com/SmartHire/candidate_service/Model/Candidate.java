@@ -1,6 +1,5 @@
 package com.SmartHire.candidate_service.Model;
 
-
 import jakarta.persistence.*;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
@@ -25,6 +24,7 @@ public class Candidate
 
     @NotBlank(message = "Email is required")
     @Email(message = "Invalid email format")
+    @Column(nullable = false, unique = true)
     private String email;
 
     private String phone;
@@ -32,7 +32,8 @@ public class Candidate
     private String experience;
     private String currentLocation;
 
-    public enum CandidateStatus {
+    public enum CandidateStatus
+    {
         ACTIVE,
         INACTIVE,
         HIRED
@@ -45,7 +46,8 @@ public class Candidate
     private LocalDateTime registeredAt;
 
     @PrePersist
-    public void Oncreate(){
+    public void onCreate()
+    {
         registeredAt = LocalDateTime.now();
     }
 }

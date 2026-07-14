@@ -1,5 +1,6 @@
 package com.SmartHire.candidate_service.Service;
 
+import com.SmartHire.candidate_service.Exception.CandidateAlreadyExistsException;
 import com.SmartHire.candidate_service.Exception.CandidateNotFoundException;
 import com.SmartHire.candidate_service.Model.Candidate;
 import com.SmartHire.candidate_service.Repository.CandidateRepository;
@@ -51,13 +52,26 @@ public class CandidateService {
         return candidate;
     }
 
-    public Candidate registerCandidate(Candidate candidate) {
-
+    public Candidate registerCandidate(Candidate candidate)
+    {
         log.info("Registering candidate: {}", candidate.getEmail());
+
+        if (repo.findByEmail(candidate.getEmail()).isPresent())
+        {
+            log.warn(
+                    "Candidate already exists with email: {}",
+                    candidate.getEmail());
+
+            throw new CandidateAlreadyExistsException(
+                    "Candidate already exists with email: "
+                            + candidate.getEmail());
+        }
 
         Candidate savedCandidate = repo.save(candidate);
 
-        log.info("Candidate registered successfully with id: {}", savedCandidate.getId());
+        log.info(
+                "Candidate registered successfully with id: {}",
+                savedCandidate.getId());
 
         return savedCandidate;
     }
