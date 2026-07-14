@@ -23,7 +23,7 @@ public class NotificationService {
     public Notification createNotification(
             Notification notification) {
 
-        log.info("Creating notification for user id: {}", notification.getUserId());
+        log.info("Creating notification for candidate id: {}", notification.getCandidateId());
 
         notification.setCreatedAt(
                 LocalDateTime.now());
@@ -62,22 +62,46 @@ public class NotificationService {
         return notification;
     }
 
-    public List<Notification> getNotificationsByUserId(
-            int userId) {
+    public List<Notification> getNotificationsByCandidateId(
+            int candidateId) {
 
-        log.info("Fetching notifications for user id: {}", userId);
+        log.info("Fetching notifications for candidate id: {}", candidateId);
 
         List<Notification> notifications =
-                repo.findByUserIdOrderByCreatedAtDesc(
-                        userId);
+                repo.findByCandidateIdOrderByCreatedAtDesc(
+                        candidateId);
 
         if (notifications.isEmpty()) {
             throw new NotificationNotFoundException(
-                    "No notifications found for user id : "
-                            + userId);
+                    "No notifications found for candidate id : "
+                            + candidateId);
         }
 
-        log.info("Fetched {} notifications for user id: {}", notifications.size(), userId);
+        log.info("Fetched {} notifications for candidate id: {}",
+                notifications.size(),
+                candidateId);
+
+        return notifications;
+    }
+
+    public List<Notification> getNotificationsByJobId(
+            int jobId) {
+
+        log.info("Fetching notifications for job id: {}", jobId);
+
+        List<Notification> notifications =
+                repo.findByJobIdOrderByCreatedAtDesc(
+                        jobId);
+
+        if (notifications.isEmpty()) {
+            throw new NotificationNotFoundException(
+                    "No notifications found for job id : "
+                            + jobId);
+        }
+
+        log.info("Fetched {} notifications for job id: {}",
+                notifications.size(),
+                jobId);
 
         return notifications;
     }

@@ -17,7 +17,9 @@ public class Notification {
     @Id
     private String id;
 
-    private int userId;
+    private int candidateId;
+
+    private int jobId;
 
     private String message;
 

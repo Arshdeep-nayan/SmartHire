@@ -21,55 +21,54 @@ public class NotificationController {
     }
 
     @PostMapping("/add")
-    public ResponseEntity<Notification>
-    createNotification(
+    public ResponseEntity<Notification> createNotification(
             @RequestBody Notification notification) {
 
         return ResponseEntity
                 .status(HttpStatus.CREATED)
-                .body(
-                        service.createNotification(
-                                notification));
+                .body(service.createNotification(notification));
     }
 
     @GetMapping("/all")
-    public ResponseEntity<List<Notification>>
-    getAllNotifications() {
+    public ResponseEntity<List<Notification>> getAllNotifications() {
 
         return ResponseEntity.ok(
                 service.getAllNotifications());
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity<Notification>
-    getNotificationById(
+    public ResponseEntity<Notification> getNotificationById(
             @PathVariable String id) {
 
         return ResponseEntity.ok(
                 service.getNotificationById(id));
     }
 
-    @GetMapping("/user/{userId}")
-    public ResponseEntity<List<Notification>>
-    getNotificationsByUserId(
-            @PathVariable int userId) {
+    @GetMapping("/candidate/{candidateId}")
+    public ResponseEntity<List<Notification>> getNotificationsByCandidateId(
+            @PathVariable int candidateId) {
 
         return ResponseEntity.ok(
-                service.getNotificationsByUserId(
-                        userId));
+                service.getNotificationsByCandidateId(candidateId));
+    }
+
+    @GetMapping("/job/{jobId}")
+    public ResponseEntity<List<Notification>> getNotificationsByJobId(
+            @PathVariable int jobId) {
+
+        return ResponseEntity.ok(
+                service.getNotificationsByJobId(jobId));
     }
 
     @GetMapping("/unread")
-    public ResponseEntity<List<Notification>>
-    getUnreadNotifications() {
+    public ResponseEntity<List<Notification>> getUnreadNotifications() {
 
         return ResponseEntity.ok(
                 service.getUnreadNotifications());
     }
 
     @PatchMapping("/{id}/read")
-    public ResponseEntity<Notification>
-    markAsRead(
+    public ResponseEntity<Notification> markAsRead(
             @PathVariable String id) {
 
         return ResponseEntity.ok(
@@ -77,8 +76,7 @@ public class NotificationController {
     }
 
     @DeleteMapping("/{id}")
-    public ResponseEntity<String>
-    deleteNotification(
+    public ResponseEntity<String> deleteNotification(
             @PathVariable String id) {
 
         service.deleteNotification(id);

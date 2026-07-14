@@ -46,8 +46,11 @@ public class ScreeningCompletedConsumer {
             Notification notification =
                     new Notification();
 
-            notification.setUserId(
+            notification.setCandidateId(
                     event.getCandidateId());
+
+            notification.setJobId(
+                    event.getJobId());
 
             notification.setMessage(
                     "Your screening for job id "

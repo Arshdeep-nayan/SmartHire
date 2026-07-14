@@ -45,8 +45,11 @@ public class NotificationEventConsumer {
             Notification notification =
                     new Notification();
 
-            notification.setUserId(
+            notification.setCandidateId(
                     event.getCandidateId());
+
+            notification.setJobId(
+                    event.getJobId());
 
             notification.setMessage(
                     "You have successfully applied for job id "
