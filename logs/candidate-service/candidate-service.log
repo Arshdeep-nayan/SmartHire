@@ -4088,3 +4088,367 @@ com.mongodb.MongoNodeIsRecoveringException: Command failed with error 11600 (Int
 2026-07-14 18:13:46 INFO  Version - HV000001: Hibernate Validator 8.0.3.Final
 2026-07-14 18:13:47 INFO  CandidateServiceApplication - Starting CandidateServiceApplication v0.0.1-SNAPSHOT using Java 21.0.11 with PID 1 (/app/app.jar started by root in /app)
 2026-07-14 18:13:47 DEBUG CandidateServiceApplication - Running with Spring Boot v3.5.15, Spring v6.2.19
+2026-07-14 18:13:47 INFO  CandidateServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2026-07-14 18:13:58 INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-07-14 18:13:58 INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-14 18:13:58 INFO  RepositoryConfigurationExtensionSupport - Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.SmartHire.candidate_service.Repository.ResumeRepository; If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: jakarta.persistence.Entity, jakarta.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository
+2026-07-14 18:13:59 INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 764 ms. Found 1 JPA repository interface.
+2026-07-14 18:13:59 INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-07-14 18:13:59 INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2026-07-14 18:13:59 INFO  RepositoryConfigurationExtensionSupport - Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.SmartHire.candidate_service.Repository.CandidateRepository; If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository
+2026-07-14 18:13:59 INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 29 ms. Found 1 MongoDB repository interface.
+2026-07-14 18:14:01 INFO  GenericScope - BeanFactory id=419e72db-55fc-3b5e-8d10-55e003a60b1b
+2026-07-14 18:14:05 INFO  TomcatWebServer - Tomcat initialized with port 8083 (http)
+2026-07-14 18:14:05 INFO  Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8083"]
+2026-07-14 18:14:05 INFO  StandardService - Starting service [Tomcat]
+2026-07-14 18:14:05 INFO  StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.55]
+2026-07-14 18:14:05 INFO  [/] - Initializing Spring embedded WebApplicationContext
+2026-07-14 18:14:05 INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 17704 ms
+2026-07-14 18:14:08 INFO  LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-07-14 18:14:08 INFO  Version - HHH000412: Hibernate ORM core version 6.6.53.Final
+2026-07-14 18:14:09 INFO  RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-07-14 18:14:12 INFO  SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-14 18:14:12 INFO  HikariDataSource - HikariPool-1 - Starting...
+2026-07-14 18:14:16 INFO  HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@746f8520
+2026-07-14 18:14:16 INFO  HikariDataSource - HikariPool-1 - Start completed.
+2026-07-14 18:14:16 WARN  deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-07-14 18:14:17 INFO  pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.4.10
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-07-14 18:14:21 INFO  JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-14 18:14:22 INFO  LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-14 18:14:23 INFO  QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-07-14 18:14:27 INFO  client - MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "5.5.2"}, "os": {"type": "Linux", "name": "Linux", "architecture": "amd64", "version": "6.18.33.2-microsoft-standard-WSL2"}, "platform": "Java/Eclipse Adoptium/21.0.11+10-LTS", "env": {"container": {"runtime": "docker"}}} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, transportSettings=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@5248688c, com.mongodb.Jep395RecordCodecProvider@37736bf1, com.mongodb.KotlinCodecProvider@2a7c82e]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[mongo:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverMonitoringMode=AUTO, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null, timeoutMS=null}
+2026-07-14 18:14:27 INFO  cluster - Monitor thread successfully connected to server with description ServerDescription{address=mongo:27017, type=STANDALONE, cryptd=false, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=112101976, minRoundTripTimeNanos=0}
+2026-07-14 18:14:29 WARN  JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-14 18:14:30 INFO  DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+2026-07-14 18:14:30 WARN  LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-07-14 18:14:30 INFO  InstanceInfoFactory - Setting initial instance status as: STARTING
+2026-07-14 18:14:30 INFO  DiscoveryClient - Initializing Eureka in region us-east-1
+2026-07-14 18:14:30 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-14 18:14:31 INFO  DiscoveryClient - Disable delta property : false
+2026-07-14 18:14:31 INFO  DiscoveryClient - Single vip registry refresh property : null
+2026-07-14 18:14:31 INFO  DiscoveryClient - Force full registry fetch : false
+2026-07-14 18:14:31 INFO  DiscoveryClient - Application is null : false
+2026-07-14 18:14:31 INFO  DiscoveryClient - Registered Applications size is zero : true
+2026-07-14 18:14:31 INFO  DiscoveryClient - Application version is -1: true
+2026-07-14 18:14:31 INFO  DiscoveryClient - Getting all instance registry info from the eureka server
+2026-07-14 18:14:31 INFO  DiscoveryClient - The response status is 200
+2026-07-14 18:14:31 INFO  DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2026-07-14 18:14:31 INFO  InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-07-14 18:14:31 INFO  DiscoveryClient - Discovery Client initialized at timestamp 1784052871828 with initial instances count: 2
+2026-07-14 18:14:31 INFO  EurekaServiceRegistry - Registering application CANDIDATE-SERVICE with eureka with status UP
+2026-07-14 18:14:31 INFO  DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1784052871848, current=UP, previous=STARTING]
+2026-07-14 18:14:31 INFO  DiscoveryClient - DiscoveryClient_CANDIDATE-SERVICE/8f5307918e8a:CANDIDATE-SERVICE:8083: registering service...
+2026-07-14 18:14:31 INFO  Http11NioProtocol - Starting ProtocolHandler ["http-nio-8083"]
+2026-07-14 18:14:31 INFO  TomcatWebServer - Tomcat started on port 8083 (http) with context path '/'
+2026-07-14 18:14:31 INFO  EurekaAutoServiceRegistration - Updating port to 8083
+2026-07-14 18:14:31 INFO  CandidateServiceApplication - Started CandidateServiceApplication in 48.47 seconds (process running for 58.652)
+2026-07-14 18:14:31 INFO  DiscoveryClient - DiscoveryClient_CANDIDATE-SERVICE/8f5307918e8a:CANDIDATE-SERVICE:8083 - registration status: 204
+2026-07-14 18:19:31 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-14 18:24:30 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-14 18:29:30 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-14 18:34:30 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-14 18:39:30 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-14 18:44:30 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-14 18:49:30 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-14 18:54:30 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-14 18:59:30 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-14 19:04:30 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-14 19:09:30 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-14 19:14:30 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-14 19:19:30 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-14 19:24:30 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-14 19:29:30 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-14 19:34:30 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-14 19:39:30 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-14 19:44:30 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-14 19:49:30 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-14 19:54:30 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-14 19:59:30 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-14 20:04:30 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-14 20:09:30 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-14 20:14:30 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-14 20:19:30 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-14 20:24:30 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-14 20:29:30 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-14 20:34:30 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-14 20:39:30 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-14 20:44:30 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-14 20:49:30 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-14 20:54:30 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-14 20:59:30 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-15 12:21:21 INFO  Version - HV000001: Hibernate Validator 8.0.3.Final
+2026-07-15 12:21:22 INFO  CandidateServiceApplication - Starting CandidateServiceApplication v0.0.1-SNAPSHOT using Java 21.0.11 with PID 1 (/app/app.jar started by root in /app)
+2026-07-15 12:21:22 DEBUG CandidateServiceApplication - Running with Spring Boot v3.5.15, Spring v6.2.19
+2026-07-15 12:21:22 INFO  CandidateServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2026-07-15 12:21:33 INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-07-15 12:21:33 INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-15 12:21:33 INFO  RepositoryConfigurationExtensionSupport - Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.SmartHire.candidate_service.Repository.ResumeRepository; If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: jakarta.persistence.Entity, jakarta.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository
+2026-07-15 12:21:33 INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 614 ms. Found 1 JPA repository interface.
+2026-07-15 12:21:34 INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-07-15 12:21:34 INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2026-07-15 12:21:34 INFO  RepositoryConfigurationExtensionSupport - Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.SmartHire.candidate_service.Repository.CandidateRepository; If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository
+2026-07-15 12:21:34 INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 21 ms. Found 1 MongoDB repository interface.
+2026-07-15 12:21:36 INFO  GenericScope - BeanFactory id=419e72db-55fc-3b5e-8d10-55e003a60b1b
+2026-07-15 12:21:39 INFO  TomcatWebServer - Tomcat initialized with port 8083 (http)
+2026-07-15 12:21:39 INFO  Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8083"]
+2026-07-15 12:21:39 INFO  StandardService - Starting service [Tomcat]
+2026-07-15 12:21:39 INFO  StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.55]
+2026-07-15 12:21:39 INFO  [/] - Initializing Spring embedded WebApplicationContext
+2026-07-15 12:21:39 INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 16193 ms
+2026-07-15 12:21:41 INFO  LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-07-15 12:21:42 INFO  Version - HHH000412: Hibernate ORM core version 6.6.53.Final
+2026-07-15 12:21:42 INFO  RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-07-15 12:21:44 INFO  SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-15 12:21:44 INFO  HikariDataSource - HikariPool-1 - Starting...
+2026-07-15 12:21:46 INFO  HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4219a4cc
+2026-07-15 12:21:46 INFO  HikariDataSource - HikariPool-1 - Start completed.
+2026-07-15 12:21:47 WARN  deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-07-15 12:21:47 INFO  pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.4.10
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-07-15 12:21:52 INFO  JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-15 12:21:53 INFO  LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-15 12:21:54 INFO  QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-07-15 12:21:58 INFO  client - MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "5.5.2"}, "os": {"type": "Linux", "name": "Linux", "architecture": "amd64", "version": "6.18.33.2-microsoft-standard-WSL2"}, "platform": "Java/Eclipse Adoptium/21.0.11+10-LTS", "env": {"container": {"runtime": "docker"}}} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, transportSettings=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@37736bf1, com.mongodb.Jep395RecordCodecProvider@2a7c82e, com.mongodb.KotlinCodecProvider@22128b73]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[mongo:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverMonitoringMode=AUTO, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null, timeoutMS=null}
+2026-07-15 12:21:58 INFO  cluster - Monitor thread successfully connected to server with description ServerDescription{address=mongo:27017, type=STANDALONE, cryptd=false, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=84145415, minRoundTripTimeNanos=0}
+2026-07-15 12:21:59 WARN  JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-15 12:22:01 INFO  DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+2026-07-15 12:22:01 WARN  LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-07-15 12:22:01 INFO  InstanceInfoFactory - Setting initial instance status as: STARTING
+2026-07-15 12:22:01 INFO  DiscoveryClient - Initializing Eureka in region us-east-1
+2026-07-15 12:22:01 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-15 12:22:01 INFO  DiscoveryClient - Disable delta property : false
+2026-07-15 12:22:01 INFO  DiscoveryClient - Single vip registry refresh property : null
+2026-07-15 12:22:01 INFO  DiscoveryClient - Force full registry fetch : false
+2026-07-15 12:22:01 INFO  DiscoveryClient - Application is null : false
+2026-07-15 12:22:01 INFO  DiscoveryClient - Registered Applications size is zero : true
+2026-07-15 12:22:01 INFO  DiscoveryClient - Application version is -1: true
+2026-07-15 12:22:01 INFO  DiscoveryClient - Getting all instance registry info from the eureka server
+2026-07-15 12:22:02 INFO  DiscoveryClient - The response status is 200
+2026-07-15 12:22:02 INFO  DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2026-07-15 12:22:02 INFO  InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-07-15 12:22:02 INFO  DiscoveryClient - Discovery Client initialized at timestamp 1784118122166 with initial instances count: 3
+2026-07-15 12:22:02 INFO  EurekaServiceRegistry - Registering application CANDIDATE-SERVICE with eureka with status UP
+2026-07-15 12:22:02 INFO  DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1784118122175, current=UP, previous=STARTING]
+2026-07-15 12:22:02 INFO  DiscoveryClient - DiscoveryClient_CANDIDATE-SERVICE/8f5307918e8a:CANDIDATE-SERVICE:8083: registering service...
+2026-07-15 12:22:02 INFO  Http11NioProtocol - Starting ProtocolHandler ["http-nio-8083"]
+2026-07-15 12:22:02 INFO  TomcatWebServer - Tomcat started on port 8083 (http) with context path '/'
+2026-07-15 12:22:02 INFO  EurekaAutoServiceRegistration - Updating port to 8083
+2026-07-15 12:22:02 INFO  CandidateServiceApplication - Started CandidateServiceApplication in 43.189 seconds (process running for 54.67)
+2026-07-15 12:22:02 INFO  DiscoveryClient - DiscoveryClient_CANDIDATE-SERVICE/8f5307918e8a:CANDIDATE-SERVICE:8083 - registration status: 204
+2026-07-15 12:24:57 INFO  cluster - Exception in monitor thread while connecting to server mongo:27017
+com.mongodb.MongoNodeIsRecoveringException: Command failed with error 11600 (InterruptedAtShutdown): 'interrupted at shutdown' on server mongo:27017. The full response is {"ok": 0.0, "errmsg": "interrupted at shutdown", "code": 11600, "codeName": "InterruptedAtShutdown"}
+	at com.mongodb.internal.connection.ProtocolHelper.createSpecialException(ProtocolHelper.java:264) ~[mongodb-driver-core-5.5.2.jar!/:?]
+	at com.mongodb.internal.connection.ProtocolHelper.getCommandFailureException(ProtocolHelper.java:206) ~[mongodb-driver-core-5.5.2.jar!/:?]
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:520) ~[mongodb-driver-core-5.5.2.jar!/:?]
+	at com.mongodb.internal.connection.InternalStreamConnection.receive(InternalStreamConnection.java:469) ~[mongodb-driver-core-5.5.2.jar!/:?]
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitor.lookupServerDescription(DefaultServerMonitor.java:249) [mongodb-driver-core-5.5.2.jar!/:?]
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitor.run(DefaultServerMonitor.java:176) [mongodb-driver-core-5.5.2.jar!/:?]
+2026-07-15 12:24:59 WARN  PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@2cbd61bc (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-07-15 12:25:02 INFO  EurekaServiceRegistry - Unregistering application CANDIDATE-SERVICE with eureka with status DOWN
+2026-07-15 12:25:02 INFO  DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1784118302404, current=DOWN, previous=UP]
+2026-07-15 12:25:02 INFO  DiscoveryClient - DiscoveryClient_CANDIDATE-SERVICE/8f5307918e8a:CANDIDATE-SERVICE:8083: registering service...
+2026-07-15 12:25:02 INFO  GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-07-15 12:25:02 INFO  GracefulShutdown - Graceful shutdown complete
+2026-07-15 12:25:02 INFO  LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-15 12:25:02 INFO  HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-07-15 12:25:02 INFO  HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-07-15 12:25:02 INFO  DiscoveryClient - Shutting down DiscoveryClient ...
+2026-07-15 12:25:11 INFO  Version - HV000001: Hibernate Validator 8.0.3.Final
+2026-07-15 12:25:11 INFO  CandidateServiceApplication - Starting CandidateServiceApplication v0.0.1-SNAPSHOT using Java 21.0.11 with PID 1 (/app/app.jar started by root in /app)
+2026-07-15 12:25:11 DEBUG CandidateServiceApplication - Running with Spring Boot v3.5.15, Spring v6.2.19
+2026-07-15 12:25:11 INFO  CandidateServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2026-07-15 12:25:18 INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-07-15 12:25:18 INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-15 12:25:19 INFO  RepositoryConfigurationExtensionSupport - Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.SmartHire.candidate_service.Repository.ResumeRepository; If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: jakarta.persistence.Entity, jakarta.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository
+2026-07-15 12:25:19 INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 517 ms. Found 1 JPA repository interface.
+2026-07-15 12:25:19 INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-07-15 12:25:19 INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2026-07-15 12:25:19 INFO  RepositoryConfigurationExtensionSupport - Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.SmartHire.candidate_service.Repository.CandidateRepository; If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository
+2026-07-15 12:25:19 INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 35 ms. Found 1 MongoDB repository interface.
+2026-07-15 12:25:20 INFO  GenericScope - BeanFactory id=419e72db-55fc-3b5e-8d10-55e003a60b1b
+2026-07-15 12:25:23 INFO  TomcatWebServer - Tomcat initialized with port 8083 (http)
+2026-07-15 12:25:23 INFO  Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8083"]
+2026-07-15 12:25:23 INFO  StandardService - Starting service [Tomcat]
+2026-07-15 12:25:23 INFO  StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.55]
+2026-07-15 12:25:23 INFO  [/] - Initializing Spring embedded WebApplicationContext
+2026-07-15 12:25:23 INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 11268 ms
+2026-07-15 12:25:24 INFO  LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-07-15 12:25:24 INFO  Version - HHH000412: Hibernate ORM core version 6.6.53.Final
+2026-07-15 12:25:24 INFO  RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-07-15 12:25:26 INFO  SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-15 12:25:26 INFO  HikariDataSource - HikariPool-1 - Starting...
+2026-07-15 12:25:28 INFO  HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3d3a28b5
+2026-07-15 12:25:28 INFO  HikariDataSource - HikariPool-1 - Start completed.
+2026-07-15 12:25:28 WARN  deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-07-15 12:25:29 INFO  pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.4.10
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-07-15 12:25:31 INFO  JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-15 12:25:31 INFO  LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-15 12:25:33 INFO  QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-07-15 12:25:36 INFO  client - MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "5.5.2"}, "os": {"type": "Linux", "name": "Linux", "architecture": "amd64", "version": "6.18.33.2-microsoft-standard-WSL2"}, "platform": "Java/Eclipse Adoptium/21.0.11+10-LTS", "env": {"container": {"runtime": "docker"}}} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, transportSettings=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@37736bf1, com.mongodb.Jep395RecordCodecProvider@2a7c82e, com.mongodb.KotlinCodecProvider@22128b73]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[mongo:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverMonitoringMode=AUTO, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null, timeoutMS=null}
+2026-07-15 12:25:36 INFO  cluster - Monitor thread successfully connected to server with description ServerDescription{address=mongo:27017, type=STANDALONE, cryptd=false, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=93009385, minRoundTripTimeNanos=0}
+2026-07-15 12:25:37 WARN  JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-15 12:25:39 INFO  DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+2026-07-15 12:25:39 WARN  LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-07-15 12:25:39 INFO  InstanceInfoFactory - Setting initial instance status as: STARTING
+2026-07-15 12:25:39 INFO  DiscoveryClient - Initializing Eureka in region us-east-1
+2026-07-15 12:25:39 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-15 12:25:39 INFO  DiscoveryClient - Disable delta property : false
+2026-07-15 12:25:39 INFO  DiscoveryClient - Single vip registry refresh property : null
+2026-07-15 12:25:39 INFO  DiscoveryClient - Force full registry fetch : false
+2026-07-15 12:25:39 INFO  DiscoveryClient - Application is null : false
+2026-07-15 12:25:39 INFO  DiscoveryClient - Registered Applications size is zero : true
+2026-07-15 12:25:39 INFO  DiscoveryClient - Application version is -1: true
+2026-07-15 12:25:39 INFO  DiscoveryClient - Getting all instance registry info from the eureka server
+2026-07-15 12:25:40 INFO  DiscoveryClient - The response status is 200
+2026-07-15 12:25:40 INFO  DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2026-07-15 12:25:40 INFO  InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-07-15 12:25:40 INFO  DiscoveryClient - Discovery Client initialized at timestamp 1784118340151 with initial instances count: 0
+2026-07-15 12:25:40 INFO  EurekaServiceRegistry - Registering application CANDIDATE-SERVICE with eureka with status UP
+2026-07-15 12:25:40 INFO  DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1784118340158, current=UP, previous=STARTING]
+2026-07-15 12:25:40 INFO  DiscoveryClient - DiscoveryClient_CANDIDATE-SERVICE/ee7b7fa5bdfb:CANDIDATE-SERVICE:8083: registering service...
+2026-07-15 12:25:40 INFO  Http11NioProtocol - Starting ProtocolHandler ["http-nio-8083"]
+2026-07-15 12:25:40 INFO  TomcatWebServer - Tomcat started on port 8083 (http) with context path '/'
+2026-07-15 12:25:40 INFO  EurekaAutoServiceRegistration - Updating port to 8083
+2026-07-15 12:25:40 INFO  CandidateServiceApplication - Started CandidateServiceApplication in 30.16 seconds (process running for 33.842)
+2026-07-15 12:25:40 INFO  DiscoveryClient - DiscoveryClient_CANDIDATE-SERVICE/ee7b7fa5bdfb:CANDIDATE-SERVICE:8083 - registration status: 204
+2026-07-15 12:26:10 INFO  DiscoveryClient - Disable delta property : false
+2026-07-15 12:26:10 INFO  DiscoveryClient - Single vip registry refresh property : null
+2026-07-15 12:26:10 INFO  DiscoveryClient - Force full registry fetch : false
+2026-07-15 12:26:10 INFO  DiscoveryClient - Application is null : false
+2026-07-15 12:26:10 INFO  DiscoveryClient - Registered Applications size is zero : true
+2026-07-15 12:26:10 INFO  DiscoveryClient - Application version is -1: false
+2026-07-15 12:26:10 INFO  DiscoveryClient - Getting all instance registry info from the eureka server
+2026-07-15 12:26:10 INFO  DiscoveryClient - The response status is 200
+2026-07-15 12:30:39 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-15 12:35:39 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-15 12:40:39 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-15 12:45:39 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-15 12:50:39 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-15 12:55:39 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-15 13:00:39 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-15 13:05:39 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-15 13:10:39 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-15 13:15:39 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-15 13:20:39 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-15 13:25:39 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-15 13:30:39 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-15 13:35:39 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-15 13:40:39 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-15 13:45:39 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-15 13:50:39 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-15 13:55:39 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-15 14:00:39 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-15 19:22:36 INFO  Version - HV000001: Hibernate Validator 8.0.3.Final
+2026-07-15 19:22:37 INFO  CandidateServiceApplication - Starting CandidateServiceApplication v0.0.1-SNAPSHOT using Java 21.0.11 with PID 1 (/app/app.jar started by root in /app)
+2026-07-15 19:22:37 DEBUG CandidateServiceApplication - Running with Spring Boot v3.5.15, Spring v6.2.19
+2026-07-15 19:22:37 INFO  CandidateServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2026-07-15 19:22:44 INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-07-15 19:22:44 INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-15 19:22:45 INFO  RepositoryConfigurationExtensionSupport - Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.SmartHire.candidate_service.Repository.ResumeRepository; If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: jakarta.persistence.Entity, jakarta.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository
+2026-07-15 19:22:45 INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 581 ms. Found 1 JPA repository interface.
+2026-07-15 19:22:45 INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-07-15 19:22:45 INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2026-07-15 19:22:45 INFO  RepositoryConfigurationExtensionSupport - Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.SmartHire.candidate_service.Repository.CandidateRepository; If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository
+2026-07-15 19:22:45 INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 33 ms. Found 1 MongoDB repository interface.
+2026-07-15 19:22:47 INFO  GenericScope - BeanFactory id=419e72db-55fc-3b5e-8d10-55e003a60b1b
+2026-07-15 19:22:50 INFO  TomcatWebServer - Tomcat initialized with port 8083 (http)
+2026-07-15 19:22:50 INFO  Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8083"]
+2026-07-15 19:22:50 INFO  StandardService - Starting service [Tomcat]
+2026-07-15 19:22:50 INFO  StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.55]
+2026-07-15 19:22:50 INFO  [/] - Initializing Spring embedded WebApplicationContext
+2026-07-15 19:22:50 INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 13230 ms
+2026-07-15 19:22:52 INFO  LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-07-15 19:22:53 INFO  Version - HHH000412: Hibernate ORM core version 6.6.53.Final
+2026-07-15 19:22:53 INFO  RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-07-15 19:22:55 INFO  SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-15 19:22:55 INFO  HikariDataSource - HikariPool-1 - Starting...
+2026-07-15 19:22:58 INFO  HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@13809363
+2026-07-15 19:22:58 INFO  HikariDataSource - HikariPool-1 - Start completed.
+2026-07-15 19:22:58 WARN  deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-07-15 19:22:58 INFO  pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.4.10
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-07-15 19:23:02 INFO  JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-15 19:23:02 INFO  LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-15 19:23:03 INFO  QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-07-15 19:23:06 INFO  cluster - Monitor thread successfully connected to server with description ServerDescription{address=mongo:27017, type=STANDALONE, cryptd=false, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=68008833, minRoundTripTimeNanos=0}
+2026-07-15 19:23:06 INFO  client - MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "5.5.2"}, "os": {"type": "Linux", "name": "Linux", "architecture": "amd64", "version": "6.18.33.2-microsoft-standard-WSL2"}, "platform": "Java/Eclipse Adoptium/21.0.11+10-LTS", "env": {"container": {"runtime": "docker"}}} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, transportSettings=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@63fa0b9, com.mongodb.Jep395RecordCodecProvider@3316aef6, com.mongodb.KotlinCodecProvider@67620d80]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[mongo:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverMonitoringMode=AUTO, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null, timeoutMS=null}
+2026-07-15 19:23:07 WARN  JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-15 19:23:07 INFO  DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+2026-07-15 19:23:07 WARN  LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-07-15 19:23:07 INFO  InstanceInfoFactory - Setting initial instance status as: STARTING
+2026-07-15 19:23:07 INFO  DiscoveryClient - Initializing Eureka in region us-east-1
+2026-07-15 19:23:07 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-15 19:23:08 INFO  DiscoveryClient - Disable delta property : false
+2026-07-15 19:23:08 INFO  DiscoveryClient - Single vip registry refresh property : null
+2026-07-15 19:23:08 INFO  DiscoveryClient - Force full registry fetch : false
+2026-07-15 19:23:08 INFO  DiscoveryClient - Application is null : false
+2026-07-15 19:23:08 INFO  DiscoveryClient - Registered Applications size is zero : true
+2026-07-15 19:23:08 INFO  DiscoveryClient - Application version is -1: true
+2026-07-15 19:23:08 INFO  DiscoveryClient - Getting all instance registry info from the eureka server
+2026-07-15 19:23:08 INFO  DiscoveryClient - The response status is 200
+2026-07-15 19:23:08 INFO  DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2026-07-15 19:23:08 INFO  InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-07-15 19:23:08 INFO  DiscoveryClient - Discovery Client initialized at timestamp 1784143388385 with initial instances count: 0
+2026-07-15 19:23:08 INFO  EurekaServiceRegistry - Registering application CANDIDATE-SERVICE with eureka with status UP
+2026-07-15 19:23:08 INFO  DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1784143388392, current=UP, previous=STARTING]
+2026-07-15 19:23:08 INFO  DiscoveryClient - DiscoveryClient_CANDIDATE-SERVICE/ee7b7fa5bdfb:CANDIDATE-SERVICE:8083: registering service...
+2026-07-15 19:23:08 INFO  Http11NioProtocol - Starting ProtocolHandler ["http-nio-8083"]
+2026-07-15 19:23:08 INFO  TomcatWebServer - Tomcat started on port 8083 (http) with context path '/'
+2026-07-15 19:23:08 INFO  EurekaAutoServiceRegistration - Updating port to 8083
+2026-07-15 19:23:08 INFO  CandidateServiceApplication - Started CandidateServiceApplication in 33.731 seconds (process running for 43.411)
+2026-07-15 19:23:08 INFO  DiscoveryClient - DiscoveryClient_CANDIDATE-SERVICE/ee7b7fa5bdfb:CANDIDATE-SERVICE:8083 - registration status: 204
+2026-07-15 19:23:38 INFO  DiscoveryClient - Disable delta property : false
+2026-07-15 19:23:38 INFO  DiscoveryClient - Single vip registry refresh property : null
+2026-07-15 19:23:38 INFO  DiscoveryClient - Force full registry fetch : false
+2026-07-15 19:23:38 INFO  DiscoveryClient - Application is null : false
+2026-07-15 19:23:38 INFO  DiscoveryClient - Registered Applications size is zero : true
+2026-07-15 19:23:38 INFO  DiscoveryClient - Application version is -1: false
+2026-07-15 19:23:38 INFO  DiscoveryClient - Getting all instance registry info from the eureka server
+2026-07-15 19:23:38 INFO  DiscoveryClient - The response status is 200
+2026-07-15 19:24:54 INFO  cluster - Exception in monitor thread while connecting to server mongo:27017
+com.mongodb.MongoNodeIsRecoveringException: Command failed with error 11600 (InterruptedAtShutdown): 'interrupted at shutdown' on server mongo:27017. The full response is {"ok": 0.0, "errmsg": "interrupted at shutdown", "code": 11600, "codeName": "InterruptedAtShutdown"}
+	at com.mongodb.internal.connection.ProtocolHelper.createSpecialException(ProtocolHelper.java:264) ~[mongodb-driver-core-5.5.2.jar!/:?]
+	at com.mongodb.internal.connection.ProtocolHelper.getCommandFailureException(ProtocolHelper.java:206) ~[mongodb-driver-core-5.5.2.jar!/:?]
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:520) ~[mongodb-driver-core-5.5.2.jar!/:?]
+	at com.mongodb.internal.connection.InternalStreamConnection.receive(InternalStreamConnection.java:469) ~[mongodb-driver-core-5.5.2.jar!/:?]
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitor.lookupServerDescription(DefaultServerMonitor.java:249) [mongodb-driver-core-5.5.2.jar!/:?]
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitor.run(DefaultServerMonitor.java:176) [mongodb-driver-core-5.5.2.jar!/:?]
+2026-07-15 19:24:56 WARN  PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@c9bb803 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-07-15 19:24:59 INFO  EurekaServiceRegistry - Unregistering application CANDIDATE-SERVICE with eureka with status DOWN
+2026-07-15 19:24:59 INFO  DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1784143499586, current=DOWN, previous=UP]
+2026-07-15 19:24:59 INFO  DiscoveryClient - DiscoveryClient_CANDIDATE-SERVICE/ee7b7fa5bdfb:CANDIDATE-SERVICE:8083: registering service...
+2026-07-15 19:24:59 INFO  GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-07-15 19:24:59 INFO  GracefulShutdown - Graceful shutdown complete
+2026-07-15 19:24:59 INFO  LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-15 19:24:59 INFO  HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-07-15 19:25:00 INFO  HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-07-15 19:25:00 INFO  DiscoveryClient - Shutting down DiscoveryClient ...
+2026-07-15 19:25:10 INFO  Version - HV000001: Hibernate Validator 8.0.3.Final
+2026-07-15 19:25:10 INFO  CandidateServiceApplication - Starting CandidateServiceApplication v0.0.1-SNAPSHOT using Java 21.0.11 with PID 1 (/app/app.jar started by root in /app)
+2026-07-15 19:25:10 DEBUG CandidateServiceApplication - Running with Spring Boot v3.5.15, Spring v6.2.19
