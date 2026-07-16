@@ -1,5 +1,6 @@
 package com.SmartHire.candidate_service.Model;
 
+import io.swagger.v3.oas.annotations.media.Schema;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
@@ -13,10 +14,11 @@ import java.time.LocalDateTime;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class Candidate
-{
+public class Candidate {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Schema(accessMode = Schema.AccessMode.READ_ONLY)
     private Integer id;
 
     @NotBlank(message = "Name is required")
@@ -28,12 +30,14 @@ public class Candidate
     private String email;
 
     private String phone;
+
     private String skills;
+
     private String experience;
+
     private String currentLocation;
 
-    public enum CandidateStatus
-    {
+    public enum CandidateStatus {
         ACTIVE,
         INACTIVE,
         HIRED
@@ -42,12 +46,12 @@ public class Candidate
     @Enumerated(EnumType.STRING)
     private CandidateStatus status = CandidateStatus.ACTIVE;
 
+    @Schema(accessMode = Schema.AccessMode.READ_ONLY)
     @Column(updatable = false)
     private LocalDateTime registeredAt;
 
     @PrePersist
-    public void onCreate()
-    {
+    public void onCreate() {
         registeredAt = LocalDateTime.now();
     }
 }

@@ -1,5 +1,6 @@
 package com.SmartHire.candidate_service.Model;
 
+import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -13,9 +14,10 @@ import java.time.LocalDateTime;
 @AllArgsConstructor
 @NoArgsConstructor
 @Document(collection = "resumes")
-public class Resume
-{
+public class Resume {
+
     @Id
+    @Schema(accessMode = Schema.AccessMode.READ_ONLY)
     private String id;
 
     private int candidateId;
@@ -23,5 +25,6 @@ public class Resume
     private String resumeText;
 
     @CreatedDate
+    @Schema(accessMode = Schema.AccessMode.READ_ONLY)
     private LocalDateTime uploadedAt;
 }

@@ -1,5 +1,6 @@
 package com.smarthire.notification_service.model;
 
+import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -15,6 +16,7 @@ import java.time.LocalDateTime;
 public class Notification {
 
     @Id
+    @Schema(accessMode = Schema.AccessMode.READ_ONLY)
     private String id;
 
     private int candidateId;
@@ -27,6 +29,7 @@ public class Notification {
 
     private boolean read = false;
 
+    @Schema(accessMode = Schema.AccessMode.READ_ONLY)
     private LocalDateTime createdAt;
 
     public enum NotificationType {

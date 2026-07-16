@@ -1,11 +1,13 @@
 package com.smarthire.auth_service.model;
 
+import io.swagger.v3.oas.annotations.media.Schema;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+
 import java.time.LocalDateTime;
 
 @Entity
@@ -23,6 +25,7 @@ public class Users {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Schema(accessMode = Schema.AccessMode.READ_ONLY)
     private int id;
 
     @NotBlank(message = "Name is required")
@@ -39,6 +42,7 @@ public class Users {
     @Enumerated(EnumType.STRING)
     private Role role;
 
+    @Schema(accessMode = Schema.AccessMode.READ_ONLY)
     @Column(updatable = false)
     private LocalDateTime createdAt;
 

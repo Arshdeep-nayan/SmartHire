@@ -1,24 +1,24 @@
 package com.smarthire.job_service.model;
 
-
+import io.swagger.v3.oas.annotations.media.Schema;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotBlank;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import java.time.LocalDateTime;
 
+import java.time.LocalDateTime;
 
 @Entity
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class job
-{
+public class job {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Schema(accessMode = Schema.AccessMode.READ_ONLY)
     private int id;
-
 
     @NotBlank(message = "Title is required")
     private String title;
@@ -33,22 +33,25 @@ public class job
     @NotBlank(message = "Description is required")
     private String description;
 
-
     private double salary;
+
     private String jobType;
+
     private String experience;
+
     private String skills;
 
     @Column(updatable = false)
     private String postedBy;
 
+    @Schema(accessMode = Schema.AccessMode.READ_ONLY)
     @Column(updatable = false)
     private LocalDateTime postedAt;
+
     private boolean isActive = true;
 
     @PrePersist
-    protected void onCreate(){
+    protected void onCreate() {
         postedAt = LocalDateTime.now();
     }
-
 }
