@@ -73,7 +73,7 @@ services:
 
 
   discovery-server:
-    image: discovery-server
+    image: arshdeepnayan1234/discovery-server:latest
     container_name: discovery-server
     restart: unless-stopped
 
@@ -90,7 +90,7 @@ services:
 
 
   auth-service:
-    image: auth-service
+    image: arshdeepnayan1234/auth-service:latest
     container_name: auth-service
     restart: unless-stopped
 
@@ -109,7 +109,7 @@ services:
 
 
   job-service:
-    image: job-service
+    image: arshdeepnayan1234/job-service:latest
     container_name: job-service
     restart: unless-stopped
 
@@ -128,7 +128,7 @@ services:
 
 
   candidate-service:
-    image: candidate-service
+    image: arshdeepnayan1234/candidate-service:latest
     container_name: candidate-service
     restart: unless-stopped
 
@@ -149,7 +149,7 @@ services:
 
 
   ai-screening-service:
-    image: ai-screening-service
+    image: arshdeepnayan1234/ai-screening-service:latest
     container_name: ai-screening-service
     restart: unless-stopped
 
@@ -172,7 +172,7 @@ services:
 
 
   notification-service:
-    image: notification-service
+    image: arshdeepnayan1234/notification-service:latest
     container_name: notification-service
     restart: unless-stopped
 
@@ -192,7 +192,7 @@ services:
 
 
   api-gateway:
-    image: api-gateway
+    image: arshdeepnayan1234/api-gateway:latest
     container_name: api-gateway
     restart: unless-stopped
 

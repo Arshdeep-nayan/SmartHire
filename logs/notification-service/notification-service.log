@@ -22911,3 +22911,1701 @@ Caused by: org.apache.hc.core5.http.NoHttpResponseException: discovery-server:87
 2026-07-16 21:11:37 INFO  DiscoveryClient - Application is null : false
 2026-07-16 21:11:37 INFO  DiscoveryClient - Registered Applications size is zero : true
 2026-07-16 21:11:37 INFO  DiscoveryClient - Application version is -1: true
+2026-07-16 21:11:37 INFO  DiscoveryClient - Getting all instance registry info from the eureka server
+2026-07-16 21:11:40 INFO  DiscoveryClient - The response status is 200
+2026-07-16 21:11:40 INFO  DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2026-07-16 21:11:40 INFO  InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-07-16 21:11:40 INFO  DiscoveryClient - Discovery Client initialized at timestamp 1784236300899 with initial instances count: 0
+2026-07-16 21:11:41 INFO  EurekaServiceRegistry - Registering application NOTIFICATION-SERVICE with eureka with status UP
+2026-07-16 21:11:41 INFO  DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1784236301107, current=UP, previous=STARTING]
+2026-07-16 21:11:41 INFO  Http11NioProtocol - Starting ProtocolHandler ["http-nio-8086"]
+2026-07-16 21:11:41 INFO  DiscoveryClient - DiscoveryClient_NOTIFICATION-SERVICE/af8ba00b458f:notification-service:8086: registering service...
+2026-07-16 21:11:41 INFO  TomcatWebServer - Tomcat started on port 8086 (http) with context path '/'
+2026-07-16 21:11:41 INFO  EurekaAutoServiceRegistration - Updating port to 8086
+2026-07-16 21:11:41 INFO  ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = latest
+	bootstrap.servers = [kafka:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-notification-group-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	enable.metrics.push = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = notification-group
+	group.instance.id = null
+	group.protocol = classic
+	group.remote.assignor = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metadata.recovery.strategy = none
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.header.urlencode = false
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2026-07-16 21:11:41 INFO  DiscoveryClient - DiscoveryClient_NOTIFICATION-SERVICE/af8ba00b458f:notification-service:8086 - registration status: 204
+2026-07-16 21:11:42 INFO  KafkaMetricsCollector - initializing Kafka metrics collector
+2026-07-16 21:11:42 INFO  AppInfoParser - Kafka version: 3.9.2
+2026-07-16 21:11:42 INFO  AppInfoParser - Kafka commitId: 5e9866f43ab8e7e4
+2026-07-16 21:11:42 INFO  AppInfoParser - Kafka startTimeMs: 1784236302810
+2026-07-16 21:11:42 INFO  ClassicKafkaConsumer - [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Subscribed to topic(s): arshdeep
+2026-07-16 21:11:42 INFO  ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = latest
+	bootstrap.servers = [kafka:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-notification-group-2
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	enable.metrics.push = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = notification-group
+	group.instance.id = null
+	group.protocol = classic
+	group.remote.assignor = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metadata.recovery.strategy = none
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.header.urlencode = false
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2026-07-16 21:11:42 INFO  KafkaMetricsCollector - initializing Kafka metrics collector
+2026-07-16 21:11:42 INFO  AppInfoParser - Kafka version: 3.9.2
+2026-07-16 21:11:42 INFO  AppInfoParser - Kafka commitId: 5e9866f43ab8e7e4
+2026-07-16 21:11:42 INFO  AppInfoParser - Kafka startTimeMs: 1784236302981
+2026-07-16 21:11:43 INFO  ClassicKafkaConsumer - [Consumer clientId=consumer-notification-group-2, groupId=notification-group] Subscribed to topic(s): screening-completed
+2026-07-16 21:11:43 INFO  NotificationServiceApplication - Started NotificationServiceApplication in 29.407 seconds (process running for 35.367)
+2026-07-16 21:11:43 INFO  NetworkClient - [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Node -1 disconnected.
+2026-07-16 21:11:43 INFO  NetworkClient - [Consumer clientId=consumer-notification-group-2, groupId=notification-group] Node -1 disconnected.
+2026-07-16 21:11:43 WARN  NetworkClient - [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Connection to node -1 (kafka/172.19.0.5:9092) could not be established. Node may not be available.
+2026-07-16 21:11:43 WARN  NetworkClient - [Consumer clientId=consumer-notification-group-2, groupId=notification-group] Connection to node -1 (kafka/172.19.0.5:9092) could not be established. Node may not be available.
+2026-07-16 21:11:43 WARN  NetworkClient - [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Bootstrap broker kafka:9092 (id: -1 rack: null) disconnected
+2026-07-16 21:11:43 WARN  NetworkClient - [Consumer clientId=consumer-notification-group-2, groupId=notification-group] Bootstrap broker kafka:9092 (id: -1 rack: null) disconnected
+2026-07-16 21:11:43 INFO  NetworkClient - [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Node -1 disconnected.
+2026-07-16 21:11:43 WARN  NetworkClient - [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Connection to node -1 (kafka/172.19.0.5:9092) could not be established. Node may not be available.
+2026-07-16 21:11:43 WARN  NetworkClient - [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Bootstrap broker kafka:9092 (id: -1 rack: null) disconnected
+2026-07-16 21:11:43 INFO  NetworkClient - [Consumer clientId=consumer-notification-group-2, groupId=notification-group] Node -1 disconnected.
+2026-07-16 21:11:43 WARN  NetworkClient - [Consumer clientId=consumer-notification-group-2, groupId=notification-group] Connection to node -1 (kafka/172.19.0.5:9092) could not be established. Node may not be available.
+2026-07-16 21:11:43 WARN  NetworkClient - [Consumer clientId=consumer-notification-group-2, groupId=notification-group] Bootstrap broker kafka:9092 (id: -1 rack: null) disconnected
+2026-07-16 21:11:43 INFO  NetworkClient - [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Node -1 disconnected.
+2026-07-16 21:11:43 WARN  NetworkClient - [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Connection to node -1 (kafka/172.19.0.5:9092) could not be established. Node may not be available.
+2026-07-16 21:11:43 WARN  NetworkClient - [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Bootstrap broker kafka:9092 (id: -1 rack: null) disconnected
+2026-07-16 21:11:44 INFO  NetworkClient - [Consumer clientId=consumer-notification-group-2, groupId=notification-group] Node -1 disconnected.
+2026-07-16 21:11:44 WARN  NetworkClient - [Consumer clientId=consumer-notification-group-2, groupId=notification-group] Connection to node -1 (kafka/172.19.0.5:9092) could not be established. Node may not be available.
+2026-07-16 21:11:44 WARN  NetworkClient - [Consumer clientId=consumer-notification-group-2, groupId=notification-group] Bootstrap broker kafka:9092 (id: -1 rack: null) disconnected
+2026-07-16 21:11:44 INFO  NetworkClient - [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Node -1 disconnected.
+2026-07-16 21:11:44 WARN  NetworkClient - [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Connection to node -1 (kafka/172.19.0.5:9092) could not be established. Node may not be available.
+2026-07-16 21:11:44 WARN  NetworkClient - [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Bootstrap broker kafka:9092 (id: -1 rack: null) disconnected
+2026-07-16 21:11:44 INFO  NetworkClient - [Consumer clientId=consumer-notification-group-2, groupId=notification-group] Node -1 disconnected.
+2026-07-16 21:11:44 WARN  NetworkClient - [Consumer clientId=consumer-notification-group-2, groupId=notification-group] Connection to node -1 (kafka/172.19.0.5:9092) could not be established. Node may not be available.
+2026-07-16 21:11:44 WARN  NetworkClient - [Consumer clientId=consumer-notification-group-2, groupId=notification-group] Bootstrap broker kafka:9092 (id: -1 rack: null) disconnected
+2026-07-16 21:11:44 INFO  NetworkClient - [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Node -1 disconnected.
+2026-07-16 21:11:44 WARN  NetworkClient - [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Connection to node -1 (kafka/172.19.0.5:9092) could not be established. Node may not be available.
+2026-07-16 21:11:44 WARN  NetworkClient - [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Bootstrap broker kafka:9092 (id: -1 rack: null) disconnected
+2026-07-16 21:11:44 INFO  NetworkClient - [Consumer clientId=consumer-notification-group-2, groupId=notification-group] Node -1 disconnected.
+2026-07-16 21:11:44 WARN  NetworkClient - [Consumer clientId=consumer-notification-group-2, groupId=notification-group] Connection to node -1 (kafka/172.19.0.5:9092) could not be established. Node may not be available.
+2026-07-16 21:11:44 WARN  NetworkClient - [Consumer clientId=consumer-notification-group-2, groupId=notification-group] Bootstrap broker kafka:9092 (id: -1 rack: null) disconnected
+2026-07-16 21:11:45 INFO  NetworkClient - [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Node -1 disconnected.
+2026-07-16 21:11:45 WARN  NetworkClient - [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Connection to node -1 (kafka/172.19.0.5:9092) could not be established. Node may not be available.
+2026-07-16 21:11:45 WARN  NetworkClient - [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Bootstrap broker kafka:9092 (id: -1 rack: null) disconnected
+2026-07-16 21:11:45 INFO  NetworkClient - [Consumer clientId=consumer-notification-group-2, groupId=notification-group] Node -1 disconnected.
+2026-07-16 21:11:45 WARN  NetworkClient - [Consumer clientId=consumer-notification-group-2, groupId=notification-group] Connection to node -1 (kafka/172.19.0.5:9092) could not be established. Node may not be available.
+2026-07-16 21:11:45 WARN  NetworkClient - [Consumer clientId=consumer-notification-group-2, groupId=notification-group] Bootstrap broker kafka:9092 (id: -1 rack: null) disconnected
+2026-07-16 21:11:46 INFO  NetworkClient - [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Node -1 disconnected.
+2026-07-16 21:11:46 WARN  NetworkClient - [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Connection to node -1 (kafka/172.19.0.5:9092) could not be established. Node may not be available.
+2026-07-16 21:11:46 WARN  NetworkClient - [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Bootstrap broker kafka:9092 (id: -1 rack: null) disconnected
+2026-07-16 21:11:46 INFO  NetworkClient - [Consumer clientId=consumer-notification-group-2, groupId=notification-group] Node -1 disconnected.
+2026-07-16 21:11:46 WARN  NetworkClient - [Consumer clientId=consumer-notification-group-2, groupId=notification-group] Connection to node -1 (kafka/172.19.0.5:9092) could not be established. Node may not be available.
+2026-07-16 21:11:46 WARN  NetworkClient - [Consumer clientId=consumer-notification-group-2, groupId=notification-group] Bootstrap broker kafka:9092 (id: -1 rack: null) disconnected
+2026-07-16 21:11:47 INFO  NetworkClient - [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Node -1 disconnected.
+2026-07-16 21:11:47 WARN  NetworkClient - [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Connection to node -1 (kafka/172.19.0.5:9092) could not be established. Node may not be available.
+2026-07-16 21:11:47 WARN  NetworkClient - [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Bootstrap broker kafka:9092 (id: -1 rack: null) disconnected
+2026-07-16 21:11:47 INFO  NetworkClient - [Consumer clientId=consumer-notification-group-2, groupId=notification-group] Node -1 disconnected.
+2026-07-16 21:11:47 WARN  NetworkClient - [Consumer clientId=consumer-notification-group-2, groupId=notification-group] Connection to node -1 (kafka/172.19.0.5:9092) could not be established. Node may not be available.
+2026-07-16 21:11:47 WARN  NetworkClient - [Consumer clientId=consumer-notification-group-2, groupId=notification-group] Bootstrap broker kafka:9092 (id: -1 rack: null) disconnected
+2026-07-16 21:11:48 INFO  NetworkClient - [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Node -1 disconnected.
+2026-07-16 21:11:48 WARN  NetworkClient - [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Connection to node -1 (kafka/172.19.0.5:9092) could not be established. Node may not be available.
+2026-07-16 21:11:48 WARN  NetworkClient - [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Bootstrap broker kafka:9092 (id: -1 rack: null) disconnected
+2026-07-16 21:11:48 INFO  NetworkClient - [Consumer clientId=consumer-notification-group-2, groupId=notification-group] Node -1 disconnected.
+2026-07-16 21:11:48 WARN  NetworkClient - [Consumer clientId=consumer-notification-group-2, groupId=notification-group] Connection to node -1 (kafka/172.19.0.5:9092) could not be established. Node may not be available.
+2026-07-16 21:11:48 WARN  NetworkClient - [Consumer clientId=consumer-notification-group-2, groupId=notification-group] Bootstrap broker kafka:9092 (id: -1 rack: null) disconnected
+2026-07-16 21:11:49 INFO  Metadata - [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Cluster ID: xCHzlIE3ThyuQ0dMnahzYg
+2026-07-16 21:11:49 INFO  ConsumerCoordinator - [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Discovered group coordinator kafka:9092 (id: 2147483646 rack: null)
+2026-07-16 21:11:49 INFO  ConsumerCoordinator - [Consumer clientId=consumer-notification-group-1, groupId=notification-group] (Re-)joining group
+2026-07-16 21:11:49 INFO  ConsumerCoordinator - [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Request joining group due to: need to re-join with the given member-id: consumer-notification-group-1-1ddd7e64-3478-47d7-b0fc-a6f8029333cb
+2026-07-16 21:11:49 INFO  ConsumerCoordinator - [Consumer clientId=consumer-notification-group-1, groupId=notification-group] (Re-)joining group
+2026-07-16 21:11:49 INFO  Metadata - [Consumer clientId=consumer-notification-group-2, groupId=notification-group] Cluster ID: xCHzlIE3ThyuQ0dMnahzYg
+2026-07-16 21:11:49 INFO  ConsumerCoordinator - [Consumer clientId=consumer-notification-group-2, groupId=notification-group] Discovered group coordinator kafka:9092 (id: 2147483646 rack: null)
+2026-07-16 21:11:49 INFO  ConsumerCoordinator - [Consumer clientId=consumer-notification-group-2, groupId=notification-group] (Re-)joining group
+2026-07-16 21:11:49 INFO  ConsumerCoordinator - [Consumer clientId=consumer-notification-group-2, groupId=notification-group] Request joining group due to: need to re-join with the given member-id: consumer-notification-group-2-823d96d8-e531-4db2-be49-0ad4af0cc104
+2026-07-16 21:11:49 INFO  ConsumerCoordinator - [Consumer clientId=consumer-notification-group-2, groupId=notification-group] (Re-)joining group
+2026-07-16 21:12:10 INFO  DiscoveryClient - Disable delta property : false
+2026-07-16 21:12:10 INFO  DiscoveryClient - Single vip registry refresh property : null
+2026-07-16 21:12:10 INFO  DiscoveryClient - Force full registry fetch : false
+2026-07-16 21:12:10 INFO  DiscoveryClient - Application is null : false
+2026-07-16 21:12:10 INFO  DiscoveryClient - Registered Applications size is zero : true
+2026-07-16 21:12:10 INFO  DiscoveryClient - Application version is -1: false
+2026-07-16 21:12:10 INFO  DiscoveryClient - Getting all instance registry info from the eureka server
+2026-07-16 21:12:10 INFO  DiscoveryClient - The response status is 200
+2026-07-16 21:12:34 INFO  ConsumerCoordinator - [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Successfully joined group with generation Generation{generationId=33, memberId='consumer-notification-group-1-1ddd7e64-3478-47d7-b0fc-a6f8029333cb', protocol='range'}
+2026-07-16 21:12:34 INFO  ConsumerCoordinator - [Consumer clientId=consumer-notification-group-2, groupId=notification-group] Successfully joined group with generation Generation{generationId=33, memberId='consumer-notification-group-2-823d96d8-e531-4db2-be49-0ad4af0cc104', protocol='range'}
+2026-07-16 21:12:34 INFO  ConsumerCoordinator - [Consumer clientId=consumer-notification-group-2, groupId=notification-group] Finished assignment for group at generation 33: {consumer-notification-group-2-823d96d8-e531-4db2-be49-0ad4af0cc104=Assignment(partitions=[screening-completed-0]), consumer-notification-group-1-1ddd7e64-3478-47d7-b0fc-a6f8029333cb=Assignment(partitions=[arshdeep-0])}
+2026-07-16 21:12:34 INFO  ConsumerCoordinator - [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Successfully synced group in generation Generation{generationId=33, memberId='consumer-notification-group-1-1ddd7e64-3478-47d7-b0fc-a6f8029333cb', protocol='range'}
+2026-07-16 21:12:34 INFO  ConsumerCoordinator - [Consumer clientId=consumer-notification-group-2, groupId=notification-group] Successfully synced group in generation Generation{generationId=33, memberId='consumer-notification-group-2-823d96d8-e531-4db2-be49-0ad4af0cc104', protocol='range'}
+2026-07-16 21:12:34 INFO  ConsumerCoordinator - [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Notifying assignor about the new Assignment(partitions=[arshdeep-0])
+2026-07-16 21:12:34 INFO  ConsumerCoordinator - [Consumer clientId=consumer-notification-group-2, groupId=notification-group] Notifying assignor about the new Assignment(partitions=[screening-completed-0])
+2026-07-16 21:12:34 INFO  ConsumerRebalanceListenerInvoker - [Consumer clientId=consumer-notification-group-2, groupId=notification-group] Adding newly assigned partitions: screening-completed-0
+2026-07-16 21:12:34 INFO  ConsumerRebalanceListenerInvoker - [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Adding newly assigned partitions: arshdeep-0
+2026-07-16 21:12:34 INFO  ConsumerUtils - Setting offset for partition arshdeep-0 to the committed offset FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[kafka:9092 (id: 1 rack: null)], epoch=0}}
+2026-07-16 21:12:34 INFO  ConsumerUtils - Setting offset for partition screening-completed-0 to the committed offset FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[kafka:9092 (id: 1 rack: null)], epoch=0}}
+2026-07-16 21:12:34 INFO  KafkaMessageListenerContainer - notification-group: partitions assigned: [arshdeep-0]
+2026-07-16 21:12:34 INFO  KafkaMessageListenerContainer - notification-group: partitions assigned: [screening-completed-0]
+2026-07-16 21:16:37 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-16 21:21:37 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-16 21:26:37 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-16 21:31:37 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-16 21:36:37 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-16 21:41:37 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-16 21:46:37 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-16 21:51:37 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-16 21:56:37 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-16 22:01:37 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-16 22:06:37 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-16 22:11:37 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-17 08:18:13 INFO  Version - HV000001: Hibernate Validator 8.0.3.Final
+2026-07-17 08:18:14 INFO  NotificationServiceApplication - Starting NotificationServiceApplication v0.0.1-SNAPSHOT using Java 21.0.11 with PID 1 (/app/app.jar started by root in /app)
+2026-07-17 08:18:14 DEBUG NotificationServiceApplication - Running with Spring Boot v3.5.16, Spring v6.2.19
+2026-07-17 08:18:14 INFO  NotificationServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2026-07-17 08:18:22 INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2026-07-17 08:18:23 INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 851 ms. Found 1 MongoDB repository interface.
+2026-07-17 08:18:25 INFO  GenericScope - BeanFactory id=06d73b6c-70af-399b-a643-67906da84194
+2026-07-17 08:18:29 INFO  TomcatWebServer - Tomcat initialized with port 8086 (http)
+2026-07-17 08:18:30 INFO  Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8086"]
+2026-07-17 08:18:30 INFO  StandardService - Starting service [Tomcat]
+2026-07-17 08:18:30 INFO  StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.55]
+2026-07-17 08:18:30 INFO  [/] - Initializing Spring embedded WebApplicationContext
+2026-07-17 08:18:30 INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 15809 ms
+2026-07-17 08:18:33 INFO  client - MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "5.5.2"}, "os": {"type": "Linux", "name": "Linux", "architecture": "amd64", "version": "6.18.33.2-microsoft-standard-WSL2"}, "platform": "Java/Eclipse Adoptium/21.0.11+10-LTS", "env": {"container": {"runtime": "docker"}}} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, transportSettings=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@13fe5bb7, com.mongodb.Jep395RecordCodecProvider@4276ad40, com.mongodb.KotlinCodecProvider@6e5f5478]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[mongo:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverMonitoringMode=AUTO, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null, timeoutMS=null}
+2026-07-17 08:18:33 INFO  cluster - Monitor thread successfully connected to server with description ServerDescription{address=mongo:27017, type=STANDALONE, cryptd=false, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=187761321, minRoundTripTimeNanos=0}
+2026-07-17 08:18:43 INFO  DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+2026-07-17 08:18:43 WARN  LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-07-17 08:18:44 INFO  InstanceInfoFactory - Setting initial instance status as: STARTING
+2026-07-17 08:18:45 INFO  DiscoveryClient - Initializing Eureka in region us-east-1
+2026-07-17 08:18:45 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-17 08:18:45 INFO  DiscoveryClient - Disable delta property : false
+2026-07-17 08:18:45 INFO  DiscoveryClient - Single vip registry refresh property : null
+2026-07-17 08:18:45 INFO  DiscoveryClient - Force full registry fetch : false
+2026-07-17 08:18:45 INFO  DiscoveryClient - Application is null : false
+2026-07-17 08:18:45 INFO  DiscoveryClient - Registered Applications size is zero : true
+2026-07-17 08:18:45 INFO  DiscoveryClient - Application version is -1: true
+2026-07-17 08:18:45 INFO  DiscoveryClient - Getting all instance registry info from the eureka server
+2026-07-17 08:18:49 INFO  RedirectingEurekaHttpClient - Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://discovery-server:8761/eureka/}, exception=I/O error on GET request for "http://discovery-server:8761/eureka/apps/": Connect to http://discovery-server:8761 failed: Connection refused
+org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://discovery-server:8761/eureka/apps/": Connect to http://discovery-server:8761 failed: Connection refused
+	at org.springframework.web.client.RestTemplate.createResourceAccessException(RestTemplate.java:926) ~[spring-web-6.2.19.jar!/:6.2.19]
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:906) ~[spring-web-6.2.19.jar!/:6.2.19]
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:841) ~[spring-web-6.2.19.jar!/:6.2.19]
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:702) ~[spring-web-6.2.19.jar!/:6.2.19]
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.getApplicationsInternal(RestTemplateEurekaHttpClient.java:174) ~[spring-cloud-netflix-eureka-client-4.3.3.jar!/:4.3.3]
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.getApplications(RestTemplateEurekaHttpClient.java:162) ~[spring-cloud-netflix-eureka-client-4.3.3.jar!/:4.3.3]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$6.execute(EurekaHttpClientDecorator.java:137) ~[eureka-client-2.0.6.jar!/:2.0.6]
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:120) ~[eureka-client-2.0.6.jar!/:2.0.6]
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:79) ~[eureka-client-2.0.6.jar!/:2.0.6]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134) ~[eureka-client-2.0.6.jar!/:2.0.6]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$6.execute(EurekaHttpClientDecorator.java:137) ~[eureka-client-2.0.6.jar!/:2.0.6]
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120) ~[eureka-client-2.0.6.jar!/:2.0.6]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134) ~[eureka-client-2.0.6.jar!/:2.0.6]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$6.execute(EurekaHttpClientDecorator.java:137) ~[eureka-client-2.0.6.jar!/:2.0.6]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76) ~[eureka-client-2.0.6.jar!/:2.0.6]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134) ~[eureka-client-2.0.6.jar!/:2.0.6]
+	at com.netflix.discovery.DiscoveryClient.getAndStoreFullRegistry(DiscoveryClient.java:1061) ~[eureka-client-2.0.6.jar!/:2.0.6]
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:976) ~[eureka-client-2.0.6.jar!/:2.0.6]
+	at com.netflix.discovery.DiscoveryClient.<init>(DiscoveryClient.java:419) ~[eureka-client-2.0.6.jar!/:2.0.6]
+	at com.netflix.discovery.DiscoveryClient.<init>(DiscoveryClient.java:254) ~[eureka-client-2.0.6.jar!/:2.0.6]
+	at com.netflix.discovery.DiscoveryClient.<init>(DiscoveryClient.java:249) ~[eureka-client-2.0.6.jar!/:2.0.6]
+	at org.springframework.cloud.netflix.eureka.CloudEurekaClient.<init>(CloudEurekaClient.java:68) ~[spring-cloud-netflix-eureka-client-4.3.3.jar!/:4.3.3]
+	at org.springframework.cloud.netflix.eureka.EurekaClientAutoConfiguration$RefreshableEurekaClientConfiguration.eurekaClient(EurekaClientAutoConfiguration.java:324) ~[spring-cloud-netflix-eureka-client-4.3.3.jar!/:4.3.3]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.lambda$instantiate$0(SimpleInstantiationStrategy.java:172) ~[spring-beans-6.2.19.jar!/:6.2.19]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiateWithFactoryMethod(SimpleInstantiationStrategy.java:89) ~[spring-beans-6.2.19.jar!/:6.2.19]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:169) ~[spring-beans-6.2.19.jar!/:6.2.19]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653) ~[spring-beans-6.2.19.jar!/:6.2.19]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:645) ~[spring-beans-6.2.19.jar!/:6.2.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1373) ~[spring-beans-6.2.19.jar!/:6.2.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1203) ~[spring-beans-6.2.19.jar!/:6.2.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569) ~[spring-beans-6.2.19.jar!/:6.2.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529) ~[spring-beans-6.2.19.jar!/:6.2.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$1(AbstractBeanFactory.java:378) ~[spring-beans-6.2.19.jar!/:6.2.19]
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.getBean(GenericScope.java:373) ~[spring-cloud-context-4.3.3.jar!/:4.3.3]
+	at org.springframework.cloud.context.scope.GenericScope.get(GenericScope.java:177) ~[spring-cloud-context-4.3.3.jar!/:4.3.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:375) ~[spring-beans-6.2.19.jar!/:6.2.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-6.2.19.jar!/:6.2.19]
+	at org.springframework.aop.target.SimpleBeanTargetSource.getTarget(SimpleBeanTargetSource.java:35) ~[spring-aop-6.2.19.jar!/:6.2.19]
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaRegistration.getTargetObject(EurekaRegistration.java:128) ~[spring-cloud-netflix-eureka-client-4.3.3.jar!/:4.3.3]
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaRegistration.getEurekaClient(EurekaRegistration.java:116) ~[spring-cloud-netflix-eureka-client-4.3.3.jar!/:4.3.3]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.springframework.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:281) ~[spring-core-6.2.19.jar!/:6.2.19]
+	at org.springframework.cloud.context.scope.GenericScope$LockedScopedProxyFactoryBean.invoke(GenericScope.java:480) ~[spring-cloud-context-4.3.3.jar!/:4.3.3]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.2.19.jar!/:6.2.19]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:728) ~[spring-aop-6.2.19.jar!/:6.2.19]
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaRegistration$$SpringCGLIB$$0.getEurekaClient(<generated>) ~[spring-cloud-netflix-eureka-client-4.3.3.jar!/:4.3.3]
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry.maybeInitializeClient(EurekaServiceRegistry.java:83) ~[spring-cloud-netflix-eureka-client-4.3.3.jar!/:4.3.3]
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry.register(EurekaServiceRegistry.java:66) ~[spring-cloud-netflix-eureka-client-4.3.3.jar!/:4.3.3]
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration.start(EurekaAutoServiceRegistration.java:89) ~[spring-cloud-netflix-eureka-client-4.3.3.jar!/:4.3.3]
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:405) ~[spring-context-6.2.19.jar!/:6.2.19]
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:394) ~[spring-context-6.2.19.jar!/:6.2.19]
+	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:586) ~[spring-context-6.2.19.jar!/:6.2.19]
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75) [?:?]
+	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:364) [spring-context-6.2.19.jar!/:6.2.19]
+	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:310) [spring-context-6.2.19.jar!/:6.2.19]
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:1010) [spring-context-6.2.19.jar!/:6.2.19]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:631) [spring-context-6.2.19.jar!/:6.2.19]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) [spring-boot-3.5.16.jar!/:3.5.16]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) [spring-boot-3.5.16.jar!/:3.5.16]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) [spring-boot-3.5.16.jar!/:3.5.16]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) [spring-boot-3.5.16.jar!/:3.5.16]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) [spring-boot-3.5.16.jar!/:3.5.16]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) [spring-boot-3.5.16.jar!/:3.5.16]
+	at com.smarthire.notification_service.NotificationServiceApplication.main(NotificationServiceApplication.java:12) [!/:0.0.1-SNAPSHOT]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.springframework.boot.loader.launch.Launcher.launch(Launcher.java:106) [app.jar:0.0.1-SNAPSHOT]
+	at org.springframework.boot.loader.launch.Launcher.launch(Launcher.java:64) [app.jar:0.0.1-SNAPSHOT]
+	at org.springframework.boot.loader.launch.JarLauncher.main(JarLauncher.java:40) [app.jar:0.0.1-SNAPSHOT]
+Caused by: org.apache.hc.client5.http.HttpHostConnectException: Connect to http://discovery-server:8761 failed: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method) ~[?:?]
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:694) ~[?:?]
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542) ~[?:?]
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:592) ~[?:?]
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327) ~[?:?]
+	at java.base/java.net.Socket.connect(Socket.java:751) ~[?:?]
+	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:226) ~[httpclient5-5.5.2.jar!/:5.5.2]
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:497) ~[httpclient5-5.5.2.jar!/:5.5.2]
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:164) ~[httpclient5-5.5.2.jar!/:5.5.2]
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:174) ~[httpclient5-5.5.2.jar!/:5.5.2]
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:144) ~[httpclient5-5.5.2.jar!/:5.5.2]
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51) ~[httpclient5-5.5.2.jar!/:5.5.2]
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:195) ~[httpclient5-5.5.2.jar!/:5.5.2]
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51) ~[httpclient5-5.5.2.jar!/:5.5.2]
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:168) ~[httpclient5-5.5.2.jar!/:5.5.2]
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51) ~[httpclient5-5.5.2.jar!/:5.5.2]
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:112) ~[httpclient5-5.5.2.jar!/:5.5.2]
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51) ~[httpclient5-5.5.2.jar!/:5.5.2]
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:110) ~[httpclient5-5.5.2.jar!/:5.5.2]
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51) ~[httpclient5-5.5.2.jar!/:5.5.2]
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:185) ~[httpclient5-5.5.2.jar!/:5.5.2]
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:87) ~[httpclient5-5.5.2.jar!/:5.5.2]
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55) ~[httpclient5-5.5.2.jar!/:5.5.2]
+	at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183) ~[httpclient5-5.5.2.jar!/:5.5.2]
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:99) ~[spring-web-6.2.19.jar!/:6.2.19]
+	at org.springframework.http.client.AbstractStreamingClientHttpRequest.executeInternal(AbstractStreamingClientHttpRequest.java:88) ~[spring-web-6.2.19.jar!/:6.2.19]
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:81) ~[spring-web-6.2.19.jar!/:6.2.19]
+	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:117) ~[spring-web-6.2.19.jar!/:6.2.19]
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateTransportClientFactory.lambda$restTemplate$2(RestTemplateTransportClientFactory.java:145) ~[spring-cloud-netflix-eureka-client-4.3.3.jar!/:4.3.3]
+	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:88) ~[spring-web-6.2.19.jar!/:6.2.19]
+	at org.springframework.http.client.InterceptingClientHttpRequest.executeInternal(InterceptingClientHttpRequest.java:72) ~[spring-web-6.2.19.jar!/:6.2.19]
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48) ~[spring-web-6.2.19.jar!/:6.2.19]
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:81) ~[spring-web-6.2.19.jar!/:6.2.19]
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:900) ~[spring-web-6.2.19.jar!/:6.2.19]
+	... 70 more
+2026-07-17 08:18:49 WARN  RetryableEurekaHttpClient - Request execution failed with message: I/O error on GET request for "http://discovery-server:8761/eureka/apps/": Connect to http://discovery-server:8761 failed: Connection refused
+2026-07-17 08:18:49 INFO  DiscoveryClient - DiscoveryClient_NOTIFICATION-SERVICE/af8ba00b458f:notification-service:8086 - was unable to refresh its cache! This periodic background refresh will be retried in 30 seconds. status = Cannot execute request on any known server
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112) ~[eureka-client-2.0.6.jar!/:2.0.6]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134) ~[eureka-client-2.0.6.jar!/:2.0.6]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$6.execute(EurekaHttpClientDecorator.java:137) ~[eureka-client-2.0.6.jar!/:2.0.6]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76) ~[eureka-client-2.0.6.jar!/:2.0.6]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134) ~[eureka-client-2.0.6.jar!/:2.0.6]
+	at com.netflix.discovery.DiscoveryClient.getAndStoreFullRegistry(DiscoveryClient.java:1061) ~[eureka-client-2.0.6.jar!/:2.0.6]
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:976) ~[eureka-client-2.0.6.jar!/:2.0.6]
+	at com.netflix.discovery.DiscoveryClient.<init>(DiscoveryClient.java:419) ~[eureka-client-2.0.6.jar!/:2.0.6]
+	at com.netflix.discovery.DiscoveryClient.<init>(DiscoveryClient.java:254) ~[eureka-client-2.0.6.jar!/:2.0.6]
+	at com.netflix.discovery.DiscoveryClient.<init>(DiscoveryClient.java:249) ~[eureka-client-2.0.6.jar!/:2.0.6]
+	at org.springframework.cloud.netflix.eureka.CloudEurekaClient.<init>(CloudEurekaClient.java:68) ~[spring-cloud-netflix-eureka-client-4.3.3.jar!/:4.3.3]
+	at org.springframework.cloud.netflix.eureka.EurekaClientAutoConfiguration$RefreshableEurekaClientConfiguration.eurekaClient(EurekaClientAutoConfiguration.java:324) ~[spring-cloud-netflix-eureka-client-4.3.3.jar!/:4.3.3]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.lambda$instantiate$0(SimpleInstantiationStrategy.java:172) ~[spring-beans-6.2.19.jar!/:6.2.19]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiateWithFactoryMethod(SimpleInstantiationStrategy.java:89) ~[spring-beans-6.2.19.jar!/:6.2.19]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:169) ~[spring-beans-6.2.19.jar!/:6.2.19]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653) ~[spring-beans-6.2.19.jar!/:6.2.19]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:645) ~[spring-beans-6.2.19.jar!/:6.2.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1373) ~[spring-beans-6.2.19.jar!/:6.2.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1203) ~[spring-beans-6.2.19.jar!/:6.2.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569) ~[spring-beans-6.2.19.jar!/:6.2.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529) ~[spring-beans-6.2.19.jar!/:6.2.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$1(AbstractBeanFactory.java:378) ~[spring-beans-6.2.19.jar!/:6.2.19]
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.getBean(GenericScope.java:373) ~[spring-cloud-context-4.3.3.jar!/:4.3.3]
+	at org.springframework.cloud.context.scope.GenericScope.get(GenericScope.java:177) ~[spring-cloud-context-4.3.3.jar!/:4.3.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:375) ~[spring-beans-6.2.19.jar!/:6.2.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-6.2.19.jar!/:6.2.19]
+	at org.springframework.aop.target.SimpleBeanTargetSource.getTarget(SimpleBeanTargetSource.java:35) ~[spring-aop-6.2.19.jar!/:6.2.19]
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaRegistration.getTargetObject(EurekaRegistration.java:128) ~[spring-cloud-netflix-eureka-client-4.3.3.jar!/:4.3.3]
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaRegistration.getEurekaClient(EurekaRegistration.java:116) ~[spring-cloud-netflix-eureka-client-4.3.3.jar!/:4.3.3]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.springframework.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:281) ~[spring-core-6.2.19.jar!/:6.2.19]
+	at org.springframework.cloud.context.scope.GenericScope$LockedScopedProxyFactoryBean.invoke(GenericScope.java:480) ~[spring-cloud-context-4.3.3.jar!/:4.3.3]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.2.19.jar!/:6.2.19]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:728) ~[spring-aop-6.2.19.jar!/:6.2.19]
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaRegistration$$SpringCGLIB$$0.getEurekaClient(<generated>) ~[spring-cloud-netflix-eureka-client-4.3.3.jar!/:4.3.3]
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry.maybeInitializeClient(EurekaServiceRegistry.java:83) ~[spring-cloud-netflix-eureka-client-4.3.3.jar!/:4.3.3]
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry.register(EurekaServiceRegistry.java:66) ~[spring-cloud-netflix-eureka-client-4.3.3.jar!/:4.3.3]
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration.start(EurekaAutoServiceRegistration.java:89) ~[spring-cloud-netflix-eureka-client-4.3.3.jar!/:4.3.3]
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:405) ~[spring-context-6.2.19.jar!/:6.2.19]
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:394) ~[spring-context-6.2.19.jar!/:6.2.19]
+	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:586) ~[spring-context-6.2.19.jar!/:6.2.19]
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75) [?:?]
+	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:364) [spring-context-6.2.19.jar!/:6.2.19]
+	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:310) [spring-context-6.2.19.jar!/:6.2.19]
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:1010) [spring-context-6.2.19.jar!/:6.2.19]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:631) [spring-context-6.2.19.jar!/:6.2.19]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) [spring-boot-3.5.16.jar!/:3.5.16]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) [spring-boot-3.5.16.jar!/:3.5.16]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) [spring-boot-3.5.16.jar!/:3.5.16]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) [spring-boot-3.5.16.jar!/:3.5.16]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) [spring-boot-3.5.16.jar!/:3.5.16]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) [spring-boot-3.5.16.jar!/:3.5.16]
+	at com.smarthire.notification_service.NotificationServiceApplication.main(NotificationServiceApplication.java:12) [!/:0.0.1-SNAPSHOT]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.springframework.boot.loader.launch.Launcher.launch(Launcher.java:106) [app.jar:0.0.1-SNAPSHOT]
+	at org.springframework.boot.loader.launch.Launcher.launch(Launcher.java:64) [app.jar:0.0.1-SNAPSHOT]
+	at org.springframework.boot.loader.launch.JarLauncher.main(JarLauncher.java:40) [app.jar:0.0.1-SNAPSHOT]
+2026-07-17 08:18:49 INFO  DiscoveryClient - Initial registry fetch from primary servers failed
+2026-07-17 08:18:49 WARN  DiscoveryClient - Using default backup registry implementation which does not do anything.
+2026-07-17 08:18:49 INFO  DiscoveryClient - Initial registry fetch from backup servers failed
+2026-07-17 08:18:49 INFO  DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2026-07-17 08:18:50 INFO  InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-07-17 08:18:50 INFO  DiscoveryClient - Discovery Client initialized at timestamp 1784276330046 with initial instances count: 0
+2026-07-17 08:18:50 INFO  EurekaServiceRegistry - Registering application NOTIFICATION-SERVICE with eureka with status UP
+2026-07-17 08:18:50 INFO  DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1784276330162, current=UP, previous=STARTING]
+2026-07-17 08:18:50 INFO  DiscoveryClient - DiscoveryClient_NOTIFICATION-SERVICE/af8ba00b458f:notification-service:8086: registering service...
+2026-07-17 08:18:50 INFO  Http11NioProtocol - Starting ProtocolHandler ["http-nio-8086"]
+2026-07-17 08:18:50 INFO  TomcatWebServer - Tomcat started on port 8086 (http) with context path '/'
+2026-07-17 08:18:50 INFO  EurekaAutoServiceRegistration - Updating port to 8086
+2026-07-17 08:18:51 INFO  ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = latest
+	bootstrap.servers = [kafka:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-notification-group-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	enable.metrics.push = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = notification-group
+	group.instance.id = null
+	group.protocol = classic
+	group.remote.assignor = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metadata.recovery.strategy = none
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.header.urlencode = false
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2026-07-17 08:18:51 INFO  KafkaMetricsCollector - initializing Kafka metrics collector
+2026-07-17 08:18:53 INFO  AppInfoParser - Kafka version: 3.9.2
+2026-07-17 08:18:53 INFO  AppInfoParser - Kafka commitId: 5e9866f43ab8e7e4
+2026-07-17 08:18:53 INFO  AppInfoParser - Kafka startTimeMs: 1784276333222
+2026-07-17 08:18:53 INFO  ClassicKafkaConsumer - [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Subscribed to topic(s): arshdeep
+2026-07-17 08:18:53 INFO  ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = latest
+	bootstrap.servers = [kafka:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-notification-group-2
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	enable.metrics.push = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = notification-group
+	group.instance.id = null
+	group.protocol = classic
+	group.remote.assignor = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metadata.recovery.strategy = none
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.header.urlencode = false
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2026-07-17 08:18:53 INFO  KafkaMetricsCollector - initializing Kafka metrics collector
+2026-07-17 08:18:53 INFO  AppInfoParser - Kafka version: 3.9.2
+2026-07-17 08:18:53 INFO  AppInfoParser - Kafka commitId: 5e9866f43ab8e7e4
+2026-07-17 08:18:53 INFO  AppInfoParser - Kafka startTimeMs: 1784276333388
+2026-07-17 08:18:53 INFO  ClassicKafkaConsumer - [Consumer clientId=consumer-notification-group-2, groupId=notification-group] Subscribed to topic(s): screening-completed
+2026-07-17 08:18:53 INFO  DiscoveryClient - DiscoveryClient_NOTIFICATION-SERVICE/af8ba00b458f:notification-service:8086 - registration status: 204
+2026-07-17 08:18:53 INFO  NotificationServiceApplication - Started NotificationServiceApplication in 42.618 seconds (process running for 54.048)
+2026-07-17 08:18:56 INFO  NetworkClient - [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Node -1 disconnected.
+2026-07-17 08:18:56 INFO  NetworkClient - [Consumer clientId=consumer-notification-group-2, groupId=notification-group] Node -1 disconnected.
+2026-07-17 08:18:56 WARN  NetworkClient - [Consumer clientId=consumer-notification-group-2, groupId=notification-group] Connection to node -1 (kafka/172.19.0.9:9092) could not be established. Node may not be available.
+2026-07-17 08:18:56 WARN  NetworkClient - [Consumer clientId=consumer-notification-group-2, groupId=notification-group] Bootstrap broker kafka:9092 (id: -1 rack: null) disconnected
+2026-07-17 08:18:56 WARN  NetworkClient - [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Connection to node -1 (kafka/172.19.0.9:9092) could not be established. Node may not be available.
+2026-07-17 08:18:56 WARN  NetworkClient - [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Bootstrap broker kafka:9092 (id: -1 rack: null) disconnected
+2026-07-17 08:18:56 INFO  NetworkClient - [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Node -1 disconnected.
+2026-07-17 08:18:56 WARN  NetworkClient - [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Connection to node -1 (kafka/172.19.0.9:9092) could not be established. Node may not be available.
+2026-07-17 08:18:56 INFO  NetworkClient - [Consumer clientId=consumer-notification-group-2, groupId=notification-group] Node -1 disconnected.
+2026-07-17 08:18:56 WARN  NetworkClient - [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Bootstrap broker kafka:9092 (id: -1 rack: null) disconnected
+2026-07-17 08:18:56 WARN  NetworkClient - [Consumer clientId=consumer-notification-group-2, groupId=notification-group] Connection to node -1 (kafka/172.19.0.9:9092) could not be established. Node may not be available.
+2026-07-17 08:18:57 WARN  NetworkClient - [Consumer clientId=consumer-notification-group-2, groupId=notification-group] Bootstrap broker kafka:9092 (id: -1 rack: null) disconnected
+2026-07-17 08:18:57 INFO  NetworkClient - [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Node -1 disconnected.
+2026-07-17 08:18:57 INFO  NetworkClient - [Consumer clientId=consumer-notification-group-2, groupId=notification-group] Node -1 disconnected.
+2026-07-17 08:18:57 WARN  NetworkClient - [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Connection to node -1 (kafka/172.19.0.9:9092) could not be established. Node may not be available.
+2026-07-17 08:18:57 WARN  NetworkClient - [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Bootstrap broker kafka:9092 (id: -1 rack: null) disconnected
+2026-07-17 08:18:57 WARN  NetworkClient - [Consumer clientId=consumer-notification-group-2, groupId=notification-group] Connection to node -1 (kafka/172.19.0.9:9092) could not be established. Node may not be available.
+2026-07-17 08:18:57 WARN  NetworkClient - [Consumer clientId=consumer-notification-group-2, groupId=notification-group] Bootstrap broker kafka:9092 (id: -1 rack: null) disconnected
+2026-07-17 08:18:57 INFO  NetworkClient - [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Node -1 disconnected.
+2026-07-17 08:18:57 WARN  NetworkClient - [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Connection to node -1 (kafka/172.19.0.9:9092) could not be established. Node may not be available.
+2026-07-17 08:18:57 WARN  NetworkClient - [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Bootstrap broker kafka:9092 (id: -1 rack: null) disconnected
+2026-07-17 08:18:57 INFO  NetworkClient - [Consumer clientId=consumer-notification-group-2, groupId=notification-group] Node -1 disconnected.
+2026-07-17 08:18:57 WARN  NetworkClient - [Consumer clientId=consumer-notification-group-2, groupId=notification-group] Connection to node -1 (kafka/172.19.0.9:9092) could not be established. Node may not be available.
+2026-07-17 08:18:57 WARN  NetworkClient - [Consumer clientId=consumer-notification-group-2, groupId=notification-group] Bootstrap broker kafka:9092 (id: -1 rack: null) disconnected
+2026-07-17 08:18:57 INFO  NetworkClient - [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Node -1 disconnected.
+2026-07-17 08:18:57 WARN  NetworkClient - [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Connection to node -1 (kafka/172.19.0.9:9092) could not be established. Node may not be available.
+2026-07-17 08:18:57 WARN  NetworkClient - [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Bootstrap broker kafka:9092 (id: -1 rack: null) disconnected
+2026-07-17 08:18:57 INFO  NetworkClient - [Consumer clientId=consumer-notification-group-2, groupId=notification-group] Node -1 disconnected.
+2026-07-17 08:18:57 WARN  NetworkClient - [Consumer clientId=consumer-notification-group-2, groupId=notification-group] Connection to node -1 (kafka/172.19.0.9:9092) could not be established. Node may not be available.
+2026-07-17 08:18:57 WARN  NetworkClient - [Consumer clientId=consumer-notification-group-2, groupId=notification-group] Bootstrap broker kafka:9092 (id: -1 rack: null) disconnected
+2026-07-17 08:18:58 INFO  NetworkClient - [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Node -1 disconnected.
+2026-07-17 08:18:58 WARN  NetworkClient - [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Connection to node -1 (kafka/172.19.0.9:9092) could not be established. Node may not be available.
+2026-07-17 08:18:58 WARN  NetworkClient - [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Bootstrap broker kafka:9092 (id: -1 rack: null) disconnected
+2026-07-17 08:18:58 INFO  NetworkClient - [Consumer clientId=consumer-notification-group-2, groupId=notification-group] Node -1 disconnected.
+2026-07-17 08:18:58 WARN  NetworkClient - [Consumer clientId=consumer-notification-group-2, groupId=notification-group] Connection to node -1 (kafka/172.19.0.9:9092) could not be established. Node may not be available.
+2026-07-17 08:18:58 WARN  NetworkClient - [Consumer clientId=consumer-notification-group-2, groupId=notification-group] Bootstrap broker kafka:9092 (id: -1 rack: null) disconnected
+2026-07-17 08:18:59 INFO  NetworkClient - [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Node -1 disconnected.
+2026-07-17 08:18:59 WARN  NetworkClient - [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Connection to node -1 (kafka/172.19.0.9:9092) could not be established. Node may not be available.
+2026-07-17 08:18:59 WARN  NetworkClient - [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Bootstrap broker kafka:9092 (id: -1 rack: null) disconnected
+2026-07-17 08:18:59 INFO  NetworkClient - [Consumer clientId=consumer-notification-group-2, groupId=notification-group] Node -1 disconnected.
+2026-07-17 08:18:59 WARN  NetworkClient - [Consumer clientId=consumer-notification-group-2, groupId=notification-group] Connection to node -1 (kafka/172.19.0.9:9092) could not be established. Node may not be available.
+2026-07-17 08:18:59 WARN  NetworkClient - [Consumer clientId=consumer-notification-group-2, groupId=notification-group] Bootstrap broker kafka:9092 (id: -1 rack: null) disconnected
+2026-07-17 08:19:00 INFO  NetworkClient - [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Node -1 disconnected.
+2026-07-17 08:19:00 WARN  NetworkClient - [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Connection to node -1 (kafka/172.19.0.9:9092) could not be established. Node may not be available.
+2026-07-17 08:19:00 WARN  NetworkClient - [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Bootstrap broker kafka:9092 (id: -1 rack: null) disconnected
+2026-07-17 08:19:00 INFO  NetworkClient - [Consumer clientId=consumer-notification-group-2, groupId=notification-group] Node -1 disconnected.
+2026-07-17 08:19:00 WARN  NetworkClient - [Consumer clientId=consumer-notification-group-2, groupId=notification-group] Connection to node -1 (kafka/172.19.0.9:9092) could not be established. Node may not be available.
+2026-07-17 08:19:00 WARN  NetworkClient - [Consumer clientId=consumer-notification-group-2, groupId=notification-group] Bootstrap broker kafka:9092 (id: -1 rack: null) disconnected
+2026-07-17 08:19:01 INFO  NetworkClient - [Consumer clientId=consumer-notification-group-2, groupId=notification-group] Node -1 disconnected.
+2026-07-17 08:19:01 WARN  NetworkClient - [Consumer clientId=consumer-notification-group-2, groupId=notification-group] Connection to node -1 (kafka/172.19.0.9:9092) could not be established. Node may not be available.
+2026-07-17 08:19:01 WARN  NetworkClient - [Consumer clientId=consumer-notification-group-2, groupId=notification-group] Bootstrap broker kafka:9092 (id: -1 rack: null) disconnected
+2026-07-17 08:19:01 INFO  NetworkClient - [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Node -1 disconnected.
+2026-07-17 08:19:01 WARN  NetworkClient - [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Connection to node -1 (kafka/172.19.0.9:9092) could not be established. Node may not be available.
+2026-07-17 08:19:01 WARN  NetworkClient - [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Bootstrap broker kafka:9092 (id: -1 rack: null) disconnected
+2026-07-17 08:19:02 INFO  NetworkClient - [Consumer clientId=consumer-notification-group-2, groupId=notification-group] Node -1 disconnected.
+2026-07-17 08:19:02 WARN  NetworkClient - [Consumer clientId=consumer-notification-group-2, groupId=notification-group] Connection to node -1 (kafka/172.19.0.9:9092) could not be established. Node may not be available.
+2026-07-17 08:19:02 WARN  NetworkClient - [Consumer clientId=consumer-notification-group-2, groupId=notification-group] Bootstrap broker kafka:9092 (id: -1 rack: null) disconnected
+2026-07-17 08:19:02 INFO  NetworkClient - [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Node -1 disconnected.
+2026-07-17 08:19:02 WARN  NetworkClient - [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Connection to node -1 (kafka/172.19.0.9:9092) could not be established. Node may not be available.
+2026-07-17 08:19:02 WARN  NetworkClient - [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Bootstrap broker kafka:9092 (id: -1 rack: null) disconnected
+2026-07-17 08:19:03 INFO  NetworkClient - [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Node -1 disconnected.
+2026-07-17 08:19:03 WARN  NetworkClient - [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Connection to node -1 (kafka/172.19.0.9:9092) could not be established. Node may not be available.
+2026-07-17 08:19:03 WARN  NetworkClient - [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Bootstrap broker kafka:9092 (id: -1 rack: null) disconnected
+2026-07-17 08:19:03 INFO  NetworkClient - [Consumer clientId=consumer-notification-group-2, groupId=notification-group] Node -1 disconnected.
+2026-07-17 08:19:03 WARN  NetworkClient - [Consumer clientId=consumer-notification-group-2, groupId=notification-group] Connection to node -1 (kafka/172.19.0.9:9092) could not be established. Node may not be available.
+2026-07-17 08:19:03 WARN  NetworkClient - [Consumer clientId=consumer-notification-group-2, groupId=notification-group] Bootstrap broker kafka:9092 (id: -1 rack: null) disconnected
+2026-07-17 08:19:04 INFO  NetworkClient - [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Node -1 disconnected.
+2026-07-17 08:19:04 WARN  NetworkClient - [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Connection to node -1 (kafka/172.19.0.9:9092) could not be established. Node may not be available.
+2026-07-17 08:19:04 WARN  NetworkClient - [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Bootstrap broker kafka:9092 (id: -1 rack: null) disconnected
+2026-07-17 08:19:04 INFO  NetworkClient - [Consumer clientId=consumer-notification-group-2, groupId=notification-group] Node -1 disconnected.
+2026-07-17 08:19:04 WARN  NetworkClient - [Consumer clientId=consumer-notification-group-2, groupId=notification-group] Connection to node -1 (kafka/172.19.0.9:9092) could not be established. Node may not be available.
+2026-07-17 08:19:04 WARN  NetworkClient - [Consumer clientId=consumer-notification-group-2, groupId=notification-group] Bootstrap broker kafka:9092 (id: -1 rack: null) disconnected
+2026-07-17 08:19:05 INFO  NetworkClient - [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Node -1 disconnected.
+2026-07-17 08:19:05 WARN  NetworkClient - [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Connection to node -1 (kafka/172.19.0.9:9092) could not be established. Node may not be available.
+2026-07-17 08:19:05 WARN  NetworkClient - [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Bootstrap broker kafka:9092 (id: -1 rack: null) disconnected
+2026-07-17 08:19:05 INFO  NetworkClient - [Consumer clientId=consumer-notification-group-2, groupId=notification-group] Node -1 disconnected.
+2026-07-17 08:19:05 WARN  NetworkClient - [Consumer clientId=consumer-notification-group-2, groupId=notification-group] Connection to node -1 (kafka/172.19.0.9:9092) could not be established. Node may not be available.
+2026-07-17 08:19:05 WARN  NetworkClient - [Consumer clientId=consumer-notification-group-2, groupId=notification-group] Bootstrap broker kafka:9092 (id: -1 rack: null) disconnected
+2026-07-17 08:19:06 INFO  Metadata - [Consumer clientId=consumer-notification-group-2, groupId=notification-group] Cluster ID: xCHzlIE3ThyuQ0dMnahzYg
+2026-07-17 08:19:06 INFO  Metadata - [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Cluster ID: xCHzlIE3ThyuQ0dMnahzYg
+2026-07-17 08:19:06 INFO  ConsumerCoordinator - [Consumer clientId=consumer-notification-group-2, groupId=notification-group] Discovered group coordinator kafka:9092 (id: 2147483646 rack: null)
+2026-07-17 08:19:06 INFO  ConsumerCoordinator - [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Discovered group coordinator kafka:9092 (id: 2147483646 rack: null)
+2026-07-17 08:19:06 INFO  ConsumerCoordinator - [Consumer clientId=consumer-notification-group-1, groupId=notification-group] (Re-)joining group
+2026-07-17 08:19:06 INFO  ConsumerCoordinator - [Consumer clientId=consumer-notification-group-2, groupId=notification-group] (Re-)joining group
+2026-07-17 08:19:06 INFO  ConsumerCoordinator - [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Request joining group due to: need to re-join with the given member-id: consumer-notification-group-1-56478e4e-e46d-412d-9f55-a8c3f220c534
+2026-07-17 08:19:06 INFO  ConsumerCoordinator - [Consumer clientId=consumer-notification-group-2, groupId=notification-group] Request joining group due to: need to re-join with the given member-id: consumer-notification-group-2-e865eb77-5c54-458b-a57e-1a4f0eac7b78
+2026-07-17 08:19:06 INFO  ConsumerCoordinator - [Consumer clientId=consumer-notification-group-1, groupId=notification-group] (Re-)joining group
+2026-07-17 08:19:06 INFO  ConsumerCoordinator - [Consumer clientId=consumer-notification-group-2, groupId=notification-group] (Re-)joining group
+2026-07-17 08:19:19 INFO  DiscoveryClient - Disable delta property : false
+2026-07-17 08:19:19 INFO  DiscoveryClient - Single vip registry refresh property : null
+2026-07-17 08:19:19 INFO  DiscoveryClient - Force full registry fetch : false
+2026-07-17 08:19:19 INFO  DiscoveryClient - Application is null : false
+2026-07-17 08:19:19 INFO  DiscoveryClient - Registered Applications size is zero : true
+2026-07-17 08:19:19 INFO  DiscoveryClient - Application version is -1: true
+2026-07-17 08:19:19 INFO  DiscoveryClient - Getting all instance registry info from the eureka server
+2026-07-17 08:19:20 INFO  DiscoveryClient - The response status is 200
+2026-07-17 08:19:51 INFO  ConsumerCoordinator - [Consumer clientId=consumer-notification-group-2, groupId=notification-group] Successfully joined group with generation Generation{generationId=34, memberId='consumer-notification-group-2-e865eb77-5c54-458b-a57e-1a4f0eac7b78', protocol='range'}
+2026-07-17 08:19:51 INFO  ConsumerCoordinator - [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Successfully joined group with generation Generation{generationId=34, memberId='consumer-notification-group-1-56478e4e-e46d-412d-9f55-a8c3f220c534', protocol='range'}
+2026-07-17 08:19:51 INFO  ConsumerCoordinator - [Consumer clientId=consumer-notification-group-2, groupId=notification-group] Finished assignment for group at generation 34: {consumer-notification-group-2-e865eb77-5c54-458b-a57e-1a4f0eac7b78=Assignment(partitions=[screening-completed-0]), consumer-notification-group-1-56478e4e-e46d-412d-9f55-a8c3f220c534=Assignment(partitions=[arshdeep-0])}
+2026-07-17 08:19:51 INFO  ConsumerCoordinator - [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Successfully synced group in generation Generation{generationId=34, memberId='consumer-notification-group-1-56478e4e-e46d-412d-9f55-a8c3f220c534', protocol='range'}
+2026-07-17 08:19:51 INFO  ConsumerCoordinator - [Consumer clientId=consumer-notification-group-2, groupId=notification-group] Successfully synced group in generation Generation{generationId=34, memberId='consumer-notification-group-2-e865eb77-5c54-458b-a57e-1a4f0eac7b78', protocol='range'}
+2026-07-17 08:19:51 INFO  ConsumerCoordinator - [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Notifying assignor about the new Assignment(partitions=[arshdeep-0])
+2026-07-17 08:19:51 INFO  ConsumerCoordinator - [Consumer clientId=consumer-notification-group-2, groupId=notification-group] Notifying assignor about the new Assignment(partitions=[screening-completed-0])
+2026-07-17 08:19:51 INFO  ConsumerRebalanceListenerInvoker - [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Adding newly assigned partitions: arshdeep-0
+2026-07-17 08:19:51 INFO  ConsumerRebalanceListenerInvoker - [Consumer clientId=consumer-notification-group-2, groupId=notification-group] Adding newly assigned partitions: screening-completed-0
+2026-07-17 08:19:51 INFO  ConsumerUtils - Setting offset for partition screening-completed-0 to the committed offset FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[kafka:9092 (id: 1 rack: null)], epoch=0}}
+2026-07-17 08:19:51 INFO  ConsumerUtils - Setting offset for partition arshdeep-0 to the committed offset FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[kafka:9092 (id: 1 rack: null)], epoch=0}}
+2026-07-17 08:19:51 INFO  KafkaMessageListenerContainer - notification-group: partitions assigned: [arshdeep-0]
+2026-07-17 08:19:51 INFO  KafkaMessageListenerContainer - notification-group: partitions assigned: [screening-completed-0]
+2026-07-17 08:22:33 INFO  Version - HV000001: Hibernate Validator 8.0.3.Final
+2026-07-17 08:22:33 INFO  NotificationServiceApplication - Starting NotificationServiceApplication v0.0.1-SNAPSHOT using Java 21.0.11 with PID 1 (/app/app.jar started by root in /app)
+2026-07-17 08:22:34 DEBUG NotificationServiceApplication - Running with Spring Boot v3.5.16, Spring v6.2.19
+2026-07-17 08:22:34 INFO  NotificationServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2026-07-17 08:22:41 INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2026-07-17 08:22:42 INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 851 ms. Found 1 MongoDB repository interface.
+2026-07-17 08:22:44 INFO  GenericScope - BeanFactory id=06d73b6c-70af-399b-a643-67906da84194
+2026-07-17 08:22:47 INFO  TomcatWebServer - Tomcat initialized with port 8086 (http)
+2026-07-17 08:22:47 INFO  Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8086"]
+2026-07-17 08:22:47 INFO  StandardService - Starting service [Tomcat]
+2026-07-17 08:22:47 INFO  StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.55]
+2026-07-17 08:22:47 INFO  [/] - Initializing Spring embedded WebApplicationContext
+2026-07-17 08:22:47 INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 13028 ms
+2026-07-17 08:22:48 INFO  client - MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "5.5.2"}, "os": {"type": "Linux", "name": "Linux", "architecture": "amd64", "version": "6.18.33.2-microsoft-standard-WSL2"}, "platform": "Java/Eclipse Adoptium/21.0.11+10-LTS", "env": {"container": {"runtime": "docker"}}} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, transportSettings=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@69e2fe3b, com.mongodb.Jep395RecordCodecProvider@27afbf14, com.mongodb.KotlinCodecProvider@4cfcac13]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[mongo:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverMonitoringMode=AUTO, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null, timeoutMS=null}
+2026-07-17 08:22:49 INFO  cluster - Monitor thread successfully connected to server with description ServerDescription{address=mongo:27017, type=STANDALONE, cryptd=false, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=164057530, minRoundTripTimeNanos=0}
+2026-07-17 08:22:55 INFO  DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+2026-07-17 08:22:56 WARN  LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-07-17 08:22:56 INFO  InstanceInfoFactory - Setting initial instance status as: STARTING
+2026-07-17 08:22:56 INFO  DiscoveryClient - Initializing Eureka in region us-east-1
+2026-07-17 08:22:56 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-17 08:22:56 INFO  DiscoveryClient - Disable delta property : false
+2026-07-17 08:22:56 INFO  DiscoveryClient - Single vip registry refresh property : null
+2026-07-17 08:22:56 INFO  DiscoveryClient - Force full registry fetch : false
+2026-07-17 08:22:57 INFO  DiscoveryClient - Application is null : false
+2026-07-17 08:22:57 INFO  DiscoveryClient - Registered Applications size is zero : true
+2026-07-17 08:22:57 INFO  DiscoveryClient - Application version is -1: true
+2026-07-17 08:22:57 INFO  DiscoveryClient - Getting all instance registry info from the eureka server
+2026-07-17 08:22:59 INFO  RedirectingEurekaHttpClient - Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://discovery-server:8761/eureka/}, exception=I/O error on GET request for "http://discovery-server:8761/eureka/apps/": Connect to http://discovery-server:8761 failed: Connection refused
+org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://discovery-server:8761/eureka/apps/": Connect to http://discovery-server:8761 failed: Connection refused
+	at org.springframework.web.client.RestTemplate.createResourceAccessException(RestTemplate.java:926) ~[spring-web-6.2.19.jar!/:6.2.19]
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:906) ~[spring-web-6.2.19.jar!/:6.2.19]
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:841) ~[spring-web-6.2.19.jar!/:6.2.19]
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:702) ~[spring-web-6.2.19.jar!/:6.2.19]
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.getApplicationsInternal(RestTemplateEurekaHttpClient.java:174) ~[spring-cloud-netflix-eureka-client-4.3.3.jar!/:4.3.3]
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.getApplications(RestTemplateEurekaHttpClient.java:162) ~[spring-cloud-netflix-eureka-client-4.3.3.jar!/:4.3.3]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$6.execute(EurekaHttpClientDecorator.java:137) ~[eureka-client-2.0.6.jar!/:2.0.6]
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:120) ~[eureka-client-2.0.6.jar!/:2.0.6]
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:79) ~[eureka-client-2.0.6.jar!/:2.0.6]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134) ~[eureka-client-2.0.6.jar!/:2.0.6]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$6.execute(EurekaHttpClientDecorator.java:137) ~[eureka-client-2.0.6.jar!/:2.0.6]
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120) ~[eureka-client-2.0.6.jar!/:2.0.6]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134) ~[eureka-client-2.0.6.jar!/:2.0.6]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$6.execute(EurekaHttpClientDecorator.java:137) ~[eureka-client-2.0.6.jar!/:2.0.6]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76) ~[eureka-client-2.0.6.jar!/:2.0.6]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134) ~[eureka-client-2.0.6.jar!/:2.0.6]
+	at com.netflix.discovery.DiscoveryClient.getAndStoreFullRegistry(DiscoveryClient.java:1061) ~[eureka-client-2.0.6.jar!/:2.0.6]
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:976) ~[eureka-client-2.0.6.jar!/:2.0.6]
+	at com.netflix.discovery.DiscoveryClient.<init>(DiscoveryClient.java:419) ~[eureka-client-2.0.6.jar!/:2.0.6]
+	at com.netflix.discovery.DiscoveryClient.<init>(DiscoveryClient.java:254) ~[eureka-client-2.0.6.jar!/:2.0.6]
+	at com.netflix.discovery.DiscoveryClient.<init>(DiscoveryClient.java:249) ~[eureka-client-2.0.6.jar!/:2.0.6]
+	at org.springframework.cloud.netflix.eureka.CloudEurekaClient.<init>(CloudEurekaClient.java:68) ~[spring-cloud-netflix-eureka-client-4.3.3.jar!/:4.3.3]
+	at org.springframework.cloud.netflix.eureka.EurekaClientAutoConfiguration$RefreshableEurekaClientConfiguration.eurekaClient(EurekaClientAutoConfiguration.java:324) ~[spring-cloud-netflix-eureka-client-4.3.3.jar!/:4.3.3]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.lambda$instantiate$0(SimpleInstantiationStrategy.java:172) ~[spring-beans-6.2.19.jar!/:6.2.19]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiateWithFactoryMethod(SimpleInstantiationStrategy.java:89) ~[spring-beans-6.2.19.jar!/:6.2.19]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:169) ~[spring-beans-6.2.19.jar!/:6.2.19]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653) ~[spring-beans-6.2.19.jar!/:6.2.19]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:645) ~[spring-beans-6.2.19.jar!/:6.2.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1373) ~[spring-beans-6.2.19.jar!/:6.2.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1203) ~[spring-beans-6.2.19.jar!/:6.2.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569) ~[spring-beans-6.2.19.jar!/:6.2.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529) ~[spring-beans-6.2.19.jar!/:6.2.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$1(AbstractBeanFactory.java:378) ~[spring-beans-6.2.19.jar!/:6.2.19]
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.getBean(GenericScope.java:373) ~[spring-cloud-context-4.3.3.jar!/:4.3.3]
+	at org.springframework.cloud.context.scope.GenericScope.get(GenericScope.java:177) ~[spring-cloud-context-4.3.3.jar!/:4.3.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:375) ~[spring-beans-6.2.19.jar!/:6.2.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-6.2.19.jar!/:6.2.19]
+	at org.springframework.aop.target.SimpleBeanTargetSource.getTarget(SimpleBeanTargetSource.java:35) ~[spring-aop-6.2.19.jar!/:6.2.19]
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaRegistration.getTargetObject(EurekaRegistration.java:128) ~[spring-cloud-netflix-eureka-client-4.3.3.jar!/:4.3.3]
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaRegistration.getEurekaClient(EurekaRegistration.java:116) ~[spring-cloud-netflix-eureka-client-4.3.3.jar!/:4.3.3]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.springframework.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:281) ~[spring-core-6.2.19.jar!/:6.2.19]
+	at org.springframework.cloud.context.scope.GenericScope$LockedScopedProxyFactoryBean.invoke(GenericScope.java:480) ~[spring-cloud-context-4.3.3.jar!/:4.3.3]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.2.19.jar!/:6.2.19]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:728) ~[spring-aop-6.2.19.jar!/:6.2.19]
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaRegistration$$SpringCGLIB$$0.getEurekaClient(<generated>) ~[spring-cloud-netflix-eureka-client-4.3.3.jar!/:4.3.3]
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry.maybeInitializeClient(EurekaServiceRegistry.java:83) ~[spring-cloud-netflix-eureka-client-4.3.3.jar!/:4.3.3]
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry.register(EurekaServiceRegistry.java:66) ~[spring-cloud-netflix-eureka-client-4.3.3.jar!/:4.3.3]
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration.start(EurekaAutoServiceRegistration.java:89) ~[spring-cloud-netflix-eureka-client-4.3.3.jar!/:4.3.3]
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:405) ~[spring-context-6.2.19.jar!/:6.2.19]
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:394) ~[spring-context-6.2.19.jar!/:6.2.19]
+	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:586) ~[spring-context-6.2.19.jar!/:6.2.19]
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75) [?:?]
+	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:364) [spring-context-6.2.19.jar!/:6.2.19]
+	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:310) [spring-context-6.2.19.jar!/:6.2.19]
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:1010) [spring-context-6.2.19.jar!/:6.2.19]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:631) [spring-context-6.2.19.jar!/:6.2.19]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) [spring-boot-3.5.16.jar!/:3.5.16]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) [spring-boot-3.5.16.jar!/:3.5.16]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) [spring-boot-3.5.16.jar!/:3.5.16]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) [spring-boot-3.5.16.jar!/:3.5.16]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) [spring-boot-3.5.16.jar!/:3.5.16]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) [spring-boot-3.5.16.jar!/:3.5.16]
+	at com.smarthire.notification_service.NotificationServiceApplication.main(NotificationServiceApplication.java:12) [!/:0.0.1-SNAPSHOT]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.springframework.boot.loader.launch.Launcher.launch(Launcher.java:106) [app.jar:0.0.1-SNAPSHOT]
+	at org.springframework.boot.loader.launch.Launcher.launch(Launcher.java:64) [app.jar:0.0.1-SNAPSHOT]
+	at org.springframework.boot.loader.launch.JarLauncher.main(JarLauncher.java:40) [app.jar:0.0.1-SNAPSHOT]
+Caused by: org.apache.hc.client5.http.HttpHostConnectException: Connect to http://discovery-server:8761 failed: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method) ~[?:?]
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:694) ~[?:?]
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542) ~[?:?]
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:592) ~[?:?]
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327) ~[?:?]
+	at java.base/java.net.Socket.connect(Socket.java:751) ~[?:?]
+	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:226) ~[httpclient5-5.5.2.jar!/:5.5.2]
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:497) ~[httpclient5-5.5.2.jar!/:5.5.2]
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:164) ~[httpclient5-5.5.2.jar!/:5.5.2]
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:174) ~[httpclient5-5.5.2.jar!/:5.5.2]
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:144) ~[httpclient5-5.5.2.jar!/:5.5.2]
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51) ~[httpclient5-5.5.2.jar!/:5.5.2]
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:195) ~[httpclient5-5.5.2.jar!/:5.5.2]
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51) ~[httpclient5-5.5.2.jar!/:5.5.2]
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:168) ~[httpclient5-5.5.2.jar!/:5.5.2]
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51) ~[httpclient5-5.5.2.jar!/:5.5.2]
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:112) ~[httpclient5-5.5.2.jar!/:5.5.2]
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51) ~[httpclient5-5.5.2.jar!/:5.5.2]
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:110) ~[httpclient5-5.5.2.jar!/:5.5.2]
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51) ~[httpclient5-5.5.2.jar!/:5.5.2]
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:185) ~[httpclient5-5.5.2.jar!/:5.5.2]
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:87) ~[httpclient5-5.5.2.jar!/:5.5.2]
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55) ~[httpclient5-5.5.2.jar!/:5.5.2]
+	at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183) ~[httpclient5-5.5.2.jar!/:5.5.2]
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:99) ~[spring-web-6.2.19.jar!/:6.2.19]
+	at org.springframework.http.client.AbstractStreamingClientHttpRequest.executeInternal(AbstractStreamingClientHttpRequest.java:88) ~[spring-web-6.2.19.jar!/:6.2.19]
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:81) ~[spring-web-6.2.19.jar!/:6.2.19]
+	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:117) ~[spring-web-6.2.19.jar!/:6.2.19]
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateTransportClientFactory.lambda$restTemplate$2(RestTemplateTransportClientFactory.java:145) ~[spring-cloud-netflix-eureka-client-4.3.3.jar!/:4.3.3]
+	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:88) ~[spring-web-6.2.19.jar!/:6.2.19]
+	at org.springframework.http.client.InterceptingClientHttpRequest.executeInternal(InterceptingClientHttpRequest.java:72) ~[spring-web-6.2.19.jar!/:6.2.19]
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48) ~[spring-web-6.2.19.jar!/:6.2.19]
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:81) ~[spring-web-6.2.19.jar!/:6.2.19]
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:900) ~[spring-web-6.2.19.jar!/:6.2.19]
+	... 70 more
+2026-07-17 08:22:59 WARN  RetryableEurekaHttpClient - Request execution failed with message: I/O error on GET request for "http://discovery-server:8761/eureka/apps/": Connect to http://discovery-server:8761 failed: Connection refused
+2026-07-17 08:22:59 INFO  DiscoveryClient - DiscoveryClient_NOTIFICATION-SERVICE/af8ba00b458f:notification-service:8086 - was unable to refresh its cache! This periodic background refresh will be retried in 30 seconds. status = Cannot execute request on any known server
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112) ~[eureka-client-2.0.6.jar!/:2.0.6]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134) ~[eureka-client-2.0.6.jar!/:2.0.6]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$6.execute(EurekaHttpClientDecorator.java:137) ~[eureka-client-2.0.6.jar!/:2.0.6]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76) ~[eureka-client-2.0.6.jar!/:2.0.6]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134) ~[eureka-client-2.0.6.jar!/:2.0.6]
+	at com.netflix.discovery.DiscoveryClient.getAndStoreFullRegistry(DiscoveryClient.java:1061) ~[eureka-client-2.0.6.jar!/:2.0.6]
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:976) ~[eureka-client-2.0.6.jar!/:2.0.6]
+	at com.netflix.discovery.DiscoveryClient.<init>(DiscoveryClient.java:419) ~[eureka-client-2.0.6.jar!/:2.0.6]
+	at com.netflix.discovery.DiscoveryClient.<init>(DiscoveryClient.java:254) ~[eureka-client-2.0.6.jar!/:2.0.6]
+	at com.netflix.discovery.DiscoveryClient.<init>(DiscoveryClient.java:249) ~[eureka-client-2.0.6.jar!/:2.0.6]
+	at org.springframework.cloud.netflix.eureka.CloudEurekaClient.<init>(CloudEurekaClient.java:68) ~[spring-cloud-netflix-eureka-client-4.3.3.jar!/:4.3.3]
+	at org.springframework.cloud.netflix.eureka.EurekaClientAutoConfiguration$RefreshableEurekaClientConfiguration.eurekaClient(EurekaClientAutoConfiguration.java:324) ~[spring-cloud-netflix-eureka-client-4.3.3.jar!/:4.3.3]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.lambda$instantiate$0(SimpleInstantiationStrategy.java:172) ~[spring-beans-6.2.19.jar!/:6.2.19]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiateWithFactoryMethod(SimpleInstantiationStrategy.java:89) ~[spring-beans-6.2.19.jar!/:6.2.19]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:169) ~[spring-beans-6.2.19.jar!/:6.2.19]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653) ~[spring-beans-6.2.19.jar!/:6.2.19]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:645) ~[spring-beans-6.2.19.jar!/:6.2.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1373) ~[spring-beans-6.2.19.jar!/:6.2.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1203) ~[spring-beans-6.2.19.jar!/:6.2.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569) ~[spring-beans-6.2.19.jar!/:6.2.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529) ~[spring-beans-6.2.19.jar!/:6.2.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$1(AbstractBeanFactory.java:378) ~[spring-beans-6.2.19.jar!/:6.2.19]
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.getBean(GenericScope.java:373) ~[spring-cloud-context-4.3.3.jar!/:4.3.3]
+	at org.springframework.cloud.context.scope.GenericScope.get(GenericScope.java:177) ~[spring-cloud-context-4.3.3.jar!/:4.3.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:375) ~[spring-beans-6.2.19.jar!/:6.2.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-6.2.19.jar!/:6.2.19]
+	at org.springframework.aop.target.SimpleBeanTargetSource.getTarget(SimpleBeanTargetSource.java:35) ~[spring-aop-6.2.19.jar!/:6.2.19]
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaRegistration.getTargetObject(EurekaRegistration.java:128) ~[spring-cloud-netflix-eureka-client-4.3.3.jar!/:4.3.3]
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaRegistration.getEurekaClient(EurekaRegistration.java:116) ~[spring-cloud-netflix-eureka-client-4.3.3.jar!/:4.3.3]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.springframework.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:281) ~[spring-core-6.2.19.jar!/:6.2.19]
+	at org.springframework.cloud.context.scope.GenericScope$LockedScopedProxyFactoryBean.invoke(GenericScope.java:480) ~[spring-cloud-context-4.3.3.jar!/:4.3.3]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.2.19.jar!/:6.2.19]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:728) ~[spring-aop-6.2.19.jar!/:6.2.19]
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaRegistration$$SpringCGLIB$$0.getEurekaClient(<generated>) ~[spring-cloud-netflix-eureka-client-4.3.3.jar!/:4.3.3]
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry.maybeInitializeClient(EurekaServiceRegistry.java:83) ~[spring-cloud-netflix-eureka-client-4.3.3.jar!/:4.3.3]
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry.register(EurekaServiceRegistry.java:66) ~[spring-cloud-netflix-eureka-client-4.3.3.jar!/:4.3.3]
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration.start(EurekaAutoServiceRegistration.java:89) ~[spring-cloud-netflix-eureka-client-4.3.3.jar!/:4.3.3]
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:405) ~[spring-context-6.2.19.jar!/:6.2.19]
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:394) ~[spring-context-6.2.19.jar!/:6.2.19]
+	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:586) ~[spring-context-6.2.19.jar!/:6.2.19]
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75) [?:?]
+	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:364) [spring-context-6.2.19.jar!/:6.2.19]
+	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:310) [spring-context-6.2.19.jar!/:6.2.19]
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:1010) [spring-context-6.2.19.jar!/:6.2.19]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:631) [spring-context-6.2.19.jar!/:6.2.19]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) [spring-boot-3.5.16.jar!/:3.5.16]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) [spring-boot-3.5.16.jar!/:3.5.16]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) [spring-boot-3.5.16.jar!/:3.5.16]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) [spring-boot-3.5.16.jar!/:3.5.16]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) [spring-boot-3.5.16.jar!/:3.5.16]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) [spring-boot-3.5.16.jar!/:3.5.16]
+	at com.smarthire.notification_service.NotificationServiceApplication.main(NotificationServiceApplication.java:12) [!/:0.0.1-SNAPSHOT]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.springframework.boot.loader.launch.Launcher.launch(Launcher.java:106) [app.jar:0.0.1-SNAPSHOT]
+	at org.springframework.boot.loader.launch.Launcher.launch(Launcher.java:64) [app.jar:0.0.1-SNAPSHOT]
+	at org.springframework.boot.loader.launch.JarLauncher.main(JarLauncher.java:40) [app.jar:0.0.1-SNAPSHOT]
+2026-07-17 08:22:59 INFO  DiscoveryClient - Initial registry fetch from primary servers failed
+2026-07-17 08:22:59 WARN  DiscoveryClient - Using default backup registry implementation which does not do anything.
+2026-07-17 08:22:59 INFO  DiscoveryClient - Initial registry fetch from backup servers failed
+2026-07-17 08:22:59 INFO  DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2026-07-17 08:22:59 INFO  InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-07-17 08:22:59 INFO  DiscoveryClient - Discovery Client initialized at timestamp 1784276579768 with initial instances count: 0
+2026-07-17 08:22:59 INFO  EurekaServiceRegistry - Registering application NOTIFICATION-SERVICE with eureka with status UP
+2026-07-17 08:22:59 INFO  DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1784276579813, current=UP, previous=STARTING]
+2026-07-17 08:22:59 INFO  Http11NioProtocol - Starting ProtocolHandler ["http-nio-8086"]
+2026-07-17 08:22:59 INFO  DiscoveryClient - DiscoveryClient_NOTIFICATION-SERVICE/af8ba00b458f:notification-service:8086: registering service...
+2026-07-17 08:22:59 INFO  TomcatWebServer - Tomcat started on port 8086 (http) with context path '/'
+2026-07-17 08:22:59 INFO  EurekaAutoServiceRegistration - Updating port to 8086
+2026-07-17 08:23:00 INFO  RedirectingEurekaHttpClient - Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://discovery-server:8761/eureka/}, exception=I/O error on POST request for "http://discovery-server:8761/eureka/apps/NOTIFICATION-SERVICE": Connect to http://discovery-server:8761 failed: Connection refused
+org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://discovery-server:8761/eureka/apps/NOTIFICATION-SERVICE": Connect to http://discovery-server:8761 failed: Connection refused
+	at org.springframework.web.client.RestTemplate.createResourceAccessException(RestTemplate.java:926) ~[spring-web-6.2.19.jar!/:6.2.19]
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:906) ~[spring-web-6.2.19.jar!/:6.2.19]
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:841) ~[spring-web-6.2.19.jar!/:6.2.19]
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:702) ~[spring-web-6.2.19.jar!/:6.2.19]
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.register(RestTemplateEurekaHttpClient.java:87) ~[spring-cloud-netflix-eureka-client-4.3.3.jar!/:4.3.3]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59) ~[eureka-client-2.0.6.jar!/:2.0.6]
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:120) ~[eureka-client-2.0.6.jar!/:2.0.6]
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:79) ~[eureka-client-2.0.6.jar!/:2.0.6]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) ~[eureka-client-2.0.6.jar!/:2.0.6]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59) ~[eureka-client-2.0.6.jar!/:2.0.6]
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120) ~[eureka-client-2.0.6.jar!/:2.0.6]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) ~[eureka-client-2.0.6.jar!/:2.0.6]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59) ~[eureka-client-2.0.6.jar!/:2.0.6]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76) ~[eureka-client-2.0.6.jar!/:2.0.6]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) ~[eureka-client-2.0.6.jar!/:2.0.6]
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:843) ~[eureka-client-2.0.6.jar!/:2.0.6]
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:125) ~[eureka-client-2.0.6.jar!/:2.0.6]
+	at com.netflix.discovery.InstanceInfoReplicator$2.run(InstanceInfoReplicator.java:105) ~[eureka-client-2.0.6.jar!/:2.0.6]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572) ~[?:?]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317) ~[?:?]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1583) [?:?]
+Caused by: org.apache.hc.client5.http.HttpHostConnectException: Connect to http://discovery-server:8761 failed: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method) ~[?:?]
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:694) ~[?:?]
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542) ~[?:?]
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:592) ~[?:?]
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327) ~[?:?]
+	at java.base/java.net.Socket.connect(Socket.java:751) ~[?:?]
+	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:226) ~[httpclient5-5.5.2.jar!/:5.5.2]
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:497) ~[httpclient5-5.5.2.jar!/:5.5.2]
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:164) ~[httpclient5-5.5.2.jar!/:5.5.2]
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:174) ~[httpclient5-5.5.2.jar!/:5.5.2]
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:144) ~[httpclient5-5.5.2.jar!/:5.5.2]
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51) ~[httpclient5-5.5.2.jar!/:5.5.2]
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:195) ~[httpclient5-5.5.2.jar!/:5.5.2]
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51) ~[httpclient5-5.5.2.jar!/:5.5.2]
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:168) ~[httpclient5-5.5.2.jar!/:5.5.2]
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51) ~[httpclient5-5.5.2.jar!/:5.5.2]
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:112) ~[httpclient5-5.5.2.jar!/:5.5.2]
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51) ~[httpclient5-5.5.2.jar!/:5.5.2]
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:110) ~[httpclient5-5.5.2.jar!/:5.5.2]
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51) ~[httpclient5-5.5.2.jar!/:5.5.2]
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:185) ~[httpclient5-5.5.2.jar!/:5.5.2]
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:87) ~[httpclient5-5.5.2.jar!/:5.5.2]
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55) ~[httpclient5-5.5.2.jar!/:5.5.2]
+	at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183) ~[httpclient5-5.5.2.jar!/:5.5.2]
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:99) ~[spring-web-6.2.19.jar!/:6.2.19]
+	at org.springframework.http.client.AbstractStreamingClientHttpRequest.executeInternal(AbstractStreamingClientHttpRequest.java:88) ~[spring-web-6.2.19.jar!/:6.2.19]
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:81) ~[spring-web-6.2.19.jar!/:6.2.19]
+	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:117) ~[spring-web-6.2.19.jar!/:6.2.19]
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateTransportClientFactory.lambda$restTemplate$2(RestTemplateTransportClientFactory.java:145) ~[spring-cloud-netflix-eureka-client-4.3.3.jar!/:4.3.3]
+	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:88) ~[spring-web-6.2.19.jar!/:6.2.19]
+	at org.springframework.http.client.InterceptingClientHttpRequest.executeInternal(InterceptingClientHttpRequest.java:72) ~[spring-web-6.2.19.jar!/:6.2.19]
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48) ~[spring-web-6.2.19.jar!/:6.2.19]
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:81) ~[spring-web-6.2.19.jar!/:6.2.19]
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:900) ~[spring-web-6.2.19.jar!/:6.2.19]
+	... 22 more
+2026-07-17 08:23:00 WARN  RetryableEurekaHttpClient - Request execution failed with message: I/O error on POST request for "http://discovery-server:8761/eureka/apps/NOTIFICATION-SERVICE": Connect to http://discovery-server:8761 failed: Connection refused
+2026-07-17 08:23:00 WARN  DiscoveryClient - DiscoveryClient_NOTIFICATION-SERVICE/af8ba00b458f:notification-service:8086 - registration failed Cannot execute request on any known server
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112) ~[eureka-client-2.0.6.jar!/:2.0.6]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) ~[eureka-client-2.0.6.jar!/:2.0.6]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59) ~[eureka-client-2.0.6.jar!/:2.0.6]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76) ~[eureka-client-2.0.6.jar!/:2.0.6]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) ~[eureka-client-2.0.6.jar!/:2.0.6]
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:843) ~[eureka-client-2.0.6.jar!/:2.0.6]
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:125) ~[eureka-client-2.0.6.jar!/:2.0.6]
+	at com.netflix.discovery.InstanceInfoReplicator$2.run(InstanceInfoReplicator.java:105) ~[eureka-client-2.0.6.jar!/:2.0.6]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572) ~[?:?]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317) ~[?:?]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1583) [?:?]
+2026-07-17 08:23:00 WARN  InstanceInfoReplicator - There was a problem with the instance info replicator
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112) ~[eureka-client-2.0.6.jar!/:2.0.6]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) ~[eureka-client-2.0.6.jar!/:2.0.6]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59) ~[eureka-client-2.0.6.jar!/:2.0.6]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76) ~[eureka-client-2.0.6.jar!/:2.0.6]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) ~[eureka-client-2.0.6.jar!/:2.0.6]
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:843) ~[eureka-client-2.0.6.jar!/:2.0.6]
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:125) ~[eureka-client-2.0.6.jar!/:2.0.6]
+	at com.netflix.discovery.InstanceInfoReplicator$2.run(InstanceInfoReplicator.java:105) ~[eureka-client-2.0.6.jar!/:2.0.6]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572) ~[?:?]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317) ~[?:?]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1583) [?:?]
+2026-07-17 08:23:00 INFO  ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = latest
+	bootstrap.servers = [kafka:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-notification-group-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	enable.metrics.push = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = notification-group
+	group.instance.id = null
+	group.protocol = classic
+	group.remote.assignor = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metadata.recovery.strategy = none
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.header.urlencode = false
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2026-07-17 08:23:00 INFO  KafkaMetricsCollector - initializing Kafka metrics collector
+2026-07-17 08:23:01 INFO  AppInfoParser - Kafka version: 3.9.2
+2026-07-17 08:23:01 INFO  AppInfoParser - Kafka commitId: 5e9866f43ab8e7e4
+2026-07-17 08:23:01 INFO  AppInfoParser - Kafka startTimeMs: 1784276581243
+2026-07-17 08:23:01 INFO  ClassicKafkaConsumer - [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Subscribed to topic(s): arshdeep
+2026-07-17 08:23:01 INFO  ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = latest
+	bootstrap.servers = [kafka:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-notification-group-2
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	enable.metrics.push = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = notification-group
+	group.instance.id = null
+	group.protocol = classic
+	group.remote.assignor = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metadata.recovery.strategy = none
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.header.urlencode = false
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2026-07-17 08:23:01 INFO  KafkaMetricsCollector - initializing Kafka metrics collector
+2026-07-17 08:23:01 INFO  AppInfoParser - Kafka version: 3.9.2
+2026-07-17 08:23:01 INFO  AppInfoParser - Kafka commitId: 5e9866f43ab8e7e4
+2026-07-17 08:23:01 INFO  AppInfoParser - Kafka startTimeMs: 1784276581429
+2026-07-17 08:23:01 INFO  ClassicKafkaConsumer - [Consumer clientId=consumer-notification-group-2, groupId=notification-group] Subscribed to topic(s): screening-completed
+2026-07-17 08:23:01 INFO  NotificationServiceApplication - Started NotificationServiceApplication in 31.012 seconds (process running for 41.252)
+2026-07-17 08:23:02 INFO  EurekaServiceRegistry - Unregistering application NOTIFICATION-SERVICE with eureka with status DOWN
+2026-07-17 08:23:02 INFO  DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1784276582573, current=DOWN, previous=UP]
+2026-07-17 08:23:02 INFO  DiscoveryClient - DiscoveryClient_NOTIFICATION-SERVICE/af8ba00b458f:notification-service:8086: registering service...
+2026-07-17 08:23:02 INFO  NetworkClient - [Consumer clientId=consumer-notification-group-2, groupId=notification-group] Node -1 disconnected.
+2026-07-17 08:23:02 INFO  NetworkClient - [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Node -1 disconnected.
+2026-07-17 08:23:02 WARN  NetworkClient - [Consumer clientId=consumer-notification-group-2, groupId=notification-group] Connection to node -1 (kafka/172.19.0.12:9092) could not be established. Node may not be available.
+2026-07-17 08:23:02 WARN  NetworkClient - [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Connection to node -1 (kafka/172.19.0.12:9092) could not be established. Node may not be available.
+2026-07-17 08:23:02 WARN  NetworkClient - [Consumer clientId=consumer-notification-group-2, groupId=notification-group] Bootstrap broker kafka:9092 (id: -1 rack: null) disconnected
+2026-07-17 08:23:02 WARN  NetworkClient - [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Bootstrap broker kafka:9092 (id: -1 rack: null) disconnected
+2026-07-17 08:23:02 INFO  ConsumerCoordinator - [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Resetting generation and member id due to: consumer pro-actively leaving the group
+2026-07-17 08:23:02 INFO  ConsumerCoordinator - [Consumer clientId=consumer-notification-group-2, groupId=notification-group] Resetting generation and member id due to: consumer pro-actively leaving the group
+2026-07-17 08:23:02 INFO  ConsumerCoordinator - [Consumer clientId=consumer-notification-group-2, groupId=notification-group] Request joining group due to: consumer pro-actively leaving the group
+2026-07-17 08:23:02 INFO  ConsumerCoordinator - [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Request joining group due to: consumer pro-actively leaving the group
+2026-07-17 08:23:02 INFO  ClassicKafkaConsumer - [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Unsubscribed all topics or patterns and assigned partitions
+2026-07-17 08:23:02 INFO  ClassicKafkaConsumer - [Consumer clientId=consumer-notification-group-2, groupId=notification-group] Unsubscribed all topics or patterns and assigned partitions
+2026-07-17 08:23:02 INFO  ConsumerCoordinator - [Consumer clientId=consumer-notification-group-2, groupId=notification-group] Resetting generation and member id due to: consumer pro-actively leaving the group
+2026-07-17 08:23:02 INFO  ConsumerCoordinator - [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Resetting generation and member id due to: consumer pro-actively leaving the group
+2026-07-17 08:23:02 INFO  ConsumerCoordinator - [Consumer clientId=consumer-notification-group-2, groupId=notification-group] Request joining group due to: consumer pro-actively leaving the group
+2026-07-17 08:23:02 INFO  ConsumerCoordinator - [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Request joining group due to: consumer pro-actively leaving the group
+2026-07-17 08:23:02 INFO  Metrics - Metrics scheduler closed
+2026-07-17 08:23:02 INFO  Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2026-07-17 08:23:02 INFO  Metrics - Metrics scheduler closed
+2026-07-17 08:23:02 INFO  Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2026-07-17 08:23:02 INFO  Metrics - Closing reporter org.apache.kafka.common.telemetry.internals.ClientTelemetryReporter
+2026-07-17 08:23:02 INFO  Metrics - Closing reporter org.apache.kafka.common.telemetry.internals.ClientTelemetryReporter
+2026-07-17 08:23:02 INFO  Metrics - Metrics reporters closed
+2026-07-17 08:23:02 INFO  Metrics - Metrics reporters closed
+2026-07-17 08:23:02 INFO  AppInfoParser - App info kafka.consumer for consumer-notification-group-1 unregistered
+2026-07-17 08:23:02 INFO  KafkaMessageListenerContainer - notification-group: Consumer stopped
+2026-07-17 08:23:02 INFO  AppInfoParser - App info kafka.consumer for consumer-notification-group-2 unregistered
+2026-07-17 08:23:02 INFO  KafkaMessageListenerContainer - notification-group: Consumer stopped
+2026-07-17 08:23:02 INFO  GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-07-17 08:23:02 INFO  GracefulShutdown - Graceful shutdown complete
+2026-07-17 08:23:02 INFO  DiscoveryClient - Shutting down DiscoveryClient ...
+2026-07-17 08:23:03 INFO  DiscoveryClient - DiscoveryClient_NOTIFICATION-SERVICE/af8ba00b458f:notification-service:8086 - registration status: 204
+2026-07-17 12:04:33 INFO  Version - HV000001: Hibernate Validator 8.0.3.Final
+2026-07-17 12:04:33 INFO  NotificationServiceApplication - Starting NotificationServiceApplication v0.0.1-SNAPSHOT using Java 21.0.11 with PID 1 (/app/app.jar started by root in /app)
+2026-07-17 12:04:33 DEBUG NotificationServiceApplication - Running with Spring Boot v3.5.16, Spring v6.2.19
+2026-07-17 12:04:33 INFO  NotificationServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2026-07-17 12:04:40 INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2026-07-17 12:04:41 INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 713 ms. Found 1 MongoDB repository interface.
+2026-07-17 12:04:43 INFO  GenericScope - BeanFactory id=06d73b6c-70af-399b-a643-67906da84194
+2026-07-17 12:04:46 INFO  TomcatWebServer - Tomcat initialized with port 8086 (http)
+2026-07-17 12:04:46 INFO  Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8086"]
+2026-07-17 12:04:46 INFO  StandardService - Starting service [Tomcat]
+2026-07-17 12:04:46 INFO  StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.55]
+2026-07-17 12:04:46 INFO  [/] - Initializing Spring embedded WebApplicationContext
+2026-07-17 12:04:46 INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 12974 ms
+2026-07-17 12:04:49 INFO  client - MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "5.5.2"}, "os": {"type": "Linux", "name": "Linux", "architecture": "amd64", "version": "6.18.33.2-microsoft-standard-WSL2"}, "platform": "Java/Eclipse Adoptium/21.0.11+10-LTS", "env": {"container": {"runtime": "docker"}}} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, transportSettings=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@4276ad40, com.mongodb.Jep395RecordCodecProvider@6e5f5478, com.mongodb.KotlinCodecProvider@5fb07347]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[mongo:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverMonitoringMode=AUTO, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null, timeoutMS=null}
+2026-07-17 12:04:49 INFO  cluster - Monitor thread successfully connected to server with description ServerDescription{address=mongo:27017, type=STANDALONE, cryptd=false, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=146474540, minRoundTripTimeNanos=0}
+2026-07-17 12:04:56 INFO  DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+2026-07-17 12:04:56 WARN  LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-07-17 12:04:56 INFO  InstanceInfoFactory - Setting initial instance status as: STARTING
+2026-07-17 12:04:56 INFO  DiscoveryClient - Initializing Eureka in region us-east-1
+2026-07-17 12:04:56 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-17 12:04:56 INFO  DiscoveryClient - Disable delta property : false
+2026-07-17 12:04:56 INFO  DiscoveryClient - Single vip registry refresh property : null
+2026-07-17 12:04:56 INFO  DiscoveryClient - Force full registry fetch : false
+2026-07-17 12:04:56 INFO  DiscoveryClient - Application is null : false
+2026-07-17 12:04:56 INFO  DiscoveryClient - Registered Applications size is zero : true
+2026-07-17 12:04:56 INFO  DiscoveryClient - Application version is -1: true
+2026-07-17 12:04:56 INFO  DiscoveryClient - Getting all instance registry info from the eureka server
+2026-07-17 12:04:59 INFO  DiscoveryClient - The response status is 200
+2026-07-17 12:04:59 INFO  DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2026-07-17 12:04:59 INFO  InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-07-17 12:04:59 INFO  DiscoveryClient - Discovery Client initialized at timestamp 1784289899370 with initial instances count: 0
+2026-07-17 12:04:59 INFO  EurekaServiceRegistry - Registering application NOTIFICATION-SERVICE with eureka with status UP
+2026-07-17 12:04:59 INFO  DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1784289899424, current=UP, previous=STARTING]
+2026-07-17 12:04:59 INFO  DiscoveryClient - DiscoveryClient_NOTIFICATION-SERVICE/bba7cdf7dcde:notification-service:8086: registering service...
+2026-07-17 12:04:59 INFO  Http11NioProtocol - Starting ProtocolHandler ["http-nio-8086"]
+2026-07-17 12:04:59 INFO  TomcatWebServer - Tomcat started on port 8086 (http) with context path '/'
+2026-07-17 12:04:59 INFO  EurekaAutoServiceRegistration - Updating port to 8086
+2026-07-17 12:04:59 INFO  DiscoveryClient - DiscoveryClient_NOTIFICATION-SERVICE/bba7cdf7dcde:notification-service:8086 - registration status: 204
+2026-07-17 12:04:59 INFO  ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = latest
+	bootstrap.servers = [kafka:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-notification-group-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	enable.metrics.push = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = notification-group
+	group.instance.id = null
+	group.protocol = classic
+	group.remote.assignor = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metadata.recovery.strategy = none
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.header.urlencode = false
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2026-07-17 12:05:00 INFO  KafkaMetricsCollector - initializing Kafka metrics collector
+2026-07-17 12:05:00 INFO  AppInfoParser - Kafka version: 3.9.2
+2026-07-17 12:05:00 INFO  AppInfoParser - Kafka commitId: 5e9866f43ab8e7e4
+2026-07-17 12:05:00 INFO  AppInfoParser - Kafka startTimeMs: 1784289900835
+2026-07-17 12:05:00 INFO  ClassicKafkaConsumer - [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Subscribed to topic(s): arshdeep
+2026-07-17 12:05:00 INFO  ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = latest
+	bootstrap.servers = [kafka:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-notification-group-2
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	enable.metrics.push = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = notification-group
+	group.instance.id = null
+	group.protocol = classic
+	group.remote.assignor = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metadata.recovery.strategy = none
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.header.urlencode = false
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2026-07-17 12:05:00 INFO  KafkaMetricsCollector - initializing Kafka metrics collector
+2026-07-17 12:05:00 INFO  AppInfoParser - Kafka version: 3.9.2
+2026-07-17 12:05:00 INFO  AppInfoParser - Kafka commitId: 5e9866f43ab8e7e4
+2026-07-17 12:05:00 INFO  AppInfoParser - Kafka startTimeMs: 1784289900961
+2026-07-17 12:05:00 INFO  ClassicKafkaConsumer - [Consumer clientId=consumer-notification-group-2, groupId=notification-group] Subscribed to topic(s): screening-completed
+2026-07-17 12:05:01 INFO  NotificationServiceApplication - Started NotificationServiceApplication in 30.195 seconds (process running for 35.952)
+2026-07-17 12:05:02 WARN  NetworkClient - [Consumer clientId=consumer-notification-group-2, groupId=notification-group] The metadata response from the cluster reported a recoverable issue with correlation id 3 : {screening-completed=LEADER_NOT_AVAILABLE}
+2026-07-17 12:05:02 WARN  NetworkClient - [Consumer clientId=consumer-notification-group-1, groupId=notification-group] The metadata response from the cluster reported a recoverable issue with correlation id 3 : {arshdeep=LEADER_NOT_AVAILABLE}
+2026-07-17 12:05:02 INFO  Metadata - [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Cluster ID: yqqD5tIsS_ivwf4U2XMuUg
+2026-07-17 12:05:02 INFO  Metadata - [Consumer clientId=consumer-notification-group-2, groupId=notification-group] Cluster ID: yqqD5tIsS_ivwf4U2XMuUg
+2026-07-17 12:05:02 WARN  NetworkClient - [Consumer clientId=consumer-notification-group-1, groupId=notification-group] The metadata response from the cluster reported a recoverable issue with correlation id 7 : {arshdeep=LEADER_NOT_AVAILABLE}
+2026-07-17 12:05:02 WARN  NetworkClient - [Consumer clientId=consumer-notification-group-2, groupId=notification-group] The metadata response from the cluster reported a recoverable issue with correlation id 7 : {screening-completed=LEADER_NOT_AVAILABLE}
+2026-07-17 12:05:02 WARN  NetworkClient - [Consumer clientId=consumer-notification-group-1, groupId=notification-group] The metadata response from the cluster reported a recoverable issue with correlation id 9 : {arshdeep=LEADER_NOT_AVAILABLE}
+2026-07-17 12:05:02 WARN  NetworkClient - [Consumer clientId=consumer-notification-group-2, groupId=notification-group] The metadata response from the cluster reported a recoverable issue with correlation id 9 : {screening-completed=LEADER_NOT_AVAILABLE}
+2026-07-17 12:05:05 INFO  ConsumerCoordinator - [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Discovered group coordinator kafka:9092 (id: 2147483646 rack: null)
+2026-07-17 12:05:05 INFO  ConsumerCoordinator - [Consumer clientId=consumer-notification-group-1, groupId=notification-group] (Re-)joining group
+2026-07-17 12:05:05 INFO  ConsumerCoordinator - [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Request joining group due to: need to re-join with the given member-id: consumer-notification-group-1-b017b261-63ca-4f40-8f8b-368785d81010
+2026-07-17 12:05:05 INFO  ConsumerCoordinator - [Consumer clientId=consumer-notification-group-1, groupId=notification-group] (Re-)joining group
+2026-07-17 12:05:05 INFO  ConsumerCoordinator - [Consumer clientId=consumer-notification-group-2, groupId=notification-group] Discovered group coordinator kafka:9092 (id: 2147483646 rack: null)
+2026-07-17 12:05:05 INFO  ConsumerCoordinator - [Consumer clientId=consumer-notification-group-2, groupId=notification-group] (Re-)joining group
+2026-07-17 12:05:05 INFO  ConsumerCoordinator - [Consumer clientId=consumer-notification-group-2, groupId=notification-group] Request joining group due to: need to re-join with the given member-id: consumer-notification-group-2-a7398682-36fa-4188-a11a-b24bf94907dc
+2026-07-17 12:05:05 INFO  ConsumerCoordinator - [Consumer clientId=consumer-notification-group-2, groupId=notification-group] (Re-)joining group
+2026-07-17 12:05:11 INFO  ConsumerCoordinator - [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Successfully joined group with generation Generation{generationId=1, memberId='consumer-notification-group-1-b017b261-63ca-4f40-8f8b-368785d81010', protocol='range'}
+2026-07-17 12:05:11 INFO  ConsumerCoordinator - [Consumer clientId=consumer-notification-group-2, groupId=notification-group] Successfully joined group with generation Generation{generationId=1, memberId='consumer-notification-group-2-a7398682-36fa-4188-a11a-b24bf94907dc', protocol='range'}
+2026-07-17 12:05:11 INFO  ConsumerCoordinator - [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Finished assignment for group at generation 1: {consumer-notification-group-1-b017b261-63ca-4f40-8f8b-368785d81010=Assignment(partitions=[arshdeep-0]), consumer-notification-group-2-a7398682-36fa-4188-a11a-b24bf94907dc=Assignment(partitions=[screening-completed-0])}
+2026-07-17 12:05:11 INFO  ConsumerCoordinator - [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Successfully synced group in generation Generation{generationId=1, memberId='consumer-notification-group-1-b017b261-63ca-4f40-8f8b-368785d81010', protocol='range'}
+2026-07-17 12:05:11 INFO  ConsumerCoordinator - [Consumer clientId=consumer-notification-group-2, groupId=notification-group] Successfully synced group in generation Generation{generationId=1, memberId='consumer-notification-group-2-a7398682-36fa-4188-a11a-b24bf94907dc', protocol='range'}
+2026-07-17 12:05:11 INFO  ConsumerCoordinator - [Consumer clientId=consumer-notification-group-2, groupId=notification-group] Notifying assignor about the new Assignment(partitions=[screening-completed-0])
+2026-07-17 12:05:11 INFO  ConsumerCoordinator - [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Notifying assignor about the new Assignment(partitions=[arshdeep-0])
+2026-07-17 12:05:11 INFO  ConsumerRebalanceListenerInvoker - [Consumer clientId=consumer-notification-group-2, groupId=notification-group] Adding newly assigned partitions: screening-completed-0
+2026-07-17 12:05:11 INFO  ConsumerRebalanceListenerInvoker - [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Adding newly assigned partitions: arshdeep-0
+2026-07-17 12:05:11 INFO  ConsumerCoordinator - [Consumer clientId=consumer-notification-group-2, groupId=notification-group] Found no committed offset for partition screening-completed-0
+2026-07-17 12:05:11 INFO  ConsumerCoordinator - [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Found no committed offset for partition arshdeep-0
+2026-07-17 12:05:11 INFO  ConsumerCoordinator - [Consumer clientId=consumer-notification-group-2, groupId=notification-group] Found no committed offset for partition screening-completed-0
+2026-07-17 12:05:11 INFO  ConsumerCoordinator - [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Found no committed offset for partition arshdeep-0
+2026-07-17 12:05:11 INFO  SubscriptionState - [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Resetting offset for partition arshdeep-0 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[kafka:9092 (id: 1 rack: null)], epoch=0}}.
+2026-07-17 12:05:11 INFO  SubscriptionState - [Consumer clientId=consumer-notification-group-2, groupId=notification-group] Resetting offset for partition screening-completed-0 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[kafka:9092 (id: 1 rack: null)], epoch=0}}.
+2026-07-17 12:05:11 INFO  KafkaMessageListenerContainer - notification-group: partitions assigned: [screening-completed-0]
+2026-07-17 12:05:11 INFO  KafkaMessageListenerContainer - notification-group: partitions assigned: [arshdeep-0]
+2026-07-17 12:05:29 INFO  DiscoveryClient - Disable delta property : false
+2026-07-17 12:05:29 INFO  DiscoveryClient - Single vip registry refresh property : null
+2026-07-17 12:05:29 INFO  DiscoveryClient - Force full registry fetch : false
+2026-07-17 12:05:29 INFO  DiscoveryClient - Application is null : false
+2026-07-17 12:05:29 INFO  DiscoveryClient - Registered Applications size is zero : true
+2026-07-17 12:05:29 INFO  DiscoveryClient - Application version is -1: false
+2026-07-17 12:05:29 INFO  DiscoveryClient - Getting all instance registry info from the eureka server
+2026-07-17 12:05:29 INFO  DiscoveryClient - The response status is 200

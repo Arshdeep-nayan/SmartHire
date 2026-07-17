@@ -5274,3 +5274,208 @@ Caused by: org.apache.hc.core5.http.NoHttpResponseException: discovery-server:87
 2026-07-16 21:11:37 INFO  HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@e04b8a0
 2026-07-16 21:11:37 INFO  HikariDataSource - HikariPool-1 - Start completed.
 2026-07-16 21:11:38 WARN  deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-07-16 21:11:38 INFO  pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.4.10
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-07-16 21:11:42 INFO  JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-16 21:11:42 INFO  LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-16 21:11:43 DEBUG JWTFilter - Filter 'JWTFilter' configured for use
+2026-07-16 21:11:43 INFO  InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2026-07-16 21:11:43 WARN  InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2026-07-16 21:11:44 WARN  JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-16 21:11:46 INFO  DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+2026-07-16 21:11:46 WARN  LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-07-16 21:11:46 INFO  InstanceInfoFactory - Setting initial instance status as: STARTING
+2026-07-16 21:11:46 INFO  DiscoveryClient - Initializing Eureka in region us-east-1
+2026-07-16 21:11:46 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-16 21:11:46 INFO  DiscoveryClient - Disable delta property : false
+2026-07-16 21:11:46 INFO  DiscoveryClient - Single vip registry refresh property : null
+2026-07-16 21:11:46 INFO  DiscoveryClient - Force full registry fetch : false
+2026-07-16 21:11:46 INFO  DiscoveryClient - Application is null : false
+2026-07-16 21:11:46 INFO  DiscoveryClient - Registered Applications size is zero : true
+2026-07-16 21:11:46 INFO  DiscoveryClient - Application version is -1: true
+2026-07-16 21:11:46 INFO  DiscoveryClient - Getting all instance registry info from the eureka server
+2026-07-16 21:11:47 INFO  DiscoveryClient - The response status is 200
+2026-07-16 21:11:47 INFO  DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2026-07-16 21:11:47 INFO  InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-07-16 21:11:47 INFO  DiscoveryClient - Discovery Client initialized at timestamp 1784236307665 with initial instances count: 0
+2026-07-16 21:11:47 INFO  EurekaServiceRegistry - Registering application AUTH-SERVICE with eureka with status UP
+2026-07-16 21:11:47 INFO  DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1784236307679, current=UP, previous=STARTING]
+2026-07-16 21:11:47 INFO  Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2026-07-16 21:11:47 INFO  DiscoveryClient - DiscoveryClient_AUTH-SERVICE/517e0116a888:AUTH-SERVICE:8081: registering service...
+2026-07-16 21:11:47 INFO  TomcatWebServer - Tomcat started on port 8081 (http) with context path '/'
+2026-07-16 21:11:47 INFO  EurekaAutoServiceRegistration - Updating port to 8081
+2026-07-16 21:11:47 INFO  AuthServiceApplication - Started AuthServiceApplication in 33.92 seconds (process running for 39.824)
+2026-07-16 21:11:47 INFO  DiscoveryClient - DiscoveryClient_AUTH-SERVICE/517e0116a888:AUTH-SERVICE:8081 - registration status: 204
+2026-07-16 21:12:17 INFO  DiscoveryClient - Disable delta property : false
+2026-07-16 21:12:17 INFO  DiscoveryClient - Single vip registry refresh property : null
+2026-07-16 21:12:17 INFO  DiscoveryClient - Force full registry fetch : false
+2026-07-16 21:12:17 INFO  DiscoveryClient - Application is null : false
+2026-07-16 21:12:17 INFO  DiscoveryClient - Registered Applications size is zero : true
+2026-07-16 21:12:17 INFO  DiscoveryClient - Application version is -1: false
+2026-07-16 21:12:17 INFO  DiscoveryClient - Getting all instance registry info from the eureka server
+2026-07-16 21:12:17 INFO  DiscoveryClient - The response status is 200
+2026-07-16 21:16:46 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-16 21:21:46 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-16 21:26:46 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-16 21:31:46 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-16 21:36:46 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-16 21:41:46 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-16 21:46:46 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-16 21:51:46 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-16 21:56:46 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-16 22:01:46 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-16 22:06:46 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-16 22:11:46 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-17 08:18:14 INFO  Version - HV000001: Hibernate Validator 8.0.3.Final
+2026-07-17 08:18:15 INFO  AuthServiceApplication - Starting AuthServiceApplication v0.0.1-SNAPSHOT using Java 21.0.11 with PID 1 (/app/app.jar started by root in /app)
+2026-07-17 08:18:15 DEBUG AuthServiceApplication - Running with Spring Boot v3.5.15, Spring v6.2.19
+2026-07-17 08:18:15 INFO  AuthServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2026-07-17 08:18:25 INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-17 08:18:26 INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 926 ms. Found 1 JPA repository interface.
+2026-07-17 08:18:29 INFO  GenericScope - BeanFactory id=a81e853c-154f-3b9d-aa4a-6a673357b50c
+2026-07-17 08:18:33 INFO  TomcatWebServer - Tomcat initialized with port 8081 (http)
+2026-07-17 08:18:33 INFO  Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2026-07-17 08:18:33 INFO  StandardService - Starting service [Tomcat]
+2026-07-17 08:18:33 INFO  StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.55]
+2026-07-17 08:18:33 INFO  [/] - Initializing Spring embedded WebApplicationContext
+2026-07-17 08:18:33 INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 17101 ms
+2026-07-17 08:18:35 INFO  LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-07-17 08:18:35 INFO  Version - HHH000412: Hibernate ORM core version 6.6.53.Final
+2026-07-17 08:18:36 INFO  RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-07-17 08:18:39 INFO  SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-17 08:18:39 INFO  HikariDataSource - HikariPool-1 - Starting...
+2026-07-17 08:18:42 INFO  HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2051a0ec
+2026-07-17 08:18:42 INFO  HikariDataSource - HikariPool-1 - Start completed.
+2026-07-17 08:18:43 WARN  deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-07-17 08:18:44 INFO  pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.4.10
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-07-17 08:18:49 INFO  JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-17 08:18:50 INFO  LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-17 08:18:53 DEBUG JWTFilter - Filter 'JWTFilter' configured for use
+2026-07-17 08:18:54 INFO  InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2026-07-17 08:18:54 WARN  InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2026-07-17 08:18:55 WARN  JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-17 08:19:00 INFO  DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+2026-07-17 08:19:00 WARN  LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-07-17 08:19:00 INFO  InstanceInfoFactory - Setting initial instance status as: STARTING
+2026-07-17 08:19:00 INFO  DiscoveryClient - Initializing Eureka in region us-east-1
+2026-07-17 08:19:00 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-17 08:19:00 INFO  DiscoveryClient - Disable delta property : false
+2026-07-17 08:19:00 INFO  DiscoveryClient - Single vip registry refresh property : null
+2026-07-17 08:19:00 INFO  DiscoveryClient - Force full registry fetch : false
+2026-07-17 08:19:00 INFO  DiscoveryClient - Application is null : false
+2026-07-17 08:19:00 INFO  DiscoveryClient - Registered Applications size is zero : true
+2026-07-17 08:19:00 INFO  DiscoveryClient - Application version is -1: true
+2026-07-17 08:19:00 INFO  DiscoveryClient - Getting all instance registry info from the eureka server
+2026-07-17 08:19:02 INFO  DiscoveryClient - The response status is 200
+2026-07-17 08:19:02 INFO  DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2026-07-17 08:19:02 INFO  InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-07-17 08:19:02 INFO  DiscoveryClient - Discovery Client initialized at timestamp 1784276342119 with initial instances count: 2
+2026-07-17 08:19:02 INFO  EurekaServiceRegistry - Registering application AUTH-SERVICE with eureka with status UP
+2026-07-17 08:19:02 INFO  DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1784276342145, current=UP, previous=STARTING]
+2026-07-17 08:19:02 INFO  Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2026-07-17 08:19:02 INFO  DiscoveryClient - DiscoveryClient_AUTH-SERVICE/517e0116a888:AUTH-SERVICE:8081: registering service...
+2026-07-17 08:19:02 INFO  TomcatWebServer - Tomcat started on port 8081 (http) with context path '/'
+2026-07-17 08:19:02 INFO  EurekaAutoServiceRegistration - Updating port to 8081
+2026-07-17 08:19:02 INFO  AuthServiceApplication - Started AuthServiceApplication in 49.976 seconds (process running for 62.654)
+2026-07-17 08:19:02 INFO  DiscoveryClient - DiscoveryClient_AUTH-SERVICE/517e0116a888:AUTH-SERVICE:8081 - registration status: 204
+2026-07-17 08:22:34 INFO  Version - HV000001: Hibernate Validator 8.0.3.Final
+2026-07-17 08:22:35 INFO  AuthServiceApplication - Starting AuthServiceApplication v0.0.1-SNAPSHOT using Java 21.0.11 with PID 1 (/app/app.jar started by root in /app)
+2026-07-17 08:22:35 DEBUG AuthServiceApplication - Running with Spring Boot v3.5.15, Spring v6.2.19
+2026-07-17 08:22:35 INFO  AuthServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2026-07-17 08:22:46 INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-17 08:22:47 INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 1368 ms. Found 1 JPA repository interface.
+2026-07-17 08:22:49 INFO  GenericScope - BeanFactory id=a81e853c-154f-3b9d-aa4a-6a673357b50c
+2026-07-17 08:22:51 INFO  TomcatWebServer - Tomcat initialized with port 8081 (http)
+2026-07-17 08:22:52 INFO  Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2026-07-17 08:22:52 INFO  StandardService - Starting service [Tomcat]
+2026-07-17 08:22:52 INFO  StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.55]
+2026-07-17 08:22:52 INFO  [/] - Initializing Spring embedded WebApplicationContext
+2026-07-17 08:22:52 INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 16775 ms
+2026-07-17 08:22:54 INFO  LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-07-17 08:22:54 INFO  Version - HHH000412: Hibernate ORM core version 6.6.53.Final
+2026-07-17 08:22:55 INFO  RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-07-17 08:22:57 INFO  SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-17 08:22:57 INFO  HikariDataSource - HikariPool-1 - Starting...
+2026-07-17 08:23:00 INFO  HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@430212cb
+2026-07-17 08:23:00 INFO  HikariDataSource - HikariPool-1 - Start completed.
+2026-07-17 08:23:00 WARN  deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-07-17 08:23:00 INFO  pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.4.10
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-07-17 12:04:34 INFO  Version - HV000001: Hibernate Validator 8.0.3.Final
+2026-07-17 12:04:34 INFO  AuthServiceApplication - Starting AuthServiceApplication v0.0.1-SNAPSHOT using Java 21.0.11 with PID 1 (/app/app.jar started by root in /app)
+2026-07-17 12:04:34 DEBUG AuthServiceApplication - Running with Spring Boot v3.5.15, Spring v6.2.19
+2026-07-17 12:04:34 INFO  AuthServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2026-07-17 12:04:42 INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-17 12:04:43 INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 1088 ms. Found 1 JPA repository interface.
+2026-07-17 12:04:45 INFO  GenericScope - BeanFactory id=a81e853c-154f-3b9d-aa4a-6a673357b50c
+2026-07-17 12:04:49 INFO  TomcatWebServer - Tomcat initialized with port 8081 (http)
+2026-07-17 12:04:49 INFO  Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2026-07-17 12:04:49 INFO  StandardService - Starting service [Tomcat]
+2026-07-17 12:04:49 INFO  StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.55]
+2026-07-17 12:04:49 INFO  [/] - Initializing Spring embedded WebApplicationContext
+2026-07-17 12:04:49 INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 14656 ms
+2026-07-17 12:04:50 INFO  LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-07-17 12:04:51 INFO  Version - HHH000412: Hibernate ORM core version 6.6.53.Final
+2026-07-17 12:04:51 INFO  RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-07-17 12:04:53 INFO  SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-17 12:04:53 INFO  HikariDataSource - HikariPool-1 - Starting...
+2026-07-17 12:04:55 INFO  HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6705b763
+2026-07-17 12:04:55 INFO  HikariDataSource - HikariPool-1 - Start completed.
+2026-07-17 12:04:56 WARN  deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-07-17 12:04:56 INFO  pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.4.10
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-07-17 12:05:00 INFO  JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-17 12:05:01 INFO  LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-17 12:05:02 DEBUG JWTFilter - Filter 'JWTFilter' configured for use
+2026-07-17 12:05:02 INFO  InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2026-07-17 12:05:02 WARN  InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2026-07-17 12:05:03 WARN  JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-17 12:05:05 INFO  DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+2026-07-17 12:05:05 WARN  LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-07-17 12:05:05 INFO  InstanceInfoFactory - Setting initial instance status as: STARTING
+2026-07-17 12:05:05 INFO  DiscoveryClient - Initializing Eureka in region us-east-1
+2026-07-17 12:05:05 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-17 12:05:05 INFO  DiscoveryClient - Disable delta property : false
+2026-07-17 12:05:05 INFO  DiscoveryClient - Single vip registry refresh property : null
+2026-07-17 12:05:05 INFO  DiscoveryClient - Force full registry fetch : false
+2026-07-17 12:05:05 INFO  DiscoveryClient - Application is null : false
+2026-07-17 12:05:05 INFO  DiscoveryClient - Registered Applications size is zero : true
+2026-07-17 12:05:06 INFO  DiscoveryClient - Application version is -1: true
+2026-07-17 12:05:06 INFO  DiscoveryClient - Getting all instance registry info from the eureka server
+2026-07-17 12:05:06 INFO  DiscoveryClient - The response status is 200
+2026-07-17 12:05:06 INFO  DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2026-07-17 12:05:06 INFO  InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-07-17 12:05:07 INFO  DiscoveryClient - Discovery Client initialized at timestamp 1784289907000 with initial instances count: 2
+2026-07-17 12:05:07 INFO  EurekaServiceRegistry - Registering application AUTH-SERVICE with eureka with status UP
+2026-07-17 12:05:07 INFO  DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1784289907014, current=UP, previous=STARTING]
+2026-07-17 12:05:07 INFO  Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2026-07-17 12:05:07 INFO  DiscoveryClient - DiscoveryClient_AUTH-SERVICE/21e5e382ec35:AUTH-SERVICE:8081: registering service...
+2026-07-17 12:05:07 INFO  TomcatWebServer - Tomcat started on port 8081 (http) with context path '/'
+2026-07-17 12:05:07 INFO  EurekaAutoServiceRegistration - Updating port to 8081
+2026-07-17 12:05:07 INFO  AuthServiceApplication - Started AuthServiceApplication in 35.326 seconds (process running for 41.846)
+2026-07-17 12:05:07 INFO  DiscoveryClient - DiscoveryClient_AUTH-SERVICE/21e5e382ec35:AUTH-SERVICE:8081 - registration status: 204
