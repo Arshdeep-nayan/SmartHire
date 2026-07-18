@@ -12,7 +12,7 @@ public interface ScreeningRepository extends MongoRepository<ScreeningResult, St
 
     List<ScreeningResult> findByCandidateId(int candidateId);
 
-    List<ScreeningResult> findByJobId(int jobId);
+    List<ScreeningResult> findByJobIdOrderByScoreDesc(int jobId);
 
     Optional<ScreeningResult> findByCandidateIdAndJobId(
             int candidateId,

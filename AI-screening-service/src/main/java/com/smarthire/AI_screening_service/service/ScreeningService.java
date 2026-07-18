@@ -203,7 +203,7 @@ public class ScreeningService {
             int jobId) {
 
         List<ScreeningResult> screenings =
-                repo.findByJobId(jobId);
+                repo.findByJobIdOrderByScoreDesc(jobId);
 
         if (screenings.isEmpty()) {
             throw new ScreeningNotFoundException(
