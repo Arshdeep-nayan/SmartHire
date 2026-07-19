@@ -120,13 +120,11 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
 
             case "RECRUITER":
 
-                // Job Service
                 if (path.startsWith("/jobs")) {
                     if (method.equals("DELETE")) return false;
                     return true;
                 }
 
-                // Candidate Service
                 if (path.startsWith("/api/candidates") || path.startsWith("/api/candidate")) {
                     if (path.equals("/api/candidates/all")) return false;
                     if (path.equals("/api/candidate/add") && method.equals("POST")) return false;
@@ -141,20 +139,18 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
                     return method.equals("GET");
                 }
 
-                // Resume Service
                 if (path.startsWith("/resumes")) {
                     return method.equals("GET");
                 }
 
-                // AI Screening Service
                 if (path.startsWith("/api/screening")) {
                     if (method.equals("DELETE")) return false;
                     if (path.equals("/api/screening/all")) return false;
+                    if (path.matches("/api/screening/candidate/[^/]+/job/[^/]+")) return true;
                     if (path.startsWith("/api/screening/candidate/")) return false;
                     return true;
                 }
 
-                // Notification Service
                 if (path.startsWith("/api/notification")) {
                     if (path.equals("/api/notification/all")) return false;
                     if (path.equals("/api/notification/add")) return false;
@@ -172,14 +168,12 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
 
             case "CANDIDATE":
 
-                // Job Service
                 if (path.startsWith("/jobs")) {
                     if (method.equals("POST") || method.equals("PUT") ||
                             method.equals("DELETE") || method.equals("PATCH")) return false;
                     return method.equals("GET");
                 }
 
-                // Candidate Service
                 if (path.startsWith("/api/candidate") || path.startsWith("/api/candidates")) {
                     if (path.equals("/api/candidates/all")) return false;
                     if (method.equals("DELETE")) return false;
@@ -199,17 +193,14 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
                     return false;
                 }
 
-                // Resume Service
                 if (path.startsWith("/resumes")) {
                     return true;
                 }
 
-                // AI Screening Service
                 if (path.startsWith("/api/screening")) {
                     return false;
                 }
 
-                // Notification Service
                 if (path.startsWith("/api/notification")) {
                     if (path.equals("/api/notification/all")) return false;
                     if (path.equals("/api/notification/add")) return false;
