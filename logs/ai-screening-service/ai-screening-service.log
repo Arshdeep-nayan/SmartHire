@@ -14468,3 +14468,1727 @@ Caused by: java.net.UnknownHostException: mongo: Name or service not known
 2026-07-19 12:41:31 INFO  Version - HV000001: Hibernate Validator 8.0.3.Final
 2026-07-19 12:41:33 INFO  AiScreeningServiceApplication - Starting AiScreeningServiceApplication v0.0.1-SNAPSHOT using Java 21.0.11 with PID 1 (/app/app.jar started by root in /app)
 2026-07-19 12:41:33 DEBUG AiScreeningServiceApplication - Running with Spring Boot v3.5.16, Spring v6.2.19
+2026-07-19 12:41:33 INFO  AiScreeningServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2026-07-19 12:41:47 INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2026-07-19 12:41:48 INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 892 ms. Found 1 MongoDB repository interface.
+2026-07-19 12:41:51 INFO  GenericScope - BeanFactory id=26347382-e24c-3f51-a990-ffc1096b85b8
+2026-07-19 12:41:56 INFO  TomcatWebServer - Tomcat initialized with port 8084 (http)
+2026-07-19 12:41:56 INFO  Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8084"]
+2026-07-19 12:41:56 INFO  StandardService - Starting service [Tomcat]
+2026-07-19 12:41:56 INFO  StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.55]
+2026-07-19 12:41:56 INFO  [/] - Initializing Spring embedded WebApplicationContext
+2026-07-19 12:41:56 INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 22568 ms
+2026-07-19 12:42:00 INFO  client - MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "5.5.2"}, "os": {"type": "Linux", "name": "Linux", "architecture": "amd64", "version": "6.18.33.2-microsoft-standard-WSL2"}, "platform": "Java/Eclipse Adoptium/21.0.11+10-LTS", "env": {"container": {"runtime": "docker"}}} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, transportSettings=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@10b87ff6, com.mongodb.Jep395RecordCodecProvider@63262071, com.mongodb.KotlinCodecProvider@2d4f67e]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[mongo:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverMonitoringMode=AUTO, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null, timeoutMS=null}
+2026-07-19 12:42:00 INFO  cluster - Monitor thread successfully connected to server with description ServerDescription{address=mongo:27017, type=STANDALONE, cryptd=false, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=265189108, minRoundTripTimeNanos=0}
+2026-07-19 12:42:17 INFO  FeignClientFactoryBean - For 'CANDIDATE-SERVICE' URL not provided. Will try picking an instance via load-balancing.
+2026-07-19 12:42:18 INFO  FeignClientFactoryBean - For 'JOB-SERVICE' URL not provided. Will try picking an instance via load-balancing.
+2026-07-19 12:42:23 INFO  DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+2026-07-19 12:42:23 WARN  LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-07-19 12:42:23 INFO  InstanceInfoFactory - Setting initial instance status as: STARTING
+2026-07-19 12:42:23 INFO  DiscoveryClient - Initializing Eureka in region us-east-1
+2026-07-19 12:42:24 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-19 12:42:24 INFO  DiscoveryClient - Disable delta property : false
+2026-07-19 12:42:24 INFO  DiscoveryClient - Single vip registry refresh property : null
+2026-07-19 12:42:24 INFO  DiscoveryClient - Force full registry fetch : false
+2026-07-19 12:42:24 INFO  DiscoveryClient - Application is null : false
+2026-07-19 12:42:24 INFO  DiscoveryClient - Registered Applications size is zero : true
+2026-07-19 12:42:24 INFO  DiscoveryClient - Application version is -1: true
+2026-07-19 12:42:24 INFO  DiscoveryClient - Getting all instance registry info from the eureka server
+2026-07-19 12:42:26 INFO  DiscoveryClient - The response status is 200
+2026-07-19 12:42:26 INFO  DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2026-07-19 12:42:26 INFO  InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-07-19 12:42:26 INFO  DiscoveryClient - Discovery Client initialized at timestamp 1784464946049 with initial instances count: 0
+2026-07-19 12:42:26 INFO  EurekaServiceRegistry - Registering application AI-SCREENING-SERVICE with eureka with status UP
+2026-07-19 12:42:26 INFO  DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1784464946079, current=UP, previous=STARTING]
+2026-07-19 12:42:26 INFO  Http11NioProtocol - Starting ProtocolHandler ["http-nio-8084"]
+2026-07-19 12:42:26 INFO  DiscoveryClient - DiscoveryClient_AI-SCREENING-SERVICE/0e0e671b2041:AI-SCREENING-SERVICE:8084: registering service...
+2026-07-19 12:42:26 INFO  TomcatWebServer - Tomcat started on port 8084 (http) with context path '/'
+2026-07-19 12:42:26 INFO  EurekaAutoServiceRegistration - Updating port to 8084
+2026-07-19 12:42:26 INFO  DiscoveryClient - DiscoveryClient_AI-SCREENING-SERVICE/0e0e671b2041:AI-SCREENING-SERVICE:8084 - registration status: 204
+2026-07-19 12:42:26 INFO  ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = latest
+	bootstrap.servers = [kafka:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-screening-group-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	enable.metrics.push = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = screening-group
+	group.instance.id = null
+	group.protocol = classic
+	group.remote.assignor = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metadata.recovery.strategy = none
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.header.urlencode = false
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2026-07-19 12:42:26 INFO  KafkaMetricsCollector - initializing Kafka metrics collector
+2026-07-19 12:42:27 INFO  AppInfoParser - Kafka version: 3.9.2
+2026-07-19 12:42:27 INFO  AppInfoParser - Kafka commitId: 5e9866f43ab8e7e4
+2026-07-19 12:42:27 INFO  AppInfoParser - Kafka startTimeMs: 1784464947524
+2026-07-19 12:42:27 INFO  ClassicKafkaConsumer - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Subscribed to topic(s): arshdeep
+2026-07-19 12:42:27 INFO  AiScreeningServiceApplication - Started AiScreeningServiceApplication in 59.755 seconds (process running for 72.289)
+2026-07-19 12:42:29 INFO  Metadata - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Cluster ID: yqqD5tIsS_ivwf4U2XMuUg
+2026-07-19 12:42:29 INFO  ConsumerCoordinator - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Discovered group coordinator kafka:9092 (id: 2147483646 rack: null)
+2026-07-19 12:42:29 INFO  ConsumerCoordinator - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] (Re-)joining group
+2026-07-19 12:42:29 INFO  ConsumerCoordinator - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Request joining group due to: need to re-join with the given member-id: consumer-screening-group-1-2ffec351-caa7-4f6b-8fe3-9376d4f0a7dc
+2026-07-19 12:42:29 INFO  ConsumerCoordinator - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] (Re-)joining group
+2026-07-19 12:42:52 INFO  ConsumerCoordinator - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Successfully joined group with generation Generation{generationId=5, memberId='consumer-screening-group-1-2ffec351-caa7-4f6b-8fe3-9376d4f0a7dc', protocol='range'}
+2026-07-19 12:42:52 INFO  ConsumerCoordinator - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Finished assignment for group at generation 5: {consumer-screening-group-1-2ffec351-caa7-4f6b-8fe3-9376d4f0a7dc=Assignment(partitions=[arshdeep-0])}
+2026-07-19 12:42:52 INFO  ConsumerCoordinator - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Successfully synced group in generation Generation{generationId=5, memberId='consumer-screening-group-1-2ffec351-caa7-4f6b-8fe3-9376d4f0a7dc', protocol='range'}
+2026-07-19 12:42:52 INFO  ConsumerCoordinator - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Notifying assignor about the new Assignment(partitions=[arshdeep-0])
+2026-07-19 12:42:52 INFO  ConsumerRebalanceListenerInvoker - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Adding newly assigned partitions: arshdeep-0
+2026-07-19 12:42:52 INFO  ConsumerUtils - Setting offset for partition arshdeep-0 to the committed offset FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[kafka:9092 (id: 1 rack: null)], epoch=0}}
+2026-07-19 12:42:52 INFO  KafkaMessageListenerContainer - screening-group: partitions assigned: [arshdeep-0]
+2026-07-19 12:42:56 INFO  DiscoveryClient - Disable delta property : false
+2026-07-19 12:42:56 INFO  DiscoveryClient - Single vip registry refresh property : null
+2026-07-19 12:42:56 INFO  DiscoveryClient - Force full registry fetch : false
+2026-07-19 12:42:56 INFO  DiscoveryClient - Application is null : false
+2026-07-19 12:42:56 INFO  DiscoveryClient - Registered Applications size is zero : true
+2026-07-19 12:42:56 INFO  DiscoveryClient - Application version is -1: false
+2026-07-19 12:42:56 INFO  DiscoveryClient - Getting all instance registry info from the eureka server
+2026-07-19 12:42:56 INFO  DiscoveryClient - The response status is 200
+2026-07-19 12:47:24 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-19 12:52:24 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-19 12:57:24 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-19 13:02:24 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-19 13:07:24 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-19 13:12:24 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-19 13:17:23 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-19 13:22:23 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-19 13:27:23 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-19 13:32:23 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-19 13:37:23 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-19 13:42:23 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-19 18:34:06 INFO  Version - HV000001: Hibernate Validator 8.0.3.Final
+2026-07-19 18:34:07 INFO  AiScreeningServiceApplication - Starting AiScreeningServiceApplication v0.0.1-SNAPSHOT using Java 21.0.11 with PID 1 (/app/app.jar started by root in /app)
+2026-07-19 18:34:07 DEBUG AiScreeningServiceApplication - Running with Spring Boot v3.5.16, Spring v6.2.19
+2026-07-19 18:34:07 INFO  AiScreeningServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2026-07-19 18:34:23 INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2026-07-19 18:34:25 INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 1471 ms. Found 1 MongoDB repository interface.
+2026-07-19 18:34:30 INFO  GenericScope - BeanFactory id=26347382-e24c-3f51-a990-ffc1096b85b8
+2026-07-19 18:34:36 INFO  TomcatWebServer - Tomcat initialized with port 8084 (http)
+2026-07-19 18:34:37 INFO  Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8084"]
+2026-07-19 18:34:37 INFO  StandardService - Starting service [Tomcat]
+2026-07-19 18:34:37 INFO  StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.55]
+2026-07-19 18:34:38 INFO  [/] - Initializing Spring embedded WebApplicationContext
+2026-07-19 18:34:38 INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 29639 ms
+2026-07-19 18:34:44 INFO  client - MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "5.5.2"}, "os": {"type": "Linux", "name": "Linux", "architecture": "amd64", "version": "6.18.33.2-microsoft-standard-WSL2"}, "platform": "Java/Eclipse Adoptium/21.0.11+10-LTS", "env": {"container": {"runtime": "docker"}}} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, transportSettings=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@63dc3420, com.mongodb.Jep395RecordCodecProvider@525b8922, com.mongodb.KotlinCodecProvider@145a821d]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[mongo:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverMonitoringMode=AUTO, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null, timeoutMS=null}
+2026-07-19 18:34:45 INFO  cluster - Monitor thread successfully connected to server with description ServerDescription{address=mongo:27017, type=STANDALONE, cryptd=false, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=243308198, minRoundTripTimeNanos=0}
+2026-07-19 18:34:56 INFO  FeignClientFactoryBean - For 'CANDIDATE-SERVICE' URL not provided. Will try picking an instance via load-balancing.
+2026-07-19 18:34:57 INFO  FeignClientFactoryBean - For 'JOB-SERVICE' URL not provided. Will try picking an instance via load-balancing.
+2026-07-19 18:35:04 INFO  DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+2026-07-19 18:35:04 WARN  LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-07-19 18:35:05 INFO  InstanceInfoFactory - Setting initial instance status as: STARTING
+2026-07-19 18:35:05 INFO  DiscoveryClient - Initializing Eureka in region us-east-1
+2026-07-19 18:35:05 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-19 18:35:05 INFO  DiscoveryClient - Disable delta property : false
+2026-07-19 18:35:05 INFO  DiscoveryClient - Single vip registry refresh property : null
+2026-07-19 18:35:05 INFO  DiscoveryClient - Force full registry fetch : false
+2026-07-19 18:35:05 INFO  DiscoveryClient - Application is null : false
+2026-07-19 18:35:05 INFO  DiscoveryClient - Registered Applications size is zero : true
+2026-07-19 18:35:05 INFO  DiscoveryClient - Application version is -1: true
+2026-07-19 18:35:05 INFO  DiscoveryClient - Getting all instance registry info from the eureka server
+2026-07-19 18:35:08 INFO  DiscoveryClient - The response status is 200
+2026-07-19 18:35:08 INFO  DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2026-07-19 18:35:08 INFO  InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-07-19 18:35:08 INFO  DiscoveryClient - Discovery Client initialized at timestamp 1784486108610 with initial instances count: 0
+2026-07-19 18:35:08 INFO  EurekaServiceRegistry - Registering application AI-SCREENING-SERVICE with eureka with status UP
+2026-07-19 18:35:08 INFO  DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1784486108640, current=UP, previous=STARTING]
+2026-07-19 18:35:08 INFO  Http11NioProtocol - Starting ProtocolHandler ["http-nio-8084"]
+2026-07-19 18:35:08 INFO  DiscoveryClient - DiscoveryClient_AI-SCREENING-SERVICE/0e0e671b2041:AI-SCREENING-SERVICE:8084: registering service...
+2026-07-19 18:35:08 INFO  TomcatWebServer - Tomcat started on port 8084 (http) with context path '/'
+2026-07-19 18:35:08 INFO  EurekaAutoServiceRegistration - Updating port to 8084
+2026-07-19 18:35:09 INFO  DiscoveryClient - DiscoveryClient_AI-SCREENING-SERVICE/0e0e671b2041:AI-SCREENING-SERVICE:8084 - registration status: 204
+2026-07-19 18:35:09 INFO  ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = latest
+	bootstrap.servers = [kafka:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-screening-group-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	enable.metrics.push = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = screening-group
+	group.instance.id = null
+	group.protocol = classic
+	group.remote.assignor = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metadata.recovery.strategy = none
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.header.urlencode = false
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2026-07-19 18:35:09 INFO  KafkaMetricsCollector - initializing Kafka metrics collector
+2026-07-19 18:35:11 INFO  AppInfoParser - Kafka version: 3.9.2
+2026-07-19 18:35:11 INFO  AppInfoParser - Kafka commitId: 5e9866f43ab8e7e4
+2026-07-19 18:35:11 INFO  AppInfoParser - Kafka startTimeMs: 1784486111210
+2026-07-19 18:35:11 INFO  ClassicKafkaConsumer - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Subscribed to topic(s): arshdeep
+2026-07-19 18:35:11 INFO  AiScreeningServiceApplication - Started AiScreeningServiceApplication in 67.897 seconds (process running for 78.761)
+2026-07-19 18:35:15 INFO  Metadata - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Cluster ID: yqqD5tIsS_ivwf4U2XMuUg
+2026-07-19 18:35:15 INFO  ConsumerCoordinator - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Discovered group coordinator kafka:9092 (id: 2147483646 rack: null)
+2026-07-19 18:35:15 INFO  ConsumerCoordinator - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] (Re-)joining group
+2026-07-19 18:35:15 INFO  ConsumerCoordinator - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Request joining group due to: need to re-join with the given member-id: consumer-screening-group-1-c07f3bc4-98c1-4cb2-a329-cf18d85c0c0b
+2026-07-19 18:35:15 INFO  ConsumerCoordinator - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] (Re-)joining group
+2026-07-19 18:35:32 INFO  cluster - Exception in monitor thread while connecting to server mongo:27017
+com.mongodb.MongoNodeIsRecoveringException: Command failed with error 11600 (InterruptedAtShutdown): 'interrupted at shutdown' on server mongo:27017. The full response is {"ok": 0.0, "errmsg": "interrupted at shutdown", "code": 11600, "codeName": "InterruptedAtShutdown"}
+	at com.mongodb.internal.connection.ProtocolHelper.createSpecialException(ProtocolHelper.java:264) ~[mongodb-driver-core-5.5.2.jar!/:?]
+	at com.mongodb.internal.connection.ProtocolHelper.getCommandFailureException(ProtocolHelper.java:206) ~[mongodb-driver-core-5.5.2.jar!/:?]
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:520) ~[mongodb-driver-core-5.5.2.jar!/:?]
+	at com.mongodb.internal.connection.InternalStreamConnection.receive(InternalStreamConnection.java:469) ~[mongodb-driver-core-5.5.2.jar!/:?]
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitor.lookupServerDescription(DefaultServerMonitor.java:249) [mongodb-driver-core-5.5.2.jar!/:?]
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitor.run(DefaultServerMonitor.java:176) [mongodb-driver-core-5.5.2.jar!/:?]
+2026-07-19 18:35:33 INFO  NetworkClient - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Node 1 disconnected.
+2026-07-19 18:35:33 INFO  NetworkClient - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Node -1 disconnected.
+2026-07-19 18:35:33 INFO  NetworkClient - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Node 2147483646 disconnected.
+2026-07-19 18:35:33 INFO  NetworkClient - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Cancelled in-flight JOIN_GROUP request with correlation id 10 due to node 2147483646 being disconnected (elapsed time since creation: 17960ms, elapsed time since send: 17970ms, throttle time: 0ms, request timeout: 305000ms)
+2026-07-19 18:35:33 INFO  ConsumerCoordinator - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Group coordinator kafka:9092 (id: 2147483646 rack: null) is unavailable or invalid due to cause: null. isDisconnected: true. Rediscovery will be attempted.
+2026-07-19 18:35:33 INFO  ConsumerCoordinator - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Request joining group due to: rebalance failed due to 'null' (DisconnectException)
+2026-07-19 18:35:33 INFO  NetworkClient - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Node 1 disconnected.
+2026-07-19 18:35:33 WARN  NetworkClient - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Connection to node 1 (kafka/172.18.0.8:9092) could not be established. Node may not be available.
+2026-07-19 18:35:34 INFO  NetworkClient - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Node 1 disconnected.
+2026-07-19 18:35:34 WARN  NetworkClient - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Connection to node 1 (kafka/172.18.0.8:9092) could not be established. Node may not be available.
+2026-07-19 18:35:34 INFO  NetworkClient - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Node 1 disconnected.
+2026-07-19 18:35:34 WARN  NetworkClient - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Connection to node 1 (kafka/172.18.0.8:9092) could not be established. Node may not be available.
+2026-07-19 18:35:35 INFO  NetworkClient - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Node 1 disconnected.
+2026-07-19 18:35:35 WARN  NetworkClient - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Connection to node 1 (kafka/172.18.0.8:9092) could not be established. Node may not be available.
+2026-07-19 18:35:36 INFO  NetworkClient - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Node 1 disconnected.
+2026-07-19 18:35:36 WARN  NetworkClient - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Connection to node 1 (kafka/172.18.0.8:9092) could not be established. Node may not be available.
+2026-07-19 18:35:37 INFO  NetworkClient - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Node 1 disconnected.
+2026-07-19 18:35:37 WARN  NetworkClient - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Connection to node 1 (kafka/172.18.0.8:9092) could not be established. Node may not be available.
+2026-07-19 18:35:38 INFO  DiscoveryClient - Disable delta property : false
+2026-07-19 18:35:38 INFO  DiscoveryClient - Single vip registry refresh property : null
+2026-07-19 18:35:38 INFO  DiscoveryClient - Force full registry fetch : false
+2026-07-19 18:35:38 INFO  DiscoveryClient - Application is null : false
+2026-07-19 18:35:38 INFO  DiscoveryClient - Registered Applications size is zero : true
+2026-07-19 18:35:38 INFO  DiscoveryClient - Application version is -1: false
+2026-07-19 18:35:38 INFO  DiscoveryClient - Getting all instance registry info from the eureka server
+2026-07-19 18:35:38 INFO  RedirectingEurekaHttpClient - Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://discovery-server:8761/eureka/} exception=I/O error on GET request for "http://discovery-server:8761/eureka/apps/": Connect to http://discovery-server:8761 failed: Connection refused stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://discovery-server:8761/eureka/apps/": Connect to http://discovery-server:8761 failed: Connection refused
+	at org.springframework.web.client.RestTemplate.createResourceAccessException(RestTemplate.java:926)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:906)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:841)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:702)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.getApplicationsInternal(RestTemplateEurekaHttpClient.java:174)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.getApplications(RestTemplateEurekaHttpClient.java:162)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$6.execute(EurekaHttpClientDecorator.java:137)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:91)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$6.execute(EurekaHttpClientDecorator.java:137)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$6.execute(EurekaHttpClientDecorator.java:137)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134)
+	at com.netflix.discovery.DiscoveryClient.getAndStoreFullRegistry(DiscoveryClient.java:1046)
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:961)
+	at com.netflix.discovery.DiscoveryClient.refreshRegistry(DiscoveryClient.java:1473)
+	at com.netflix.discovery.DiscoveryClient$CacheRefreshThread.run(DiscoveryClient.java:1441)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.apache.hc.client5.http.HttpHostConnectException: Connect to http://discovery-server:8761 failed: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:694)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:592)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:751)
+	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:226)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:497)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:164)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:174)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:144)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:195)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:168)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:112)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:87)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:99)
+	at org.springframework.http.client.AbstractStreamingClientHttpRequest.executeInternal(AbstractStreamingClientHttpRequest.java:88)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:81)
+	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:117)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateTransportClientFactory.lambda$restTemplate$2(RestTemplateTransportClientFactory.java:145)
+	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:88)
+	at org.springframework.http.client.InterceptingClientHttpRequest.executeInternal(InterceptingClientHttpRequest.java:72)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:81)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:900)
+	... 22 more
+
+2026-07-19 18:35:38 WARN  RetryableEurekaHttpClient - Request execution failed with message: I/O error on GET request for "http://discovery-server:8761/eureka/apps/": Connect to http://discovery-server:8761 failed: Connection refused
+2026-07-19 18:35:38 INFO  RedirectingEurekaHttpClient - Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://discovery-server:8761/eureka/} exception=I/O error on PUT request for "http://discovery-server:8761/eureka/apps/AI-SCREENING-SERVICE/0e0e671b2041:AI-SCREENING-SERVICE:8084": Connect to http://discovery-server:8761 failed: Connection refused stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on PUT request for "http://discovery-server:8761/eureka/apps/AI-SCREENING-SERVICE/0e0e671b2041:AI-SCREENING-SERVICE:8084": Connect to http://discovery-server:8761 failed: Connection refused
+	at org.springframework.web.client.RestTemplate.createResourceAccessException(RestTemplate.java:926)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:906)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:841)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:702)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.sendHeartBeat(RestTemplateEurekaHttpClient.java:119)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:91)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:845)
+	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1402)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.apache.hc.client5.http.HttpHostConnectException: Connect to http://discovery-server:8761 failed: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:694)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:592)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:751)
+	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:226)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:497)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:164)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:174)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:144)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:195)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:168)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:112)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:87)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:99)
+	at org.springframework.http.client.AbstractStreamingClientHttpRequest.executeInternal(AbstractStreamingClientHttpRequest.java:88)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:81)
+	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:117)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateTransportClientFactory.lambda$restTemplate$2(RestTemplateTransportClientFactory.java:145)
+	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:88)
+	at org.springframework.http.client.InterceptingClientHttpRequest.executeInternal(InterceptingClientHttpRequest.java:72)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:81)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:900)
+	... 19 more
+
+2026-07-19 18:35:38 WARN  RetryableEurekaHttpClient - Request execution failed with message: I/O error on PUT request for "http://discovery-server:8761/eureka/apps/AI-SCREENING-SERVICE/0e0e671b2041:AI-SCREENING-SERVICE:8084": Connect to http://discovery-server:8761 failed: Connection refused
+2026-07-19 18:35:38 INFO  RedirectingEurekaHttpClient - Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://discovery-server:8761/eureka/}, exception=I/O error on GET request for "http://discovery-server:8761/eureka/apps/": Connect to http://discovery-server:8761 failed: Connection refused stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://discovery-server:8761/eureka/apps/": Connect to http://discovery-server:8761 failed: Connection refused
+	at org.springframework.web.client.RestTemplate.createResourceAccessException(RestTemplate.java:926)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:906)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:841)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:702)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.getApplicationsInternal(RestTemplateEurekaHttpClient.java:174)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.getApplications(RestTemplateEurekaHttpClient.java:162)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$6.execute(EurekaHttpClientDecorator.java:137)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:121)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:80)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$6.execute(EurekaHttpClientDecorator.java:137)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$6.execute(EurekaHttpClientDecorator.java:137)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134)
+	at com.netflix.discovery.DiscoveryClient.getAndStoreFullRegistry(DiscoveryClient.java:1046)
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:961)
+	at com.netflix.discovery.DiscoveryClient.refreshRegistry(DiscoveryClient.java:1473)
+	at com.netflix.discovery.DiscoveryClient$CacheRefreshThread.run(DiscoveryClient.java:1441)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.apache.hc.client5.http.HttpHostConnectException: Connect to http://discovery-server:8761 failed: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:694)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:592)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:751)
+	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:226)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:497)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:164)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:174)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:144)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:195)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:168)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:112)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:87)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:99)
+	at org.springframework.http.client.AbstractStreamingClientHttpRequest.executeInternal(AbstractStreamingClientHttpRequest.java:88)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:81)
+	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:117)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateTransportClientFactory.lambda$restTemplate$2(RestTemplateTransportClientFactory.java:145)
+	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:88)
+	at org.springframework.http.client.InterceptingClientHttpRequest.executeInternal(InterceptingClientHttpRequest.java:72)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:81)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:900)
+	... 23 more
+
+2026-07-19 18:35:38 WARN  RetryableEurekaHttpClient - Request execution failed with message: I/O error on GET request for "http://discovery-server:8761/eureka/apps/": Connect to http://discovery-server:8761 failed: Connection refused
+2026-07-19 18:35:38 INFO  DiscoveryClient - DiscoveryClient_AI-SCREENING-SERVICE/0e0e671b2041:AI-SCREENING-SERVICE:8084 - was unable to refresh its cache! This periodic background refresh will be retried in 30 seconds. status = Cannot execute request on any known server stacktrace = com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$6.execute(EurekaHttpClientDecorator.java:137)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134)
+	at com.netflix.discovery.DiscoveryClient.getAndStoreFullRegistry(DiscoveryClient.java:1046)
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:961)
+	at com.netflix.discovery.DiscoveryClient.refreshRegistry(DiscoveryClient.java:1473)
+	at com.netflix.discovery.DiscoveryClient$CacheRefreshThread.run(DiscoveryClient.java:1441)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+2026-07-19 18:35:38 INFO  RedirectingEurekaHttpClient - Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://discovery-server:8761/eureka/}, exception=I/O error on PUT request for "http://discovery-server:8761/eureka/apps/AI-SCREENING-SERVICE/0e0e671b2041:AI-SCREENING-SERVICE:8084": Connect to http://discovery-server:8761 failed: Connection refused stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on PUT request for "http://discovery-server:8761/eureka/apps/AI-SCREENING-SERVICE/0e0e671b2041:AI-SCREENING-SERVICE:8084": Connect to http://discovery-server:8761 failed: Connection refused
+	at org.springframework.web.client.RestTemplate.createResourceAccessException(RestTemplate.java:926)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:906)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:841)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:702)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.sendHeartBeat(RestTemplateEurekaHttpClient.java:119)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:121)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:80)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:845)
+	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1402)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.apache.hc.client5.http.HttpHostConnectException: Connect to http://discovery-server:8761 failed: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:694)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:592)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:751)
+	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:226)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:497)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:164)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:174)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:144)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:195)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:168)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:112)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:87)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:99)
+	at org.springframework.http.client.AbstractStreamingClientHttpRequest.executeInternal(AbstractStreamingClientHttpRequest.java:88)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:81)
+	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:117)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateTransportClientFactory.lambda$restTemplate$2(RestTemplateTransportClientFactory.java:145)
+	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:88)
+	at org.springframework.http.client.InterceptingClientHttpRequest.executeInternal(InterceptingClientHttpRequest.java:72)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:81)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:900)
+	... 20 more
+
+2026-07-19 18:35:38 WARN  RetryableEurekaHttpClient - Request execution failed with message: I/O error on PUT request for "http://discovery-server:8761/eureka/apps/AI-SCREENING-SERVICE/0e0e671b2041:AI-SCREENING-SERVICE:8084": Connect to http://discovery-server:8761 failed: Connection refused
+2026-07-19 18:35:38 ERROR DiscoveryClient - DiscoveryClient_AI-SCREENING-SERVICE/0e0e671b2041:AI-SCREENING-SERVICE:8084 - was unable to send heartbeat!
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112) ~[eureka-client-2.0.4.jar!/:2.0.4]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) ~[eureka-client-2.0.4.jar!/:2.0.4]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92) ~[eureka-client-2.0.4.jar!/:2.0.4]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76) ~[eureka-client-2.0.4.jar!/:2.0.4]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) ~[eureka-client-2.0.4.jar!/:2.0.4]
+	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:845) ~[eureka-client-2.0.4.jar!/:2.0.4]
+	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1402) ~[eureka-client-2.0.4.jar!/:2.0.4]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572) ~[?:?]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1583) [?:?]
+2026-07-19 18:35:39 INFO  EurekaServiceRegistry - Unregistering application AI-SCREENING-SERVICE with eureka with status DOWN
+2026-07-19 18:35:39 INFO  DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1784486139758, current=DOWN, previous=UP]
+2026-07-19 18:35:39 INFO  DiscoveryClient - DiscoveryClient_AI-SCREENING-SERVICE/0e0e671b2041:AI-SCREENING-SERVICE:8084: registering service...
+2026-07-19 18:35:39 INFO  ConsumerCoordinator - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Resetting generation and member id due to: consumer pro-actively leaving the group
+2026-07-19 18:35:39 INFO  ConsumerCoordinator - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Request joining group due to: consumer pro-actively leaving the group
+2026-07-19 18:35:39 INFO  ClassicKafkaConsumer - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Unsubscribed all topics or patterns and assigned partitions
+2026-07-19 18:35:39 INFO  ConsumerCoordinator - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Resetting generation and member id due to: consumer pro-actively leaving the group
+2026-07-19 18:35:39 INFO  ConsumerCoordinator - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Request joining group due to: consumer pro-actively leaving the group
+2026-07-19 18:35:39 INFO  Metrics - Metrics scheduler closed
+2026-07-19 18:35:39 INFO  Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2026-07-19 18:35:40 INFO  Metrics - Closing reporter org.apache.kafka.common.telemetry.internals.ClientTelemetryReporter
+2026-07-19 18:35:40 INFO  Metrics - Metrics reporters closed
+2026-07-19 18:35:40 INFO  AppInfoParser - App info kafka.consumer for consumer-screening-group-1 unregistered
+2026-07-19 18:35:40 INFO  KafkaMessageListenerContainer - screening-group: Consumer stopped
+2026-07-19 18:35:40 INFO  GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-07-19 18:35:40 INFO  GracefulShutdown - Graceful shutdown complete
+2026-07-19 18:35:40 INFO  DiscoveryClient - Shutting down DiscoveryClient ...
+2026-07-19 18:35:43 INFO  DiscoveryClient - Unregistering ...
+2026-07-19 18:36:14 INFO  Version - HV000001: Hibernate Validator 8.0.3.Final
+2026-07-19 18:36:15 INFO  AiScreeningServiceApplication - Starting AiScreeningServiceApplication v0.0.1-SNAPSHOT using Java 21.0.11 with PID 1 (/app/app.jar started by root in /app)
+2026-07-19 18:36:15 DEBUG AiScreeningServiceApplication - Running with Spring Boot v3.5.16, Spring v6.2.19
+2026-07-19 18:36:15 INFO  AiScreeningServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2026-07-19 18:36:29 INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2026-07-19 18:36:30 INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 985 ms. Found 1 MongoDB repository interface.
+2026-07-19 18:36:33 INFO  GenericScope - BeanFactory id=26347382-e24c-3f51-a990-ffc1096b85b8
+2026-07-19 18:36:43 INFO  TomcatWebServer - Tomcat initialized with port 8084 (http)
+2026-07-19 18:36:43 INFO  Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8084"]
+2026-07-19 18:36:43 INFO  StandardService - Starting service [Tomcat]
+2026-07-19 18:36:43 INFO  StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.55]
+2026-07-19 18:36:44 INFO  [/] - Initializing Spring embedded WebApplicationContext
+2026-07-19 18:36:44 INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 28613 ms
+2026-07-19 18:36:48 INFO  client - MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "5.5.2"}, "os": {"type": "Linux", "name": "Linux", "architecture": "amd64", "version": "6.18.33.2-microsoft-standard-WSL2"}, "platform": "Java/Eclipse Adoptium/21.0.11+10-LTS", "env": {"container": {"runtime": "docker"}}} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, transportSettings=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@5d2e6f62, com.mongodb.Jep395RecordCodecProvider@77ff14ce, com.mongodb.KotlinCodecProvider@733fae8]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[mongo:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverMonitoringMode=AUTO, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null, timeoutMS=null}
+2026-07-19 18:36:48 INFO  cluster - Monitor thread successfully connected to server with description ServerDescription{address=mongo:27017, type=STANDALONE, cryptd=false, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=525550176, minRoundTripTimeNanos=0}
+2026-07-19 18:36:59 INFO  FeignClientFactoryBean - For 'CANDIDATE-SERVICE' URL not provided. Will try picking an instance via load-balancing.
+2026-07-19 18:37:00 INFO  FeignClientFactoryBean - For 'JOB-SERVICE' URL not provided. Will try picking an instance via load-balancing.
+2026-07-19 18:37:06 INFO  DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+2026-07-19 18:37:06 WARN  LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-07-19 18:37:06 INFO  InstanceInfoFactory - Setting initial instance status as: STARTING
+2026-07-19 18:37:07 INFO  DiscoveryClient - Initializing Eureka in region us-east-1
+2026-07-19 18:37:07 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-19 18:37:07 INFO  DiscoveryClient - Disable delta property : false
+2026-07-19 18:37:07 INFO  DiscoveryClient - Single vip registry refresh property : null
+2026-07-19 18:37:07 INFO  DiscoveryClient - Force full registry fetch : false
+2026-07-19 18:37:07 INFO  DiscoveryClient - Application is null : false
+2026-07-19 18:37:07 INFO  DiscoveryClient - Registered Applications size is zero : true
+2026-07-19 18:37:07 INFO  DiscoveryClient - Application version is -1: true
+2026-07-19 18:37:07 INFO  DiscoveryClient - Getting all instance registry info from the eureka server
+2026-07-19 18:37:09 INFO  DiscoveryClient - The response status is 200
+2026-07-19 18:37:09 INFO  DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2026-07-19 18:37:09 INFO  InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-07-19 18:37:09 INFO  DiscoveryClient - Discovery Client initialized at timestamp 1784486229061 with initial instances count: 0
+2026-07-19 18:37:09 INFO  EurekaServiceRegistry - Registering application AI-SCREENING-SERVICE with eureka with status UP
+2026-07-19 18:37:09 INFO  DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1784486229084, current=UP, previous=STARTING]
+2026-07-19 18:37:09 INFO  Http11NioProtocol - Starting ProtocolHandler ["http-nio-8084"]
+2026-07-19 18:37:09 INFO  DiscoveryClient - DiscoveryClient_AI-SCREENING-SERVICE/b2f70d56cf94:AI-SCREENING-SERVICE:8084: registering service...
+2026-07-19 18:37:09 INFO  TomcatWebServer - Tomcat started on port 8084 (http) with context path '/'
+2026-07-19 18:37:09 INFO  EurekaAutoServiceRegistration - Updating port to 8084
+2026-07-19 18:37:09 INFO  DiscoveryClient - DiscoveryClient_AI-SCREENING-SERVICE/b2f70d56cf94:AI-SCREENING-SERVICE:8084 - registration status: 204
+2026-07-19 18:37:09 INFO  ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = latest
+	bootstrap.servers = [kafka:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-screening-group-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	enable.metrics.push = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = screening-group
+	group.instance.id = null
+	group.protocol = classic
+	group.remote.assignor = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metadata.recovery.strategy = none
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.header.urlencode = false
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2026-07-19 18:37:09 INFO  KafkaMetricsCollector - initializing Kafka metrics collector
+2026-07-19 18:37:11 INFO  AppInfoParser - Kafka version: 3.9.2
+2026-07-19 18:37:11 INFO  AppInfoParser - Kafka commitId: 5e9866f43ab8e7e4
+2026-07-19 18:37:11 INFO  AppInfoParser - Kafka startTimeMs: 1784486231000
+2026-07-19 18:37:11 INFO  ClassicKafkaConsumer - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Subscribed to topic(s): arshdeep
+2026-07-19 18:37:11 INFO  AiScreeningServiceApplication - Started AiScreeningServiceApplication in 61.558 seconds (process running for 76.711)
+2026-07-19 18:37:12 INFO  Metadata - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Cluster ID: yqqD5tIsS_ivwf4U2XMuUg
+2026-07-19 18:37:12 INFO  ConsumerCoordinator - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Discovered group coordinator kafka:9092 (id: 2147483646 rack: null)
+2026-07-19 18:37:12 INFO  ConsumerCoordinator - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] (Re-)joining group
+2026-07-19 18:37:13 INFO  ConsumerCoordinator - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Request joining group due to: need to re-join with the given member-id: consumer-screening-group-1-d9dca35e-560f-45fd-8898-008bcc1abbd3
+2026-07-19 18:37:13 INFO  ConsumerCoordinator - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] (Re-)joining group
+2026-07-19 18:37:34 INFO  ConsumerCoordinator - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Successfully joined group with generation Generation{generationId=6, memberId='consumer-screening-group-1-d9dca35e-560f-45fd-8898-008bcc1abbd3', protocol='range'}
+2026-07-19 18:37:34 INFO  ConsumerCoordinator - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Finished assignment for group at generation 6: {consumer-screening-group-1-d9dca35e-560f-45fd-8898-008bcc1abbd3=Assignment(partitions=[arshdeep-0])}
+2026-07-19 18:37:34 INFO  ConsumerCoordinator - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Successfully synced group in generation Generation{generationId=6, memberId='consumer-screening-group-1-d9dca35e-560f-45fd-8898-008bcc1abbd3', protocol='range'}
+2026-07-19 18:37:34 INFO  ConsumerCoordinator - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Notifying assignor about the new Assignment(partitions=[arshdeep-0])
+2026-07-19 18:37:34 INFO  ConsumerRebalanceListenerInvoker - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Adding newly assigned partitions: arshdeep-0
+2026-07-19 18:37:34 INFO  ConsumerUtils - Setting offset for partition arshdeep-0 to the committed offset FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[kafka:9092 (id: 1 rack: null)], epoch=0}}
+2026-07-19 18:37:34 INFO  KafkaMessageListenerContainer - screening-group: partitions assigned: [arshdeep-0]
+2026-07-19 18:37:39 INFO  DiscoveryClient - Disable delta property : false
+2026-07-19 18:37:39 INFO  DiscoveryClient - Single vip registry refresh property : null
+2026-07-19 18:37:39 INFO  DiscoveryClient - Force full registry fetch : false
+2026-07-19 18:37:39 INFO  DiscoveryClient - Application is null : false
+2026-07-19 18:37:39 INFO  DiscoveryClient - Registered Applications size is zero : true
+2026-07-19 18:37:39 INFO  DiscoveryClient - Application version is -1: false
+2026-07-19 18:37:39 INFO  DiscoveryClient - Getting all instance registry info from the eureka server
+2026-07-19 18:37:39 INFO  DiscoveryClient - The response status is 200
+2026-07-19 18:38:20 INFO  cluster - Exception in monitor thread while connecting to server mongo:27017
+com.mongodb.MongoNodeIsRecoveringException: Command failed with error 11600 (InterruptedAtShutdown): 'interrupted at shutdown' on server mongo:27017. The full response is {"ok": 0.0, "errmsg": "interrupted at shutdown", "code": 11600, "codeName": "InterruptedAtShutdown"}
+	at com.mongodb.internal.connection.ProtocolHelper.createSpecialException(ProtocolHelper.java:264) ~[mongodb-driver-core-5.5.2.jar!/:?]
+	at com.mongodb.internal.connection.ProtocolHelper.getCommandFailureException(ProtocolHelper.java:206) ~[mongodb-driver-core-5.5.2.jar!/:?]
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:520) ~[mongodb-driver-core-5.5.2.jar!/:?]
+	at com.mongodb.internal.connection.InternalStreamConnection.receive(InternalStreamConnection.java:469) ~[mongodb-driver-core-5.5.2.jar!/:?]
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitor.lookupServerDescription(DefaultServerMonitor.java:249) [mongodb-driver-core-5.5.2.jar!/:?]
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitor.run(DefaultServerMonitor.java:176) [mongodb-driver-core-5.5.2.jar!/:?]
+2026-07-19 18:38:21 INFO  NetworkClient - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Node 2147483646 disconnected.
+2026-07-19 18:38:21 INFO  NetworkClient - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Node 1 disconnected.
+2026-07-19 18:38:21 INFO  NetworkClient - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Cancelled in-flight FETCH request with correlation id 122 due to node 1 being disconnected (elapsed time since creation: 292ms, elapsed time since send: 292ms, throttle time: 0ms, request timeout: 30000ms)
+2026-07-19 18:38:21 INFO  NetworkClient - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Cancelled in-flight METADATA request with correlation id 123 due to node 1 being disconnected (elapsed time since creation: 192ms, elapsed time since send: 192ms, throttle time: 0ms, request timeout: 30000ms)
+2026-07-19 18:38:21 INFO  NetworkClient - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Node -1 disconnected.
+2026-07-19 18:38:21 INFO  FetchSessionHandler - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Error sending fetch request (sessionId=2058506325, epoch=93) to node 1:
+org.apache.kafka.common.errors.DisconnectException: null
+2026-07-19 18:38:21 INFO  ConsumerCoordinator - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Group coordinator kafka:9092 (id: 2147483646 rack: null) is unavailable or invalid due to cause: coordinator unavailable. isDisconnected: true. Rediscovery will be attempted.
+2026-07-19 18:38:21 INFO  NetworkClient - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Node 1 disconnected.
+2026-07-19 18:38:21 WARN  NetworkClient - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Connection to node 1 (kafka/172.18.0.5:9092) could not be established. Node may not be available.
+2026-07-19 18:38:22 INFO  NetworkClient - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Node 1 disconnected.
+2026-07-19 18:38:22 WARN  NetworkClient - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Connection to node 1 (kafka/172.18.0.5:9092) could not be established. Node may not be available.
+2026-07-19 18:38:22 INFO  NetworkClient - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Node 1 disconnected.
+2026-07-19 18:38:22 WARN  NetworkClient - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Connection to node 1 (kafka/172.18.0.5:9092) could not be established. Node may not be available.
+2026-07-19 18:38:23 INFO  NetworkClient - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Node 1 disconnected.
+2026-07-19 18:38:23 WARN  NetworkClient - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Connection to node 1 (kafka/172.18.0.5:9092) could not be established. Node may not be available.
+2026-07-19 18:38:24 INFO  NetworkClient - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Node 1 disconnected.
+2026-07-19 18:38:24 WARN  NetworkClient - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Connection to node 1 (kafka/172.18.0.5:9092) could not be established. Node may not be available.
+2026-07-19 18:38:25 INFO  NetworkClient - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Node 1 disconnected.
+2026-07-19 18:38:25 WARN  NetworkClient - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Connection to node 1 (kafka/172.18.0.5:9092) could not be established. Node may not be available.
+2026-07-19 18:38:27 INFO  EurekaServiceRegistry - Unregistering application AI-SCREENING-SERVICE with eureka with status DOWN
+2026-07-19 18:38:27 INFO  DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1784486307753, current=DOWN, previous=UP]
+2026-07-19 18:38:27 INFO  DiscoveryClient - DiscoveryClient_AI-SCREENING-SERVICE/b2f70d56cf94:AI-SCREENING-SERVICE:8084: registering service...
+2026-07-19 18:38:27 INFO  ConsumerRebalanceListenerInvoker - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Revoke previously assigned partitions arshdeep-0
+2026-07-19 18:38:27 INFO  KafkaMessageListenerContainer - screening-group: partitions revoked: [arshdeep-0]
+2026-07-19 18:38:27 INFO  ConsumerCoordinator - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Resetting generation and member id due to: consumer pro-actively leaving the group
+2026-07-19 18:38:27 INFO  ConsumerCoordinator - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Request joining group due to: consumer pro-actively leaving the group
+2026-07-19 18:38:27 INFO  ClassicKafkaConsumer - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Unsubscribed all topics or patterns and assigned partitions
+2026-07-19 18:38:27 INFO  ConsumerCoordinator - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Resetting generation and member id due to: consumer pro-actively leaving the group
+2026-07-19 18:38:27 INFO  ConsumerCoordinator - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Request joining group due to: consumer pro-actively leaving the group
+2026-07-19 18:38:30 INFO  RedirectingEurekaHttpClient - Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://discovery-server:8761/eureka/} exception=I/O error on POST request for "http://discovery-server:8761/eureka/apps/AI-SCREENING-SERVICE": discovery-server: Name or service not known stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://discovery-server:8761/eureka/apps/AI-SCREENING-SERVICE": discovery-server: Name or service not known
+	at org.springframework.web.client.RestTemplate.createResourceAccessException(RestTemplate.java:926)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:906)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:841)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:702)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.register(RestTemplateEurekaHttpClient.java:87)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:91)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:828)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:125)
+	at com.netflix.discovery.InstanceInfoReplicator$2.run(InstanceInfoReplicator.java:105)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.net.UnknownHostException: discovery-server: Name or service not known
+	at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Inet6AddressImpl.java:52)
+	at java.base/java.net.InetAddress$PlatformResolver.lookupByName(InetAddress.java:1211)
+	at java.base/java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1828)
+	at java.base/java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:1139)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1818)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1688)
+	at org.apache.hc.client5.http.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:61)
+	at org.apache.hc.client5.http.DnsResolver.resolve(DnsResolver.java:77)
+	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:181)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:497)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:164)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:174)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:144)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:195)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:168)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:112)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:87)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:99)
+	at org.springframework.http.client.AbstractStreamingClientHttpRequest.executeInternal(AbstractStreamingClientHttpRequest.java:88)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:81)
+	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:117)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateTransportClientFactory.lambda$restTemplate$2(RestTemplateTransportClientFactory.java:145)
+	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:88)
+	at org.springframework.http.client.InterceptingClientHttpRequest.executeInternal(InterceptingClientHttpRequest.java:72)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:81)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:900)
+	... 21 more
+
+2026-07-19 18:38:30 WARN  RetryableEurekaHttpClient - Request execution failed with message: I/O error on POST request for "http://discovery-server:8761/eureka/apps/AI-SCREENING-SERVICE": discovery-server: Name or service not known
+2026-07-19 18:38:30 INFO  RedirectingEurekaHttpClient - Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://discovery-server:8761/eureka/}, exception=I/O error on POST request for "http://discovery-server:8761/eureka/apps/AI-SCREENING-SERVICE": discovery-server stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://discovery-server:8761/eureka/apps/AI-SCREENING-SERVICE": discovery-server
+	at org.springframework.web.client.RestTemplate.createResourceAccessException(RestTemplate.java:926)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:906)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:841)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:702)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.register(RestTemplateEurekaHttpClient.java:87)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:121)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:80)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:828)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:125)
+	at com.netflix.discovery.InstanceInfoReplicator$2.run(InstanceInfoReplicator.java:105)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.net.UnknownHostException: discovery-server
+	at java.base/java.net.InetAddress$CachedLookup.get(InetAddress.java:988)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1818)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1688)
+	at org.apache.hc.client5.http.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:61)
+	at org.apache.hc.client5.http.DnsResolver.resolve(DnsResolver.java:77)
+	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:181)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:497)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:164)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:174)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:144)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:195)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:168)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:112)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:87)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:99)
+	at org.springframework.http.client.AbstractStreamingClientHttpRequest.executeInternal(AbstractStreamingClientHttpRequest.java:88)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:81)
+	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:117)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateTransportClientFactory.lambda$restTemplate$2(RestTemplateTransportClientFactory.java:145)
+	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:88)
+	at org.springframework.http.client.InterceptingClientHttpRequest.executeInternal(InterceptingClientHttpRequest.java:72)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:81)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:900)
+	... 22 more
+
+2026-07-19 18:38:30 WARN  RetryableEurekaHttpClient - Request execution failed with message: I/O error on POST request for "http://discovery-server:8761/eureka/apps/AI-SCREENING-SERVICE": discovery-server
+2026-07-19 18:38:30 WARN  DiscoveryClient - DiscoveryClient_AI-SCREENING-SERVICE/b2f70d56cf94:AI-SCREENING-SERVICE:8084 - registration failed Cannot execute request on any known server
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112) ~[eureka-client-2.0.4.jar!/:2.0.4]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) ~[eureka-client-2.0.4.jar!/:2.0.4]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59) ~[eureka-client-2.0.4.jar!/:2.0.4]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76) ~[eureka-client-2.0.4.jar!/:2.0.4]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) ~[eureka-client-2.0.4.jar!/:2.0.4]
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:828) ~[eureka-client-2.0.4.jar!/:2.0.4]
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:125) ~[eureka-client-2.0.4.jar!/:2.0.4]
+	at com.netflix.discovery.InstanceInfoReplicator$2.run(InstanceInfoReplicator.java:105) ~[eureka-client-2.0.4.jar!/:2.0.4]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572) ~[?:?]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317) ~[?:?]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1583) [?:?]
+2026-07-19 18:38:30 WARN  InstanceInfoReplicator - There was a problem with the instance info replicator
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112) ~[eureka-client-2.0.4.jar!/:2.0.4]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) ~[eureka-client-2.0.4.jar!/:2.0.4]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59) ~[eureka-client-2.0.4.jar!/:2.0.4]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76) ~[eureka-client-2.0.4.jar!/:2.0.4]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) ~[eureka-client-2.0.4.jar!/:2.0.4]
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:828) ~[eureka-client-2.0.4.jar!/:2.0.4]
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:125) ~[eureka-client-2.0.4.jar!/:2.0.4]
+	at com.netflix.discovery.InstanceInfoReplicator$2.run(InstanceInfoReplicator.java:105) ~[eureka-client-2.0.4.jar!/:2.0.4]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572) ~[?:?]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317) ~[?:?]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1583) [?:?]
+2026-07-19 18:38:33 INFO  cluster - Exception in monitor thread while connecting to server mongo:27017
+com.mongodb.MongoSocketException: mongo: Name or service not known
+	at com.mongodb.internal.connection.ServerAddressHelper.getSocketAddresses(ServerAddressHelper.java:75) ~[mongodb-driver-core-5.5.2.jar!/:?]
+	at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:100) ~[mongodb-driver-core-5.5.2.jar!/:?]
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:79) ~[mongodb-driver-core-5.5.2.jar!/:?]
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:233) ~[mongodb-driver-core-5.5.2.jar!/:?]
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitor.lookupServerDescription(DefaultServerMonitor.java:219) [mongodb-driver-core-5.5.2.jar!/:?]
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitor.run(DefaultServerMonitor.java:176) [mongodb-driver-core-5.5.2.jar!/:?]
+Caused by: java.net.UnknownHostException: mongo: Name or service not known
+	at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method) ~[?:?]
+	at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Inet6AddressImpl.java:52) ~[?:?]
+	at java.base/java.net.InetAddress$PlatformResolver.lookupByName(InetAddress.java:1211) ~[?:?]
+	at java.base/java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1828) ~[?:?]
+	at java.base/java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:1139) ~[?:?]
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1818) ~[?:?]
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1688) ~[?:?]
+	at com.mongodb.internal.connection.DefaultInetAddressResolver.lookupByName(DefaultInetAddressResolver.java:34) ~[mongodb-driver-core-5.5.2.jar!/:?]
+	at com.mongodb.internal.connection.ServerAddressHelper.getSocketAddresses(ServerAddressHelper.java:71) ~[mongodb-driver-core-5.5.2.jar!/:?]
+	... 5 more
+2026-07-19 18:38:48 INFO  Version - HV000001: Hibernate Validator 8.0.3.Final
+2026-07-19 18:38:49 INFO  AiScreeningServiceApplication - Starting AiScreeningServiceApplication v0.0.1-SNAPSHOT using Java 21.0.11 with PID 1 (/app/app.jar started by root in /app)
+2026-07-19 18:38:49 DEBUG AiScreeningServiceApplication - Running with Spring Boot v3.5.16, Spring v6.2.19
+2026-07-19 18:38:49 INFO  AiScreeningServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2026-07-19 18:38:59 INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2026-07-19 18:39:00 INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 914 ms. Found 1 MongoDB repository interface.
+2026-07-19 18:39:03 INFO  GenericScope - BeanFactory id=26347382-e24c-3f51-a990-ffc1096b85b8
+2026-07-19 18:39:05 INFO  TomcatWebServer - Tomcat initialized with port 8084 (http)
+2026-07-19 18:39:05 INFO  Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8084"]
+2026-07-19 18:39:05 INFO  StandardService - Starting service [Tomcat]
+2026-07-19 18:39:05 INFO  StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.55]
+2026-07-19 18:39:06 INFO  [/] - Initializing Spring embedded WebApplicationContext
+2026-07-19 18:39:06 INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 15795 ms
+2026-07-19 18:39:11 INFO  client - MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "5.5.2"}, "os": {"type": "Linux", "name": "Linux", "architecture": "amd64", "version": "6.18.33.2-microsoft-standard-WSL2"}, "platform": "Java/Eclipse Adoptium/21.0.11+10-LTS", "env": {"container": {"runtime": "docker"}}} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, transportSettings=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@6caa4dc5, com.mongodb.Jep395RecordCodecProvider@6ed51944, com.mongodb.KotlinCodecProvider@60c98f25]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[mongo:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverMonitoringMode=AUTO, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null, timeoutMS=null}
+2026-07-19 18:39:12 INFO  cluster - Monitor thread successfully connected to server with description ServerDescription{address=mongo:27017, type=STANDALONE, cryptd=false, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=373504384, minRoundTripTimeNanos=0}
+2026-07-19 18:39:22 INFO  FeignClientFactoryBean - For 'CANDIDATE-SERVICE' URL not provided. Will try picking an instance via load-balancing.
+2026-07-19 18:39:24 INFO  FeignClientFactoryBean - For 'JOB-SERVICE' URL not provided. Will try picking an instance via load-balancing.
+2026-07-19 18:39:30 INFO  DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+2026-07-19 18:39:31 WARN  LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-07-19 18:39:31 INFO  InstanceInfoFactory - Setting initial instance status as: STARTING
+2026-07-19 18:39:31 INFO  DiscoveryClient - Initializing Eureka in region us-east-1
+2026-07-19 18:39:31 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-19 18:39:31 INFO  DiscoveryClient - Disable delta property : false
+2026-07-19 18:39:32 INFO  DiscoveryClient - Single vip registry refresh property : null
+2026-07-19 18:39:32 INFO  DiscoveryClient - Force full registry fetch : false
+2026-07-19 18:39:32 INFO  DiscoveryClient - Application is null : false
+2026-07-19 18:39:32 INFO  DiscoveryClient - Registered Applications size is zero : true
+2026-07-19 18:39:32 INFO  DiscoveryClient - Application version is -1: true
+2026-07-19 18:39:32 INFO  DiscoveryClient - Getting all instance registry info from the eureka server
+2026-07-19 18:39:33 INFO  DiscoveryClient - The response status is 200
+2026-07-19 18:39:33 INFO  DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2026-07-19 18:39:33 INFO  InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-07-19 18:39:33 INFO  DiscoveryClient - Discovery Client initialized at timestamp 1784486373735 with initial instances count: 1
+2026-07-19 18:39:33 INFO  EurekaServiceRegistry - Registering application AI-SCREENING-SERVICE with eureka with status UP
+2026-07-19 18:39:33 INFO  DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1784486373760, current=UP, previous=STARTING]
+2026-07-19 18:39:33 INFO  DiscoveryClient - DiscoveryClient_AI-SCREENING-SERVICE/de015b9664e0:AI-SCREENING-SERVICE:8084: registering service...
+2026-07-19 18:39:33 INFO  Http11NioProtocol - Starting ProtocolHandler ["http-nio-8084"]
+2026-07-19 18:39:33 INFO  TomcatWebServer - Tomcat started on port 8084 (http) with context path '/'
+2026-07-19 18:39:33 INFO  EurekaAutoServiceRegistration - Updating port to 8084
+2026-07-19 18:39:34 INFO  DiscoveryClient - DiscoveryClient_AI-SCREENING-SERVICE/de015b9664e0:AI-SCREENING-SERVICE:8084 - registration status: 204
+2026-07-19 18:39:34 INFO  ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = latest
+	bootstrap.servers = [kafka:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-screening-group-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	enable.metrics.push = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = screening-group
+	group.instance.id = null
+	group.protocol = classic
+	group.remote.assignor = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metadata.recovery.strategy = none
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.header.urlencode = false
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2026-07-19 18:39:34 INFO  KafkaMetricsCollector - initializing Kafka metrics collector
+2026-07-19 18:39:35 INFO  AppInfoParser - Kafka version: 3.9.2
+2026-07-19 18:39:35 INFO  AppInfoParser - Kafka commitId: 5e9866f43ab8e7e4
+2026-07-19 18:39:35 INFO  AppInfoParser - Kafka startTimeMs: 1784486375031
+2026-07-19 18:39:35 INFO  ClassicKafkaConsumer - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Subscribed to topic(s): arshdeep
+2026-07-19 18:39:35 INFO  AiScreeningServiceApplication - Started AiScreeningServiceApplication in 49.606 seconds (process running for 55.406)
+2026-07-19 18:39:36 INFO  NetworkClient - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Node -1 disconnected.
+2026-07-19 18:39:36 WARN  NetworkClient - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Connection to node -1 (kafka/172.18.0.5:9092) could not be established. Node may not be available.
+2026-07-19 18:39:36 WARN  NetworkClient - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Bootstrap broker kafka:9092 (id: -1 rack: null) disconnected
+2026-07-19 18:39:36 INFO  NetworkClient - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Node -1 disconnected.
+2026-07-19 18:39:36 WARN  NetworkClient - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Connection to node -1 (kafka/172.18.0.5:9092) could not be established. Node may not be available.
+2026-07-19 18:39:36 WARN  NetworkClient - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Bootstrap broker kafka:9092 (id: -1 rack: null) disconnected
+2026-07-19 18:39:36 INFO  NetworkClient - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Node -1 disconnected.
+2026-07-19 18:39:36 WARN  NetworkClient - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Connection to node -1 (kafka/172.18.0.5:9092) could not be established. Node may not be available.
+2026-07-19 18:39:36 WARN  NetworkClient - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Bootstrap broker kafka:9092 (id: -1 rack: null) disconnected
+2026-07-19 18:39:36 INFO  NetworkClient - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Node -1 disconnected.
+2026-07-19 18:39:36 WARN  NetworkClient - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Connection to node -1 (kafka/172.18.0.5:9092) could not be established. Node may not be available.
+2026-07-19 18:39:36 WARN  NetworkClient - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Bootstrap broker kafka:9092 (id: -1 rack: null) disconnected
+2026-07-19 18:39:37 INFO  NetworkClient - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Node -1 disconnected.
+2026-07-19 18:39:37 WARN  NetworkClient - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Connection to node -1 (kafka/172.18.0.5:9092) could not be established. Node may not be available.
+2026-07-19 18:39:37 WARN  NetworkClient - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Bootstrap broker kafka:9092 (id: -1 rack: null) disconnected
+2026-07-19 18:39:37 INFO  NetworkClient - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Node -1 disconnected.
+2026-07-19 18:39:37 WARN  NetworkClient - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Connection to node -1 (kafka/172.18.0.5:9092) could not be established. Node may not be available.
+2026-07-19 18:39:37 WARN  NetworkClient - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Bootstrap broker kafka:9092 (id: -1 rack: null) disconnected
+2026-07-19 18:39:38 INFO  NetworkClient - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Node -1 disconnected.
+2026-07-19 18:39:38 WARN  NetworkClient - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Connection to node -1 (kafka/172.18.0.5:9092) could not be established. Node may not be available.
+2026-07-19 18:39:38 WARN  NetworkClient - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Bootstrap broker kafka:9092 (id: -1 rack: null) disconnected
+2026-07-19 18:39:39 INFO  Metadata - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Cluster ID: yqqD5tIsS_ivwf4U2XMuUg
+2026-07-19 18:39:39 INFO  ConsumerCoordinator - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Discovered group coordinator kafka:9092 (id: 2147483646 rack: null)
+2026-07-19 18:39:39 INFO  ConsumerCoordinator - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] (Re-)joining group
+2026-07-19 18:39:39 INFO  ConsumerCoordinator - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Request joining group due to: need to re-join with the given member-id: consumer-screening-group-1-bd9fb42c-e27d-4164-8f44-5fce57a6195c
+2026-07-19 18:39:39 INFO  ConsumerCoordinator - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] (Re-)joining group
+2026-07-19 18:40:04 INFO  cluster - Exception in monitor thread while connecting to server mongo:27017
+com.mongodb.MongoNodeIsRecoveringException: Command failed with error 11600 (InterruptedAtShutdown): 'interrupted at shutdown' on server mongo:27017. The full response is {"ok": 0.0, "errmsg": "interrupted at shutdown", "code": 11600, "codeName": "InterruptedAtShutdown"}
+	at com.mongodb.internal.connection.ProtocolHelper.createSpecialException(ProtocolHelper.java:264) ~[mongodb-driver-core-5.5.2.jar!/:?]
+	at com.mongodb.internal.connection.ProtocolHelper.getCommandFailureException(ProtocolHelper.java:206) ~[mongodb-driver-core-5.5.2.jar!/:?]
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:520) ~[mongodb-driver-core-5.5.2.jar!/:?]
+	at com.mongodb.internal.connection.InternalStreamConnection.receive(InternalStreamConnection.java:469) ~[mongodb-driver-core-5.5.2.jar!/:?]
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitor.lookupServerDescription(DefaultServerMonitor.java:249) [mongodb-driver-core-5.5.2.jar!/:?]
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitor.run(DefaultServerMonitor.java:176) [mongodb-driver-core-5.5.2.jar!/:?]
+2026-07-19 18:40:05 INFO  NetworkClient - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Node 2147483646 disconnected.
+2026-07-19 18:40:05 INFO  NetworkClient - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Cancelled in-flight JOIN_GROUP request with correlation id 11 due to node 2147483646 being disconnected (elapsed time since creation: 26067ms, elapsed time since send: 26067ms, throttle time: 0ms, request timeout: 305000ms)
+2026-07-19 18:40:05 INFO  ConsumerCoordinator - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Group coordinator kafka:9092 (id: 2147483646 rack: null) is unavailable or invalid due to cause: null. isDisconnected: true. Rediscovery will be attempted.
+2026-07-19 18:40:05 INFO  NetworkClient - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Node 1 disconnected.
+2026-07-19 18:40:05 INFO  NetworkClient - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Cancelled in-flight METADATA request with correlation id 13 due to node 1 being disconnected (elapsed time since creation: 5ms, elapsed time since send: 5ms, throttle time: 0ms, request timeout: 30000ms)
+2026-07-19 18:40:05 INFO  NetworkClient - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Node -1 disconnected.
+2026-07-19 18:40:05 INFO  NetworkClient - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Node 1 disconnected.
+2026-07-19 18:40:05 WARN  NetworkClient - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Connection to node 1 (kafka/172.18.0.5:9092) could not be established. Node may not be available.
+2026-07-19 18:40:06 INFO  NetworkClient - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Node 1 disconnected.
+2026-07-19 18:40:06 WARN  NetworkClient - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Connection to node 1 (kafka/172.18.0.5:9092) could not be established. Node may not be available.
+2026-07-19 18:40:06 INFO  NetworkClient - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Node 1 disconnected.
+2026-07-19 18:40:06 WARN  NetworkClient - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Connection to node 1 (kafka/172.18.0.5:9092) could not be established. Node may not be available.
+2026-07-19 18:40:07 INFO  NetworkClient - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Node 1 disconnected.
+2026-07-19 18:40:07 WARN  NetworkClient - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Connection to node 1 (kafka/172.18.0.5:9092) could not be established. Node may not be available.
+2026-07-19 18:40:08 INFO  NetworkClient - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Node 1 disconnected.
+2026-07-19 18:40:08 WARN  NetworkClient - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Connection to node 1 (kafka/172.18.0.5:9092) could not be established. Node may not be available.
+2026-07-19 18:40:09 INFO  NetworkClient - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Node 1 disconnected.
+2026-07-19 18:40:09 WARN  NetworkClient - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Connection to node 1 (kafka/172.18.0.5:9092) could not be established. Node may not be available.
+2026-07-19 18:40:10 INFO  NetworkClient - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Node 1 disconnected.
+2026-07-19 18:40:10 WARN  NetworkClient - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Connection to node 1 (kafka/172.18.0.5:9092) could not be established. Node may not be available.
+2026-07-19 18:40:11 INFO  NetworkClient - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Node 1 disconnected.
+2026-07-19 18:40:11 WARN  NetworkClient - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Connection to node 1 (kafka/172.18.0.5:9092) could not be established. Node may not be available.
+2026-07-19 18:40:12 INFO  NetworkClient - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Node 1 disconnected.
+2026-07-19 18:40:12 WARN  NetworkClient - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Connection to node 1 (kafka/172.18.0.5:9092) could not be established. Node may not be available.
+2026-07-19 18:40:13 INFO  NetworkClient - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Node 1 disconnected.
+2026-07-19 18:40:13 WARN  NetworkClient - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Connection to node 1 (kafka/172.18.0.5:9092) could not be established. Node may not be available.
+2026-07-19 18:40:14 INFO  NetworkClient - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Node 1 disconnected.
+2026-07-19 18:40:14 WARN  NetworkClient - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Connection to node 1 (kafka/172.18.0.5:9092) could not be established. Node may not be available.
+2026-07-19 18:40:15 INFO  NetworkClient - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Node 1 disconnected.
+2026-07-19 18:40:15 WARN  NetworkClient - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Connection to node 1 (kafka/172.18.0.5:9092) could not be established. Node may not be available.
+2026-07-19 18:40:16 INFO  EurekaServiceRegistry - Unregistering application AI-SCREENING-SERVICE with eureka with status DOWN
+2026-07-19 18:40:16 INFO  DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1784486416850, current=DOWN, previous=UP]
+2026-07-19 18:40:16 INFO  DiscoveryClient - DiscoveryClient_AI-SCREENING-SERVICE/de015b9664e0:AI-SCREENING-SERVICE:8084: registering service...
+2026-07-19 18:40:16 INFO  ConsumerCoordinator - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Resetting generation and member id due to: consumer pro-actively leaving the group
+2026-07-19 18:40:16 INFO  ConsumerCoordinator - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Request joining group due to: consumer pro-actively leaving the group
+2026-07-19 18:40:16 INFO  ClassicKafkaConsumer - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Unsubscribed all topics or patterns and assigned partitions
+2026-07-19 18:40:16 INFO  ConsumerCoordinator - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Resetting generation and member id due to: consumer pro-actively leaving the group
+2026-07-19 18:40:16 INFO  ConsumerCoordinator - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Request joining group due to: consumer pro-actively leaving the group
+2026-07-19 18:40:16 INFO  Metrics - Metrics scheduler closed
+2026-07-19 18:40:16 INFO  Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2026-07-19 18:40:16 INFO  Metrics - Closing reporter org.apache.kafka.common.telemetry.internals.ClientTelemetryReporter
+2026-07-19 18:40:16 INFO  Metrics - Metrics reporters closed
+2026-07-19 18:40:16 INFO  AppInfoParser - App info kafka.consumer for consumer-screening-group-1 unregistered
+2026-07-19 18:40:16 INFO  KafkaMessageListenerContainer - screening-group: Consumer stopped
+2026-07-19 18:40:16 INFO  GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-07-19 18:40:17 INFO  GracefulShutdown - Graceful shutdown complete
+2026-07-19 18:40:17 INFO  DiscoveryClient - Shutting down DiscoveryClient ...
+2026-07-19 18:40:19 INFO  RedirectingEurekaHttpClient - Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://discovery-server:8761/eureka/} exception=I/O error on POST request for "http://discovery-server:8761/eureka/apps/AI-SCREENING-SERVICE": discovery-server: Name or service not known stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://discovery-server:8761/eureka/apps/AI-SCREENING-SERVICE": discovery-server: Name or service not known
+	at org.springframework.web.client.RestTemplate.createResourceAccessException(RestTemplate.java:926)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:906)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:841)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:702)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.register(RestTemplateEurekaHttpClient.java:87)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:91)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:828)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:125)
+	at com.netflix.discovery.InstanceInfoReplicator$2.run(InstanceInfoReplicator.java:105)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.net.UnknownHostException: discovery-server: Name or service not known
+	at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Inet6AddressImpl.java:52)
+	at java.base/java.net.InetAddress$PlatformResolver.lookupByName(InetAddress.java:1211)
+	at java.base/java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1828)
+	at java.base/java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:1139)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1818)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1688)
+	at org.apache.hc.client5.http.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:61)
+	at org.apache.hc.client5.http.DnsResolver.resolve(DnsResolver.java:77)
+	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:181)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:497)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:164)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:174)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:144)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:195)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:168)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:112)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:87)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:99)
+	at org.springframework.http.client.AbstractStreamingClientHttpRequest.executeInternal(AbstractStreamingClientHttpRequest.java:88)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:81)
+	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:117)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateTransportClientFactory.lambda$restTemplate$2(RestTemplateTransportClientFactory.java:145)
+	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:88)
+	at org.springframework.http.client.InterceptingClientHttpRequest.executeInternal(InterceptingClientHttpRequest.java:72)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:81)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:900)
+	... 21 more
+
+2026-07-19 18:40:19 WARN  RetryableEurekaHttpClient - Request execution failed with message: I/O error on POST request for "http://discovery-server:8761/eureka/apps/AI-SCREENING-SERVICE": discovery-server: Name or service not known
+2026-07-19 18:40:19 INFO  RedirectingEurekaHttpClient - Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://discovery-server:8761/eureka/}, exception=I/O error on POST request for "http://discovery-server:8761/eureka/apps/AI-SCREENING-SERVICE": discovery-server stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://discovery-server:8761/eureka/apps/AI-SCREENING-SERVICE": discovery-server
+	at org.springframework.web.client.RestTemplate.createResourceAccessException(RestTemplate.java:926)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:906)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:841)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:702)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.register(RestTemplateEurekaHttpClient.java:87)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:121)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:80)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:828)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:125)
+	at com.netflix.discovery.InstanceInfoReplicator$2.run(InstanceInfoReplicator.java:105)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.net.UnknownHostException: discovery-server
+	at java.base/java.net.InetAddress$CachedLookup.get(InetAddress.java:988)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1818)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1688)
+	at org.apache.hc.client5.http.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:61)
+	at org.apache.hc.client5.http.DnsResolver.resolve(DnsResolver.java:77)
+	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:181)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:497)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:164)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:174)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:144)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:195)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:168)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:112)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:87)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:99)
+	at org.springframework.http.client.AbstractStreamingClientHttpRequest.executeInternal(AbstractStreamingClientHttpRequest.java:88)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:81)
+	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:117)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateTransportClientFactory.lambda$restTemplate$2(RestTemplateTransportClientFactory.java:145)
+	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:88)
+	at org.springframework.http.client.InterceptingClientHttpRequest.executeInternal(InterceptingClientHttpRequest.java:72)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:81)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:900)
+	... 22 more
+
+2026-07-19 18:40:19 WARN  RetryableEurekaHttpClient - Request execution failed with message: I/O error on POST request for "http://discovery-server:8761/eureka/apps/AI-SCREENING-SERVICE": discovery-server
+2026-07-19 18:40:19 WARN  DiscoveryClient - DiscoveryClient_AI-SCREENING-SERVICE/de015b9664e0:AI-SCREENING-SERVICE:8084 - registration failed Cannot execute request on any known server
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112) ~[eureka-client-2.0.4.jar!/:2.0.4]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) ~[eureka-client-2.0.4.jar!/:2.0.4]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59) ~[eureka-client-2.0.4.jar!/:2.0.4]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76) ~[eureka-client-2.0.4.jar!/:2.0.4]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) ~[eureka-client-2.0.4.jar!/:2.0.4]
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:828) ~[eureka-client-2.0.4.jar!/:2.0.4]
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:125) ~[eureka-client-2.0.4.jar!/:2.0.4]
+	at com.netflix.discovery.InstanceInfoReplicator$2.run(InstanceInfoReplicator.java:105) ~[eureka-client-2.0.4.jar!/:2.0.4]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572) ~[?:?]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317) ~[?:?]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1583) [?:?]
+2026-07-19 18:40:19 WARN  InstanceInfoReplicator - There was a problem with the instance info replicator
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112) ~[eureka-client-2.0.4.jar!/:2.0.4]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) ~[eureka-client-2.0.4.jar!/:2.0.4]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59) ~[eureka-client-2.0.4.jar!/:2.0.4]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76) ~[eureka-client-2.0.4.jar!/:2.0.4]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) ~[eureka-client-2.0.4.jar!/:2.0.4]
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:828) ~[eureka-client-2.0.4.jar!/:2.0.4]
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:125) ~[eureka-client-2.0.4.jar!/:2.0.4]
+	at com.netflix.discovery.InstanceInfoReplicator$2.run(InstanceInfoReplicator.java:105) ~[eureka-client-2.0.4.jar!/:2.0.4]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572) ~[?:?]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317) ~[?:?]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1583) [?:?]
+2026-07-19 18:40:19 INFO  DiscoveryClient - Unregistering ...
+2026-07-19 18:40:19 INFO  RedirectingEurekaHttpClient - Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://discovery-server:8761/eureka/}, exception=I/O error on DELETE request for "http://discovery-server:8761/eureka/apps/AI-SCREENING-SERVICE/de015b9664e0:AI-SCREENING-SERVICE:8084": discovery-server stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on DELETE request for "http://discovery-server:8761/eureka/apps/AI-SCREENING-SERVICE/de015b9664e0:AI-SCREENING-SERVICE:8084": discovery-server
+	at org.springframework.web.client.RestTemplate.createResourceAccessException(RestTemplate.java:926)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:906)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:841)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:702)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.cancel(RestTemplateEurekaHttpClient.java:100)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:121)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:80)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:919)
+	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:900)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMethod.invoke(InitDestroyAnnotationBeanPostProcessor.java:457)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:415)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:239)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:203)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.run(DisposableBeanAdapter.java:196)
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.destroy(GenericScope.java:387)
+	at org.springframework.cloud.context.scope.GenericScope.destroy(GenericScope.java:134)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:212)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:798)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:748)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1506)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:707)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1499)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1243)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1204)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:179)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1150)
+	at org.springframework.boot.SpringApplicationShutdownHook.closeAndWait(SpringApplicationShutdownHook.java:147)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.boot.SpringApplicationShutdownHook.run(SpringApplicationShutdownHook.java:116)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.net.UnknownHostException: discovery-server
+	at java.base/java.net.InetAddress$CachedLookup.get(InetAddress.java:988)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1818)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1688)
+	at org.apache.hc.client5.http.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:61)
+	at org.apache.hc.client5.http.DnsResolver.resolve(DnsResolver.java:77)
+	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:181)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:497)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:164)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:174)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:144)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:195)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:168)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:112)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:87)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:99)
+	at org.springframework.http.client.AbstractStreamingClientHttpRequest.executeInternal(AbstractStreamingClientHttpRequest.java:88)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:81)
+	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:117)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateTransportClientFactory.lambda$restTemplate$2(RestTemplateTransportClientFactory.java:145)
+	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:88)
+	at org.springframework.http.client.InterceptingClientHttpRequest.executeInternal(InterceptingClientHttpRequest.java:72)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:81)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:900)
+	... 38 more
+
+2026-07-19 18:40:19 WARN  RetryableEurekaHttpClient - Request execution failed with message: I/O error on DELETE request for "http://discovery-server:8761/eureka/apps/AI-SCREENING-SERVICE/de015b9664e0:AI-SCREENING-SERVICE:8084": discovery-server
+2026-07-19 18:40:19 ERROR DiscoveryClient - DiscoveryClient_AI-SCREENING-SERVICE/de015b9664e0:AI-SCREENING-SERVICE:8084 - de-registration failedCannot execute request on any known server
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112) ~[eureka-client-2.0.4.jar!/:2.0.4]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71) ~[eureka-client-2.0.4.jar!/:2.0.4]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74) ~[eureka-client-2.0.4.jar!/:2.0.4]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76) ~[eureka-client-2.0.4.jar!/:2.0.4]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71) ~[eureka-client-2.0.4.jar!/:2.0.4]
+	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:919) ~[eureka-client-2.0.4.jar!/:2.0.4]
+	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:900) ~[eureka-client-2.0.4.jar!/:2.0.4]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMethod.invoke(InitDestroyAnnotationBeanPostProcessor.java:457) ~[spring-beans-6.2.19.jar!/:6.2.19]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:415) ~[spring-beans-6.2.19.jar!/:6.2.19]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:239) ~[spring-beans-6.2.19.jar!/:6.2.19]
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:203) ~[spring-beans-6.2.19.jar!/:6.2.19]
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.run(DisposableBeanAdapter.java:196) ~[spring-beans-6.2.19.jar!/:6.2.19]
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.destroy(GenericScope.java:387) ~[spring-cloud-context-4.3.0.jar!/:4.3.0]
+	at org.springframework.cloud.context.scope.GenericScope.destroy(GenericScope.java:134) ~[spring-cloud-context-4.3.0.jar!/:4.3.0]
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:212) ~[spring-beans-6.2.19.jar!/:6.2.19]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:798) ~[spring-beans-6.2.19.jar!/:6.2.19]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:748) ~[spring-beans-6.2.19.jar!/:6.2.19]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1506) ~[spring-beans-6.2.19.jar!/:6.2.19]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:707) ~[spring-beans-6.2.19.jar!/:6.2.19]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1499) ~[spring-beans-6.2.19.jar!/:6.2.19]
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1243) ~[spring-context-6.2.19.jar!/:6.2.19]
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1204) ~[spring-context-6.2.19.jar!/:6.2.19]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:179) ~[spring-boot-3.5.16.jar!/:3.5.16]
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1150) ~[spring-context-6.2.19.jar!/:6.2.19]
+	at org.springframework.boot.SpringApplicationShutdownHook.closeAndWait(SpringApplicationShutdownHook.java:147) ~[spring-boot-3.5.16.jar!/:3.5.16]
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75) ~[?:?]
+	at org.springframework.boot.SpringApplicationShutdownHook.run(SpringApplicationShutdownHook.java:116) ~[spring-boot-3.5.16.jar!/:3.5.16]
+	at java.base/java.lang.Thread.run(Thread.java:1583) [?:?]
+2026-07-19 18:40:19 INFO  DiscoveryClient - Completed shut down of DiscoveryClient
+2026-07-19 18:40:30 INFO  Version - HV000001: Hibernate Validator 8.0.3.Final
+2026-07-19 18:40:31 INFO  AiScreeningServiceApplication - Starting AiScreeningServiceApplication v0.0.1-SNAPSHOT using Java 21.0.11 with PID 1 (/app/app.jar started by root in /app)
+2026-07-19 18:40:31 DEBUG AiScreeningServiceApplication - Running with Spring Boot v3.5.16, Spring v6.2.19
+2026-07-19 18:40:31 INFO  AiScreeningServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2026-07-19 18:40:40 INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2026-07-19 18:40:41 INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 755 ms. Found 1 MongoDB repository interface.
+2026-07-19 18:40:43 INFO  GenericScope - BeanFactory id=26347382-e24c-3f51-a990-ffc1096b85b8
+2026-07-19 18:40:46 INFO  TomcatWebServer - Tomcat initialized with port 8084 (http)
+2026-07-19 18:40:47 INFO  Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8084"]
+2026-07-19 18:40:47 INFO  StandardService - Starting service [Tomcat]
+2026-07-19 18:40:47 INFO  StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.55]
+2026-07-19 18:40:47 INFO  [/] - Initializing Spring embedded WebApplicationContext
+2026-07-19 18:40:48 INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 14711 ms
+2026-07-19 18:40:52 INFO  client - MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "5.5.2"}, "os": {"type": "Linux", "name": "Linux", "architecture": "amd64", "version": "6.18.33.2-microsoft-standard-WSL2"}, "platform": "Java/Eclipse Adoptium/21.0.11+10-LTS", "env": {"container": {"runtime": "docker"}}} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, transportSettings=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@145a821d, com.mongodb.Jep395RecordCodecProvider@6caa4dc5, com.mongodb.KotlinCodecProvider@6ed51944]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[mongo:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverMonitoringMode=AUTO, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null, timeoutMS=null}
+2026-07-19 18:40:52 INFO  cluster - Monitor thread successfully connected to server with description ServerDescription{address=mongo:27017, type=STANDALONE, cryptd=false, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=677340336, minRoundTripTimeNanos=0}
+2026-07-19 18:41:00 INFO  FeignClientFactoryBean - For 'CANDIDATE-SERVICE' URL not provided. Will try picking an instance via load-balancing.
+2026-07-19 18:41:01 INFO  FeignClientFactoryBean - For 'JOB-SERVICE' URL not provided. Will try picking an instance via load-balancing.
+2026-07-19 18:41:06 INFO  DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+2026-07-19 18:41:06 WARN  LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-07-19 18:41:06 INFO  InstanceInfoFactory - Setting initial instance status as: STARTING
+2026-07-19 18:41:07 INFO  DiscoveryClient - Initializing Eureka in region us-east-1
+2026-07-19 18:41:07 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-19 18:41:07 INFO  DiscoveryClient - Disable delta property : false
+2026-07-19 18:41:07 INFO  DiscoveryClient - Single vip registry refresh property : null
+2026-07-19 18:41:07 INFO  DiscoveryClient - Force full registry fetch : false
+2026-07-19 18:41:07 INFO  DiscoveryClient - Application is null : false
+2026-07-19 18:41:07 INFO  DiscoveryClient - Registered Applications size is zero : true
+2026-07-19 18:41:07 INFO  DiscoveryClient - Application version is -1: true
+2026-07-19 18:41:07 INFO  DiscoveryClient - Getting all instance registry info from the eureka server
+2026-07-19 18:41:08 INFO  DiscoveryClient - The response status is 200
+2026-07-19 18:41:08 INFO  DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2026-07-19 18:41:08 INFO  InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-07-19 18:41:08 INFO  DiscoveryClient - Discovery Client initialized at timestamp 1784486468398 with initial instances count: 0
+2026-07-19 18:41:08 INFO  EurekaServiceRegistry - Registering application AI-SCREENING-SERVICE with eureka with status UP
+2026-07-19 18:41:08 INFO  DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1784486468443, current=UP, previous=STARTING]
+2026-07-19 18:41:08 INFO  DiscoveryClient - DiscoveryClient_AI-SCREENING-SERVICE/808055bd4e7a:AI-SCREENING-SERVICE:8084: registering service...
+2026-07-19 18:41:08 INFO  Http11NioProtocol - Starting ProtocolHandler ["http-nio-8084"]
+2026-07-19 18:41:08 INFO  TomcatWebServer - Tomcat started on port 8084 (http) with context path '/'
+2026-07-19 18:41:08 INFO  EurekaAutoServiceRegistration - Updating port to 8084
+2026-07-19 18:41:08 INFO  DiscoveryClient - DiscoveryClient_AI-SCREENING-SERVICE/808055bd4e7a:AI-SCREENING-SERVICE:8084 - registration status: 204
+2026-07-19 18:41:09 INFO  ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = latest
+	bootstrap.servers = [kafka:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-screening-group-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	enable.metrics.push = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = screening-group
+	group.instance.id = null
+	group.protocol = classic
+	group.remote.assignor = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metadata.recovery.strategy = none
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.header.urlencode = false
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2026-07-19 18:41:09 INFO  KafkaMetricsCollector - initializing Kafka metrics collector
+2026-07-19 18:41:10 INFO  AppInfoParser - Kafka version: 3.9.2
+2026-07-19 18:41:10 INFO  AppInfoParser - Kafka commitId: 5e9866f43ab8e7e4
+2026-07-19 18:41:10 INFO  AppInfoParser - Kafka startTimeMs: 1784486470330
+2026-07-19 18:41:10 INFO  ClassicKafkaConsumer - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Subscribed to topic(s): arshdeep
+2026-07-19 18:41:10 INFO  AiScreeningServiceApplication - Started AiScreeningServiceApplication in 41.85 seconds (process running for 48.373)
+2026-07-19 18:41:11 INFO  NetworkClient - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Node -1 disconnected.
+2026-07-19 18:41:11 WARN  NetworkClient - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Connection to node -1 (kafka/172.18.0.5:9092) could not be established. Node may not be available.
+2026-07-19 18:41:11 WARN  NetworkClient - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Bootstrap broker kafka:9092 (id: -1 rack: null) disconnected
+2026-07-19 18:41:11 INFO  NetworkClient - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Node -1 disconnected.
+2026-07-19 18:41:11 WARN  NetworkClient - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Connection to node -1 (kafka/172.18.0.5:9092) could not be established. Node may not be available.
+2026-07-19 18:41:11 WARN  NetworkClient - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Bootstrap broker kafka:9092 (id: -1 rack: null) disconnected
+2026-07-19 18:41:12 INFO  NetworkClient - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Node -1 disconnected.
+2026-07-19 18:41:12 WARN  NetworkClient - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Connection to node -1 (kafka/172.18.0.5:9092) could not be established. Node may not be available.
+2026-07-19 18:41:12 WARN  NetworkClient - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Bootstrap broker kafka:9092 (id: -1 rack: null) disconnected
+2026-07-19 18:41:12 INFO  NetworkClient - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Node -1 disconnected.
+2026-07-19 18:41:12 WARN  NetworkClient - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Connection to node -1 (kafka/172.18.0.5:9092) could not be established. Node may not be available.
+2026-07-19 18:41:12 WARN  NetworkClient - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Bootstrap broker kafka:9092 (id: -1 rack: null) disconnected
+2026-07-19 18:41:12 INFO  NetworkClient - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Node -1 disconnected.
+2026-07-19 18:41:12 WARN  NetworkClient - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Connection to node -1 (kafka/172.18.0.5:9092) could not be established. Node may not be available.
+2026-07-19 18:41:12 WARN  NetworkClient - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Bootstrap broker kafka:9092 (id: -1 rack: null) disconnected
+2026-07-19 18:41:13 INFO  NetworkClient - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Node -1 disconnected.
+2026-07-19 18:41:13 WARN  NetworkClient - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Connection to node -1 (kafka/172.18.0.5:9092) could not be established. Node may not be available.
+2026-07-19 18:41:13 WARN  NetworkClient - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Bootstrap broker kafka:9092 (id: -1 rack: null) disconnected
+2026-07-19 18:41:14 WARN  NetworkClient - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] The metadata response from the cluster reported a recoverable issue with correlation id 3 : {arshdeep=LEADER_NOT_AVAILABLE}
+2026-07-19 18:41:14 INFO  Metadata - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Cluster ID: yqqD5tIsS_ivwf4U2XMuUg
+2026-07-19 18:41:15 WARN  NetworkClient - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] The metadata response from the cluster reported a recoverable issue with correlation id 8 : {arshdeep=LEADER_NOT_AVAILABLE}
+2026-07-19 18:41:15 INFO  ConsumerCoordinator - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Discovered group coordinator kafka:9092 (id: 2147483646 rack: null)
+2026-07-19 18:41:15 INFO  ConsumerCoordinator - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] (Re-)joining group
+2026-07-19 18:41:15 INFO  ConsumerCoordinator - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Request joining group due to: need to re-join with the given member-id: consumer-screening-group-1-d6450441-a265-42c2-948f-56b45aa0a596
+2026-07-19 18:41:15 INFO  ConsumerCoordinator - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] (Re-)joining group
+2026-07-19 18:41:38 INFO  DiscoveryClient - Disable delta property : false
+2026-07-19 18:41:38 INFO  DiscoveryClient - Single vip registry refresh property : null
+2026-07-19 18:41:38 INFO  DiscoveryClient - Force full registry fetch : false
+2026-07-19 18:41:38 INFO  DiscoveryClient - Application is null : false
+2026-07-19 18:41:38 INFO  DiscoveryClient - Registered Applications size is zero : true
+2026-07-19 18:41:38 INFO  DiscoveryClient - Application version is -1: false
+2026-07-19 18:41:38 INFO  DiscoveryClient - Getting all instance registry info from the eureka server
+2026-07-19 18:41:38 INFO  DiscoveryClient - The response status is 200
+2026-07-19 18:42:00 INFO  ConsumerCoordinator - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Successfully joined group with generation Generation{generationId=7, memberId='consumer-screening-group-1-d6450441-a265-42c2-948f-56b45aa0a596', protocol='range'}
+2026-07-19 18:42:00 INFO  ConsumerCoordinator - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Finished assignment for group at generation 7: {consumer-screening-group-1-d6450441-a265-42c2-948f-56b45aa0a596=Assignment(partitions=[arshdeep-0])}
+2026-07-19 18:42:00 INFO  ConsumerCoordinator - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Successfully synced group in generation Generation{generationId=7, memberId='consumer-screening-group-1-d6450441-a265-42c2-948f-56b45aa0a596', protocol='range'}
+2026-07-19 18:42:00 INFO  ConsumerCoordinator - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Notifying assignor about the new Assignment(partitions=[arshdeep-0])
+2026-07-19 18:42:00 INFO  ConsumerRebalanceListenerInvoker - [Consumer clientId=consumer-screening-group-1, groupId=screening-group] Adding newly assigned partitions: arshdeep-0
+2026-07-19 18:42:00 INFO  ConsumerUtils - Setting offset for partition arshdeep-0 to the committed offset FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[kafka:9092 (id: 1 rack: null)], epoch=0}}
+2026-07-19 18:42:00 INFO  KafkaMessageListenerContainer - screening-group: partitions assigned: [arshdeep-0]
+2026-07-19 18:42:49 INFO  [/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-07-19 18:42:49 INFO  DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-07-19 18:42:49 INFO  DispatcherServlet - Completed initialization in 2 ms
