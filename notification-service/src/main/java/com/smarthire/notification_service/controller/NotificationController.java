@@ -15,73 +15,69 @@ public class NotificationController {
 
     private final NotificationService service;
 
-    public NotificationController(
-            NotificationService service) {
+    public NotificationController(NotificationService service) {
         this.service = service;
     }
 
     @PostMapping("/add")
     public ResponseEntity<Notification> createNotification(
             @RequestBody Notification notification) {
-
-        return ResponseEntity
-                .status(HttpStatus.CREATED)
+        return ResponseEntity.status(HttpStatus.CREATED)
                 .body(service.createNotification(notification));
     }
 
     @GetMapping("/all")
     public ResponseEntity<List<Notification>> getAllNotifications() {
-
-        return ResponseEntity.ok(
-                service.getAllNotifications());
+        return ResponseEntity.ok(service.getAllNotifications());
     }
 
     @GetMapping("/{id}")
     public ResponseEntity<Notification> getNotificationById(
             @PathVariable String id) {
-
-        return ResponseEntity.ok(
-                service.getNotificationById(id));
+        return ResponseEntity.ok(service.getNotificationById(id));
     }
 
     @GetMapping("/candidate/{candidateId}")
     public ResponseEntity<List<Notification>> getNotificationsByCandidateId(
             @PathVariable int candidateId) {
-
-        return ResponseEntity.ok(
-                service.getNotificationsByCandidateId(candidateId));
+        return ResponseEntity.ok(service.getNotificationsByCandidateId(candidateId));
     }
 
     @GetMapping("/job/{jobId}")
     public ResponseEntity<List<Notification>> getNotificationsByJobId(
             @PathVariable int jobId) {
-
-        return ResponseEntity.ok(
-                service.getNotificationsByJobId(jobId));
+        return ResponseEntity.ok(service.getNotificationsByJobId(jobId));
     }
 
     @GetMapping("/unread")
     public ResponseEntity<List<Notification>> getUnreadNotifications() {
+        return ResponseEntity.ok(service.getUnreadNotifications());
+    }
 
-        return ResponseEntity.ok(
-                service.getUnreadNotifications());
+
+    @GetMapping("/unread/candidate/{candidateId}")
+    public ResponseEntity<List<Notification>> getUnreadByCandidateId(
+            @PathVariable int candidateId) {
+        return ResponseEntity.ok(service.getUnreadNotificationsByCandidateId(candidateId));
+    }
+
+
+    @GetMapping("/unread/job/{jobId}")
+    public ResponseEntity<List<Notification>> getUnreadByJobId(
+            @PathVariable int jobId) {
+        return ResponseEntity.ok(service.getUnreadNotificationsByJobId(jobId));
     }
 
     @PatchMapping("/{id}/read")
     public ResponseEntity<Notification> markAsRead(
             @PathVariable String id) {
-
-        return ResponseEntity.ok(
-                service.markAsRead(id));
+        return ResponseEntity.ok(service.markAsRead(id));
     }
 
     @DeleteMapping("/{id}")
     public ResponseEntity<String> deleteNotification(
             @PathVariable String id) {
-
         service.deleteNotification(id);
-
-        return ResponseEntity.ok(
-                "Notification deleted successfully");
+        return ResponseEntity.ok("Notification deleted successfully");
     }
 }

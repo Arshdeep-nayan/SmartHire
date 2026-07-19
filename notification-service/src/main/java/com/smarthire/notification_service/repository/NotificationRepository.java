@@ -15,4 +15,8 @@ public interface NotificationRepository
     List<Notification> findByJobIdOrderByCreatedAtDesc(int jobId);
 
     List<Notification> findByReadFalse();
+
+    List<Notification> findByCandidateIdAndReadFalse(int candidateId);
+
+    List<Notification> findByJobIdAndReadFalse(int jobId);
 }

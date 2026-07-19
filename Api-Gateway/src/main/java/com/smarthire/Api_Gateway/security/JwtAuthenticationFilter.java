@@ -143,16 +143,19 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
 
                 if (path.startsWith("/api/screening")) {
                     if (method.equals("DELETE")) return false;
+                    if (path.equals("/api/screening/all")) return false;
                     return true;
                 }
 
                 if (path.startsWith("/api/notification")) {
                     if (path.equals("/api/notification/all")) return false;
                     if (path.equals("/api/notification/add")) return false;
+                    if (path.equals("/api/notification/unread")) return false;
                     if (method.equals("DELETE")) return false;
-                    if (path.startsWith("/api/notification/candidate/")) return true;
+                    if (path.startsWith("/api/notification/candidate/")) return false;
+                    if (path.startsWith("/api/notification/unread/candidate/")) return false;
                     if (path.startsWith("/api/notification/job/")) return true;
-                    if (path.equals("/api/notification/unread")) return true;
+                    if (path.startsWith("/api/notification/unread/job/")) return true;
                     if (path.matches("/api/notification/[^/]+/read")) return true;
                     return false;
                 }
@@ -197,10 +200,12 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
                 if (path.startsWith("/api/notification")) {
                     if (path.equals("/api/notification/all")) return false;
                     if (path.equals("/api/notification/add")) return false;
+                    if (path.equals("/api/notification/unread")) return false;
                     if (method.equals("DELETE")) return false;
                     if (path.startsWith("/api/notification/job/")) return false;
+                    if (path.startsWith("/api/notification/unread/job/")) return false;
                     if (path.startsWith("/api/notification/candidate/")) return true;
-                    if (path.equals("/api/notification/unread")) return true;
+                    if (path.startsWith("/api/notification/unread/candidate/")) return true;
                     if (path.matches("/api/notification/[^/]+/read")) return true;
                     return false;
                 }
