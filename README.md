@@ -314,7 +314,7 @@ Run the services in the following order:
 | GET | `/jobs/jobs/all` | Get all jobs | ADMIN, RECRUITER, CANDIDATE |
 | GET | `/jobs/job/{id}` | Get job by ID | ADMIN, RECRUITER, CANDIDATE |
 | POST | `/jobs/job/add` | Create job | ADMIN, RECRUITER |
-| PUT | `/jobs/job/update` | Update job | ADMIN, RECRUITER |
+| PUT | `/jobs/job/update/{id}` | Update job | ADMIN, RECRUITER |
 | DELETE | `/jobs/job/delete/{id}` | Delete job | ADMIN |
 | PATCH | `/jobs/job/{id}/activate` | Activate job | ADMIN, RECRUITER |
 | PATCH | `/jobs/job/{id}/deactivate` | Deactivate job | ADMIN, RECRUITER |
@@ -340,10 +340,10 @@ Run the services in the following order:
 
 | Method | Endpoint | Description | Access |
 | ------ | -------- | ----------- | ------ |
-| GET | `/api/candidates/all` | Get all candidates | ADMIN, RECRUITER |
+| GET | `/api/candidates/all` | Get all candidates | ADMIN |
 | GET | `/api/candidate/{id}` | Get candidate by ID | ADMIN, RECRUITER, CANDIDATE |
 | POST | `/api/candidate/add` | Register candidate | ADMIN, CANDIDATE |
-| PUT | `/api/candidate/update` | Update candidate | ADMIN, CANDIDATE |
+| PUT | `/api/candidate/update/{id}` | Update candidate | ADMIN, CANDIDATE |
 | DELETE | `/api/candidate/delete/{id}` | Delete candidate | ADMIN |
 | PATCH | `/api/candidate/{id}/activate` | Activate candidate | ADMIN |
 | PATCH | `/api/candidate/{id}/deactivate` | Deactivate candidate | ADMIN |
@@ -352,10 +352,10 @@ Run the services in the following order:
 | GET | `/api/candidate/skill/{skill}` | Search by skill | ADMIN, RECRUITER |
 | GET | `/api/candidate/location/{location}` | Search by location | ADMIN, RECRUITER |
 | GET | `/api/candidate/experience/{experience}` | Search by experience | ADMIN, RECRUITER |
-| GET | `/api/candidate/status/{status}` | Search by status | ADMIN, RECRUITER |
+| GET | `/api/candidate/status/{status}` | Search by status | ADMIN |
 | GET | `/api/candidate/page?page=&size=` | Pagination | ADMIN |
 | GET | `/api/candidate/sort/date` | Sort by registration date | ADMIN |
-| POST | `/api/candidate/apply?candidateId=&jobId=` | Publish Candidate Applied Kafka Event | CANDIDATE |
+| POST | `/api/candidate/apply?candidateId=&jobId=` | Apply for job (Publishes Kafka Event) | CANDIDATE |
 
 ### Resume APIs
 
@@ -364,7 +364,7 @@ Run the services in the following order:
 | POST | `/resumes` | Upload resume | ADMIN, CANDIDATE |
 | GET | `/resumes/candidate/{candidateId}` | Get candidate resume | ADMIN, RECRUITER, CANDIDATE |
 | PUT | `/resumes/candidate/{candidateId}` | Update candidate resume | ADMIN, CANDIDATE |
-| DELETE | `/resumes/{id}` | Delete resume | ADMIN, CANDIDATE |
+| DELETE | `/resumes/candidate/{candidateId}` | Delete candidate resume | ADMIN, CANDIDATE |
 
 </details>
 
@@ -373,11 +373,15 @@ Run the services in the following order:
 <details>
 <summary><b>🤖 AI Screening Service (8084)</b></summary>
 
-| Method | Endpoint                                    | Description         | Access           |
-| ------ | ------------------------------------------- | ------------------- | ---------------- |
-| POST   | `/api/screening/screen?candidateId=&jobId=` | AI resume screening | ADMIN, RECRUITER |
-| GET    | `/api/screening/all`                        | Get all screenings  | ADMIN, RECRUITER |
-| GET    | `/api/screening/{id}`                       | Get screening by ID | ADMIN, RECRUITER |
+| Method | Endpoint | Description | Access |
+| ------ | -------- | ----------- | ------ |
+| POST | `/api/screening/screen?candidateId=&jobId=` | Screen candidate using Gemini AI | ADMIN, RECRUITER |
+| GET | `/api/screening/all` | Get all screenings | ADMIN |
+| GET | `/api/screening/{id}` | Get screening by ID | ADMIN, RECRUITER |
+| GET | `/api/screening/candidate/{candidateId}` | Get screenings by candidate | ADMIN |
+| GET | `/api/screening/job/{jobId}` | Get screenings by job | ADMIN, RECRUITER |
+| GET | `/api/screening/candidate/{candidateId}/job/{jobId}` | Get screening by candidate & job | ADMIN, RECRUITER |
+| DELETE | `/api/screening/{id}` | Delete screening | ADMIN |
 
 </details>
 
@@ -386,15 +390,18 @@ Run the services in the following order:
 <details>
 <summary><b>🔔 Notification Service (8086)</b></summary>
 
-| Method | Endpoint                          | Description               | Access     |
-| ------ | --------------------------------- | ------------------------- | ---------- |
-| POST   | `/api/notification/add`           | Create notification       | Internal   |
-| GET    | `/api/notification/all`           | Get all notifications     | ADMIN      |
-| GET    | `/api/notification/{id}`          | Get notification by ID    | ADMIN      |
-| GET    | `/api/notification/user/{userId}` | Get user notifications    | User/Admin |
-| GET    | `/api/notification/unread`        | Get unread notifications  | User/Admin |
-| PATCH  | `/api/notification/read/{id}`     | Mark notification as read | User       |
-| DELETE | `/api/notification/delete/{id}`   | Delete notification       | ADMIN      |
+| Method | Endpoint | Description | Access |
+| ------ | -------- | ----------- | ------ |
+| POST | `/api/notification/add` | Create notification (Internal Only) | Internal |
+| GET | `/api/notification/all` | Get all notifications | ADMIN |
+| GET | `/api/notification/{id}` | Get notification by ID | ADMIN |
+| GET | `/api/notification/candidate/{candidateId}` | Get notifications by candidate | ADMIN, CANDIDATE |
+| GET | `/api/notification/job/{jobId}` | Get notifications by job | ADMIN, RECRUITER |
+| GET | `/api/notification/unread` | Get all unread notifications | ADMIN |
+| GET | `/api/notification/unread/candidate/{candidateId}` | Get unread notifications by candidate | ADMIN, CANDIDATE |
+| GET | `/api/notification/unread/job/{jobId}` | Get unread notifications by job | ADMIN, RECRUITER |
+| PATCH | `/api/notification/{id}/read` | Mark notification as read | ADMIN, RECRUITER, CANDIDATE |
+| DELETE | `/api/notification/{id}` | Delete notification | ADMIN |
 
 </details>
 
@@ -405,21 +412,21 @@ Run the services in the following order:
 
 ### Public Endpoints
 
-| Method | Endpoint        |
-| ------ | --------------- |
-| POST   | `/api/register` |
-| POST   | `/api/login`    |
+| Method | Endpoint |
+| ------ | -------- |
+| POST | `/api/register` |
+| POST | `/api/login` |
 
 ### Protected Routes
 
-* `/jobs/**`
-* `/api/candidate/**`
-* `/api/candidates/**`
-* `/api/resume/**`
-* `/api/screening/**`
-* `/api/notification/**`
+- `/jobs/**`
+- `/api/candidate/**`
+- `/api/candidates/**`
+- `/resumes/**`
+- `/api/screening/**`
+- `/api/notification/**`
 
-**JWT is validated before forwarding requests to downstream services.**
+**JWT authentication and Role-Based Access Control (RBAC) enforced at the API Gateway before forwarding requests to downstream microservices.**
 
 </details>
 
