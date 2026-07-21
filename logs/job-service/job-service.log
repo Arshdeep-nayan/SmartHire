@@ -7272,3 +7272,150 @@ com.netflix.discovery.shared.transport.TransportException: Cannot execute reques
 2026-07-19 22:45:39 INFO  Version - HV000001: Hibernate Validator 8.0.3.Final
 2026-07-19 22:45:39 INFO  JobServiceApplication - Starting JobServiceApplication v0.0.1-SNAPSHOT using Java 21.0.11 with PID 1 (/app/app.jar started by root in /app)
 2026-07-19 22:45:39 DEBUG JobServiceApplication - Running with Spring Boot v3.5.14, Spring v6.2.18
+2026-07-19 22:45:39 INFO  JobServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2026-07-19 22:45:46 INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-19 22:45:47 INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 504 ms. Found 1 JPA repository interface.
+2026-07-19 22:45:49 INFO  GenericScope - BeanFactory id=da17e58e-5b73-3206-bed5-870faaf56e10
+2026-07-19 22:45:51 INFO  TomcatWebServer - Tomcat initialized with port 8082 (http)
+2026-07-19 22:45:51 INFO  Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2026-07-19 22:45:51 INFO  StandardService - Starting service [Tomcat]
+2026-07-19 22:45:51 INFO  StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.54]
+2026-07-19 22:45:51 INFO  [/] - Initializing Spring embedded WebApplicationContext
+2026-07-19 22:45:51 INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 11551 ms
+2026-07-19 22:45:52 INFO  LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-07-19 22:45:52 INFO  Version - HHH000412: Hibernate ORM core version 6.6.49.Final
+2026-07-19 22:45:52 INFO  RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-07-19 22:45:54 INFO  SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-19 22:45:54 INFO  HikariDataSource - HikariPool-1 - Starting...
+2026-07-19 22:45:56 INFO  HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@24f5e9e8
+2026-07-19 22:45:56 INFO  HikariDataSource - HikariPool-1 - Start completed.
+2026-07-19 22:45:56 WARN  deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-07-19 22:45:56 INFO  pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.4.10
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-07-19 22:45:59 INFO  JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-19 22:45:59 INFO  LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-19 22:46:00 INFO  QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-07-19 22:46:04 WARN  JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-19 22:46:06 INFO  DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+2026-07-19 22:46:07 WARN  LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-07-19 22:46:07 INFO  InstanceInfoFactory - Setting initial instance status as: STARTING
+2026-07-19 22:46:07 INFO  DiscoveryClient - Initializing Eureka in region us-east-1
+2026-07-19 22:46:07 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-19 22:46:07 INFO  DiscoveryClient - Disable delta property : false
+2026-07-19 22:46:07 INFO  DiscoveryClient - Single vip registry refresh property : null
+2026-07-19 22:46:07 INFO  DiscoveryClient - Force full registry fetch : false
+2026-07-19 22:46:07 INFO  DiscoveryClient - Application is null : false
+2026-07-19 22:46:07 INFO  DiscoveryClient - Registered Applications size is zero : true
+2026-07-19 22:46:07 INFO  DiscoveryClient - Application version is -1: true
+2026-07-19 22:46:07 INFO  DiscoveryClient - Getting all instance registry info from the eureka server
+2026-07-19 22:46:08 INFO  DiscoveryClient - The response status is 200
+2026-07-19 22:46:08 INFO  DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2026-07-19 22:46:08 INFO  InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-07-19 22:46:08 INFO  DiscoveryClient - Discovery Client initialized at timestamp 1784501168350 with initial instances count: 0
+2026-07-19 22:46:08 INFO  EurekaServiceRegistry - Registering application JOB-SERVICE with eureka with status UP
+2026-07-19 22:46:08 INFO  DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1784501168365, current=UP, previous=STARTING]
+2026-07-19 22:46:08 INFO  DiscoveryClient - DiscoveryClient_JOB-SERVICE/089485c5cb37:JOB-SERVICE:8082: registering service...
+2026-07-19 22:46:08 INFO  Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+2026-07-19 22:46:08 INFO  TomcatWebServer - Tomcat started on port 8082 (http) with context path '/'
+2026-07-19 22:46:08 INFO  EurekaAutoServiceRegistration - Updating port to 8082
+2026-07-19 22:46:08 INFO  JobServiceApplication - Started JobServiceApplication in 30.982 seconds (process running for 36.063)
+2026-07-19 22:46:08 INFO  DiscoveryClient - DiscoveryClient_JOB-SERVICE/089485c5cb37:JOB-SERVICE:8082 - registration status: 204
+2026-07-19 22:46:38 INFO  DiscoveryClient - Disable delta property : false
+2026-07-19 22:46:38 INFO  DiscoveryClient - Single vip registry refresh property : null
+2026-07-19 22:46:38 INFO  DiscoveryClient - Force full registry fetch : false
+2026-07-19 22:46:38 INFO  DiscoveryClient - Application is null : false
+2026-07-19 22:46:38 INFO  DiscoveryClient - Registered Applications size is zero : true
+2026-07-19 22:46:38 INFO  DiscoveryClient - Application version is -1: false
+2026-07-19 22:46:38 INFO  DiscoveryClient - Getting all instance registry info from the eureka server
+2026-07-19 22:46:38 INFO  DiscoveryClient - The response status is 200
+2026-07-19 22:51:07 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-19 22:56:07 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-19 23:01:07 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-19 23:06:07 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-19 23:11:07 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-19 23:16:07 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-19 23:21:07 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-19 23:26:07 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-19 23:31:07 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-19 23:36:07 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-19 23:41:07 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-19 23:46:07 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-19 23:51:07 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-19 23:56:07 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-20 00:01:07 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-21 18:59:23 INFO  Version - HV000001: Hibernate Validator 8.0.3.Final
+2026-07-21 18:59:24 INFO  JobServiceApplication - Starting JobServiceApplication v0.0.1-SNAPSHOT using Java 21.0.11 with PID 1 (/app/app.jar started by root in /app)
+2026-07-21 18:59:24 DEBUG JobServiceApplication - Running with Spring Boot v3.5.14, Spring v6.2.18
+2026-07-21 18:59:24 INFO  JobServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2026-07-21 18:59:34 INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-21 18:59:35 INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 605 ms. Found 1 JPA repository interface.
+2026-07-21 18:59:38 INFO  GenericScope - BeanFactory id=da17e58e-5b73-3206-bed5-870faaf56e10
+2026-07-21 18:59:43 INFO  TomcatWebServer - Tomcat initialized with port 8082 (http)
+2026-07-21 18:59:43 INFO  Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2026-07-21 18:59:43 INFO  StandardService - Starting service [Tomcat]
+2026-07-21 18:59:43 INFO  StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.54]
+2026-07-21 18:59:43 INFO  [/] - Initializing Spring embedded WebApplicationContext
+2026-07-21 18:59:43 INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 18904 ms
+2026-07-21 18:59:46 INFO  LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-07-21 18:59:47 INFO  Version - HHH000412: Hibernate ORM core version 6.6.49.Final
+2026-07-21 18:59:48 INFO  RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-07-21 18:59:52 INFO  SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-21 18:59:53 INFO  HikariDataSource - HikariPool-1 - Starting...
+2026-07-21 18:59:58 INFO  HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@71eafb64
+2026-07-21 18:59:58 INFO  HikariDataSource - HikariPool-1 - Start completed.
+2026-07-21 18:59:59 WARN  deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-07-21 18:59:59 INFO  pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.4.10
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-07-21 19:00:05 INFO  JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-21 19:00:05 INFO  LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-21 19:00:07 INFO  QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-07-21 19:00:10 WARN  JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-21 19:00:12 INFO  DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+2026-07-21 19:00:12 WARN  LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-07-21 19:00:12 INFO  InstanceInfoFactory - Setting initial instance status as: STARTING
+2026-07-21 19:00:12 INFO  DiscoveryClient - Initializing Eureka in region us-east-1
+2026-07-21 19:00:12 INFO  ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-07-21 19:00:12 INFO  DiscoveryClient - Disable delta property : false
+2026-07-21 19:00:12 INFO  DiscoveryClient - Single vip registry refresh property : null
+2026-07-21 19:00:12 INFO  DiscoveryClient - Force full registry fetch : false
+2026-07-21 19:00:12 INFO  DiscoveryClient - Application is null : false
+2026-07-21 19:00:12 INFO  DiscoveryClient - Registered Applications size is zero : true
+2026-07-21 19:00:12 INFO  DiscoveryClient - Application version is -1: true
+2026-07-21 19:00:12 INFO  DiscoveryClient - Getting all instance registry info from the eureka server
+2026-07-21 19:00:13 INFO  DiscoveryClient - The response status is 200
+2026-07-21 19:00:13 INFO  DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2026-07-21 19:00:13 INFO  InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-07-21 19:00:13 INFO  DiscoveryClient - Discovery Client initialized at timestamp 1784660413773 with initial instances count: 0
+2026-07-21 19:00:13 INFO  EurekaServiceRegistry - Registering application JOB-SERVICE with eureka with status UP
+2026-07-21 19:00:13 INFO  DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1784660413786, current=UP, previous=STARTING]
+2026-07-21 19:00:13 INFO  DiscoveryClient - DiscoveryClient_JOB-SERVICE/089485c5cb37:JOB-SERVICE:8082: registering service...
+2026-07-21 19:00:13 INFO  Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+2026-07-21 19:00:13 INFO  TomcatWebServer - Tomcat started on port 8082 (http) with context path '/'
+2026-07-21 19:00:13 INFO  EurekaAutoServiceRegistration - Updating port to 8082
+2026-07-21 19:00:13 INFO  JobServiceApplication - Started JobServiceApplication in 53.37 seconds (process running for 66.566)
+2026-07-21 19:00:13 INFO  DiscoveryClient - DiscoveryClient_JOB-SERVICE/089485c5cb37:JOB-SERVICE:8082 - registration status: 204
+2026-07-21 19:00:32 INFO  EurekaServiceRegistry - Unregistering application JOB-SERVICE with eureka with status DOWN
+2026-07-21 19:00:32 INFO  DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1784660432061, current=DOWN, previous=UP]
+2026-07-21 19:00:32 INFO  DiscoveryClient - DiscoveryClient_JOB-SERVICE/089485c5cb37:JOB-SERVICE:8082: registering service...
+2026-07-21 19:00:32 INFO  GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-07-21 19:00:32 INFO  GracefulShutdown - Graceful shutdown complete
+2026-07-21 19:00:32 INFO  LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-21 19:00:32 INFO  HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-07-21 19:00:32 INFO  HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-07-21 19:00:32 INFO  DiscoveryClient - Shutting down DiscoveryClient ...
+2026-07-21 19:00:35 INFO  DiscoveryClient - Unregistering ...
+2026-07-21 19:00:55 INFO  Version - HV000001: Hibernate Validator 8.0.3.Final
+2026-07-21 19:00:56 INFO  JobServiceApplication - Starting JobServiceApplication v0.0.1-SNAPSHOT using Java 21.0.11 with PID 1 (/app/app.jar started by root in /app)
+2026-07-21 19:00:56 DEBUG JobServiceApplication - Running with Spring Boot v3.5.14, Spring v6.2.18
