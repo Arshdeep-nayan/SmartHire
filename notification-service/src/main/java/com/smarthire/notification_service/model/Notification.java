@@ -34,9 +34,6 @@ public class Notification {
 
     public enum NotificationType {
         APPLICATION_SUBMITTED,
-        SCREENING_COMPLETED,
-        SHORTLISTED,
-        HIRED,
-        JOB_POSTED
+        SCREENING_COMPLETED
     }
 }
