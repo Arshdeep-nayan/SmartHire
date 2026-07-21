@@ -8198,3 +8198,8 @@ com.netflix.discovery.shared.transport.TransportException: Cannot execute reques
 2026-07-21 19:00:55 INFO  Version - HV000001: Hibernate Validator 8.0.3.Final
 2026-07-21 19:00:56 INFO  AuthServiceApplication - Starting AuthServiceApplication v0.0.1-SNAPSHOT using Java 21.0.11 with PID 1 (/app/app.jar started by root in /app)
 2026-07-21 19:00:56 DEBUG AuthServiceApplication - Running with Spring Boot v3.5.15, Spring v6.2.19
+2026-07-21 19:57:43 INFO  Version - HV000001: Hibernate Validator 8.0.3.Final
+2026-07-21 19:57:44 INFO  AuthServiceApplication - Starting AuthServiceApplication v0.0.1-SNAPSHOT using Java 21.0.11 with PID 1 (/app/app.jar started by root in /app)
+2026-07-21 19:57:44 DEBUG AuthServiceApplication - Running with Spring Boot v3.5.15, Spring v6.2.19
+2026-07-21 19:57:44 INFO  AuthServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2026-07-21 19:57:51 INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.

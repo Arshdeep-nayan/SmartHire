@@ -134,7 +134,7 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
                     if (path.contains("/activate") || path.contains("/deactivate")) return false;
                     if (path.startsWith("/api/candidate/page") ||
                             path.startsWith("/api/candidate/sort")) return false;
-                    if(path.startsWith("/api/candidate/status"))return true;
+                    if(path.startsWith("/api/candidate/status"))return false;
                     if (path.contains("/hire") && method.equals("PATCH")) return true;
                     return method.equals("GET");
                 }

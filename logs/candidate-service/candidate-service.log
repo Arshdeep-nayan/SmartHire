@@ -8114,3 +8114,14 @@ com.mongodb.MongoNodeIsRecoveringException: Command failed with error 11600 (Int
 2026-07-21 19:00:55 INFO  Version - HV000001: Hibernate Validator 8.0.3.Final
 2026-07-21 19:00:55 INFO  CandidateServiceApplication - Starting CandidateServiceApplication v0.0.1-SNAPSHOT using Java 21.0.11 with PID 1 (/app/app.jar started by root in /app)
 2026-07-21 19:00:55 DEBUG CandidateServiceApplication - Running with Spring Boot v3.5.15, Spring v6.2.19
+2026-07-21 19:57:44 INFO  Version - HV000001: Hibernate Validator 8.0.3.Final
+2026-07-21 19:57:45 INFO  CandidateServiceApplication - Starting CandidateServiceApplication v0.0.1-SNAPSHOT using Java 21.0.11 with PID 1 (/app/app.jar started by root in /app)
+2026-07-21 19:57:45 DEBUG CandidateServiceApplication - Running with Spring Boot v3.5.15, Spring v6.2.19
+2026-07-21 19:57:45 INFO  CandidateServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2026-07-21 19:57:51 INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-07-21 19:57:51 INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-21 19:57:51 INFO  RepositoryConfigurationExtensionSupport - Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.SmartHire.candidate_service.Repository.ResumeRepository; If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: jakarta.persistence.Entity, jakarta.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository
+2026-07-21 19:57:51 INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 429 ms. Found 1 JPA repository interface.
+2026-07-21 19:57:51 INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-07-21 19:57:51 INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2026-07-21 19:57:51 INFO  RepositoryConfigurationExtensionSupport - Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.SmartHire.candidate_service.Repository.CandidateRepository; If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository

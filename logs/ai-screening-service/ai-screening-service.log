@@ -16863,3 +16863,8 @@ com.mongodb.MongoNodeIsRecoveringException: Command failed with error 11600 (Int
 2026-07-21 19:00:55 INFO  Version - HV000001: Hibernate Validator 8.0.3.Final
 2026-07-21 19:00:56 INFO  AiScreeningServiceApplication - Starting AiScreeningServiceApplication v0.0.1-SNAPSHOT using Java 21.0.11 with PID 1 (/app/app.jar started by root in /app)
 2026-07-21 19:00:56 DEBUG AiScreeningServiceApplication - Running with Spring Boot v3.5.16, Spring v6.2.19
+2026-07-21 19:57:44 INFO  Version - HV000001: Hibernate Validator 8.0.3.Final
+2026-07-21 19:57:45 INFO  AiScreeningServiceApplication - Starting AiScreeningServiceApplication v0.0.1-SNAPSHOT using Java 21.0.11 with PID 1 (/app/app.jar started by root in /app)
+2026-07-21 19:57:45 DEBUG AiScreeningServiceApplication - Running with Spring Boot v3.5.16, Spring v6.2.19
+2026-07-21 19:57:45 INFO  AiScreeningServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2026-07-21 19:57:52 INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
