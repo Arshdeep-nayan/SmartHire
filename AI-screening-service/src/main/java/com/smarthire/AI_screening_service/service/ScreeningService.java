@@ -11,7 +11,6 @@ import com.smarthire.AI_screening_service.model.ScreeningResult;
 import com.smarthire.AI_screening_service.repository.ScreeningRepository;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.ai.chat.client.ChatClient;
-import org.springframework.ai.google.genai.GoogleGenAiChatModel;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
@@ -29,13 +28,13 @@ public class ScreeningService {
 
     public ScreeningService(
             ScreeningRepository repo,
-            GoogleGenAiChatModel chatModel,
+            ChatClient chatClient,
             CandidateFeignClient candidateFeignClient,
             JobFeignClient jobFeignClient,
             ScreeningEventProducer screeningEventProducer) {
 
         this.repo = repo;
-        this.chatClient = ChatClient.create(chatModel);
+        this.chatClient = chatClient;
         this.candidateFeignClient = candidateFeignClient;
         this.jobFeignClient = jobFeignClient;
         this.screeningEventProducer = screeningEventProducer;
