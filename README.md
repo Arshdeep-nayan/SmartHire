@@ -1,8 +1,5 @@
 # 🚀 SmartHire
 
-
-
-
 > [!IMPORTANT]
 > ### Testing Protected APIs
 >
@@ -15,27 +12,26 @@
 > 3. Call **POST `/api/login`** to generate a JWT.
 > 4. Copy the JWT from the response.
 > 5. Click the **Authorize (🔒)** button.
-> 6. Paste the JWT into the authorization field and click **Authorize**.
-> 7. Switch to any service and test the protected endpoints.
+> 6. Paste the JWT into the authorization field.
+> 7. Click **Authorize**.
+> 8. Switch to any microservice and test protected endpoints.
 
+---
 
-
-
-
-
-
-> **An AI-powered Job Portal Backend built using Java, Spring Boot Microservices, Spring Cloud, Apache Kafka, Google Gemini, Docker, MySQL, and MongoDB.**
+## **An AI-Powered Job Portal Backend built using Java, Spring Boot Microservices, Spring Cloud, Apache Kafka, Google Gemini AI, Docker, MySQL, MongoDB, JUnit 5 and Mockito.**
 
 <p align="center">
 
-![Java](https://img.shields.io/badge/Java-21-orange?style=for-the-badge\&logo=openjdk)
-![Spring Boot](https://img.shields.io/badge/Spring_Boot-3.5.x-6DB33F?style=for-the-badge\&logo=springboot)
+![Java](https://img.shields.io/badge/Java-21-orange?style=for-the-badge&logo=openjdk)
+![Spring Boot](https://img.shields.io/badge/Spring_Boot-3.5.x-6DB33F?style=for-the-badge&logo=springboot)
 ![Spring Cloud](https://img.shields.io/badge/Spring_Cloud-Microservices-success?style=for-the-badge)
 ![Spring Security](https://img.shields.io/badge/Spring_Security-JWT-success?style=for-the-badge)
-![Kafka](https://img.shields.io/badge/Apache-Kafka-black?style=for-the-badge\&logo=apachekafka)
-![Docker](https://img.shields.io/badge/Docker-Containerized-blue?style=for-the-badge\&logo=docker)
-![MySQL](https://img.shields.io/badge/MySQL-Database-4479A1?style=for-the-badge\&logo=mysql)
-![MongoDB](https://img.shields.io/badge/MongoDB-NoSQL-47A248?style=for-the-badge\&logo=mongodb)
+![Kafka](https://img.shields.io/badge/Apache-Kafka-black?style=for-the-badge&logo=apachekafka)
+![Docker](https://img.shields.io/badge/Docker-Containerized-blue?style=for-the-badge&logo=docker)
+![MySQL](https://img.shields.io/badge/MySQL-Database-4479A1?style=for-the-badge&logo=mysql)
+![MongoDB](https://img.shields.io/badge/MongoDB-NoSQL-47A248?style=for-the-badge&logo=mongodb)
+![JUnit 5](https://img.shields.io/badge/JUnit-5-success?style=for-the-badge)
+![Mockito](https://img.shields.io/badge/Mockito-Testing-green?style=for-the-badge)
 ![Log4j2](https://img.shields.io/badge/Log4j2-Logging-blue?style=for-the-badge)
 
 </p>
@@ -44,27 +40,41 @@
 
 # 📖 Overview
 
-SmartHire is a backend-only job portal built using a **microservices architecture** with Spring Boot and Spring Cloud. The project demonstrates secure authentication, distributed system design, AI-powered resume screening, asynchronous event-driven communication, and containerized deployment using modern Java backend technologies.
+SmartHire is a backend-only Job Portal built using a **Microservices Architecture** with **Spring Boot** and **Spring Cloud**.
+
+The project demonstrates:
+
+- Secure JWT Authentication
+- Role-Based Access Control (RBAC)
+- Spring Cloud API Gateway
+- Eureka Service Discovery
+- OpenFeign Inter-Service Communication
+- Apache Kafka Event-Driven Architecture
+- AI-powered Candidate Screening using Google Gemini
+- MySQL & MongoDB Integration
+- Dockerized Deployment
+- Comprehensive Service Layer Unit Testing using **JUnit 5** and **Mockito**
 
 ---
 
 # ✨ Features
 
-* 🔐 JWT Authentication & Authorization
-* 👥 Role-Based Access Control (ADMIN, RECRUITER, CANDIDATE)
-* 🏗️ Spring Boot Microservices Architecture
-* 🌐 Spring Cloud API Gateway
-* 🔍 Eureka Service Discovery
-* 🔄 OpenFeign Inter-Service Communication
-* ⚡ Apache Kafka Event Streaming
-* 🤖 AI Resume Screening using Google Gemini
-* 📄 Resume Management
-* 🔔 Notification Service
-* 🗄️ MySQL & MongoDB Integration
-* 📊 Search, Pagination & Sorting APIs
-* 📑 Swagger / OpenAPI Documentation
-* 📝 Log4j2 Logging
-* 🐳 Docker & Docker Compose Support
+- 🔐 JWT Authentication & Authorization
+- 👥 Role-Based Access Control (ADMIN, RECRUITER, CANDIDATE)
+- 🏗️ Spring Boot Microservices Architecture
+- 🌐 Spring Cloud API Gateway
+- 🔍 Eureka Service Discovery
+- 🔄 OpenFeign Inter-Service Communication
+- ⚡ Apache Kafka Event Streaming
+- 🤖 AI Resume Screening using Google Gemini
+- 📄 Resume Management
+- 🔔 Notification Service
+- 🗄️ MySQL & MongoDB Integration
+- 📊 Search, Pagination & Sorting APIs
+- 📑 Swagger / OpenAPI Documentation
+- 📝 Log4j2 Logging
+- 🧪 Unit Testing using JUnit 5 & Mockito
+- 🐳 Docker & Docker Compose Deployment
 
 ---
 
@@ -74,55 +84,57 @@ SmartHire is a backend-only job portal built using a **microservices architectur
                                  Client
                                     │
                                     ▼
-                            API Gateway (8085)
-                           JWT Validation & Routing
+                           API Gateway (8085)
+                        JWT Validation & Routing
                                     │
-        ┌──────────────┬────────────┼──────────────┬──────────────┐
-        ▼              ▼            ▼              ▼              ▼
- Auth Service     Job Service   Candidate     AI Screening   Notification
-    (8081)          (8082)      Service          (8084)        Service
-                                  (8083)                          (8086)
-                                       │
-                                       ▼
-                                Apache Kafka
-                                       │
-                                       ▼
-                          Eureka Discovery Server
-                                       │
-                      MySQL                      MongoDB
+      ┌──────────────┬──────────────┼──────────────┬──────────────┐
+      ▼              ▼              ▼              ▼              ▼
+ Auth Service    Job Service   Candidate     AI Screening   Notification
+    (8081)         (8082)        Service         Service        Service
+                                  (8083)         (8084)         (8086)
+                                     │
+                                     ▼
+                               Apache Kafka
+                                     │
+                                     ▼
+                         Eureka Discovery Server
+                                     │
+                     MySQL                      MongoDB
 ```
 
 ---
 
 # 🧩 Microservices
 
-| Service                  | Port | Database        | Responsibility                                |
-| ------------------------ | ---- | --------------- | --------------------------------------------- |
-| **Auth Service**         | 8081 | MySQL           | User Registration, Login & JWT Authentication |
-| **Job Service**          | 8082 | MySQL           | Job Management, Search, Pagination & Sorting  |
-| **Candidate Service**    | 8083 | MySQL & MongoDB | Candidate & Resume Management                 |
-| **AI Screening Service** | 8084 | MongoDB         | AI Resume Screening using Google Gemini       |
-| **Notification Service** | 8086 | MongoDB         | Kafka-based Notification Management           |
-| **API Gateway**          | 8085 | —               | Centralized Routing & JWT Validation          |
-| **Discovery Server**     | 8761 | —               | Eureka Service Discovery                      |
+| Service | Port | Database | Responsibility |
+|---------|------|----------|----------------|
+| **Auth Service** | 8081 | MySQL | Registration, Login & JWT Generation |
+| **Job Service** | 8082 | MySQL | Job Management |
+| **Candidate Service** | 8083 | MySQL & MongoDB | Candidate & Resume Management |
+| **AI Screening Service** | 8084 | MongoDB | AI Resume Screening using Gemini |
+| **Notification Service** | 8086 | MongoDB | Kafka-based Notifications |
+| **API Gateway** | 8085 | — | JWT Validation & Routing |
+| **Discovery Server** | 8761 | — | Eureka Registry |
 
 ---
 
 # 🛠️ Technology Stack
 
-| Category                  | Technologies                       |
-| ------------------------- | ---------------------------------- |
-| **Language**              | Java 21                            |
-| **Framework**             | Spring Boot 3.5.x, Spring Cloud    |
-| **Security**              | Spring Security, JWT, BCrypt       |
-| **Databases**             | MySQL, MongoDB                     |
-| **AI**                    | Spring AI, Google Gemini 2.5 Flash |
-| **Messaging**             | Apache Kafka                       |
-| **Service Communication** | OpenFeign                          |
-| **Documentation**         | Swagger / OpenAPI                  |
-| **Logging**               | Log4j2, SLF4J                      |
-| **Build Tool**            | Maven                              |
-| **Containerization**      | Docker, Docker Compose             |
+| Category | Technologies |
+|-----------|-------------|
+| Language | Java 21 |
+| Framework | Spring Boot 3.5.x |
+| Microservices | Spring Cloud |
+| Security | Spring Security, JWT |
+| AI | Spring AI, Google Gemini 2.5 Flash |
+| Messaging | Apache Kafka |
+| Service Communication | OpenFeign |
+| Databases | MySQL, MongoDB |
+| Documentation | Swagger / OpenAPI |
+| Testing | JUnit 5, Mockito |
+| Logging | Log4j2 |
+| Build Tool | Maven |
+| Containerization | Docker, Docker Compose |
 
 ---
 
@@ -131,13 +143,13 @@ SmartHire is a backend-only job portal built using a **microservices architectur
 ```text
 SmartHire
 │
-├── AUTH-SERVICE
-├── JOB-SERVICE
-├── CANDIDATE-SERVICE
-├── AI-SCREENING-SERVICE
-├── NOTIFICATION-SERVICE
-├── API-GATEWAY
-├── DISCOVERY-SERVER
+├── auth-service
+├── job-service
+├── candidate-service
+├── AI-screening-service
+├── notification-service
+├── api-gateway
+├── discovery-server
 └── docker-compose.yml
 ```
 
@@ -146,60 +158,61 @@ SmartHire
 # 📌 Core Workflow
 
 ```text
-                Client
-                   │
-                   ▼
+               Client
+                  │
+                  ▼
              API Gateway
-                   │
-      ┌────────────┼────────────┐
-      ▼            ▼            ▼
- Auth Service   Job Service   Candidate Service
-                                    │
-                                    ▼
-                          AI Screening Service
-                                    │
-                                    ▼
-                         Notification Service
+                  │
+      ┌───────────┼────────────┐
+      ▼           ▼            ▼
+ Auth Service  Job Service  Candidate Service
+                                 │
+                                 ▼
+                       AI Screening Service
+                                 │
+                                 ▼
+                      Notification Service
 
-      Service Discovery → Eureka
+     Service Discovery → Eureka
 
-      Async Communication → Apache Kafka
+     Async Communication → Apache Kafka
 
-      Databases → MySQL & MongoDB
+     Databases → MySQL & MongoDB
 ```
 
 ---
+
 # 🔐 Authentication Flow
 
 ```text
-                    Login Request
-                          │
-                          ▼
-                 Authentication Service
-                          │
+                 Login Request
+                       │
+                       ▼
+             Authentication Service
+                       │
                Validate Credentials
-                          │
-                          ▼
-                  Generate JWT Token
-                          │
-                          ▼
-                    Return JWT Token
-                          │
-─────────────────────────────────────────────
+                       │
+                       ▼
+                Generate JWT Token
+                       │
+                       ▼
+                 Return JWT Token
+                       │
+────────────────────────────────────────────
          Every Protected API Request
-─────────────────────────────────────────────
-                          │
-                          ▼
-                     API Gateway
-                          │
-                 Validate JWT Token
-                          │
+────────────────────────────────────────────
+                       │
+                       ▼
+                  API Gateway
+                       │
+                Validate JWT Token
+                       │
           Extract User ID & Role Claims
-                          │
-                    Authorize Request
-                          │
-                          ▼
-              Forward Request to Service
+                       │
+                 Authorize Request
+                       │
+                       ▼
+          Forward Request to Service
 ```
 
 ---
@@ -220,51 +233,64 @@ Candidate Service
     ▼
 Kafka Topic : arshdeep
     │
+    ├──────────────► AI Screening Service
+    │                       │
+    │                       ▼
+    │              Gemini AI Screening
+    │                       │
+    │                       ▼
+    │         Kafka Topic : screening-completed
+    │
     ▼
 Notification Service
     │
     ▼
-Notification Created
+Application Notification Created
 ```
 
-### AI Screening Completed
+## AI Screening Completed
 
 ```text
-Recruiter
-    │
-    ▼
-POST /api/screening/screen
-    │
-    ▼
 AI Screening Service
-    │
-    ▼
-Kafka Topic : screening-completed
-    │
-    ▼
+        │
+        ▼
+screening-completed Topic
+        │
+        ▼
 Notification Service
-    │
-    ▼
-Notification Created
+        │
+        ▼
+Screening Completion Notification Created
 ```
 
 ---
 
 # 🌐 Live Demo
 
-| Service              | URL                                      |
-| -------------------- | ---------------------------------------- |
-| **Swagger UI**       | http://13.62.16.155:8085/swagger-ui.html |
+| Service | URL |
+|---------|-----|
+| **Swagger UI** | http://13.62.16.155:8085/swagger-ui.html |
 
-> **Note:** Protected endpoints require a valid JWT. Authenticate using `/api/login` and include the token in the request header:
+> **Note**
 >
-> `Authorization: Bearer <your-jwt-token>`
-
----
+> Protected APIs require a valid JWT.
+>
+> Authenticate using:
+>
+> ```
+> POST /api/login
+> ```
+>
+> Then use:
+>
+> ```
+> Authorization: Bearer <JWT_TOKEN>
+> ```
+> ---
 
 # 🚀 Running the Project
 
-### Clone the Repository
+## Clone the Repository
 
 ```bash
 git clone https://github.com/Arshdeep-nayan/SmartHire.git
@@ -272,34 +298,39 @@ git clone https://github.com/Arshdeep-nayan/SmartHire.git
 cd SmartHire
 ```
 
-### Start the Infrastructure
+---
+
+## Start Docker Infrastructure
 
 ```bash
-docker-compose up -d
+docker compose up -d
 ```
 
-### Start Services
+This starts:
 
-Run the services in the following order:
-
-1. Discovery Server
-2. Auth Service
-3. Job Service
-4. Candidate Service
-5. AI Screening Service
-6. Notification Service
-7. API Gateway
+- Discovery Server
+- API Gateway
+- Auth Service
+- Job Service
+- Candidate Service
+- AI Screening Service
+- Notification Service
+- MySQL
+- MongoDB
+- Apache Kafka
+- Zookeeper
 
 ---
 
 # 📚 REST API Reference
 
 <details>
+
 <summary><b>🔐 Auth Service (8081)</b></summary>
 
 | Method | Endpoint | Description | Access |
-| ------ | -------- | ----------- | ------ |
-| POST | `/api/register` | Register new user | Public |
+|---------|----------|-------------|--------|
+| POST | `/api/register` | Register User | Public |
 | POST | `/api/login` | Login & Generate JWT | Public |
 
 </details>
@@ -307,113 +338,120 @@ Run the services in the following order:
 ---
 
 <details>
+
 <summary><b>💼 Job Service (8082)</b></summary>
 
 | Method | Endpoint | Description | Access |
-| ------ | -------- | ----------- | ------ |
-| GET | `/jobs/jobs/all` | Get all jobs | ADMIN, RECRUITER, CANDIDATE |
-| GET | `/jobs/job/{id}` | Get job by ID | ADMIN, RECRUITER, CANDIDATE |
-| POST | `/jobs/job/add` | Create job | ADMIN, RECRUITER |
-| PUT | `/jobs/job/update/{id}` | Update job | ADMIN, RECRUITER |
-| DELETE | `/jobs/job/delete/{id}` | Delete job | ADMIN |
-| PATCH | `/jobs/job/{id}/activate` | Activate job | ADMIN, RECRUITER |
-| PATCH | `/jobs/job/{id}/deactivate` | Deactivate job | ADMIN, RECRUITER |
-| GET | `/jobs/search?keyword=` | Search jobs | ADMIN, RECRUITER, CANDIDATE |
-| GET | `/jobs/location/{location}` | Jobs by location | ADMIN, RECRUITER, CANDIDATE |
-| GET | `/jobs/company/{company}` | Jobs by company | ADMIN, RECRUITER, CANDIDATE |
-| GET | `/jobs/salary?minSalary=&maxSalary=` | Salary range | ADMIN, RECRUITER, CANDIDATE |
-| GET | `/jobs/type/{jobType}` | Job type | ADMIN, RECRUITER, CANDIDATE |
-| GET | `/jobs/experience/{experience}` | Experience | ADMIN, RECRUITER, CANDIDATE |
-| GET | `/jobs/active` | Active jobs | ADMIN, RECRUITER, CANDIDATE |
+|---------|----------|-------------|--------|
+| GET | `/jobs/jobs/all` | Get All Jobs | ADMIN, RECRUITER, CANDIDATE |
+| GET | `/jobs/job/{id}` | Get Job by ID | ADMIN, RECRUITER, CANDIDATE |
+| POST | `/jobs/job/add` | Create Job | ADMIN, RECRUITER |
+| PUT | `/jobs/job/update/{id}` | Update Job | ADMIN, RECRUITER |
+| DELETE | `/jobs/job/delete/{id}` | Delete Job | ADMIN |
+| PATCH | `/jobs/job/{id}/activate` | Activate Job | ADMIN, RECRUITER |
+| PATCH | `/jobs/job/{id}/deactivate` | Deactivate Job | ADMIN, RECRUITER |
+| GET | `/jobs/search?keyword=` | Search Jobs | ADMIN, RECRUITER, CANDIDATE |
+| GET | `/jobs/location/{location}` | Search by Location | ADMIN, RECRUITER, CANDIDATE |
+| GET | `/jobs/company/{company}` | Search by Company | ADMIN, RECRUITER, CANDIDATE |
+| GET | `/jobs/salary?minSalary=&maxSalary=` | Search by Salary | ADMIN, RECRUITER, CANDIDATE |
+| GET | `/jobs/type/{jobType}` | Search by Job Type | ADMIN, RECRUITER, CANDIDATE |
+| GET | `/jobs/experience/{experience}` | Search by Experience | ADMIN, RECRUITER, CANDIDATE |
+| GET | `/jobs/active` | Active Jobs | ADMIN, RECRUITER, CANDIDATE |
 | GET | `/jobs/page?page=&size=` | Pagination | ADMIN, RECRUITER, CANDIDATE |
-| GET | `/jobs/sort/salary` | Sort by salary | ADMIN, RECRUITER, CANDIDATE |
-| GET | `/jobs/sort/date` | Sort by posted date | ADMIN, RECRUITER, CANDIDATE |
+| GET | `/jobs/sort/salary` | Sort by Salary | ADMIN, RECRUITER, CANDIDATE |
+| GET | `/jobs/sort/date` | Sort by Posted Date | ADMIN, RECRUITER, CANDIDATE |
 
 </details>
 
 ---
 
 <details>
+
 <summary><b>👤 Candidate Service (8083)</b></summary>
 
 ### Candidate APIs
 
 | Method | Endpoint | Description | Access |
-| ------ | -------- | ----------- | ------ |
-| GET | `/api/candidates/all` | Get all candidates | ADMIN |
-| GET | `/api/candidate/{id}` | Get candidate by ID | ADMIN, RECRUITER, CANDIDATE |
-| POST | `/api/candidate/add` | Register candidate | ADMIN, CANDIDATE |
-| PUT | `/api/candidate/update/{id}` | Update candidate | ADMIN, CANDIDATE |
-| DELETE | `/api/candidate/delete/{id}` | Delete candidate | ADMIN |
-| PATCH | `/api/candidate/{id}/activate` | Activate candidate | ADMIN |
-| PATCH | `/api/candidate/{id}/deactivate` | Deactivate candidate | ADMIN |
-| PATCH | `/api/candidate/{id}/hire` | Mark candidate as hired | ADMIN, RECRUITER |
-| GET | `/api/candidate/search?keyword=` | Search candidates | ADMIN, RECRUITER |
-| GET | `/api/candidate/skill/{skill}` | Search by skill | ADMIN, RECRUITER |
-| GET | `/api/candidate/location/{location}` | Search by location | ADMIN, RECRUITER |
-| GET | `/api/candidate/experience/{experience}` | Search by experience | ADMIN, RECRUITER |
-| GET | `/api/candidate/status/{status}` | Search by status | ADMIN |
+|---------|----------|-------------|--------|
+| GET | `/api/candidates/all` | Get All Candidates | ADMIN |
+| GET | `/api/candidate/{id}` | Get Candidate by ID | ADMIN, RECRUITER, CANDIDATE |
+| POST | `/api/candidate/add` | Register Candidate | ADMIN, CANDIDATE |
+| PUT | `/api/candidate/update/{id}` | Update Candidate | ADMIN, CANDIDATE |
+| DELETE | `/api/candidate/delete/{id}` | Delete Candidate | ADMIN |
+| PATCH | `/api/candidate/{id}/activate` | Activate Candidate | ADMIN |
+| PATCH | `/api/candidate/{id}/deactivate` | Deactivate Candidate | ADMIN |
+| PATCH | `/api/candidate/{id}/hire` | Mark Candidate as Hired | ADMIN, RECRUITER |
+| GET | `/api/candidate/search?keyword=` | Search Candidates | ADMIN, RECRUITER |
+| GET | `/api/candidate/skill/{skill}` | Search by Skill | ADMIN, RECRUITER |
+| GET | `/api/candidate/location/{location}` | Search by Location | ADMIN, RECRUITER |
+| GET | `/api/candidate/experience/{experience}` | Search by Experience | ADMIN, RECRUITER |
+| GET | `/api/candidate/status/{status}` | Search by Status | ADMIN |
 | GET | `/api/candidate/page?page=&size=` | Pagination | ADMIN |
-| GET | `/api/candidate/sort/date` | Sort by registration date | ADMIN |
-| POST | `/api/candidate/apply?candidateId=&jobId=` | Apply for job (Publishes Kafka Event) | CANDIDATE |
+| GET | `/api/candidate/sort/date` | Sort by Registration Date | ADMIN |
+| POST | `/api/candidate/apply?candidateId=&jobId=` | Apply for Job (Publishes Kafka Event) | CANDIDATE |
+
+---
 
 ### Resume APIs
 
 | Method | Endpoint | Description | Access |
-| ------ | -------- | ----------- | ------ |
-| POST | `/resumes` | Upload resume | ADMIN, CANDIDATE |
-| GET | `/resumes/candidate/{candidateId}` | Get candidate resume | ADMIN, RECRUITER, CANDIDATE |
-| PUT | `/resumes/candidate/{candidateId}` | Update candidate resume | ADMIN, CANDIDATE |
-| DELETE | `/resumes/candidate/{candidateId}` | Delete candidate resume | ADMIN, CANDIDATE |
+|---------|----------|-------------|--------|
+| POST | `/resumes` | Upload Resume | ADMIN, CANDIDATE |
+| GET | `/resumes/candidate/{candidateId}` | Get Resume | ADMIN, RECRUITER, CANDIDATE |
+| PUT | `/resumes/candidate/{candidateId}` | Update Resume | ADMIN, CANDIDATE |
+| DELETE | `/resumes/candidate/{candidateId}` | Delete Resume | ADMIN, CANDIDATE |
 
 </details>
 
 ---
 
 <details>
+
 <summary><b>🤖 AI Screening Service (8084)</b></summary>
 
 | Method | Endpoint | Description | Access |
-| ------ | -------- | ----------- | ------ |
-| POST | `/api/screening/screen?candidateId=&jobId=` | Screen candidate using Gemini AI | ADMIN, RECRUITER |
-| GET | `/api/screening/all` | Get all screenings | ADMIN |
-| GET | `/api/screening/{id}` | Get screening by ID | ADMIN, RECRUITER |
-| GET | `/api/screening/candidate/{candidateId}` | Get screenings by candidate | ADMIN |
-| GET | `/api/screening/job/{jobId}` | Get screenings by job | ADMIN, RECRUITER |
-| GET | `/api/screening/candidate/{candidateId}/job/{jobId}` | Get screening by candidate & job | ADMIN, RECRUITER |
-| DELETE | `/api/screening/{id}` | Delete screening | ADMIN |
+|---------|----------|-------------|--------|
+| POST | `/api/screening/screen?candidateId=&jobId=` | Screen Candidate using Gemini AI | ADMIN, RECRUITER |
+| GET | `/api/screening/all` | Get All Screening Results | ADMIN |
+| GET | `/api/screening/{id}` | Get Screening by ID | ADMIN, RECRUITER |
+| GET | `/api/screening/candidate/{candidateId}` | Get Candidate Screenings | ADMIN |
+| GET | `/api/screening/job/{jobId}` | Get Job Screenings | ADMIN, RECRUITER |
+| GET | `/api/screening/candidate/{candidateId}/job/{jobId}` | Candidate + Job Screening | ADMIN, RECRUITER |
+| DELETE | `/api/screening/{id}` | Delete Screening | ADMIN |
 
 </details>
 
 ---
 
 <details>
+
 <summary><b>🔔 Notification Service (8086)</b></summary>
 
 | Method | Endpoint | Description | Access |
-| ------ | -------- | ----------- | ------ |
-| POST | `/api/notification/add` | Create notification (Internal Only) | Internal |
-| GET | `/api/notification/all` | Get all notifications | ADMIN |
-| GET | `/api/notification/{id}` | Get notification by ID | ADMIN |
-| GET | `/api/notification/candidate/{candidateId}` | Get notifications by candidate | ADMIN, CANDIDATE |
-| GET | `/api/notification/job/{jobId}` | Get notifications by job | ADMIN, RECRUITER |
-| GET | `/api/notification/unread` | Get all unread notifications | ADMIN |
-| GET | `/api/notification/unread/candidate/{candidateId}` | Get unread notifications by candidate | ADMIN, CANDIDATE |
-| GET | `/api/notification/unread/job/{jobId}` | Get unread notifications by job | ADMIN, RECRUITER |
-| PATCH | `/api/notification/{id}/read` | Mark notification as read | ADMIN, RECRUITER, CANDIDATE |
-| DELETE | `/api/notification/{id}` | Delete notification | ADMIN |
+|---------|----------|-------------|--------|
+| POST | `/api/notification/add` | Internal Notification Creation | Internal |
+| GET | `/api/notification/all` | Get All Notifications | ADMIN |
+| GET | `/api/notification/{id}` | Get Notification by ID | ADMIN |
+| GET | `/api/notification/candidate/{candidateId}` | Candidate Notifications | ADMIN, CANDIDATE |
+| GET | `/api/notification/job/{jobId}` | Job Notifications | ADMIN, RECRUITER |
+| GET | `/api/notification/unread` | All Unread Notifications | ADMIN |
+| GET | `/api/notification/unread/candidate/{candidateId}` | Candidate Unread Notifications | ADMIN, CANDIDATE |
+| GET | `/api/notification/unread/job/{jobId}` | Job Unread Notifications | ADMIN, RECRUITER |
+| PATCH | `/api/notification/{id}/read` | Mark Notification as Read | ADMIN, RECRUITER, CANDIDATE |
+| DELETE | `/api/notification/{id}` | Delete Notification | ADMIN |
 
 </details>
 
 ---
 
 <details>
+
 <summary><b>🌐 API Gateway (8085)</b></summary>
 
 ### Public Endpoints
 
 | Method | Endpoint |
-| ------ | -------- |
+|---------|----------|
 | POST | `/api/register` |
 | POST | `/api/login` |
 
@@ -426,7 +464,7 @@ Run the services in the following order:
 - `/api/screening/**`
 - `/api/notification/**`
 
-**JWT authentication and Role-Based Access Control (RBAC) enforced at the API Gateway before forwarding requests to downstream microservices.**
+JWT Authentication and Role-Based Access Control (RBAC) are enforced at the API Gateway before requests are forwarded to downstream services.
 
 </details>
 
@@ -434,88 +472,191 @@ Run the services in the following order:
 
 # 📖 Swagger
 
-| Service              | Endpoint                                   |
-| -------------------- | ------------------------------------------ |
-| Gateway UI           | `http://13.62.16.155:8085/swagger-ui.html` |
-| Auth Service         | `/auth/v3/api-docs`                        |
-| Job Service          | `/jobs/v3/api-docs`                        |
-| Candidate Service    | `/candidate/v3/api-docs`                   |
-| AI Screening Service | `/screening/v3/api-docs`                   |
-| Notification Service | `/notification/v3/api-docs`                |
+| Service | Endpoint |
+|---------|----------|
+| Gateway UI | `http://13.62.16.155:8085/swagger-ui.html` |
+| Auth Service | `/auth/v3/api-docs` |
+| Job Service | `/jobs/v3/api-docs` |
+| Candidate Service | `/candidate/v3/api-docs` |
+| AI Screening Service | `/screening/v3/api-docs` |
+| Notification Service | `/notification/v3/api-docs` |
 
 ---
+
 # 🗄️ Databases
 
-| Database    | Purpose                                                 |
-| ----------- | ------------------------------------------------------- |
-| **MySQL**   | Stores users, jobs, and candidate information           |
-| **MongoDB** | Stores resumes, AI screening results, and notifications |
+| Database | Purpose |
+|----------|---------|
+| **MySQL** | Stores Users, Jobs and Candidate Information |
+| **MongoDB** | Stores Resumes, AI Screening Results and Notifications |
+
+---
+
+# 🧪 Testing
+
+SmartHire includes comprehensive **service-layer unit tests** written using **JUnit 5** and **Mockito**.
+
+All business logic is tested independently by mocking repositories, Kafka components, external services, and AI integrations.
+
+## Services Tested
+
+- ✅ Authentication Service
+- ✅ Job Service
+- ✅ Candidate Service
+- ✅ AI Screening Service
+- ✅ Notification Service
+- ✅ API Gateway
+
+### Test Coverage Includes
+
+- Business Logic
+- Exception Handling
+- Repository Mocking
+- Kafka Producers
+- Kafka Consumers
+- JWT Token Validation
+- Spring Security Filter Testing
+- Route Validation
+- Google Gemini AI Mocking
+- MongoDB Repository Mocking
+- MySQL Repository Mocking
 
 ---
 
 # 🐳 Docker Services
 
-The project is fully containerized using **Docker** and **Docker Compose**.
+The complete SmartHire application runs using Docker Compose.
 
-The following services are orchestrated using Docker Compose:
+| Container | Port |
+|------------|------|
+| Discovery Server | 8761 |
+| API Gateway | 8085 |
+| Auth Service | 8081 |
+| Job Service | 8082 |
+| Candidate Service | 8083 |
+| AI Screening Service | 8084 |
+| Notification Service | 8086 |
+| MySQL | 3307 |
+| MongoDB | 27017 |
+| Apache Kafka | 9092 |
+| Zookeeper | 2181 |
 
-* Discovery Server
-* API Gateway
-* Auth Service
-* Job Service
-* Candidate Service
-* AI Screening Service
-* Notification Service
-* MySQL
-* MongoDB
-* Apache Kafka
-* Zookeeper
+Start the entire application using:
 
----
+```bash
+docker compose up -d
+```
 
-# 💻 Skills Demonstrated
+Check running containers:
 
-* Java 21
-* Spring Boot
-* Spring Cloud
-* Spring Security
-* JWT Authentication & Authorization
-* REST API Development
-* Microservices Architecture
-* API Gateway
-* Eureka Service Discovery
-* OpenFeign
-* Apache Kafka
-* Event-Driven Architecture
-* Spring AI
-* Google Gemini API
-* MySQL
-* MongoDB
-* Docker
-* Docker Compose
-* Swagger / OpenAPI
-* Log4j2
-* Maven
+```bash
+docker ps
+```
+
+Stop all services:
+
+```bash
+docker compose down
+```
 
 ---
 
-# 📌 Project Summary
+# 🔄 Event-Driven Communication
 
-SmartHire is a backend-only job portal built using a microservices architecture with Java and Spring Boot. The project integrates secure JWT authentication, centralized routing through Spring Cloud Gateway, service discovery with Eureka, asynchronous communication using Apache Kafka, AI-powered resume screening through Google Gemini, and containerized deployment using Docker.
+SmartHire uses **Apache Kafka** for asynchronous communication between microservices.
 
-It demonstrates practical implementation of modern backend technologies while following a modular and scalable architecture.
+### Candidate Applies for Job
+
+```text
+Candidate
+    │
+    ▼
+Candidate Service
+    │
+    ▼
+Kafka Topic (arshdeep)
+    │
+    ├──────────────► AI Screening Service
+    │                      │
+    │                      ▼
+    │              Google Gemini AI
+    │                      │
+    │                      ▼
+    │         screening-completed Topic
+    │
+    ▼
+Notification Service
+```
+
+### Screening Completed
+
+```text
+AI Screening Service
+        │
+        ▼
+screening-completed Topic
+        │
+        ▼
+Notification Service
+        │
+        ▼
+Notification Created
+```
+
+---
+
+# 💡 Skills Demonstrated
+
+- Java 21
+- Spring Boot
+- Spring Cloud
+- Spring Security
+- JWT Authentication
+- Role-Based Access Control (RBAC)
+- API Gateway
+- Eureka Service Discovery
+- OpenFeign
+- Apache Kafka
+- Event-Driven Architecture
+- Google Gemini AI
+- Spring AI
+- RESTful APIs
+- Microservices Architecture
+- Docker
+- Docker Compose
+- MySQL
+- MongoDB
+- Maven
+- Swagger / OpenAPI
+- Log4j2
+- JUnit 5
+- Mockito
+- Unit Testing
+- Git
+- GitHub
+- Jenkins CI/CD
 
 ---
 
 # 👨‍💻 Author
 
-**Arshdeep Nayan**
+**Arshdeep Kumar**
 
 Java Backend Developer
 
-Passionate about building scalable backend applications using Java, Spring Boot, Microservices, Cloud technologies, and AI integrations.
+### Connect
 
-**LinkedIn:** https://www.linkedin.com/in/arshdeep-nayan-6a6033311/
+- GitHub: https://github.com/Arshdeep-nayan
+- LinkedIn: https://www.linkedin.com/in/arshdeep-kumar/
 
 ---
 
+# ⭐ Project Summary
+
+SmartHire is a production-style backend job portal built using a modern **Spring Boot Microservices Architecture**.
+
+The project demonstrates secure JWT authentication, role-based authorization, centralized routing with Spring Cloud Gateway, service discovery using Eureka, asynchronous communication using Apache Kafka, AI-powered candidate screening with Google Gemini, Docker-based deployment, and comprehensive service-layer testing using JUnit 5 and Mockito.
+
+The application showcases modern backend engineering practices including microservices, event-driven communication, cloud-native architecture, RESTful API design, containerization, automated testing, and CI/CD, making it a strong portfolio project for Java Backend and Spring Boot development.
+
+---
